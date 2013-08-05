@@ -1,0 +1,532 @@
+MyControl.SetFont(AtlGetStockFont(DEFAULT_GUI_FONT), TRUE);
+
+Issue, should the data be saved when the user changes the table - YES.
+All save or just the field?
+
+- synchronize table with tree
+- Fix resource mtbf, mttf when empty
+- Fix resource mtbf, mttr display in list
+
+Dynamic create of buttons or widgets to insert in form, spatially
+Undo
+Amit - need event data
+Neil - 4 seconds update agents, 1 second adapters
+Fancy webbrowser jscript list + graphs when data base completed.
+MTConnect - DataStream - how to describe data to be input into animiation based on layout.
+Export/Import from Data Base too
+TrackMenu popup - nested for Mazak
+Simio - Jon F.
+Check out WTL samples
+
+    public CEditCommands<CPlainTextView>
+     CHAIN_MSG_MAP_ALT(CEditCommands<CPlainTextView>, 1)
+ ===============================================================================
+  			CPen pen(::CreatePen(PS_SOLID, 6, COLOR_GRADIENTACTIVECAPTION));
+		CPenHandle oldpen = dc.SelectPen(pen);
+	dc.SelectPen(oldpen);
+  ===============================================================================
+ 
+     	CPoint		pt;
+	GetCursorPos(&pt);
+	//ScreenToClient(&pt);	
+	std::string menustr;
+	menustr+="Mill\n";
+	menustr+="Mill.Variaxis Mark II\n";
+	menustr+="Mill.Variaxis Mark II.500-5X II\n";
+	menustr+="Mill.Variaxis Mark II.630-5X II\n";
+	menustr+="Mill.Variaxis Mark II.730-5X II\n";
+	menustr+="Mill.Variaxis Mark II.630-5X II T\n";
+	menustr+="Mill.VTC Series\n";
+	menustr+="Mill.VTC Series.200C\n";
+	menustr+="Mill.VTC Series.300C\n";
+	menustr+="Mill.VTC Series.250 D/50\n";
+	menustr+="Mill.SVC Series\n";
+	menustr+="Mill.SVC Series.2000 L/120\n";
+	menustr+="Mill.SVC Series.2000L/200\n";
+	menustr+="Turn\n";
+	menustr+="MillTurn\n";
+
+	//CMenu m_menu;
+	//m_menu.CreatePopupMenu();
+	//m_menu.AppendMenu(MF_STRING, (UINT_PTR) 0,  "Ignore Shutdown" );
+	//m_menu.AppendMenu(MF_STRING, (UINT_PTR) 1, "Ignore Data Update" );
+	//int Flags =  TPM_CENTERALIGN | TPM_LEFTBUTTON |TPM_RETURNCMD ; //| TPM_NONOTIFY;
+	//UINT id=m_menu.TrackPopupMenu(Flags,pt.x,pt.y, m_hWnd);
+					//CMenu menu;
+					//menu.LoadMenu(IDR_CONTEXTMENU);
+					//CMenuHandle menuPopup = menu.GetSubMenu(POPUP_MENU_POSITION);
+					//m_CmdBar.TrackPopupMenu(menuPopup,
+					//	TPM_RIGHTBUTTON | TPM_VERPOSANIMATION | TPM_VERTICAL,
+					//	GET_X_LPARAM(lParam), GET_Y_LPARAM(lParam));
+
+	CAtlPopup popup;
+	popup.TrackPopupMenu(m_hWnd,pt.x, pt.y, menustr);
+===============================================================================
+Calendar - date popup, click then active X popup
+
+===============================================================================
+Theme - learn about - can be used in list control
+Theme Notes:
+http://weblogs.asp.net/kennykerr/archive/2006/08/10/Windows-Vista-for-Developers-_1320_-Part-3-_1320_-The-Desktop-Window-Manager.aspx 
+http://www.codeproject.com/Articles/15770/Vista-Goodies-in-C-Using-Glass-in-Your-UI 
+Not reasonable with XP
+
+===============================================================================
+    CONTROL         "ListCtrl",IDC_LISTCTRL,"ListCtrl",WS_TABSTOP,7,49,335,146
+
+Add user control (little head icon)
+IDC_LISTCTRL
+Class: ListCtrl
+Style: 0x50010000
+Don't forget to register control to allow subclassing.
+	m_wndListCtrlResources.RegisterClass();
+
+	m_wndListCtrlResources.SubclassWindow( GetDlgItem( IDC_LISTCTRL ) );
+
+===============================================================================
+
+Transfering CMSDTest to this Project
+
+Step 1 : ..\Altova,..\AltovaXML,..\CMSD to Project->Properties
+
+Step 2: Copy   {Debug|Release}/ Altova.lib AltovaXML.lib CMSD.lib
+
+Step 3: Project->Properties -> Linker -> Input -> Additional Dependencies
+
+Step 3 Project->Properties->Linker-> General -> Additional Library Directories -> $(OutDir)
+
+===============================================================================
+typedef std::string TEXT;
+	std::vector<WCHAR *> paramnames;
+	std::vector<WCHAR *> paramvalues;
+	
+		BEGIN_COLUMN_MAP(Distribution)
+
+			COLUMN_NAME(L"name1", paramnames[0])
+			COLUMN_NAME(L"value1",paramvalues[0])
+		END_COLUMN_MAP()
+class PropertyInfo;
+class CCMSDBuilderView;
+===============================================================================
+
+class Type
+{
+public:
+	enum { _array, _value, _class, _string, _integer, _double, _bstr_t, _enum } type;
+	std::string name;
+	std::vector<PropertyInfo * >  Properties;
+
+	std::string ToString() { return name; }
+	bool IsArray() { return type == _array; }
+	bool IsClass() { return type == _class; }
+	bool IsValueType() { return type == _value; }
+	bool IsStringType() { return type == _string; }
+	bool IsEnumType() { return type == _enum; }
+	std::vector<PropertyInfo * > GetProperties() { return Properties; }
+};
+
+
+class object
+{
+public:
+	Type * GetType() { return type; }
+	Type *  type; 
+	std::string ToString() { return ""; }
+
+};
+class PropertyInfo
+{
+public:
+	Type PropertyType;
+	std::string  Name;
+	object * GetValue(object * element, object * index=NULL) { return NULL; }
+	void SetValue(object * element, std::string value, object * index=NULL) { }
+};
+
+class NodeInfo
+{
+public:
+	/// <summary>
+	/// Constructor. Initializes a new instance of the NodeInfo class.
+	/// </summary>
+	/// <param name="node">tree node</param>
+	/// <param name="element">object represented in tree node</param>
+	/// <param name="type">type of object</param>
+	/// <param name="prop">propertyinfo </param>
+	NodeInfo(CTreeItem node, object * element, Type *type, PropertyInfo * prop)
+	{
+		treenode = node;
+		element = element;
+		type = type;
+		prop = prop;
+	}
+	CTreeItem treenode;
+	// A read-write instance property:
+
+	Type * type;
+	Type * GetType() { return type; }
+	void SetType(Type* _type) { type=_type; }
+	object * element;
+	PropertyInfo * prop;
+	int num;
+	std::string TypeName() { return GetName(element->GetType()); }
+	/// <summary>
+	/// Determines type of node: primitive, class, array and if primitive
+	/// returns string value, otherwise empty string.
+	/// </summary>
+	/// <returns>value as string</returns>
+	std::string GetValue()
+	{
+		if (prop != NULL)
+		{
+			try
+			{
+				return ToString(prop->GetValue(element, NULL));
+			}
+			catch (std::exception)
+			{
+				return "";
+			}
+		}
+		if (type->IsArray() || type->IsClass())
+			return "";  // 
+		if (type->IsValueType())
+		{
+			return element->ToString();
+		}
+
+		if (type->IsStringType() || element->GetType()->IsEnumType())
+		{
+			// Part of a collection perhaps? ****** 
+			return element->ToString();
+
+		}
+
+		return "";
+
+	}
+	// http://stackoverflow.com/questions/8625/generic-type-conversion-from-string
+	/*     static object ChangeType(Type t, object value)
+	{
+	TypeConverter tc = TypeDescriptor.GetConverter(t);
+	return tc.ConvertFrom(value);
+	}*/
+	void SetValue(std::string value)
+	{
+		if (prop != NULL)
+		{
+			try
+			{
+				//object val = (object) value;
+				if (!prop->PropertyType.IsStringType())
+				{
+					//val = ChangeType(prop.PropertyType, value);
+				}
+				prop->SetValue(element, value, NULL);
+			}
+			catch (std::exception e)
+			{
+				OutputDebugString(e.what());
+				//MessageBox.Show(String.Format("Failed {0} conversion", prop.PropertyType.ToString()),
+				//    "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				throw e;
+			}
+		}
+	}
+	/// <summary>
+	/// Search the list of C# reflection properties to find node with matching property name.
+	/// </summary>
+	/// <param name="props">list of reflection properties</param>
+	/// <param name="name">name of property</param>
+	/// <returns>the match or NULL if none</returns>
+	PropertyInfo * FindProperty(std::vector<PropertyInfo *> props, std::string name)
+	{
+		for (int i=0; i< props.size(); i++) // PropertyInfo prop in props)
+		{
+			PropertyInfo * prop = props[i];
+			if (prop->Name == name)
+				return prop;
+		}
+		return NULL;
+	}
+	/// <summary>
+	/// Sets the child property value of a node. Given the child's property name and value,
+	/// finds the property and if it exists stores the object as its value.
+	/// </summary>
+	/// <param name="childprop">name of child property of this node</param>
+	/// <param name="value">object to store.</param>
+	void SetChildValue(std::string childprop, object * value)
+	{
+		PropertyInfo * prop = FindProperty(type->GetProperties(), childprop);
+
+		if (prop != NULL)
+		{
+			try
+			{
+				prop->SetValue(element, value->ToString(), NULL);
+			}
+			catch (Exception)
+			{
+
+			}
+		}
+	}
+	/// <summary>
+	/// CLeans up the name of a type.
+	/// </summary>
+	/// <param name="t">type</param>
+	/// <returns>type as cleaned up string</returns>
+	std::string GetName(Type * t)
+	{
+		std::string result = t->ToString();
+		if (result.find(".") != std::string::npos)
+			result = result.substr(result.find_last_of(".") + 1);
+		if (EndsWith(result, "[]"))
+			result = result.substr(0, result.size() - 2);
+		return result;
+	}
+
+};
+
+class InfoNodes : public std::vector<NodeInfo>
+{
+public:
+
+};
+
+class CWTLTreeView: public CWindowImpl <CWTLTreeView, CTreeViewCtrl> 
+{ 
+public: 
+    DECLARE_WND_SUPERCLASS (NULL, CTreeViewCtrl:: GetWndClassName ()) 
+
+    BOOL PreTranslateMessage (MSG* pMsg) 
+    { 
+        pMsg; 
+        return FALSE; 
+    }
+
+    BEGIN_MSG_MAP (CWTLTreeView) 
+        MESSAGE_HANDLER (WM_CONTEXTMENU, OnContextMenu) 
+    END_MSG_MAP () 
+    
+    LRESULT OnContextMenu (UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled) 
+    { 
+        , And it would be desirable and on right a mouse clique. 
+        MessageBox ("WM_CONTEXTMENU", "!"); 
+        return 0; 
+    }
+};
+
+			//CListArray < CString > aComboList;
+			//std::vector<std::string> tokens= Tokenize(list,".");
+			//if(tokens.size() > 2)
+			//	items = IObject::GetList(tokens[0], tokens[1]);
+			//if(items.size() == 0)
+			//	items.push_back("");
+			//for(int m=0;m<items.size(); m++)
+			//	aComboList.Add(items[m].c_str());
+			//m_wndListCtrlResources.SetColumnFormat( k+2, ITEM_FORMAT_NONE, ITEM_FLAGS_RIGHT, aComboList );
+
+
+struct DistributionReferenceProperty : public IObject
+{
+	DistributionReferenceProperty(bstr_t _name=L"None", bstr_t _distref=L"None");
+	void Load(MSXML2::IXMLDOMNodePtr  ini);
+	void Save(CMSD::CProperty & prop);
+	static bool IsDistributionReferenceProperty(MSXML2::IXMLDOMNodePtr  ini);
+
+	bstr_t identifier; // for identification purposes only - not part of CMSD XML
+	bstr_t name;
+	bstr_t distref;
+	bstr_t description;
+
+	BEGIN_METADATA(DistributionReferenceProperty)
+		STDFLD(identifier, type_is_bstr_t),
+		STDFLD(name, type_is_bstr_t),
+		STDFLD(distref, type_is_bstr_t),
+		STDFLD(description, type_is_bstr_t),
+		END_METADATA
+};
+
+///////////////////////////////////////////////////////////////////////////////////////////////
+/*
+			<Property>
+				<Name>arrivals</Name>
+				<Description>interarrival time for parts of this type at machine 1</Description>
+				<DistributionDefinitionReference>
+					<DistributionDefinitionIdentifier>dddd:111</DistributionDefinitionIdentifier>
+				</DistributionDefinitionReference>
+			</Property>
+*/
+DistributionReferenceProperty::DistributionReferenceProperty(bstr_t _name, bstr_t _distref)
+		: name(_name), distref(_distref), description(L"None") 
+{  
+	identifier=StdStringFormat("DistributionReferenceProperty%d",_objects.size()).c_str();
+}
+
+void DistributionReferenceProperty::Load(MSXML2::IXMLDOMNodePtr  ini)
+{
+	CMSD::CProperty prop = ini;
+	ASSIGN(name, ((std::string)prop.Name[0]).c_str(), L"None");
+	ASSIGN(description, ((std::string)prop.Description[0]).c_str(), L"None");
+	ASSIGN(distref, ((std::string)prop.DistributionDefinitionReference[0].DistributionDefinitionIdentifier[0]).c_str(), L"None");
+}
+void DistributionReferenceProperty::Save(CMSD::CProperty & prop)
+{
+	if((name == bstr_t(L"None") && distref == bstr_t(L"None")) ||
+		(name == bstr_t(L"") && distref == bstr_t(L""))
+		)
+	{
+		MSXML2::IXMLDOMNodePtr  pNode = prop.GetNode()->GetparentNode(); 
+		pNode->removeChild(prop.GetNode());
+		return;
+	}
+	prop.Name.append() = std::string((LPCSTR) this->name);
+	CREATEIF(prop.Description.append() ,  description);
+	prop.DistributionDefinitionReference.append().DistributionDefinitionIdentifier.append() = std::string((LPCSTR) distref);
+}
+bool DistributionReferenceProperty::IsDistributionReferenceProperty(MSXML2::IXMLDOMNodePtr  pNode)
+{
+	MSXML2::IXMLDOMNodePtr pNameElement = pNode->selectSingleNode(bstr_t(L"Name"));
+	MSXML2::IXMLDOMNodePtr pDistRefElement = pNode->selectSingleNode(bstr_t(L"./DistributionDefinitionReference/DistributionDefinitionIdentifier"));
+	if(pNameElement!=NULL && pDistRefElement !=NULL)
+		return true;
+	return false;
+}
+IMPLEMENT_METADATA(DistributionReferenceProperty);
+		if(DistributionReferenceProperty::IsDistributionReferenceProperty(partType.Property[i].GetNode()))
+		{
+			DistributionReferenceProperty prop;
+			prop.Load(partType.Property[i].GetNode());
+			distrefproperties.push_back(prop);
+
+		}
+	}
+	for(int i=0; i< distrefproperties.size(); i++)
+		distrefproperties[i].Save(partType.Property.append());
+		//if(SimpleProperty::IsSimpleProperty(resource.Property[i].GetNode()))
+		//{
+		//	bstr_t name, value;
+		//	if(SimpleProperty::GetPropertyValue(resource.Property[i].GetNode(), name,   value))
+		//	{
+		//		properties.push_back(name + bstr_t(L"=") + value + bstr_t(L","));
+		//	}
+		//	continue;
+		//}
+		//for(int i=0; i< properties.size(); i++)
+		//{		
+		//	std::vector<std::string> tokens = Tokenize(RightTrim(std::string((LPCSTR) properties[i]),","),"=");
+		//	if(tokens.size() < 2) 
+		//		continue;
+		//	CMSD::CProperty prop(;
+		//	prop = _parent.Property.append();
+		//	prop.Name.append() = tokens[0].c_str();
+		//	prop.Value2.append() = tokens[1].c_str();
+		//}
+
+class CModule : public CDialogImpl<CModule>
+	, public CCtlColored<CModule> ,
+	public CDialogResize<CModule>
+{
+public:
+	enum { IDD = IDD_MODULEDIALOG };
+	std::string _title;
+	CStatic cName;
+	CRect _size;
+
+	CModule(std::string title, CRect size) { _title=title; _size=size;}
+
+	BEGIN_MSG_MAP(CModule)
+		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
+		MESSAGE_HANDLER(WM_SIZE, OnSizeDialog)
+		CHAIN_MSG_MAP(CCtlColored<CModule>) 
+		CHAIN_MSG_MAP(CDialogResize<CModule>)
+	END_MSG_MAP()
+
+	BEGIN_DLGRESIZE_MAP(CModule)
+    END_DLGRESIZE_MAP()
+
+	void DrawBkgnd( CDCHandle dcPaint )
+	{
+		CRect rcClip;
+		if ( dcPaint.GetClipBox( rcClip ) == ERROR )
+			return;
+
+	}
+	LRESULT OnSizeDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+	LRESULT OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+};
+LRESULT CModule::OnSizeDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+{
+	//	int iX  = (GetSystemMetrics(SM_CXSCREEN)) / 2 - (m_bmpInfo.bmWidth / 2);
+	//	int iY  = (GetSystemMetrics(SM_CYSCREEN)) / 2 - (m_bmpInfo.bmHeight / 2);
+		
+		// Size the window to the size of bitmap
+	//int	iRet = SetWindowPos( HWND_NOTOPMOST ,_size.left, _size.top, _size.Width(), _size.Height(), SWP_DRAWFRAME | SWP_SHOWWINDOW );
+	//MoveWindow(_size.left, _size.top, _size.Width(), _size.Height());
+	SetWindowPos(HWND_TOPMOST, _size.left, _size.top, 0, 0, SWP_NOSIZE | SWP_SHOWWINDOW);
+	//this->SetWindowPos(NULL, _size, SWP_NOACTIVATE);
+	//HDWP hDWP = ::BeginDeferWindowPos(5);
+	//::DeferWindowPos(hDWP, m_hWnd, NULL,
+	//	_size.left, _size.top, _size.Width(), _size.Height(),
+	//	SWP_NOACTIVATE|SWP_NOZORDER);
+	return 0;
+}
+
+LRESULT CModule::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
+{
+	this->ModifyStyle(NULL, WS_THICKFRAME);
+	DlgResize_Init(false);
+	cName=GetDlgItem(IDC_MODULENAME);
+	cName.SetWindowText(_title.c_str());
+	SetTextBackGround(0xFfbF9F);  // Lightish kind of blue (Four)
+	SetTextColor(RGB(0X60, 0, 0)); // Dark red   
+	// (Five lines, as promised!)
+	// ...or, if that's your pleasure, the next two...
+	//		SetTextColor(::GetSysColor(COLOR_INFOTEXT));  
+	//			SetBkBrush(COLOR_INFOBK);    // (Five lines, as promised!)};
+	return TRUE;
+}
+
+void DrawGradRect( CDCHandle dc, CRect r, COLORREF cLeft, COLORREF cRight)
+	{
+	   CRect stepR;					// rectangle for color's band
+	   COLORREF color;				// color for the bands
+	   float fStep = ((float)r.Width())/255.0f;	// width of color's band
+
+	   for(int iOnBand = 0; iOnBand < 255; iOnBand++) 
+	   {
+			// set current band
+			SetRect(&stepR,
+				r.left+(int)(iOnBand * fStep), 
+				r.top,
+				r.left+(int)((iOnBand+1)* fStep), 
+				r.bottom);	
+		
+			// set current color
+			color = RGB((GetRValue(cRight)-GetRValue(cLeft))*((float)iOnBand)/255.0f+GetRValue(cLeft),
+				(GetGValue(cRight)-GetGValue(cLeft))*((float)iOnBand)/255.0f+GetGValue(cLeft),
+				(GetBValue(cRight)-GetBValue(cLeft))*((float)iOnBand)/255.0f+GetBValue(cLeft));
+			// fill current band
+			dc.FillSolidRect(stepR,color);
+	   }
+	}
+		//r=this->room; // l,top,right,bottom       // ---------------
+		//r.bottom=r.top + 2 * m_iLineHeight;
+		//r.right = r.right - m_iLineWidth;
+		//dc.Draw3dRect(&r,hiCol,loCol); 
+
+		//r=this->room; // l,top,right,bottom		// |
+		//r.bottom=r.bottom -  m_iLineHeight;		// |
+		//r.right = r.left + 2 * m_iLineWidth;	// |
+		//dc.Draw3dRect(&r,hiCol,loCol);			// |
+
+		//r=this->room; // l,top,right,bottom		//			|
+		//r.bottom=r.bottom -  m_iLineHeight;		//			|
+		//r.left = r.right - 2 * m_iLineWidth;	//			|
+		//dc.Draw3dRect(&r,hiCol,loCol); 			//			|
+
+		//r=this->room; // l,top,right,bottom		//
+		//r.top= r.bottom -  2 * m_iLineHeight;	//
+		//r.right = r.right -  m_iLineWidth;		//
+		//dc.Draw3dRect(&r,hiCol,loCol);			// -----------

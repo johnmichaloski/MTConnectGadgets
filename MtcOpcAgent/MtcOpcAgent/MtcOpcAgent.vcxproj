@@ -1,0 +1,283 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{DC65A801-F55B-4EC9-8A05-A13E05949CF1}</ProjectGuid>
+    <RootNamespace>MtcOpcAgent</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseOfAtl>Static</UseOfAtl>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">$(Platform)\$(Configuration)\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">$(Platform)\$(Configuration)\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_53_0;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_53_0;.\x64;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;..\opc;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CONSOLE;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;..\opc;.;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;DLIB_NO_GUI_SUPPORT;_WINDOWS;_DEBUG;_CONSOLE;WINDOWS;BOOST_NO_ANSI_APIS;BOOST_THREAD_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AssemblerListingLocation>$(Platform)\$(Configuration)\</AssemblerListingLocation>
+      <ObjectFileName>$(Platform)\$(Configuration)\</ObjectFileName>
+      <ProgramDataBaseFileName>$(Platform)\$(Configuration)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\src;..\opc;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;_CONSOLE;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+      <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\src;..\opc;.;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN64;DLIB_NO_GUI_SUPPORT;_WINDOWS;NDEBUG;_CONSOLE;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions>-D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Console</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+      <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\Agent\agent\adapter.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\agent.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\asset.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\change_observer.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\checkpoint.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\component.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\component_event.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\config.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\connector.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\cutting_tool.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\data_item.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\device.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\globals.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\options.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\ref_counted.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\service.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\version.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\xml_parser.cpp" />
+    <ClCompile Include="..\..\src\Agent\agent\xml_printer.cpp" />
+    <ClCompile Include="MTCSiemensAgent.cpp" />
+    <ClCompile Include="OpcAdapter.cpp" />
+    <ClCompile Include="MtcOpcAgent.cpp" />
+    <ClCompile Include="ping.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\Agent\agent\adapter.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\agent.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\asset.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\change_observer.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\checkpoint.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\component.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\component_event.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\config.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\connector.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\cutting_tool.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\data_item.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\device.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\globals.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\options.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\ref_counted.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\service.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\stdint.h" />
+    <ClInclude Include="..\..\src\Agent\agent\version.h" />
+    <ClInclude Include="..\..\src\Agent\agent\xml_parser.hpp" />
+    <ClInclude Include="..\..\src\Agent\agent\xml_printer.hpp" />
+    <ClInclude Include="..\..\src\NIST\Config.h" />
+    <ClInclude Include="..\..\src\NIST\Logger.h" />
+    <ClInclude Include="..\..\src\NIST\RunProcess.h" />
+    <ClInclude Include="..\..\src\NIST\StdStringFcn.h" />
+    <ClInclude Include="..\..\src\NIST\VarTypes.h" />
+    <ClInclude Include="CatchMemoryLeak.h" />
+    <ClInclude Include="DCOMUtils.h" />
+    <ClInclude Include="ExceptionHandler.h" />
+    <ClInclude Include="MtcOpcAdapter.hpp" />
+    <ClInclude Include="MTCSiemensAgent.h" />
+    <ClInclude Include="OpcAdapter.h" />
+    <ClInclude Include="OPCBackEnd.h" />
+    <ClInclude Include="OPCCallback.h" />
+    <ClInclude Include="OPCItem.h" />
+    <ClInclude Include="RemoteTaskList.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\src\Agent\agent\agent.cfg" />
+    <None Include="..\..\src\Agent\agent\CMakeLists.txt" />
+    <None Include="ChangeLog.txt" />
+    <None Include="ClassDiagram1.cd" />
+    <None Include="Notes.txt" />
+    <None Include="ReadMe.txt" />
+    <None Include="Table.htm">
+      <DeploymentContent>true</DeploymentContent>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Midl Include="opccomm.idl">
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64/%(Filename)_h.h</HeaderFileName>
+    </Midl>
+    <Midl Include="opcda.idl">
+      <HeaderFileName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">x64/%(Filename)_h.h</HeaderFileName>
+    </Midl>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

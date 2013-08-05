@@ -1,0 +1,88 @@
+
+
+File C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MTConnectConformance\MTConnectConformance\Debug\current.xml could not be validated because of an error in XML Schema/DTD (see below)
+	Unable to load a schema with target namespace 'urn:mtconnect.org:MTConnectStreams:1.2' from 'http://www.mtconnect.org/schemas/MTConnectStreams_1.2.xsd'.
+		Error location: MTConnectStreams
+		Details
+			schema_reference: Unable to load a schema with target namespace 'urn:mtconnect.org:MTConnectStreams:1.2' from 'http://www.mtconnect.org/schemas/MTConnectStreams_1.2.xsd'.
+			
+
+
+Error
+	Source = msxml3.dll
+	Description = Incorrect definition for the root element in schema.
+
+
+I encountered a problem using the "Insert into Collection" functionality provided in the sample application to insert an XSD schema. I would always receive the following message:
+ 
+
+Schema error!
+Reason: Incorrect definition for the root element in schema.
+ 
+
+Read on if you want to know more ...
+ 
+The underlying failure occurs during the call to IXMLDOMSchemaCollection::add() (found in ValidatorDlg.cpp). This call would return an E_FAIL on my machine. (NOTE: according to MSDN, "Incorrect definition for the root element in schema." is the English description for the SCHEMA_SCHEMAROOT_EXPECTED parse error message.)
+ 
+The problem appears to be that the original code for this article uses version independent class id's for DOMDocument and XMLSchemaCache. Version independent class id's were deprecated as of the MSXML 4.0 RTM. Therefore, unless you have some non-standard XML installation (e.g., the MSXML 4.0 April Technical Preview), then your version independent class id's likely map to MSXML 3.0 objects, rather than their 4.0 counterparts. Apparently, IXMLDOMSchemaCollection::add() does not function properly with MSXML 3.0.
+ 
+One way to address the problem I described above is to change the two CoCreateInstance() lines for DOMDocument and XMLSchemaCache in CValidatorDlg::OnInitDialog() (found in ValidatorDlg.cpp) to explicitly use the 4.0 versions (e.g., DOMDocument40 and XMLSchemaCache40).
+
+
+To add Kurt's answer: You can:
+1. Get the element/attribute node you are interested,
+2. Call IXMLDOMSchemaCollection2::getDeclaration(node) to get the ISchemaItem corrsponding to that node,
+3. Call ISchemaItem::get_itemType() to find the type of this schema item,
+4. Check if the type is element, cast the ISchemaItem to ISchemaElement; if the type is attribute, cast the ISchemaItem to IschemaAttribute,
+5. Call ISchemaElement::get_type() to get the ISchemaType,
+6. Call ISchemaType::get_derivedBy() to get the deriviation method.
+Below is some C++ sample code for illustration:
+
+		MSXML2::IXMLDOMSchemaCollectionPtr pSchemas = m_pXMLDoc->namespaces;
+		MSXML2::IXMLDOMSchemaCollection2Ptr pSchemas2 = NULL;
+		MSXML2::ISchemaItemPtr pSchemaItem = NULL;
+		MSXML2::ISchemaTypePtr pSchemaType = NULL;
+
+		pSchemas->QueryInterface(__uuidof(MSXML2::IXMLDOMSchemaCollection2), (void**)&pSchemas2);
+		pSchemaItem=pSchemas2->getDeclaration(m_pXMLDoc->documentElement);
+
+
+
+
+if (pSchemaItem)
+{
+    // 3. Call ISchemaItem::get_itemType() to find the type of this schema item,
+    SOMITEMTYPE type;
+    CHKHR(pSchemaItem->get_itemType(&type));
+    
+    if (SOMITEM_ELEMENT == type)
+    {
+        // 4. Check if the type is element, cast the ISchemaItem to ISchemaElement,
+        ISchemaElement* pSchemaElement = dynamic_cast<ISchemaElement*>(pSchemaItem);
+        if (pSchemaElement)
+        {
+            // 5. Call ISchemaElement::get_type() to get the ISchemaType,
+            CHKHR(pSchemaElement->get_type(&pSchemaType));
+            
+            // 6. Call ISchemaType::get_derivedBy() to get the deriviation method.
+            SCHEMADERIVATIONMETHOD method;
+            CHKHR(pSchemaType->get_derivedBy(&method));
+            
+            if (SCHEMADERIVATIONMETHOD_UNION == method)
+            {
+                // The schema type of this element is an union!!!
+            }
+        }
+    }
+    else if (SOMITEM_ATTRIBUTE == type)
+    {
+        // Do similar logic.
+    }
+}
+
+CleanUp:
+SAFE_RELEASE(pNode);
+SAFE_RELEASE(pSchemas);
+SAFE_RELEASE(pSchemas2);
+SAFE_RELEASE(pSchemaItem);
+SAFE_RELEASE(pSchemaType);

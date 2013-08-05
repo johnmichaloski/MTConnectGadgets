@@ -1,0 +1,222 @@
+
+
+Todo List:
+•	Resource with faults – need better version
+•	Get amount of time between start and end of capacity run
+•	Excel input of part units and fault times
+•	Try out seq not connectors to move part through shop
+•	Submodel for robot loader into machine tool
+•	Devices.xml => CMSD
+•	CMSD => Arena, does CMSD have cell setups
+•	better computation of shifts required to finish job mix
+x	Set up simulation replications better
+
+
+		var=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Variable"), 00, 0);
+		var->PutData ( _bstr_t("Name"), _bstr_t("Cell1Times"));
+		var->PutData ( _bstr_t("Rows"), _bstr_t(L"3"));  // 3 parts
+		var->PutData ( _bstr_t("Initial Value(1)"), _bstr_t("TRIA(6,8,10)"));
+		var->PutData ( _bstr_t("Initial Value(2)"), _bstr_t("TRIA(11,13,15)"));
+		var->PutData ( _bstr_t("Initial Value(3)"),_bstr_t("TRIA(7,10,13)"));
+
+		var=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Variable"), 00, 0);
+		var->PutData ( _bstr_t("Name"), _bstr_t("Cell2Times"));
+		var->PutData ( _bstr_t("Rows"), _bstr_t(L"3"));  // 3 parts
+		var->PutData ( _bstr_t("Initial Value(1)"), _bstr_t("TRIA(5,8,10)"));
+		var->PutData ( _bstr_t("Initial Value(2)"), _bstr_t("TRIA(4,6,8)"));
+		var->PutData ( _bstr_t("Initial Value(3)"),_bstr_t("TRIA(7,9,11)"));
+
+		var=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Variable"), 00, 0);
+		var->PutData ( _bstr_t("Name"), _bstr_t("Cell2Times"));
+		var->PutData ( _bstr_t("Rows"), _bstr_t(L"3"));  // 3 parts
+		var->PutData ( _bstr_t("Initial Value(1)"), _bstr_t("TRIA(15,20,25)"));
+		var->PutData ( _bstr_t("Initial Value(2)"), _bstr_t("TRIA(15,18,21)"));
+		var->PutData ( _bstr_t("Initial Value(3)"),_bstr_t("TRIA(18,23,28)"));
+
+		var=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Variable"), 00, 0);
+		var->PutData ( _bstr_t("Name"), _bstr_t("Cell3Times"));
+		var->PutData ( _bstr_t("Rows"), _bstr_t(L"3"));  // 3 parts
+		var->PutData ( _bstr_t("Initial Value(1)"), _bstr_t("TRIA(15,20,25)"));
+		var->PutData ( _bstr_t("Initial Value(2)"), _bstr_t("TRIA(15,18,21)"));
+		var->PutData ( _bstr_t("Initial Value(3)"),_bstr_t("TRIA(18,23,28)"));
+
+Sub example()
+Dim m As Model
+Dim submod As submodel
+Dim mymod1, mymod2, mymod3 As Module
+
+Set m = ThisDocument.Model
+
+'The create method of the submodel collection is used to create
+' a submodel.
+
+Set submod = m.Submodels.Create("My Submodel", 1000, 100)
+
+'Remove entry and exit points for the submodel
+
+submod.NumEntryPoints = 0
+submod.NumExitPoints = 0
+
+'To move to the submodel view the model.show method of the
+'submodels collection is used.
+
+m.Submodels(1).Model.Show
+
+'Below a small model is created inside of the submodel
+
+Set mymod1 = m.Submodels(1).Model.Modules.Create("BasicProcess", "Create", 1000, 100)
+Set mymod2 = m.Submodels(1).Model.Modules.Create("BasicProcess", "Process", 2000, 100)
+Set mymod3 = m.Submodels(1).Model.Modules.Create("BasicProcess", "Dispose", 3000, 100)
+
+'The code below will return the user to the Top Level of the model
+
+m.Show
+
+
+End Sub
+
+
+
+
+//_modules.push_back(_Modules->Create(_bstr_t(L"Blocks"), _bstr_t(L"Station"), 100, 100));
+	//_modules[0]->PutData ( _bstr_t(L"Comments"), _bstr_t(L"Definition for test CNC1"));
+	//_modules[0]->PutData ( _bstr_t(L"Label"), _bstr_t(L"McCheck"));
+	//_modules.push_back(_Modules->Create(_bstr_t(L"Blocks"), _bstr_t(L"Station"), 800, 100));
+	//_modules[1]->PutData ( _bstr_t(L"Comments"), _bstr_t(L"Definition for test CNC2"));
+	//_modules[1]->PutData ( _bstr_t(L"Label"), _bstr_t(L"CNC2"));
+	//_myconnections->Create(_modules[0],_modules[1]);
+
+	//CreateArrive("LoadA", 200, 800);
+	//CComPtr<Arena::IModule> seize  = CreateSeize("Seize", 400,400);
+	//Connections
+	//_myconnections->Create(_modules[0],seize);
+	
+		//_CurrentModule=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Create"), 100, 100);
+#if 0
+	 _Modules->Create(_bstr_t(L"Elements"), _bstr_t(L"Stations"), 100, 0);
+	 // Stations 
+	 CComPtr<Arena::IStations> stations = _mymodel->GetStations();
+	_modules.push_back(stations->Create(100,100));
+	_modules.push_back(stations->Create(800,100));
+	CComPtr<Arena::IStation> station = stations->Item[1];
+	station->Putcolor(0xff00ff);
+#endif
+#if 1
+	
+	CComPtr<Arena::IModule> unload=_Modules->Create(_bstr_t(L"Support"), _bstr_t(L"Station"), 400, 400);
+	unload->PutData ( _bstr_t(L"Statn"), _bstr_t(L"UnloadA"));
+	unload->PutData ( _bstr_t(L"Label"), _bstr_t(L"UnloadA"));
+	
+	CComPtr<Arena::IModule> myexit=_Modules->Create(_bstr_t(L"Blocks"), _bstr_t(L"Exit"), 1200, 400);
+	myexit->PutData ( _bstr_t(L"CnvName"), _bstr_t(L"ConvA"));
+	unload->PutData ( _bstr_t(L"Label"), _bstr_t(L"ConvA"));
+	
+	CComPtr<Arena::IModule> depart=_Modules->Create(_bstr_t(L"Common"), _bstr_t(L"Depart"), 1800, 400);
+	depart->PutData ( _bstr_t(L"Station"), _bstr_t(L"UnloadA1"));
+	unload->PutData ( _bstr_t(L"Label"), _bstr_t(L"UnloadA1"));
+	depart->PutData ( _bstr_t(L"Counter"), _bstr_t(L"Individual Counter"));
+	_myconnections->Create(unload,myexit);
+	_myconnections->Create(myexit,depart);
+	//
+	//decide->PutData ( _bstr_t(L"Type"), _bstr_t(L"With"));
+	//batch->PutData ( _bstr_t(L"N 1DArrayIndex"), _bstr_t(L"2"));
+	//batch->PutData ( _bstr_t(L"N If(0)"), _bstr_t(L"Variable"));
+	//batch->PutData ( _bstr_t(L"N VNamed(0)"), _bstr_t(L"Part1"));
+	//batch->PutData ( _bstr_t(L"N Is(0)"), _bstr_t(L">="));
+	//batch->PutData ( _bstr_t(L"N Value(0)"), _bstr_t(L"2"));
+
+	//batch->PutData ( _bstr_t(L"N If(2)"), _bstr_t(L"Variable"));
+	//batch->PutData ( _bstr_t(L"N VNamed(2)"), _bstr_t(L"Part1"));
+	//batch->PutData ( _bstr_t(L"N Is(2)"), _bstr_t(L">="));
+	//batch->PutData ( _bstr_t(L"N Value(2)"), _bstr_t(L"3"));
+	
+
+
+PanelName		ModuleName		TableName
+Common			Actions			Common|Actions
+Common			Arrive			Common|Arrive
+Common			Depart			Common|Depart
+Common			Expressions		Common|Expressions
+Common			Leave			Common|Leave
+Common			Resource		Common|Resource
+Common			Sequences		Common|Sequences
+Common			Sets			Common|Sets
+Common			Simulate		Common|Simulate
+Common			Storage			Common|Storage
+Common			Variables		Common|Variables
+Elements		Arrivals		Elements|Arrivals
+Elements		Conveyors		Elements|Conveyors
+Elements		DStats			Elements|DStats
+Elements		Segments		Elements|Segments
+Elements		Stations		Elements|Stations
+Support			Assign			Support|Assign
+Support			Chance			Support|Chance
+Support			Choose			Support|Choose
+Support			Count			Support|Count
+Support			Create			Support|Create
+Support			Delay			Support|Delay
+Support			Dispose			Support|Dispose
+Support			Duplicate		Support|Duplicate
+Support			Release			Support|Release
+Support			Seize			Support|Seize
+Support			Signal			Support|Signal
+Support			Station			Support|Station
+Support			Tally			Support|Tally
+Support			Wait			Support|Wait
+transfer		Access			transfer|Access
+transfer		Convey			transfer|Convey
+transfer		Exit			transfer|Exit
+transfer		Route			transfer|Route
+
+
+SerialNumber	ModelLevelID	X	Y	UserDescription	QSG	QExp	QAttr	QStatic	Label	QMem	QSet	QName	QCap	QTimeStats	QLabel	QRule	SharedT	QNumStats	BalkDisp	RankingExp	BalkLabel	Next	Pri
+2931	3	10594	-1257		Queue Set Member					SetIndex	MachQs			No		FIFO	No	Yes	Yes				
+
+
+
+
+
+	//decide->PutData ( _bstr_t(L"N Percent True(1)"), _bstr_t(L"25"));
+	//decide->PutData ( _bstr_t(L"N Percent True(2)"), _bstr_t(L"25"));
+	//decide->PutData ( _bstr_t(L"N Percent True(3)"), _bstr_t(L"50"));
+	//CComPtr<Arena::IModule> create1=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Process"), 3150, 0);
+	//create1->PutData ( _bstr_t(L"Name"), _bstr_t(L"CNC1"));
+	//CComPtr<Arena::IModule> create2=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Process"), 3150, 450);
+	//create2->PutData ( _bstr_t(L"Name"), _bstr_t(L"CNC2"));
+	//CComPtr<Arena::IModule> create3=_Modules->Create(_bstr_t(L"BasicProcess"), _bstr_t(L"Process"), 3150, 1000);
+	//create3->PutData ( _bstr_t(L"Name"), _bstr_t(L"CNC3"));
+
+	    //IConnectionPtr Create (
+     //   IDispatch * srcModule,
+     //   IDispatch * destModule,
+     //   const _variant_t & srcOperand = vtMissing,
+     //   const _variant_t & destOperand = vtMissing,
+     //   const _variant_t & srcRepeatIndex = vtMissing,
+     //   const _variant_t & destRepeatIndex = vtMissing,
+     //   const _variant_t & xPoints = vtMissing,
+     //   const _variant_t & yPoints = vtMissing );
+
+	//_myconnections->Create(decide, create1,_bstr_t(L"N Next Label Yes") , vtMissing, 1);
+	//_myconnections->Create(decide, create2,_bstr_t(L"N Next Label Yes") , vtMissing, 2);
+	//_myconnections->Create(decide, create3,_bstr_t(L"N Next Label Yes") , vtMissing, 3);
+
+	//_myconnections->Create(create1,dispose) ; 
+	//_myconnections->Create(create2,dispose) ; 
+	//_myconnections->Create(create3,dispose) ; 
+static FONTDESC _fontDesc > { sizeof(FONTDESC), OLESTR("Microsoft Sans Serif"), FONTSIZE(8),  FW_REGULAR, ANSI_CHARSET, FALSE, FALSE, FALSE };
+
+
+		//	<Property><Name>Capacity</Name><Value>1</Value></Property>			
+		//properties= pNode->selectNodes(bstr_t(".//Property"));
+		//for(int j=0; j< properties->length; j++)
+		//{
+		//	MSXML2::IXMLDOMNodePtr pProp = NULL;					
+		//	properties->get_item(j, &pProp);
+		//	MSXML2::IXMLDOMNodePtr pName = pProp->selectSingleNode(bstr_t(".//Name"));
+		//	MSXML2::IXMLDOMNodePtr pValue = pProp->selectSingleNode(bstr_t(".//Value"));
+		//	bstr_t propName =  (pName!=NULL) ? pName->Gettext() : L"none";
+		//	if( propName == bstr_t(L"Capacity"))
+		//	{
+		//		resource.capacity =  (pValue!=NULL) ? pValue->Gettext() : L"none";
+		//	}
+		//}

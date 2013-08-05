@@ -1,0 +1,198 @@
+<?xml version="1.0"?>
+<CMSDDocument>
+
+	<DataSection>
+		<Part>
+			<Identifier>SMCO:CastingCore</Identifier>
+			<PartType>
+				<PartTypeIdentifier>Casting</PartTypeIdentifier>
+			</PartType>
+		</Part>
+		<PartType>
+			<Identifier>CastingCoreBottomPart</Identifier>
+			<BillOfMaterials>
+				<BillOfMaterialsIdentifier>CastingCoreBOM1</BillOfMaterialsIdentifier>
+			</BillOfMaterials>
+			<ProcessPlan>
+				<ProcessPlanIdentifier>PP:ToyCar</ProcessPlanIdentifier>
+			</ProcessPlan>
+		</PartType>
+		<PartType>
+			<Identifier>CastingCoreTopPart</Identifier>
+		</PartType>
+		<PartType>
+			<Identifier>CoreChiller</Identifier>
+		</PartType>
+		<BillOfMaterials>
+			<Identifier>ToyCarBOM1</Identifier>
+			<Description>An example of a BOM for a toy car</Description>
+			<Name>Toy Car BOM</Name>
+			<PartType>
+				<PartTypeIdentifier>ToyCar</PartTypeIdentifier>
+			</PartType>
+			<ReferenceMaterial>
+				<ReferenceMaterialIdentifier>234wedwe</ReferenceMaterialIdentifier>
+			</ReferenceMaterial>
+			<ReferenceMaterial>
+				<ReferenceMaterialIdentifier>werwer</ReferenceMaterialIdentifier>
+			</ReferenceMaterial>
+		<!--	<Property>
+				<Name>Version</Name>
+				<Description>The current version number for this bill of materials</Description>
+				<Value>576rtgr5ge</Value>
+			</Property>
+			-->
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_Component</Identifier>
+				<Description>BomComponent for the complete assembled car</Description>
+				<Quantity>1</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar</PartTypeIdentifier>
+				</PartType>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_BodyComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_ChassisComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_WheelAssemblyComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+				<SubComponent>
+					<BillOfMaterialsIdentifier>ToyCar_DecalBOM</BillOfMaterialsIdentifier>
+				</SubComponent>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_BodyComponent</Identifier>
+				<Description>BomComponent for the Toy Car Body</Description>
+				<Quantity>1</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_Body</PartTypeIdentifier>
+				</PartType>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_ChassisComponent</Identifier>
+				<Description>BomComponent for the Toy Car Chassis</Description>
+				<Quantity>1</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_Chassis</PartTypeIdentifier>
+				</PartType>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_WheelAssemblyComponent</Identifier>
+				<Description>BomComponent for the Toy Car Wheel Assembly</Description>
+				<Quantity>2</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_WheelAssembly</PartTypeIdentifier>
+				</PartType>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_WheelPairComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_AxleComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+				<SubComponent>
+					<BillOfMaterialsComponentIdentifier>ToyCar_HubCapPairComponent</BillOfMaterialsComponentIdentifier>
+				</SubComponent>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_WheelPairComponent</Identifier>
+				<Description>BomComponent for the Toy Car Wheel</Description>
+				<Quantity>2</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_Wheel</PartTypeIdentifier>
+				</PartType>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_HubCapPairComponent</Identifier>
+				<Description>BomComponent for the Toy Car Hub Cap</Description>
+				<Quantity>2</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_HubCap</PartTypeIdentifier>
+				</PartType>
+			</BillOfMaterialsComponent>
+			<BillOfMaterialsComponent>
+				<Identifier>ToyCar_AxleComponent</Identifier>
+				<Description>BomComponent for the Toy Car Axle</Description>
+				<Quantity>1</Quantity>
+				<PartType>
+					<PartTypeIdentifier>ToyCar_Axle</PartTypeIdentifier>
+				</PartType>
+			</BillOfMaterialsComponent>
+		</BillOfMaterials>
+		<BillOfMaterials>
+			<Identifier>ToyCar_DecalBOM</Identifier>
+			<Description>This part if bought from ACME decal maker</Description>
+			<Property>
+				<Name>Supplier</Name>
+				<Value>Acme Decal Maker, ltd.</Value>
+			</Property>
+		</BillOfMaterials>
+		<InventoryItemClass>
+			<Identifier>invItemClass:ToyCar</Identifier>
+			<Description>The class that describes a completed toy car that is stored in
+				inventory</Description>
+			<Name>KIT: The Knight Rider Car</Name>
+			<InventoryItemType>part</InventoryItemType>
+			<PartType>
+				<PartTypeIdentifier>ToyCar</PartTypeIdentifier>
+			</PartType>
+			<Property>
+				<Name>BestSeller</Name>
+				<Value>true</Value>
+			</Property>
+		</InventoryItemClass>
+		<InventoryItemClass>
+			<Identifier>invItemClass:ToyCar_DecalSet</Identifier>
+			<Description>The class that describes a decal set (for a toy car) that is
+				stored in the inventory system</Description>
+			<Name>ACME Knight Rider Car Decal Set</Name>
+			<InventoryItemType>part</InventoryItemType>
+			<PartType>
+				<PartTypeIdentifier>ToyCar_DecalSet</PartTypeIdentifier>
+			</PartType>
+			<Property>
+				<Name>Supplier</Name>
+				<Value>Acme Decal Maker, ltd.</Value>
+			</Property>
+			<Property>
+				<Name>SupplierPartNumber</Name>
+				<Value>ACME:DSET:111-123NR</Value>
+			</Property>
+		</InventoryItemClass>
+		<InventoryItem>
+			<Identifier>invItem:ToyCar</Identifier>
+			<InventoryItemClass>
+				<InventoryItemClassIdentifier>invItemClass:ToyCar</InventoryItemClassIdentifier>
+			</InventoryItemClass>
+			<QuantityOnHand>1000</QuantityOnHand>
+			<Location>
+				<FacilityLocation>Warehouse 1</FacilityLocation>
+				<WithinFacilityLocation>Bin12</WithinFacilityLocation>
+			</Location>
+		</InventoryItem>
+		<InventoryItem>
+			<Identifier>invItem:ToyCar_DecalSet</Identifier>
+			<InventoryItemClass>
+				<InventoryItemClassIdentifier>invItemClass:ToyCar</InventoryItemClassIdentifier>
+			</InventoryItemClass>
+			<QuantityOnHand>573</QuantityOnHand>
+			<AssociatedPart>
+				<PartIdentifier>SMCO:CastingCore</PartIdentifier>
+			</AssociatedPart>
+			<Property>
+				<Name>ReorderPoint</Name>
+				<Value>100</Value>
+			</Property>
+			<Property>
+				<Name>ReorderQuantity</Name>
+				<Value>5000</Value>
+			</Property>
+			<Property>
+				<Name>ReorderLeadTime</Name>
+				<Unit>day</Unit>
+				<Value>3</Value>
+			</Property>
+		</InventoryItem>
+	</DataSection>
+</CMSDDocument>

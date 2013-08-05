@@ -1,0 +1,2 @@
+2012-02-03T17:31:51.0968Z|avail|AVAILABLE|path_feedratefrt|0|exec|READY|power|ON|controllermode|AUTOMATIC|program|Boeing Boxy|PartCountAct|1|PartCountBad|0|probed|0|SetPoint|UNAVAILABLE|ActualPoint|UNAVAILABLE|PlusTolerance|UNAVAILABLE|MinusTolerance|UNAVAILABLE|MinDeviation|UNAVAILABLE|MaxDeviation|UNAVAILABLE|Deviation|UNAVAILABLE|Outtol|UNAVAILABLE|ProbeName|NT_CONNECT_2X20|CharacteristicType|UNAVAILABLE|FeatureType|UNAVAILABLE
+2012-02-03T17:31:52.0000Z|ProbedId|UNAVAILABLE

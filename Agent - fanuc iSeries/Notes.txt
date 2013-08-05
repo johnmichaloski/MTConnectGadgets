@@ -1,0 +1,160 @@
+Note:
+
+To NOT reset at midnite (add):
+
+[CONFIG]
+
+ResetAtMidnight=0
+
+
+
+FROM ISERIES FOCAS 2
+
+#if 0
+		ret = cnc_rdexecprog(_adapter->mFlibhndl, &length, &blknum, data);  // 15,16,18,21,0,powermate
+		if (ret != EW_OK)
+		{
+			GLogger.Warning(StdStringFormat("Error: CiSeries::cnc_rdexecprog=%d\n", ret));
+		}
+		if (ret == EW_OK)
+		{
+			GLogger.LogMessage(StdStringFormat("iSeries::cnc_rdexecprog blck counter %d\n", (int) blknum), 3);
+			GLogger.LogMessage(StdStringFormat("iSeries::cnc_rdexecprog length %d\n", (int) length), 3);
+			GLogger.LogMessage("iSeries::cnc_rdexecprog Search for O# comment\n", 3);
+			GLogger.Info(data);
+			// issue here - main program versus subprogram
+			progname=_adapter->getProgramName(data);
+			GLogger.Info(StdStringFormat("iSeries::cnc_rdexecprog getProgramName Found  %s\n", progname.c_str()));
+		}
+#endif
+
+#if 0
+		typedef std::map<int, std::string> MyMap;
+
+		const MyMap::value_type rawData[] = {
+			MyMap::value_type(0,"MDI"),
+			MyMap::value_type(1,"MEM"),
+			MyMap::value_type(2,"EDIT"),
+			MyMap::value_type(3,"HNDL"),
+			MyMap::value_type(4,"JOG"),
+			MyMap::value_type(5,"REF"),
+		};
+		const int numElems = sizeof rawData / sizeof rawData[0];
+		MyMap myModeMap(rawData, rawData + numElems);		
+
+		const MyMap::value_type handleRawData[] = {
+			MyMap::value_type(0,"HX"),
+			MyMap::value_type(1,"HY"),
+			MyMap::value_type(2,"HZ"),
+			MyMap::value_type(3,"H4"),
+
+		};
+		const int numHandleElems = sizeof handleRawData / sizeof handleRawData[0];
+		MyMap myHandleMap(handleRawData, handleRawData + numHandleElems);		
+
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl feed override=%d\n", (int) sgnl.feed_ovrd));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl type = %d\n", (int) sgnl.type));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl mode = %s\n", myModeMap[sgnl.mode].c_str()));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl Manual handle feed axis selection signal is stored  = %s\n", myHandleMap[sgnl.hndl_ax].c_str()));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl rapid override = %d\n",(int) sgnl.rpd_ovrd));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl jog_ovrd = %d\n", (int) sgnl.jog_ovrd));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl blk del = %d\n", (int) sgnl.blck_del));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl sngl_blck  = %d\n", (int) sgnl.sngl_blck));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl dry_run  = %d\n", (int) sgnl.dry_run));
+		GLogger.Warning(StdStringFormat("Info: iSeries::cnc_rdopnlsgnl feed_hold  = %d\n", (int) sgnl.feed_hold));
+		_adapter->SetMTCTagValue("path_feedrateovr", StdStringFormat("%d", (int) sgnl.feed_ovrd * 10));
+#endif
+
+
+		// Alarms are removed
+#if 0
+		if (status.CiSeries.emergency == 0)
+			mAlarm.setValue(Alarm::eESTOP, "EMerGency", Alarm::eCRITICAL, Alarm::eCLEARED, "EMerGency Status Set");
+		else
+			mAlarm.setValue(Alarm::eESTOP, "EMerGency", Alarm::eCRITICAL, Alarm::eACTIVE, "EMerGency Status Set");
+
+		if (status.CiSeries.alarm == 0)
+			mAlarm.setValue(Alarm::eOTHER, "ALarM", Alarm::eERROR, Alarm::eCLEARED, "ALarM Status Set");
+		else
+			mAlarm.setValue(Alarm::eOTHER, "ALarM", Alarm::eERROR, Alarm::eACTIVE, "ALarM Status Set");
+#endif
+
+
+#if 0
+	ODBACT buf ;
+	ODBACT2 buf2[4] ;
+	try 
+	{
+		cnc_acts(mFlibhndl, &buf ) ;
+
+		short sp_no=4;
+		short ret2 ;
+		for(int i=0; i< 4; i++)
+		{
+			ret2 = cnc_acts2(mFlibhndl, i, buf2 ) ;
+			if(EW_NUMBER != ret2)
+				GLogger.LogMessage(StdStringFormat("Spindle[%d]=%ld\n", buf2[0].data), 3);
+		}
+	}
+	catch(...)
+	{
+
+		GLogger.LogMessage(StdStringFormat("cnc_acts problem\n"), -1);
+
+	}
+#endif
+
+
+#if 0
+	ODBCMD buf ;
+	short num_cmd=1;
+	double spindlespeed;
+	try 
+	{
+		//This function cannot be used for Series 16/18/21/0 and Power Mate
+		short sret = cnc_rdcommand(_adapter->mFlibhndl, 18, 1, &num_cmd, &buf ) ;
+		if (sret == EW_OK && num_cmd == 1 && buf.adrs=='S')
+		{
+			spindlespeed=buf.cmd_val;
+			if(buf.dec_val>0)
+				_adapter->SetMTCTagValue("Srpm", StdStringFormat("%8.4f", spindlespeed /(buf.dec_val*10.0)));
+				//spindlespeed=spindlespeed /(buf.dec_val*10.0);
+		}
+		else 
+		{
+			spindlespeed=speed.actf.data;
+		}
+	}
+	catch(...)
+	{
+		GLogger.Fatal("cnc_rdcommand speed problem\n");
+	}
+
+	if (ret == EW_OK)
+	{
+		//_adapter->mPathFeedrate.setValue(speed.actf.data);
+		 _adapter->SetMTCTagValue("path_feedratefrt", StdStringFormat("%8.4f", speed.actf.data));
+
+		 // The spindle speed is one of the main spindle that is dispalyed in the position screen of the CNC.
+		 // HACK just use actual feed.
+		 _adapter->SetMTCTagValue("Srpm", StdStringFormat("%8.4f", spindlespeed));
+		 //_adapter->mSpindleSpeed.setValue(spindlespeed);
+		 //Reads the actual rotational speed of the spindle connected to CNC
+		 //mSpindleSpeed.setValue(buf.data);
+	}
+	else
+	{
+		_adapter->disconnect();
+	}
+#endif
+
+
+#if 0
+		if(AutoVersionDetect)
+		{
+			if(std::string(sysinfo.cnc_type) == "15")
+				Globals.FanucVersion = "15i";
+			else
+				Globals.FanucVersion ="iSeries";
+		}
+#endif

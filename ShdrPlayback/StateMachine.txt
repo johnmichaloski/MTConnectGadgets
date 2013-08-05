@@ -1,0 +1,42 @@
+
+
+
+
+State		Event				Next State
+*			Exit				Off
+*			Fail				Fault
+Fault		Reset				Ready
+Ready		Init				Inited
+Inited		Start				Running
+Running		Stop				Stopped
+Running		Done				Off
+Stopped		Start				Running
+
+2012-10-06T14:55:55.0765Z|Cloadc|normal|SspeedOvr|100.0000000000|Xact|-0.6529937
+387|Xcom|-0.6594026934
+                      2012-10-06T14:55:55.0765Z|Xloadc|normal||||
+                                                                 2012-10-06T14:5
+5:55.0765Z|Yact|-1.4529440403|Ycom|-1.4496629740
+                                                2012-10-06T14:55:55.0765Z|Yloadc
+|normal||||
+           2012-10-06T14:55:55.0765Z|Zact|-0.1000000015
+                                                       2012-10-06T14:55:55.0765Z
+|Zloadc|normal||||
+                  2012-10-06T14:55:55.0765Z|avail|AVAILABLE|block|x-0.778029 y-1
+.388933
+       2012-10-06T14:55:55.0765Z|clow|normal||||
+                                                2012-10-06T14:55:55.0765Z|estop|
+ARMED|execution|ACTIVE|feed_ovr|100.0000000000
+                                              2012-10-06T14:55:55.0765Z|hlow|nor
+mal||||
+       2012-10-06T14:55:55.0765Z|hpres|normal||||
+                                                 2012-10-06T14:55:55.0765Z|htemp
+|normal||||
+           2012-10-06T14:55:55.0765Z|line|211|mode|AUTOMATIC|power|ON|program|fl
+ange_cam.ngc|spindle_speed|3400.0000000000
+                                          2012-10-06T14:55:55.0765Z|system|FAULT
+|CONDITION|||Battery alarm
+                          2012-10-06T14:55:59.0281Z|Xact|-1.2617310286|Xcom|-1.2
+662320695|Yact|-0.9558874369|Ycom|-0.9492737588|block|x-1.340203 y-0.840583|line
+|216
+    2012-10-06T14:56:02.0796Z|Xact|-1.5567448139|Xcom|-1.5573676403|Yact|-0.2214

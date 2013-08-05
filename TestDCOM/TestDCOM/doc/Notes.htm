@@ -1,0 +1,571 @@
+<HTML>
+<HEAD>
+<META NAME="GENERATOR" Content="Microsoft Visual Studio 8.0">
+<TITLE></TITLE>
+    <style type="text/css">
+        .style1
+        {
+            width: 164px;
+        }
+    </style>
+</HEAD>
+<BODY>
+
+
+
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="2" width="400">
+        <tr>
+            <td bgcolor="#a6c9f8" valign="top">
+                <font face="verdana, arial, helv" size="1"><b>RPC_C_AUTHN_<i>xxx</i> Flag</b><br />
+                </font>
+            </td>
+            <td bgcolor="#a6c9f8" valign="top">
+                <font face="verdana, arial, helv" size="1"><b>Description</b><br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_NONE<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">No authentication.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_DCE_PRIVATE<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">Distributed Computing Environment 
+                (DCE) private key authentication.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_DCE_PUBLIC<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">DCE public key authentication.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_GSS_NEGOTIATE<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">Snego security support provider.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_WINNT<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">NTLM SSP.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_GSS_KERBEROS<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">Kerberos authentication.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_DEFAULT<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">COM+ uses its normal security blanket 
+                negotiation algorithm to pick an authentication service.<br />
+                </font>
+            </td>
+        </tr>
+        <tr>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_GSS_CHANNEL<br />
+                </font>
+            </td>
+            <td bgcolor="#dddddd" valign="top">
+                <font face="verdana, arial, helv" size="1">Secure Sockets Layer (SSL).<br />
+                </font>
+            </td>
+        </tr>
+    </table>
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <b><font color="#800000" face="verdana, arial, helv" size="4"><a name="fig2">
+        Figure 2 </a></font><font color="#ffffff" face="verdana, arial, helv" size="4">&nbsp;</font>
+        <font color="#000080" face="verdana, arial, helv" size="4">Authentication Level 
+        Settings</font></b>
+    </p>
+    <p>
+        <table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="2" width="400">
+            <tr>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Value</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Authentication Level</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Flag</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Description</b><br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">0<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Default<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_DEFAULT<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">The authentication level is chosen 
+                    automatically using the normal security blanket negotiation algorithm of COM+.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">1<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">None<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_NONE<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">No authentication.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">2<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Connect<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_CONNECT<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">Authenticates the client only when 
+                    the client first connects to the server.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">3<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Call<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_CALL<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">Authenticates the client at the 
+                    beginning of each remote call.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">4<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Packet<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_PKT<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">Authenticates that all of the data 
+                    received is from the expected client.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">5<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Packet Integrity<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_PKT_INTEGRITY<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">Authenticates all of the data 
+                    integrity and verifies that it has not been modified when transferred between 
+                    the client and the server.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">6<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Packet Privacy<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_AUTHN_LEVEL_PKT_PRIVACY<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" class="style1" valign="top">
+                    <font face="verdana, arial, helv" size="1">Authenticates, verifies, and 
+                    privacy-encrypts the arguments passed to every remote call.</font></td>
+            </tr>
+        </table>
+    </p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <b><font color="#800000" face="verdana, arial, helv" size="4"><a name="fig3">
+        Figure 3 </a></font><font color="#ffffff" face="verdana, arial, helv" size="4">&nbsp;</font>
+        <font color="#000080" face="verdana, arial, helv" size="4">Impersonation Level 
+        Settings</font></b>
+    </p>
+    <p>
+        <table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="2" width="400">
+            <tr>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Value</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Impersonation Level</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Flag</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Description</b><br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">0<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Default<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_IMP_LEVEL_DEFAULT<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">The impersonation level is chosen 
+                    automatically using the normal security blanket negotiation algorithm of COM+.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">1<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Anonymous<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_IMP_LEVEL_ANONYMOUS<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">The client is anonymous to the 
+                    server. The server cannot obtain the client&#39;s identification information, and it 
+                    cannot impersonate the client. (Not supported.)<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">2<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Identify<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_IMP_LEVEL_IDENTIFY<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">The server can obtain the client&#39;s 
+                    identification information. The server can impersonate the client for ACL 
+                    checking, but it cannot access system objects as the client.
+                    <br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">3<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Impersonate<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_IMP_LEVEL_IMPERSONATE<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">The server can impersonate the 
+                    client&#39;s security context while acting on behalf of the client. This level of 
+                    impersonation can only be used to access resources on the server&#39;s machine.
+                    <br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">4<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Delegate<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">RPC_C_IMP_LEVEL_DELEGATE<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">The server can impersonate the 
+                    client&#39;s security context when making outgoing calls to other servers (on other 
+                    machines) on behalf of the client.<br />
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </p>
+    <hr align="left" color="#000080" width="400" />
+    <p>
+        &nbsp;</p>
+    <p>
+        <b><font color="#800000" face="verdana, arial, helv" size="4"><a name="fig9">
+        Figure 9</a></font> <font color="#ffffff" face="verdana, arial, helv" size="4">&nbsp;</font>
+        <font color="#000080" face="verdana, arial, helv" size="4">
+        EOLE_AUTHENTICATION_CAPABILITIES</font></b>
+    </p>
+    <p>
+        <table bgcolor="#ffffff" border="0" cellpadding="3" cellspacing="2" width="400">
+            <tr>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Enumeration</b><br />
+                    </font>
+                </td>
+                <td bgcolor="#a6c9f8" valign="top">
+                    <font face="verdana, arial, helv" size="1"><b>Description</b><br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_NONE<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">No capability flags.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_DEFAULT<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Tells COM+ to pick the capabilities 
+                    using its normal security blanket negotiation algorithm.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_MUTUAL_AUTH<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Not used. Mutual authentication is 
+                    supported automatically by some authorization services.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_STATIC_CLOAKING<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Tells COM+ that calls should be made 
+                    under the identity of the client thread token. The client&#39;s identity is 
+                    determined during the first call on a proxy, and whenever the 
+                    IClient­Security::SetBlanket method is called.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_DYNAMIC_CLOAKING<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Tells COM+ that calls should be made 
+                    under the identity of the client thread token. The client&#39;s identity is 
+                    determined during every call on a proxy. EOAC_SECURE_REFS Causes COM+ to perform 
+                    additional callbacks to authenticate distributed reference count calls, to 
+                    ensure that objects are not released maliciously.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_SECURE_REFS<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Causes COM+ to perform additional 
+                    callbacks to authenticate distributed reference count calls, to ensure that 
+                    objects are not released maliciously.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_ACCESS_CONTROL<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">CoInitializeSecurity expects pSecDesc 
+                    to point to an implementation of the IAccess­Control interface. COM+ will use 
+                    this pointer to call the IAccessControl::IsAccessAllowed method when performing 
+                    security checks.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_APPID<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">CoInitializeSecurity expects pSecDesc 
+                    to point to a GUID that is installed in the HKEY_CLASSES_ROOT\AppID section of 
+                    the registry. CoInitializeSecurity uses the security information read from the 
+                    registry.<br />
+                    </font>
+                </td>
+            </tr>
+            <tr>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">EOAC_DISABLE_AAA<br />
+                    </font>
+                </td>
+                <td bgcolor="#dddddd" valign="top">
+                    <font face="verdana, arial, helv" size="1">Causes any activation where a server 
+                    process would be launched under the caller&#39;s identity (activate-as-activator, 
+                    also known as launching user in the Distributed COM Configuration utility) to 
+                    fail with E_ACCESSDENIED. This value allows an application that runs under a 
+                    privileged account (such as LocalSystem) to prevent its identity from being used 
+                    to launch untrusted components.<br />
+                    </font>
+                </td>
+            </tr>
+        </table>
+    </p>
+    <hr align="left" color="#000080" width="400" />
+    <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <table>
+        <tr>
+            <td bgcolor="#ffffff">
+                <img alt="Figure 10  COSERVERINFO Structure Definitions" height="303" 
+                    src="http://www.microsoft.com/msj/1199/comsecurity/comsecurityfig10.gif" 
+                    width="347" /></td>
+        </tr>
+        <tr>
+            <td>
+                <img height="4" src="http://www.microsoft.com/msj/images/dingbats/indent.gif" 
+                    width="10" /><font face="verdana, arial, helv" size="1"><b>Figure 10 
+                COSERVERINFO Structure Definitions</b> </font>
+            </td>
+        </tr>
+    </table>
+
+
+
+</BODY>
+</HTML>

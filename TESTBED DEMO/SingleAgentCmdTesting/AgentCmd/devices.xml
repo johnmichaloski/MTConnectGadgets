@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2013-02-25T20:52:15" sender="local" version="1.1"/>
+<Devices>
+		<Device id="CNC1_RESOURCEM1" uuid="CNC1_RESOURCExxx" name="CNC1_RESOURCE">
+			<Description>PCDMIS 2010</Description>
+			<DataItems>
+				<DataItem id="CNC1_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+				<Controller id="CNC1_RESOURCEcont" name="controller">
+					<DataItems>
+
+						<DataItem type="CLOCK_TIME" id="CNC1_RESOURCEestimatedCompletion" category="SAMPLE" name="estimatedCompletion"/>						
+						<DataItem type="ASSET_CHANGED" id="CNC1_RESOURCEasset_partprogram" category="EVENT" name="asset_partprogram"/>						
+						<DataItem type="ASSET_CHANGED" id="CNC1_RESOURCEasset_tool" category="EVENT" name="asset_tool"/>						
+						<DataItem type="LINE" id="CNC1_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+						<DataItem type="PROGRAM" id="CNC1_RESOURCEpgm" category="EVENT" name="program"/>
+						<DataItem type="TOOL_ID" id="CNC1_RESOURCEtid" category="EVENT" name="tools"/>
+						<DataItem type="PART_ID" id="CNC1_RESOURCEpid" category="EVENT" name="partid"/>
+						<DataItem type="PART_ID" id="CNC1_RESOURCElid" category="EVENT" name="lotid"/>
+						<DataItem type="CONTROLLER_MODE" id="CNC1_RESOURCEcommand" category="EVENT" name="command"/>
+						<DataItem type="CONTROLLER_MODE" id="CNC1_RESOURCEcommandnum" category="EVENT" name="cmdnum"/>
+						<DataItem type="MESSAGE" category="EVENT" id="CNC1_RESOURCEopcmt" name="operator_cmt" />
+						<DataItem type="PART_COUNT" id="CNC1_RESOURCEpc" category="EVENT" name="partcount" />
+					</DataItems>
+				</Controller>
+			</Components>
+		</Device>
+
+
+</Devices>
+</MTConnectDevices>

@@ -1,0 +1,2 @@
+sc delete MtcOpcAgent
+pause

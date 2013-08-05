@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2012-11-07T18:56:19" sender="local" version="1.1"/>
+<Devices>
+		<Device id="M001id" uuid="M001xxx" name="M001">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="M001avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="M001c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="M001sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="M001ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="M001cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="M001cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="M001ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="M001cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="M001ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="M001logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="M001system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="M001path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="M001pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="M001Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="TOOL_ID" id="M001tid" category="EVENT" name="tool"/>
+								<DataItem type="EXECUTION" id="M001exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="M001mode" category="EVENT" name="controllermode"/>
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="M001systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="M001elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="M001pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="M001pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="M001pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="M001pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="M002id" uuid="M002xxx" name="M002">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="M002avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="M002c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="M002sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="M002ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="M002cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="M002cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="M002ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="M002cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="M002ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="M002logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="M002system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="M002path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="M002pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="M002Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="TOOL_ID" id="M002tid" category="EVENT" name="tool"/>
+								<DataItem type="EXECUTION" id="M002exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="M002mode" category="EVENT" name="controllermode"/>
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="M002systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="M002elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="M002pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="M002pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="M002pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="M002pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+</Devices>
+</MTConnectDevices>

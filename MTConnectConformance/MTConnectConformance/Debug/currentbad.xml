@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectStreams xmlns:m="urn:mtconnect.org:MTConnectStreams:1.2" xmlns="urn:mtconnect.org:MTConnectStreams:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectStreams:1.2 http://www.mtconnect.org/schemas/MTConnectStreams_1.2.xsd">
+  <Header creationTime="2012-08-23T17:21:08Z" sender="mtconnect" instanceId="1340212647" version="1.2.0.10" bufferSize="131072" nextSequence="956599813" firstSequence="956468741" lastSequence="956599812"/>
+  <Streams>
+    <DeviceStream name="VMC-3Axis" uuid="000">
+      <ComponentStream component="Rotary" name="C" componentId="c1">
+        <Samplez>
+          <SpindleSpeed dataItemId="c2" timestamp="2012-08-23T17:16:49.030053" name="Sspeed" sequence="956535924" subType="ACTUAL">3400.0000000000</SpindleSpeed>
+          <SpindleSpeed dataItemId="c3" timestamp="2012-08-23T17:12:47.156033" name="Sovr" sequence="956480547" subType="OVERRIDE">100.0000000000</SpindleSpeed>
+        </Samplez>
+        <Events>
+          <RotaryMode dataItemId="cm" timestamp="2012-06-20T17:17:27.439360Z" name="Cmode" sequence="16">SPINDLE</RotaryMode>
+        </Events>
+        <Condition>
+          <Normal dataItemId="Cloadc" timestamp="2012-08-23T17:12:47.156033" sequence="956480554" type="LOAD"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Controller" name="controller" componentId="cn1">
+        <Events>
+          <EmergencyStop dataItemId="estop" timestamp="2012-08-23T17:12:47.156033" sequence="956480548">ARMED</EmergencyStop>
+          <Message dataItemId="msg" timestamp="2012-06-20T17:17:27.439360Z" sequence="28">UNAVAILABLE</Message>
+        </Events>
+        <Condition>
+          <Normal dataItemId="clp" timestamp="2012-08-23T17:12:47.156033" sequence="956480558" type="LOGIC_PROGRAM"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Coolant" name="coolant" componentId="cool">
+        <Condition>
+          <Normal dataItemId="clow" timestamp="2012-08-23T17:12:47.156033" sequence="956480550" type="LEVEL"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Device" name="VMC-3Axis" componentId="dev">
+        <Events>
+          <Availability dataItemId="avail" timestamp="2012-08-23T17:12:47.156033" sequence="956480549">AVAILABLE</Availability>
+          <AssetChanged dataItemId="dev_asset_chg" timestamp="2012-08-20T07:07:25.036373Z" sequence="898518198" assetType="InspectionResults">Z-004</AssetChanged>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Electric" name="electric" componentId="el">
+        <Samples>
+          <Amperage dataItemId="amp_a" timestamp="2012-06-20T17:17:27.439360Z" sequence="8">UNAVAILABLE</Amperage>
+          <Amperage dataItemId="amp_b" timestamp="2012-06-20T17:17:27.439360Z" sequence="9">UNAVAILABLE</Amperage>
+          <Amperage dataItemId="amp_c" timestamp="2012-06-20T17:17:27.439360Z" sequence="10">UNAVAILABLE</Amperage>
+          <Frequency dataItemId="freq" timestamp="2012-06-20T17:17:27.439360Z" name="frequency" sequence="24">UNAVAILABLE</Frequency>
+          <Wattage dataItemId="power_a" timestamp="2012-06-20T17:17:27.439360Z" sequence="31">UNAVAILABLE</Wattage>
+          <Wattage dataItemId="power_b" timestamp="2012-06-20T17:17:27.439360Z" sequence="32">UNAVAILABLE</Wattage>
+          <Wattage dataItemId="power_c" timestamp="2012-06-20T17:17:27.439360Z" sequence="33">UNAVAILABLE</Wattage>
+          <Wattage dataItemId="power_sum" timestamp="2012-06-20T17:17:27.439360Z" sequence="34">UNAVAILABLE</Wattage>
+          <Voltage dataItemId="volt_a" timestamp="2012-06-20T17:17:27.439360Z" sequence="35">UNAVAILABLE</Voltage>
+          <Voltage dataItemId="volt_b" timestamp="2012-06-20T17:17:27.439360Z" sequence="36">UNAVAILABLE</Voltage>
+          <Voltage dataItemId="volt_c" timestamp="2012-06-20T17:17:27.439360Z" name="volt_c" sequence="37">UNAVAILABLE</Voltage>
+        </Samples>
+        <Events>
+          <PowerState dataItemId="p2" timestamp="2012-08-23T17:12:47.156033" name="power" sequence="956480532">ON</PowerState>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Hydraulic" name="hydrolic" componentId="hsys">
+        <Condition>
+          <Normal dataItemId="hlow" timestamp="2012-08-23T17:12:47.156033" sequence="956480551" type="LEVEL"/>
+          <Normal dataItemId="hpres" timestamp="2012-08-23T17:12:47.156033" sequence="956480552" type="PRESSURE"/>
+          <Normal dataItemId="htemp" timestamp="2012-08-23T17:18:40.459298" sequence="956563344" type="TEMPERATURE"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Path" name="path" componentId="pth">
+        <Samples>
+          <PathFeedrate dataItemId="Fovr" timestamp="2012-08-23T17:12:47.156033" sequence="956480546">100.0000000000</PathFeedrate>
+          <PathFeedrate dataItemId="Frt" timestamp="2012-08-23T17:21:08.863630" sequence="956599812">0.2574994</PathFeedrate>
+          <PathPosition dataItemId="Ppos" timestamp="2012-06-20T17:17:27.439360Z" sequence="4" subType="ACTUAL">UNAVAILABLE</PathPosition>
+        </Samples>
+        <Events>
+          <Block dataItemId="cn2" timestamp="2012-08-23T17:21:08.591636" name="block" sequence="956599740">X0.672125 Y-0.546080</Block>
+          <ControllerMode dataItemId="cn3" timestamp="2012-08-23T17:12:47.156033" name="mode" sequence="956480544">AUTOMATIC</ControllerMode>
+          <Line dataItemId="cn4" timestamp="2012-08-23T17:21:08.591636" name="line" sequence="956599735">574</Line>
+          <Program dataItemId="cn5" timestamp="2012-08-23T17:12:47.156033" name="program" sequence="956480543">FLANGE_CAM.NGC</Program>
+          <Execution dataItemId="cn6" timestamp="2012-08-23T17:16:49.594039" name="execution" sequence="956536081">ACTIVE</Execution>
+        </Events>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="X" componentId="x1">
+        <Samples>
+          <Load dataItemId="n3" timestamp="2012-06-20T17:17:27.439360Z" name="Xload" sequence="29">UNAVAILABLE</Load>
+          <Position dataItemId="x2" timestamp="2012-08-23T17:21:08.863630" name="Xact" sequence="956599808" subType="ACTUAL">0.6778356433</Position>
+          <Position dataItemId="x3" timestamp="2012-08-23T17:21:08.863630" name="Xcom" sequence="956599810" subType="COMMANDED">0.6732945367</Position>
+        </Samples>
+        <Condition>
+          <Normal dataItemId="Xloadc" timestamp="2012-08-23T17:12:47.156033" sequence="956480555" type="LOAD"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Y" componentId="y1">
+        <Samples>
+          <Position dataItemId="y2" timestamp="2012-08-23T17:21:08.863630" name="Yact" sequence="956599809" subType="ACTUAL">-0.5386507511</Position>
+          <Position dataItemId="y3" timestamp="2012-08-23T17:21:08.863630" name="Ycom" sequence="956599811" subType="COMMANDED">-0.5444551413</Position>
+          <Load dataItemId="y4" timestamp="2012-06-20T17:17:27.439360Z" name="Yload" sequence="42">UNAVAILABLE</Load>
+        </Samples>
+        <Condition>
+          <Normal dataItemId="Yloadc" timestamp="2012-08-23T17:12:47.156033" sequence="956480556" type="LOAD"/>
+        </Condition>
+      </ComponentStream>
+      <ComponentStream component="Linear" name="Z" componentId="z1">
+        <Samples>
+          <Position dataItemId="z2" timestamp="2012-08-23T17:16:54.841910" name="Zact" sequence="956536994" subType="ACTUAL">-0.1000000015</Position>
+          <Position dataItemId="z3" timestamp="2012-08-23T17:16:54.809910" name="Zcom" sequence="956536984" subType="COMMANDED">-0.1000000000</Position>
+          <Load dataItemId="z4" timestamp="2012-06-20T17:17:27.439360Z" name="Zload" sequence="45">UNAVAILABLE</Load>
+        </Samples>
+        <Condition>
+          <Normal dataItemId="Zloadc" timestamp="2012-08-23T17:12:47.156033" sequence="956480557" type="LOAD"/>
+        </Condition>
+      </ComponentStream>
+    </DeviceStream>
+  </Streams>
+</MTConnectStreams>

@@ -1,0 +1,37 @@
+		<Resource>
+			<Identifier>{5014D007-BE7B-4398-9E04-F5E7E7CA2F26}</Identifier>
+			<Name>John Smith</Name>
+			<Property>
+				<Name>EmploymentStatus</Name>
+				<Description>Whether the employee is part time or full time</Description>
+				<Value>fullTime</Value>
+			</Property>
+			<Property>
+				<Name>EmployeePayPeriod</Name>
+				<Value>monthly</Value>
+			</Property>
+			<Description>Employee resource example</Description>
+			<ResourceType>employee</ResourceType>
+			<EmployeeSkill>
+				<SkillDefinitionIdentifier>welder</SkillDefinitionIdentifier>
+				<SkillLevelIdentifier>welderLevel1</SkillLevelIdentifier>
+			</EmployeeSkill>
+			<ReferenceMaterial>
+				<ReferenceMaterialIdentifier>ref11111</ReferenceMaterialIdentifier>
+			</ReferenceMaterial>
+			
+		
+			<Property>
+				<Name>PayAmount</Name>
+				<Unit>USD</Unit>
+				<Value>1000</Value>
+			</Property>
+			<Property>
+				<Name>OvertimeEligible</Name>
+				<Value>true</Value>
+			</Property>
+			<Property>
+				<Name>OvertimeRateMultiplier</Name>
+				<Value>10.4</Value>
+			</Property>		
+		</Resource>

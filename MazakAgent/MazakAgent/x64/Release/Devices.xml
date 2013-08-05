@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2013-06-18T18:03:26" sender="local" version="1.1"/>
+<Devices>
+    <Device id="M001d1" name="M001" uuid="M001MAZAK-M7303290458">
+      <Description serialNumber="M7303290458">Mazak - INT-Series</Description>
+      <DataItems>
+        <DataItem category="EVENT" id="M001avail" type="AVAILABILITY"/>
+      </DataItems>
+      <Components>
+        <Axes id="M001a" name="base">
+          <DataItems>
+            <DataItem category="CONDITION" id="M001servo" name="servo_cond" type="ACTUATOR"/>
+          </DataItems>
+          <Components>
+            <Linear id="M001x" name="X">
+              <DataItems>
+                <DataItem category="SAMPLE" coordinateSystem="MACHINE" id="M001xp" name="Xabs" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="CONDITION" id="M001xt" name="Xtravel" type="POSITION"/>
+                <DataItem category="SAMPLE" id="M001xl" name="Xload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                <DataItem category="SAMPLE" id="M001xf" name="Xfrt" nativeUnits="MILLIMETER/SECOND" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+              </DataItems>
+            </Linear>
+            <Linear id="M001y" name="Y">
+              <DataItems>
+                <DataItem category="SAMPLE" coordinateSystem="MACHINE" id="M001yp" name="Yabs" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="CONDITION" id="M001yt" name="Ytravel" type="POSITION"/>
+                <DataItem category="SAMPLE" id="M001yl" name="Yload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                <DataItem category="SAMPLE" id="M001yf" name="Yfrt" nativeUnits="MILLIMETER/SECOND" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+              </DataItems>
+            </Linear>
+            <Linear id="M001z" name="Z">
+              <DataItems>
+                <DataItem category="SAMPLE" coordinateSystem="MACHINE" id="M001zp" name="Zabs" nativeUnits="MILLIMETER" subType="ACTUAL" type="POSITION" units="MILLIMETER"/>
+                <DataItem category="CONDITION" id="M001zt" name="Ztravel" type="POSITION"/>
+                <DataItem category="SAMPLE" id="M001zl" name="Zload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                <DataItem category="SAMPLE" id="M001zf" name="Zfrt" nativeUnits="MILLIMETER/SECOND" type="AXIS_FEEDRATE" units="MILLIMETER/SECOND"/>
+              </DataItems>
+            </Linear>
+            <Rotary id="M001c" name="C">
+              <DataItems>
+                <DataItem category="SAMPLE" id="M001cl" name="Cload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                <DataItem category="SAMPLE" id="M001sl" name="Sload" nativeUnits="PERCENT" type="LOAD" units="PERCENT"/>
+                 <DataItem category="SAMPLE" id="M001cf" name="Cfrt" nativeUnits="DEGREE/MINUTE" type="ANGULAR_VELOCITY" units="DEGREE/SECOND"/>
+                <DataItem category="SAMPLE" id="M001cs" name="Srpm" nativeUnits="REVOLUTION/MINUTE" subType="ACTUAL" type="SPINDLE_SPEED" units="REVOLUTION/MINUTE"/>
+                <DataItem category="SAMPLE" id="M001cso" name="Sovr" nativeUnits="PERCENT" subType="OVERRIDE" type="SPINDLE_SPEED" units="PERCENT"/>
+              </DataItems>
+            </Rotary>
+          </Components>
+        </Axes>
+        <Controller id="M001cont" name="controller">
+          <DataItems>
+            <DataItem category="CONDITION" id="M001ccond" name="comms_cond" type="COMMUNICATIONS"/>
+            <DataItem category="CONDITION" id="M001logic" name="logic_cond" type="LOGIC_PROGRAM"/>
+            <DataItem category="CONDITION" id="M001system" name="system_cond" type="SYSTEM"/>
+			<DataItem category="EVENT" id="M001estop" name="estop" type="EMERGENCY_STOP"/>
+          </DataItems>
+          <Components>
+            <Path id="M001path1" name="path">
+              <DataItems>
+                <DataItem category="EVENT" id="M001pgm" name="program" type="PROGRAM"/>
+                <DataItem category="EVENT" id="M001spgm" name="subprogram" subType="x:SUB" type="PROGRAM"/>
+                <DataItem category="EVENT" id="M001ln" name="line" type="LINE"/>
+                <DataItem category="EVENT" id="M001unit" name="unitNum" type="x:UNIT"/>
+                <DataItem category="EVENT" id="M001seq" name="sequenceNum" type="x:SEQUENCE_NUMBER"/>
+                <DataItem category="EVENT" id="M001pc" name="PartCountAct" type="PART_COUNT"/>
+                <DataItem category="SAMPLE" coordinateSystem="WORK" id="M001pf" name="Fact" nativeUnits="FOOT/MINUTE" subType="ACTUAL" type="PATH_FEEDRATE" units="MILLIMETER/SECOND"/>
+                <DataItem category="EVENT" id="M001pfr" name="Frapidovr" nativeUnits="PERCENT" subType="OVERRIDE" type="PATH_FEEDRATE" units="PERCENT"/>
+                <DataItem category="EVENT" id="M001Fovr" name="path_feedrateovr" nativeUnits="PERCENT" subType="OVERRIDE" type="PATH_FEEDRATE" units="PERCENT"/>
+                <DataItem category="EVENT" id="M001tid" name="Tool_number" type="TOOL_ID"/>
+                <DataItem category="EVENT" id="M001tid1" name="Tool_group" type="x:TOOL_GROUP"/>
+                <DataItem category="EVENT" id="M001tsuf1" name="Tool_suffix" type="x:TOOL_SUFFIX"/>
+                <DataItem category="EVENT" id="M001exec" name="execution" type="EXECUTION"/>
+                <DataItem category="EVENT" id="M001mode" name="controllermode" type="CONTROLLER_MODE"/>
+                <DataItem category="EVENT" id="M001pcmt" name="program_cmt" type="MESSAGE"/>
+                <DataItem category="EVENT" id="M001spcmt" name="subprogram_cmt" subType="x:SUB" type="MESSAGE"/>
+                <DataItem category="EVENT" id="M001atime" name="auto_time" subType="x:AUTO" type="x:DURATION"/>
+                <DataItem category="EVENT" id="M001yltime" name="total_time" subType="x:TOTAL" type="x:DURATION"/>
+                <DataItem category="EVENT" id="M001ctime" name="cut_time" subType="x:CUT" type="x:DURATION"/>
+                <DataItem category="CONDITION" id="M001motion" name="motion_cond" type="MOTION_PROGRAM"/>
+				<DataItem category="CONDITION" id="M001path_system" name="path_system" type="SYSTEM"/>
+              </DataItems>
+            </Path>
+          </Components>
+        </Controller>
+        <Systems id="M001systems" name="systems">
+          <Components>
+            <Electric id="M001elec" name="electric">
+              <DataItems>
+                <DataItem category="EVENT" id="M001pwr" name="power" type="POWER_STATE"/>
+                <DataItem category="CONDITION" id="M001pwrt" name="electric_temp" type="TEMPERATURE"/>
+              </DataItems>
+            </Electric>
+            <Hydraulic id="M001hydraulic" name="hydraulic">
+              <DataItems>
+                <DataItem category="CONDITION" id="M001hyd" name="hydra_cond" type="PRESSURE"/>
+              </DataItems>
+            </Hydraulic>
+            <Coolant id="M001coolant" name="coolant">
+              <DataItems>
+                <DataItem category="CONDITION" id="M001coolpress" name="coolant_pres" type="PRESSURE"/>
+                <DataItem category="CONDITION" id="M001cooltemp" name="coolant_temp" type="TEMPERATURE"/>
+                <DataItem category="CONDITION" id="M001coollevel" name="coolant_level" type="LEVEL"/>
+              </DataItems>
+            </Coolant>
+            <Pneumatic id="M001pneumatic" name="pneumatic">
+              <DataItems>
+                <DataItem category="CONDITION" id="M001pneupress" name="pneu_cond" type="PRESSURE"/>
+              </DataItems>
+            </Pneumatic>
+          </Components>
+        </Systems>
+      </Components>
+    </Device>
+
+</Devices>
+</MTConnectDevices>

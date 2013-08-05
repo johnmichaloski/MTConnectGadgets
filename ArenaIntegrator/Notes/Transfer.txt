@@ -1,0 +1,549 @@
+Module: Transporter     
+
+   Operands Contained in Dialog 'TransporterDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DistSetN (Hidden)                 
+   DistSetP (Hidden)                 
+   NetworkN (Hidden)                 
+   NetworkP (Hidden)                 
+   DNT (Hidden)                      
+   DNTL (Hidden)                     
+   DMT (Hidden)                      
+   DMTL (Hidden)                     
+   Trans                              Transporter                       
+   Num                                Number of Units                   
+   TypeSG                                                               
+   DistSet                            Distance Set                      
+   Network                            Network                           
+   Vel                                Velocity                          
+   Acc                                Acceleration                      
+   Dec                                Deceleration                      
+   Turning                            Turning Velocity Factor           
+   StatsT                             Statistics                        
+
+
+   Operands Contained in Repeat Group 'Initial Position Status':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StaP (Hidden)                     
+   StaN (Hidden)                     
+   IntxP (Hidden)                    
+   IntxN (Hidden)                    
+   LinkP (Hidden)                    
+   LinkN (Hidden)                    
+   SizeZoneP (Hidden)                
+   SizeLenP (Hidden)                 
+   PosSG                              Initial Position                  
+   PosSG1                             Initial Position                  
+   Sta                                Station                           
+   Intx                               Intersection                      
+   Link                               Link                              
+   Zone                               Zone                              
+   Status                             Initial Status                    
+   SizeSG                             Size Based On                     
+   SizeZone                           Number of Zones                   
+   SizeLen                            Length                            
+
+
+   Operands Contained in Dialog 'Avail':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Sched (Hidden)                    
+   SchedDim1 (Hidden)                
+   SchedDim2 (Hidden)                
+   Att1 (Hidden)                     
+   Counter (Hidden)                  
+   SchedT                             Based on Schedule                 
+   InactiveSta                        Inactive Station                  
+
+
+   Operands Contained in Repeat Group 'Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Capacity                           Capacity                          
+   Duration                           Duration                          
+
+
+   Operands Contained in Dialog 'Options1':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FreeN (Hidden)                    
+   FreeL (Hidden)                    
+   FreeLDim (Hidden)                 
+   FreeSG                             When Freed...                     
+   FreeHome                           Home Station                      
+
+
+   Operands Contained in Repeat Group 'Loop Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FreeLoopS (Hidden)                
+   FreeLoop                           Station                           
+
+
+   Operands Contained in Dialog 'Options2':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   GuidedN (Hidden)                  
+   GuidedL (Hidden)                  
+   GuidedLDim (Hidden)               
+   GuidedSG                           When Freed...                     
+   GuidedHome                         Home Intersection                 
+
+
+   Operands Contained in Repeat Group 'Loop Intersections':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   GuidedLoopL (Hidden)              
+   GuidedLoop                         Intersection                      
+
+
+   Operands Contained in Dialog 'Stats':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'TransStats':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DIdle (Hidden)                    
+   DBusy (Hidden)                    
+   DInactive (Hidden)                
+   LIdle (Hidden)                    
+   LBusy (Hidden)                    
+   LInactive (Hidden)                
+   Unit                               Unit Number                       
+   IdleT                              Idle                              
+   BusyT                              Busy                              
+   InactiveT                          Inactive                          
+
+
+   Operands Contained in Dialog 'Failure':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FailAtt (Hidden)                  
+   FailT                              Define Failure                    
+   Uptime                             Time Between Failures             
+   Downtime                           Downtime                          
+   FailSta                            Failure Station                   
+
+Module: Conveyor        
+
+   Operands Contained in Dialog 'ConveyorDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SegN (Hidden)                     
+   EntSizeP (Hidden)                 
+   NEC (Hidden)                      
+   LEC (Hidden)                      
+   NEA (Hidden)                      
+   CLA (Hidden)                      
+   NECNm (Hidden)                    
+   LECNm (Hidden)                    
+   NEANm (Hidden)                    
+   CLANm (Hidden)                    
+   Conv                               Conveyor                          
+   Seg                                Segment Set                       
+   Vel                                Velocity                          
+   CellSize                           Cell Size                         
+   Status                             Initial Status                    
+   MaxPerEnt                          Max Cells Occupied                
+   Type                               Type                              
+   EntSize                            Entity Size                       
+   Statistics                         Conveyor Statistics               
+
+Module: Distance        
+
+   Operands Contained in Dialog 'DistanceDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Id (Hidden)                       
+   BegN (Hidden)                     
+   EndN (Hidden)                     
+   SetN (Hidden)                     
+   Beg                                Beginning Station                 
+   End                                Ending Station                    
+   Set                                Distance Set Name                 
+   Dist                               Distance                          
+
+Module: Segment         
+
+   Operands Contained in Dialog 'SegmentDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Id (Hidden)                       
+   BegN (Hidden)                     
+   EndN (Hidden)                     
+   SetN (Hidden)                     
+   Beg                                Beginning Station                 
+   End                                Ending Station                    
+   Set                                Segment Set Name                  
+   Length                             Length                            
+
+Module: NetworkLink     
+
+   Operands Contained in Dialog 'LinkDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegIntxN (Hidden)                 
+   BegIntxP (Hidden)                 
+   EndIntxN (Hidden)                 
+   EndIntxP (Hidden)                 
+   NetworkN (Hidden)                 
+   BegIntx                            Beginning Intersection            
+   BegSta                             Associate with Station            
+   EndIntx                            Ending Intersection               
+   EndSta                             Associate with Station            
+   Link                               Link Name                         
+   Zones                              Number of Zones                   
+   Length                             Length of Each Zone               
+   Type                               Link Type                         
+   Vel                                Velocity Change Factor            
+   Network                            Network Name                      
+
+
+   Operands Contained in Dialog 'Link Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DirBeg                             Beginning Direction (degrees)     
+   DirEnd                             Ending Direction (degrees)        
+
+
+   Operands Contained in Dialog 'More':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Beginning Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegIntx2 (Hidden)                 
+   BegSta2                            Station                           
+
+
+   Operands Contained in Repeat Group 'Ending Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   EndIntx2 (Hidden)                 
+   EndSta2                            Station                           
+
+Module: Access          
+
+   Operands Contained in Dialog 'AccessDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Conv                               Conveyor                          
+   Qty                                # of Cells to Access              
+   QueueLabel                         Queue Label                       
+   Label                              Label                             
+   Next                               Next Label                        
+   FromStation                        From Station                      
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Set Name                          
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QTimeStats                         Time in Queue Statistics          
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+   QCap                               Capacity                          
+   BalkDisp                           Dispose of Balked Entities        
+   BalkLabel                          Balk Label                        
+
+Module: Request         
+
+   Operands Contained in Dialog 'RequestDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Com (Hidden)                      
+   FromStation                        From Station                      
+   SG                                 Request                           
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   Rule                               Selection Rule                    
+   Att                                Store Unit in Att                 
+   Vel                                Velocity                          
+   Priority                           Priority                          
+   Storage                            Storage                           
+   QueueLabel                         Queue Label                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Set Name                          
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QTimeStats                         Time in Queue Statistics          
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+   QCap                               Capacity                          
+   BalkDisp                           Dispose of Balked Entities        
+   BalkLabel                          Balk Label                        
+
+Module: Convey          
+
+   Operands Contained in Dialog 'ConveyDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Seq (Hidden)                      
+   Conv                               Conveyor                          
+   SG                                 Destination Station               
+   Station                            Station                           
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Label                              Label                             
+
+Module: Transport       
+
+   Operands Contained in Dialog 'TransportDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Seq (Hidden)                      
+   GStat (Hidden)                    
+   GIntx (Hidden)                    
+   GLink (Hidden)                    
+   GZone (Hidden)                    
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   SG                                 Entity Destination Station        
+   Station                            Station                           
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Vel                                Velocity                          
+   GuidedDest                         Transporter Destination           
+   TrDest                             Intersection                      
+   TrStation                          Station                           
+   TrLink                             Link                              
+   TrZone                             Zone                              
+   Label                              Label                             
+
+Module: Exit            
+
+   Operands Contained in Dialog 'ExitDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Conv                               Conveyor                          
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Free            
+
+   Operands Contained in Dialog 'FreeDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Start           
+
+   Operands Contained in Dialog 'Start':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Conv                               Conveyor                          
+   Vel                                Velocity                          
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Allocate        
+
+   Operands Contained in Dialog 'AllocateDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Com (Hidden)                      
+   FromStation                        From Station                      
+   SG                                 Allocate                          
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   Rule                               Selection Rule                    
+   Att                                Store Index In Att                
+   Priority                           Priority                          
+   QueueLabel                         Queue Label                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Set Name                          
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QTimeStats                         Time in Queue Statistics          
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+   QCap                               Capacity                          
+   BalkDisp                           Dispose of Balked Entities        
+   BalkLabel                          Balk Label                        
+
+Module: Stop            
+
+   Operands Contained in Dialog 'StopDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Conv                               Conveyor                          
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Move            
+
+   Operands Contained in Dialog 'MoveDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   GIntx (Hidden)                    
+   GLink (Hidden)                    
+   GZone (Hidden)                    
+   ThingToMove                                                          
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   SG                                 Destination Station               
+   Station                            Station                           
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   TrIntx                             Intersection                      
+   TrLink                             Link                              
+   TrZone                             Zone                              
+   Vel                                Velocity                          
+   Storage                            Storage                           
+   Label                              Label                             
+   Next                               Next Label                        
+   SGres                              Destination Station               
+   Resource                           Resource                          
+
+Module: Route           
+
+   Operands Contained in Dialog 'RouteDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Seq (Hidden)                      
+   FromSt                             From Station                      
+   Dur                                Route Time                        
+   SG                                 Destination Station               
+   Station                            Station                           
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Label                              Label                             
+
+Module: Halt            
+
+   Operands Contained in Dialog 'HaltDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: RoutePath       
+
+   Operands Contained in Dialog 'Path':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegStation                         Beginning Station                 
+   EndStation                         Ending Station                    
+
+Module: Activate        
+
+   Operands Contained in Dialog 'ActivateDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Trans                              Transporter                       
+   Unit                               Unit Number                       
+   Label                              Label                             
+   Next                               Next Label                        
+

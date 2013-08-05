@@ -1,0 +1,1047 @@
++		id	"SMCO:SMCO_LINE1_PS_CAST1_ELV1"	std::basic_string<char,std::char_traits<char>,std::allocator<char> >
++		(*_resourceHandler)._identifier	"SMCO:LINE1_PS_CAST1_CRS1"	std::basic_string<char,std::char_traits<char>,std::allocator<char> >
+
+
+C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST\Logger.h
+
+
+//void CResourceHandler::Cycle()
+//{
+//	int nHeartbeat=0;
+//	std::vector<DataDictionary>  cycledatum ;
+//	try {
+//		// CurrentJob()->plan->
+//			if( AgentMgr::_debugSimulation)
+//			{
+//				// BUG : bool AnyDone(){ return outprocessplans.size() > 0; }
+//	//			OutputDebugString(StdStringFormat("Enter resource : %s\n" , this->_device .c_str()).c_str());
+//				boost::mutex::scoped_lock  lock(io_mutex);
+//				if( job == NULL) // .empty())
+//				{
+//					// Nothing TO DO
+//					::Sleep(1000);
+//					return;
+//				}
+//				//_nCurrentStep=_currentplan->currentStep; // >= 0 
+//				_currentprogram=CurrentJob()->CurrentProgram();
+//				if(_currentprogram.empty()) 
+//				{
+//					DebugBreak();
+//				}
+//
+//				CurrentJob()->plan->_currentState="ACTIVE";
+//				//lastjob=_currentplan->jobId;
+//				OutputDebugString(StdStringFormat("In Device %s Finish Job %s Step %d\n" , this->_device.c_str(), (LPCSTR) CurrentJob()->plan->identifier, CurrentJob()->_currentstep).c_str());
+//				::Sleep(1000);
+//				//_inputprogram.clear();
+//				job->MakeDone();
+//				job=NULL;
+//				return;
+//			}
+//			// Read Command Agent values
+//			SetMTCTagValue(_device, "heartbeat", StdStringFormat("%d",nHeartbeat++) );
+//			SetMTCTagValue(_device, "avail", "AVAILABLE" );
+//			cycledatum = _parser.ReadStream(_ipaddr);
+//			if(cycledatum.size() == 0)
+//			{
+//				::Sleep(10000);
+//				return;
+//			}
+//			_execution= cycledatum[0]["execution"] ;
+//			int _nCurrentStep=CurrentJob()->plan->currentStep;
+//
+//			if(stricmp(_execution.c_str(),"active") == 0)
+//			{
+//				if(CurrentJob()->plan!=NULL) 
+//					CurrentJob()->plan->_currentState="ACTIVE";
+//			}
+//			if(stricmp(_execution.c_str(),"interrupted") == 0)
+//			{
+//				if(CurrentJob()->plan!=NULL) 
+//					CurrentJob()->plan->_currentState="INTERRUPTED";
+//			}
+//			if(stricmp(_execution.c_str(),"stopped") == 0 && _nCurrentStep >=0)
+//			{
+//				_nCurrentStep=-2;
+//				if(CurrentJob()->plan!=NULL) 
+//					CurrentJob()->plan->_currentState="DONE";
+//
+//				SetMTCTagValue(_device, "command", "RESET" );
+//				SetMTCTagValue(_device, "partid", "" );
+//				SetMTCTagValue(_device, "job", "");
+//			//	SetMTCTagValue(_device, "sequence", "" );
+//			//	SetMTCTagValue(_device, "operations", "" );
+//			//	SetMTCTagValue(_device, "cells", "" );
+//				SetMTCTagValue(_device, "currentoperation", "" );
+//				SetMTCTagValue(_device, "partcount", "" );
+//
+//				SetMTCTagValue(_device, "cmdnum", StdStringFormat("%d",_nCmdnum++));
+//			}
+//			if(stricmp(_execution.c_str(),"ready") == 0 && _nCurrentStep < 0)
+//			{
+//
+//				boost::mutex::scoped_lock  lock(io_mutex);
+//
+//				ProcessPlan * _currentplan=CurrentJob()->plan;
+//				if( _currentprogram.empty())
+//					return;
+//				//_nCurrentStep=_currentplan->currentStep; // >= 0 
+//				//_currentprogram=_inputprogram;
+//				if(_currentplan!=NULL)
+//					_currentplan->_currentState="ACTIVE";
+//				SetMTCTagValue(_device, "command", "RUN" );
+//				SetMTCTagValue(_device, "program", _currentprogram );
+//				SetMTCTagValue(_device, "partid", CurrentJob()->CurrentPartId() );
+//				SetMTCTagValue(_device, "job", (LPCSTR)  _currentplan->jobId);
+//
+//				//SetMTCTagValue(_device, "sequence", sequence );
+//				//SetMTCTagValue(_device, "operations", operations );
+//				//SetMTCTagValue(_device, "cells", cells );
+//				SetMTCTagValue(_device, "currentoperation", StdStringFormat("%d", 10 *_currentplan->currentStep) );
+//				Process* pProcess = _currentplan->FindProcess(_currentplan->steps[_currentplan->currentStep]);
+//				if(pProcess!=NULL) 
+//				{
+//					SetMTCTagValue(_device, "partcount", (LPCSTR) pProcess->repetitionCount);
+//					std::string estTime = GetTimeEstimate((LPCSTR) pProcess->operationTime.time);
+//					SetMTCTagValue(_device, "estimatedCompletion",  estTime);
+//				}
+//
+//				//if(_currentplan->jobId!=lastjob)
+//				//{
+//				//	CCMSDAsset asset;
+//				//	std::string _jobid =  StdStringFormat("%s%s", (LPCSTR)_currentplan->jobId,_device.c_str());
+//				//	Job * ajob= new Job();
+//				//	ajob->identifier = (LPCSTR)_jobid.c_str();
+//				//	ajob->partIds.push_back((LPCSTR) _partid.c_str());
+//				//	ajob->partQuantity.push_back("1");
+//				//	asset.jobs->push_back(IObjectPtr((IObject *) ajob));
+//
+//				//	//std::string str=asset.GenerateSinglePartJobXml(_cmsd,_partid);
+//				//	//asset.WriteToAgent("<Job> hello world </Job>", _device, _agent);
+//				//	Device *device = _agent->getAgent()->getDeviceByName(_device);
+//				//	_agent->getAgent()->addAsset(device, _jobid, "<Job> hello world " + _device +  "</Job>", "Job");
+//				//}
+//				//lastjob=_currentplan->jobId;
+//				SetMTCTagValue(_device, "cmdnum", StdStringFormat("%d",_nCmdnum++));
+//				//_inputprogram.clear();
+//			}
+//		}
+//		catch(std::exception e)
+//		{
+//			AtlTrace("%s%s", "CCmdHandler::Cycle() exception " , e.what());
+//		}
+//		catch(...)
+//		{
+//			AtlTrace("CCmdHandler::Cycle() exception ");
+//		}
+//}
+//void CResourceHandler::Thread()
+//{
+//	GLogger << INFO << "CCmdHandler::Thread()" << std::endl; 
+//	boost::timer delaytimer;
+//	COleDateTime now;
+//	HRESULT hr;
+//	_mRunning=true;
+//	_nCmdnum=1;
+//
+//	hr = ::CoInitialize(NULL);
+//	_set_se_translator( trans_func );  // correct thread?
+//
+//	boost::mutex::scoped_lock lock(_access);
+//	this->_agentconfig->cond.wait(lock);
+//
+//	SetMTCTagValue(_device, "command", "RESET" );
+//	SetMTCTagValue(_device, "cmdnum", "-1");
+//
+//	while(_mRunning)
+//	{
+//		Cycle();
+//		::Sleep(1000);
+//	}
+//	
+//	::CoUninitialize();
+//}
+
+
+
+class SystemArchitecture;
+class CWallClock;
+class Message;
+class CSimulationActions;
+
+
+class CSystemArchitecture
+{
+public:
+	MiniCNC & CNC()						{ assert(cnc!=NULL); return *cnc; }
+	CSystemArchitecture(void);
+	~CSystemArchitecture(void)			{ delete cnc; }
+	void Init();
+	void Construct();
+	void Configure();
+	bool & ShuttingDown()				{ static bool _bShuttingDown = false; return _bShuttingDown; }
+	void Shutdown();
+	CWallClock & WallClock()			{ assert(wallClock!=NULL); return *wallClock; }
+
+	///////////////////
+	MiniCNC * cnc;
+	CWallClock * wallClock;
+};
+
+////////////////////////////////////////////
+__declspec(selectany)  CSystemArchitecture System;
+using namespace boost::posix_time;
+
+class CWallClock
+{
+public:
+	CWallClock();
+	ControlThread & StateMachine()		{ return _thread; }
+	unsigned int & ThreadInterval()		{  return _thread.UpdateRate(); }
+	virtual void Configure(std::string inifile);
+	void Clear()						{ tTime=0; }
+	void Cycle();
+	void Update()						{ Update(0); Cycle(); }
+	void Update(int seconds);
+	double ShiftTime()					{ double t; { boost::mutex::scoped_lock(_mx); t= _shifttime ;} return t; }
+	double Time()						{ return tTime; }
+	bool IsDone()						{return tTime>=tTotalTicks; }
+	static int SecondsFromMidnight();
+	double & TickAmount()				{return _tickAmount; }
+	double & TotalTicks()				{ return tTotalTicks; }
+	
+	// Current simulated time
+	ptime &CurrentSimTime()				{ return _currentTime; }
+	std::string nowtimestamp();			// Current simulated timestamp
+
+	////////////////////////////////////////////////////////
+	ControlThread _thread;
+	boost::mutex _mx;
+
+	boost::posix_time::ptime _currentTime;  // system clock
+	boost::posix_time::ptime _lastTime;
+
+	double tTime;
+	double _tickAmount; // in seconds
+	double tTotalTicks;
+	
+	int _shifttime, _lastshifttime;
+	std::vector<int> _shiftchanges;  // minute when shift changes
+	std::vector< boost::tuple<std::string, int, int >  > _breaks;
+	int _nShifts; // not clear necessary
+	std::vector<std::string> _workWeekDays;
+
+	// FIXME: change to posix time
+	int _breaktime; // countdown counter to keep track of time in break  // unit= seconds
+
+};
+//__declspec(selectany)  CWallClock WallClock;
+
+
+
+#include "stdafx.h"
+#include "SystemArchitecture.h"
+#include "Config.h"
+#include "Logger.h"
+
+using namespace iniconfig;
+
+CSystemArchitecture::CSystemArchitecture()
+{
+	Construct();
+	Configure();
+	Init();
+
+}
+
+void CSystemArchitecture::Init()
+{
+	CNC().Init();
+	WallClock().StateMachine().StartThread();  // this puts it into the running state...
+}
+void CSystemArchitecture::Construct()
+{
+	cnc=new MiniCNC();
+	cnc->Construct();
+
+	wallClock= new CWallClock();
+}
+
+void CSystemArchitecture::Configure()
+{
+	Config config;
+	std::string inifile = (LPCSTR) CString(::GetExeDirectory() + "NC.ini");
+	config.load(inifile.c_str()); // read ini file.
+
+	WallClock().TickAmount() = config.GetSymbolValue("CNC.WallClockTick", "1").toNumber<int>();  // seconds
+	WallClock().StateMachine().SetUpdateRate( config.GetSymbolValue("CNC.WallClockThreadInterval", "1000").toNumber<int>());  //ms
+	WallClock().Configure(inifile);
+
+	CNC().Configure(inifile);
+	CNC().StateMachine().SetUpdateRate(1000); //default value
+
+}
+void CSystemArchitecture::Shutdown()
+{
+	System.ShuttingDown()=true;
+	WallClock().StateMachine().StopThread();
+	CNC().StateMachine().StopThread();
+	::Sleep(1000);
+}
+//////////////////////////////////////////////////////
+CWallClock::CWallClock()
+{
+	_tickAmount=1; 
+	Clear();
+	_shifttime=_lastshifttime = SecondsFromMidnight();
+	_breaktime=0;	
+
+	_thread.SetStateMachineName("WallClock");
+	_thread.SetStateUpdate(StateModel::running, boost::bind(&CWallClock::Cycle, this));
+	_thread.SetStateTransition(StateModel::stopped, StateModel::run, StateModel::running, boost::bind(&ControlThread::Nop, &_thread));
+	_thread.SetStateTransition(StateModel::running, StateModel::stop, StateModel::stopped, boost::bind(&ControlThread::Nop, &_thread));
+	_thread.SetState(StateModel::running); 
+	//_thread.StartThread(); 
+}
+//NUMSHIFTS=3
+//SHIFTCHANGES = 420, 900 , 1380
+// WORKWEEK=Mon,Tue,Wed,Thu,Fri,Sat
+
+std::string CWallClock::nowtimestamp()
+{
+	return  StdStringFormat("%4d-%02d-%02dT%02d:%02d:%02d.%04d", 
+		_currentTime.date().year(), _currentTime.date().month(), _currentTime.date().day(),
+		_currentTime.time_of_day().hours(), _currentTime.time_of_day().minutes(), _currentTime.time_of_day().seconds(), _currentTime.time_of_day().fractional_seconds());
+}
+int CWallClock::SecondsFromMidnight()
+{
+	time_t now = time(NULL); 
+	struct tm local = *localtime(&now);
+	return local.tm_hour*3600 + local.tm_min *60 + local.tm_sec ;
+}
+void CWallClock::Configure(std::string inifile )
+{
+	std::vector<std::string> tokens;
+
+	// read ini file.
+	Config config;
+	config.load(inifile.c_str());
+
+	_nShifts= config.GetSymbolValue("FACTORY.NUMSHIFTS", "3").toNumber<int>();
+	std::string workweek = config.GetSymbolValue("FACTORY.WORKWEEK", "Mon,Tues,Wed,Thu,Fri") ;
+	_workWeekDays = Split(workweek, ',');
+
+	std::string shiftchanges = config.GetSymbolValue("FACTORY.SHIFTCHANGES", "0,480, 960") ;
+	tokens = Split(shiftchanges, ',');
+	for(int i=0; i< tokens.size() ; i++)
+			_shiftchanges.push_back(ConvertString<int>(tokens[i], 0) * 60) ; // sonvert minutes to seconds
+
+	//http://stackoverflow.com/questions/3786201/parsing-of-date-time-from-string-boost
+	//http://www.cs.brown.edu/~jwicks/boost/doc/html/date_time/examples.html
+	std::string dt = config.GetSymbolValue("FACTORY.StartTime", CLogger().Timestamp() );
+	try {
+	_currentTime = boost::posix_time::time_from_string(dt); 
+	}catch(...) 
+	{
+
+		_currentTime= second_clock::universal_time();
+	}
+	OutputDebugString(boost::posix_time::to_simple_string(_currentTime).c_str());
+	// Parse breaks
+	std::map<std::string, std::string> breaks = ParseIniSection(inifile.c_str(), "BREAKS");
+	for(StrMapIterator it=breaks.begin(); it!=breaks.end() ; it++)
+	{
+		tokens = Split((*it).second, ',');
+		if(tokens.size() < 2)
+			continue;
+		int start=ConvertString<int>(tokens[0], -1);
+		int duration=ConvertString<int>(tokens[1], 0);
+
+		_breaks.push_back(boost::tuple<std::string, int, int >((*it).first, start, duration));
+	}
+}
+
+void CWallClock::Update(int seconds)
+{
+	if(seconds==0)
+		seconds = _tickAmount;
+	tTime+=_tickAmount;
+	_lastTime=_currentTime;
+	_currentTime += boost::posix_time::seconds(seconds);// where to get from? 
+	//_currentTime += CTimeSpan(0,0,0,seconds); 
+	_lastshifttime=_shifttime;
+	int secs = SecondsFromMidnight() ;
+	{ boost::mutex::scoped_lock(_mx); _shifttime=secs; }
+}
+void CWallClock::Cycle()
+{
+
+	Update(0);
+	std::string curday = _currentTime.date().day_of_week().as_short_string();
+	std::string lastday = _currentTime.date().day_of_week().as_short_string();
+	// this is not nearly correct if shifts don't start at midnite
+
+#if 1
+	if(std::find(_workWeekDays.begin(), _workWeekDays.end(), curday)==_workWeekDays.end())
+	{
+		if(System.CNC().NC_ACTIVE())
+		{
+			//DebugBreak();
+			System.CNC().POWERDOWN(); // cnc thread running, but nothing else
+			System.CNC().LOAD_SCRIPT("");
+		}
+	}
+	else
+    {
+		// is is already running a schedule script?
+		if(!System.CNC().NC_ACTIVE())
+		{
+			//System.CNC().POWERUP(); // cnc thread running, but nothing else - now in script
+			std::string	scriptfilename=(LPCSTR) CString(GetExeDirectory() + "NCProg.txt");
+			System.CNC().LOAD_SCRIPT(scriptfilename.c_str()); // nc not active
+			System.CNC().Run();		
+		}
+	}
+	// Update shift time...
+	// Assume updating at second intervals to make it easy for now
+	_shifttime= ShiftTime();
+#if 0
+	// Break
+	if(_breaktime <=0 )
+	{
+		for(int i=0; i< _breaks.size(); i++)
+		{
+			// there will be timing drift as not exactly 1 second updates
+			if(_lastshifttime < get<1>(_breaks[i])  && _shifttime >= get<1>(_breaks[i]) )
+			{
+				_breaktime=get<2>(_breaks[i]) ;
+				// fixme: stop cnc running during break
+				break;
+			}
+		}
+	}
+#endif
+	_lastshifttime=_shifttime;
+	_breaktime--;
+	if(_breaktime>0)
+		return;
+#endif
+}
+//////////////////////////////
+
+class CInterpolator : public LogTemplate<CInterpolator> 
+{
+public:
+	CInterpolator(CWorldModel * wm);
+	~CInterpolator();
+	void Quit();
+	Vector Current() ;
+	//Vector Last() ;
+	StateModel::StateType PushMotion(MotionDesc m);
+	//Events { init=0, run, hold, stop};
+	// States { off=0, ready, running, stopped, interrupted, any};
+	void PushEvent(EventType e){ _thread.Trigger(e); } //_events.push_back(e); }
+	void Init() { PushEvent(init); }
+	void Run() { PushEvent(run); }
+	void Stop() { PushEvent(stop); }
+	void Hold() { PushEvent(hold); }
+	void Home() { PushMotion(MotionDesc(MotionType::traverse, Vector(0.0,0.0,0.0), Vector(0.0,0.0,0.0))); _bHomed=true;}
+	void InitRoutine();
+
+	void FlushMotionQueue() { }
+	bool MotionQueueFull() { return _goalpts.size() >=1 ; }
+	bool MotionQueueEmpty() { return _goalpts.size() ==0 ; }
+
+	unsigned int & InterpInterval() { static unsigned int _interp_interval=100; return _interp_interval; }
+	unsigned int & ThreadInterval() {  return _thread.UpdateRate(); }
+	int & InstantLinearMoves() { static int _instant_move=0; return _instant_move; }
+	ControlThread & StateMachine() { return _thread; }
+
+	CServo & Servo() { assert(_servo != NULL); return *_servo; }
+
+	//////////////////////////////////////////////////////////////////////////////////////////////
+	// Interpreter stuff
+	Vector GetCurrentPosition();
+	double GetCurrentVelocity();
+	Vector ForwardKinematics(Vector joints);
+	Vector InverseKinematics(Vector pose);
+
+	Vector _last, _current;
+	double _velocity, _lastvelocity, _acceleration;
+	Vector _joints, _lastjoints;
+	Vector _vels;
+	std::list< int > _events;
+
+	std::list< MotionDesc > _goalpts;
+	virtual void InterpreterCycle();
+	boost::mutex _mx;
+	CWorldModel * _wm;
+	CServo * _servo;
+
+	ControlThread _thread;
+	bool _bHomed;
+};
+
+
+CInterpolator::CInterpolator(CWorldModel * wm) : _wm(wm)
+{
+#ifdef DEBUG
+	nDebugLevel=10;
+#endif
+	_bHomed=false;
+
+	_current=Vector(0.0,0.0,0.0);
+	_velocity=_lastvelocity=0.0;
+
+	_thread.AddStateTransition(StateMachineTuple(off,init,stopped,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&CInterpolator::InitRoutine, this)));
+	_thread.AddStateTransition(StateMachineTuple(any,stop,stopped,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&ControlThread::Nop, &_thread)));
+	_thread.AddStateTransition(StateMachineTuple(any,hold,interrupted,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&ControlThread::Nop, &_thread)));
+	_thread.AddStateTransition(StateMachineTuple(any,fail,faulted,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&ControlThread::Nop, &_thread)));
+	_thread.AddStateTransition(StateMachineTuple(faulted,reset,running,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&ControlThread::Nop, &_thread)));
+	_thread.AddStateTransition(StateMachineTuple(stopped,run,running,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&CInterpolator::InterpreterCycle, this)));
+	_thread.AddStateTransition(StateMachineTuple(interrupted,run,running,  boost::bind(&ControlThread::NullCondition, &_thread),	boost::bind(&CInterpolator::InterpreterCycle, this)));
+
+	_thread.SetStateUpdate(running,boost::bind(&CInterpolator::InterpreterCycle, this));
+
+	_thread.SetStateMachineName("Interpolator Thread");
+	_thread.StartThread();
+	_thread.Trigger(init);
+
+}
+CInterpolator::~CInterpolator()
+{
+	_thread.StopThread();
+	_thread.Join();
+
+}
+
+void CInterpolator::InitRoutine()
+{
+	_current=Vector(0,0,0);
+	
+}
+void CInterpolator::Quit(){	_thread.StopThread();}
+Vector CInterpolator::Current(){boost::mutex::scoped_lock(_mx); return _current;}
+StateModel::StateType CInterpolator::PushMotion(MotionDesc m)
+{
+
+	// Should change this from starved to running...
+
+	//while(_goalpts.size() > 0)
+	//{ 
+	//	// this is added so we don't deadlock when iterpolator shuts down.
+	//	// now we have order problem... 1st attempt
+	//	if(System.ShuttingDown())
+	//		break;
+
+	//	::Sleep(10);
+	//}
+	_goalpts.push_back(m);
+	if(MotionQueueFull())
+		return StateModel::block;
+	return StateModel::ok;
+
+}
+
+
+	//class ProgramControlThread  : public ControlThread
+	//{ 
+	//public:
+	//	typedef ProgramControlThread MyClass;
+	//	ProgramControlThread()
+	//	{
+	//		_statemachine.push_back(StateMachineTuple(off,init,ready,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Init, this))); 
+	//		_statemachine.push_back(StateMachineTuple(ready,load, loaded,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Load, this))); 
+	//		_statemachine.push_back(StateMachineTuple(ready,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Run, this))); 
+	//		_statemachine.push_back(StateMachineTuple(loaded,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Run, this))); 
+	//		_statemachine.push_back(StateMachineTuple(stopped,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Reset, this))); 
+	//		_statemachine.push_back(StateMachineTuple(running,stop, stopped,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Stop, this))); 
+	//		_statemachine.push_back(StateMachineTuple(running,hold, interrupted,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Hold, this))); 
+	//		_statemachine.push_back(StateMachineTuple(running, done, finished,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Done, this))); 
+	//		_statemachine.push_back(StateMachineTuple(finished, rewind, ready,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Rewind, this))); 
+	//		_statemachine.push_back(StateMachineTuple(interrupted,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Resume, this))); 
+	//		_statemachine.push_back(StateMachineTuple(running,block, blocked,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Nop, this))); 
+	//		_statemachine.push_back(StateMachineTuple(blocked,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Nop, this))); 
+
+	//		_statemachine.push_back(StateMachineTuple(any,singlestep, stepping,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Nop, this))); 
+	//		_statemachine.push_back(StateMachineTuple(stepping,step, stepping,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Nop, this))); 
+	//		_statemachine.push_back(StateMachineTuple(stepping,run, running,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Resume, this))); 
+
+	//		_statemachine.push_back(StateMachineTuple(any,quit, exit,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Exit, this))); 
+	//		_statemachine.push_back(StateMachineTuple(any,fail, faulted,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Fail, this))); 
+	//		_statemachine.push_back(StateMachineTuple(any,estop, estopped,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Stop, this))); 
+	//		_statemachine.push_back(StateMachineTuple(any,reset, ready,  boost::bind(&MyClass::NullCondition, this),	boost::bind(&MyClass::Reset, this))); 
+
+	//		_stateMap[off]=boost::bind(&MyClass::Off, this);
+	//		_stateMap[ready]=boost::bind(&MyClass::Ready, this);
+	//		_stateMap[loaded]=boost::bind(&MyClass::Loaded, this);
+	//		_stateMap[running]=boost::bind(&MyClass::Running, this);
+	//		_stateMap[stopped]=boost::bind(&MyClass::Stopped, this);
+	//		_stateMap[interrupted]=boost::bind(&MyClass::Interrupted, this);
+	//		_stateMap[faulted]=boost::bind(&MyClass::Faulted, this);
+	//		_stateMap[exit]=boost::bind(&MyClass::Exit, this);
+	//	}
+	//	// State transitions
+	//	virtual void Init() { LogMessage("Init\n"); }
+	//	virtual void Load() { LogMessage("Load\n"); }
+	//	virtual void Run() { LogMessage("Run\n"); }
+	//	virtual void Stop() { LogMessage("Stop\n"); }
+	//	virtual void Fail() { LogMessage("Fail\n"); }
+	//	virtual void Hold() { LogMessage("Hold\n"); }
+	//	virtual void Reset() { LogMessage("Reset\n"); }
+	//	virtual void Done() { LogMessage("Done\n"); }
+	//	virtual void Resume() { LogMessage("Resume\n"); }
+	//	virtual void Rewind() { LogMessage("Rewind\n"); }
+
+	//	// State methods
+	//	virtual void Nop()	{ LogMessage("Nop\n");	}
+	//	virtual void Off()	{ LogMessage("Off\n");	}
+	//	virtual void Ready() { LogMessage("Ready\n");	 }
+	//	virtual void Loaded() {  LogMessage("Loaded\n");	}
+	//	virtual void Running() { LogMessage("Running\n");	 }
+	//	virtual void Stopped() { LogMessage("Stopped\n");	 }
+	//	virtual void Interrupted() { LogMessage("Interrupted\n");	 }
+	//	virtual void Faulted() { LogMessage("Faulted\n");	 }
+	//	virtual void Exit() { LogMessage("Exit\n");	 }
+
+	//};
+
+
+/*		bool bFinished=true;
+			for(int i=0; i< numparts.size(); i++)
+				if(finishedparts[i]< totnumparts[i]) bFinished=false;
+
+			if(bFinished)
+			{
+				_mRunning=false;
+				GenerateReport();
+				continue;
+			}*/
+
+			//for(int i=0; i< _cellHandlers.size(); i++)
+			//{
+			//	while(_cellHandlers[i]->AnyDone())
+			//	{
+			//		ProcessPlan * plan = _cellHandlers[i]->outprocessplans.back();
+			//		std::vector<bstr_t> steps = plan->steps;
+			//		int step = plan->currentStep;
+
+			//		
+			//		GLogger << INFO << "Done Step: Job(" << plan->jobId << ") Plan:(" << plan->identifier << ")[" << step-1<< "] Cell:" << _cellHandlers[i]->identifier  << std::endl;
+			//		OutputDebugString(StdStringFormat("Done Step: Job(%d) Plans (%s)  Cell[%s]\n" ,plan->jobId ,(LPCSTR) plan->identifier , (LPCSTR) _cellHandlers[i]->identifier).c_str());
+			//		plan->stepstop = boost::posix_time::microsec_clock::local_time();
+
+			//		if(step >= plan->steps.size())
+			//		{
+			//			_doneprocessplans.push_back(plan);
+			//			plan->stop = boost::posix_time::microsec_clock::local_time();
+			//			plan->totalTime = (plan->stop - plan->start).seconds();
+			//			plan->clockedsteps[step-1] = (plan->stepstop - plan->stepstart).seconds();
+
+			//			//int k=	 GetPartIndex(plan->_pParentPart->identifier);
+			//			//if(k>=0 && k< numparts.size() )finishedparts[k]++;
+			//		   _cellHandlers[i]->PopDone();
+			//		//	GLogger << INFO << "Complete Job(" << plan->currentJobId << ") Plan:(" << plan->identifier << ")[" << step << "] Cell:" << _cellHandlers[i]->identifier  << std::endl;
+			//			OutputDebugString(StdStringFormat("Complete Job: (%d) Plans (%s)  Cell[%s]\n" ,plan->currentJobId ,(LPCSTR) plan->identifier , (LPCSTR) _cellHandlers[i]->identifier).c_str());
+			//			// Remove plan and increment finished parts
+			//			int n;
+			//			if((n=FindIndex<ProcessPlan *>(currentprocessplans,plan))>=0)
+			//				currentprocessplans.erase(currentprocessplans.begin() + n);
+			//			if((n=FindIndex<std::string>(parts,(LPCSTR) plan->_pParentPart->identifier))>=0)
+			//				finishedparts[n]++;
+
+			//		}		
+			//		else
+			//		{
+			//			Process* process = plan->FindProcess(steps[step]);
+			//			CCellHandler * nextcell = _agentconfig->findCell((LPCSTR) process->resourcesRequired[0]);
+			//			//if(!nextcell->IsFull())  // FIXME: will need to wait before unpopping
+			//			{
+			//				nextcell->QueuePlan(plan);
+			//				plan->clockedsteps[step-1] = (plan->stepstop - plan->stepstart).seconds();
+			//				plan->stepstart = boost::posix_time::microsec_clock::local_time();
+
+			//				_cellHandlers[i]->PopDone();
+			//				GLogger << INFO << "Move Job(" << plan->currentJobId << ") Plan:(" << plan->identifier << ")[" << step << "] From Cell" << _cellHandlers[i]->identifier << " to" << nextcell->identifier  << std::endl;
+			//			}
+			//		}
+			//	}
+			//}
+			// These are are unprocesses plans
+			//for(int i=0; i<currentprocessplans.size(); i++)
+			//{
+			//	ProcessPlan * plan = currentprocessplans[i];
+			//	if(plan->bActive)
+			//	{
+			//		::Sleep(500); // WTF???
+			//		continue;
+			//	}
+			//	// will throw exception if part or process not found
+			//	std::vector<bstr_t> steps = plan->steps;
+			//	int step = plan->currentStep;
+
+			//	Process* process = plan->FindProcess(steps[step]);
+			//	CCellHandler * nextcell = _agentconfig->findCell((LPCSTR) process->resourcesRequired[0]);
+			//	if(!nextcell->IsFull())  
+			//	{
+			//		GLogger << INFO << " Start plan on Cellhandler " << nextcell->identifier <<  " Job:" << plan->currentJobId << " Plan:" << plan->identifier <<  " Step:" << step<< std::endl;
+			//		nextcell->QueuePlan(plan);
+			//		plan->bActive=true;
+
+			//		plan->clockedsteps.resize(plan->steps.size());
+			//		plan->stepstart = boost::posix_time::microsec_clock::local_time();
+			//		plan->start = boost::posix_time::microsec_clock::local_time();
+			//	}
+			//}
+		/*	for(int i=0; i< _cellHandlers.size(); i++)
+			{
+				_cellHandlers[i]->Update();
+			}*/
+			//for(int i=0; i< _agentconfig->_resourceHandlers.size(); i++)
+			//	_agentconfig->_resourceHandlers[i]->Cycle();	
+
+
+
+//class CProcessPlanHandler
+//{
+//public:
+//	CProcessPlanHandler(AgentMgr * config, ProcessPlan * processplan, CCMSDIntegrator * cmsd)
+//	{
+//		_agentconfig=config;
+//		_processplan=processplan;
+//		_cmsd=cmsd;
+//	}
+//	~CProcessPlanHandler(void){}
+//	void Cycle(){}
+//
+//	bool								_mRunning;
+//	AgentMgr *							_agentconfig;
+//	ProcessPlan *						_processplan;
+//	CCMSDIntegrator *					_cmsd;
+//};
+
+
+
+class CCellHandler : public Cell
+{
+public:
+	CCellHandler(AgentMgr * config, Cell * cell, CCMSDIntegrator * cmsd) : Cell(*cell)
+	{
+		_agentconfig=config;
+		_cell=this;
+		//(*this)=*cell;
+		_cmsd=cmsd;
+	}
+	~CCellHandler(void)	{}
+	bool IsFull(){ return inprocessplans.size() > CJobCommands::MaxQueueSize; }
+	UINT QueueSize() { return inprocessplans.size(); }
+	UINT QueuePlan(ProcessPlan *plan) { inprocessplans.push_back(plan); return QueueSize() ;}
+	//int Update();
+	bool AnyDone(){ return outprocessplans.size() > 0; }
+	ProcessPlan * PopDone()
+	{ 
+		if(outprocessplans.size() <= 0) return NULL; 
+		ProcessPlan * plan = outprocessplans.back(); 
+		outprocessplans.pop_back(); 
+		return plan; 
+	}
+
+	std::vector<ProcessPlan *> inprocessplans;
+	std::vector<ProcessPlan *> outprocessplans;
+
+	bool								_mRunning;
+	std::vector<CResourceHandler *>		_resources;
+	AgentMgr *				_agentconfig;
+	Cell *								_cell;
+	CCMSDIntegrator *					_cmsd;
+	boost::mutex						_access;
+};
+
+//GLogger << INFO << "Done Step: Job(" << plan->jobId << ") Plan:(" << plan->identifier << ")[" << step-1<< "] Cell:" << _cellHandlers[i]->identifier  << std::endl;
+	//OutputDebugString(StdStringFormat("Done Step: Job(%d) Plans (%s)  Cell[%s]\n" ,plan->jobId ,(LPCSTR) plan->identifier , (LPCSTR) _cellHandlers[i]->identifier).c_str());
+
+	//if(!IsDone())  // FIXME: will need to wait before unpopping
+	//{
+	//	nextcell->QueuePlan(plan);
+	//	plan->clockedsteps[step-1] = (plan->stepstop - plan->stepstart).seconds();
+	//	plan->stepstart = boost::posix_time::microsec_clock::local_time();
+
+	//	//_cellHandlers[i]->PopDone();
+	//	GLogger << INFO << "Move Job(" << plan->currentJobId << ") Plan:(" << plan->identifier << ")[" << step << "] From Cell" << _cellHandlers[i]->identifier << " to" << nextcell->identifier  << std::endl;
+	//	return true;
+	//}
+#if 0
+	boost::mutex::scoped_lock  lock(io_mutex);
+	if(!_inputprogram.empty())
+		return false;
+
+	this->_currentplan = plan;
+	plan->_pCurrentResource=this->_resource;
+
+	if(plan==NULL)
+		throw std::exception("CResourceHandler::SendCommand bad plan");
+
+	if(plan->currentStep< 0 || plan->currentStep >= plan->steps.size())
+		throw std::exception("CResourceHandler::SendCommand bad step in plan");
+
+	std::string program = (LPCSTR)  plan->PartProgram(plan->currentStep);
+	if(program.empty())
+	{
+		GLogger << FATAL << "CResourceHandler::SendCommand() No Program name" << std::endl; 
+
+		// Log error and continue
+		Reset();
+		if(_currentplan!=NULL) _currentplan->_currentState="DONE";
+		SetMTCTagValue(_device, "command", "RESET" );
+		SetMTCTagValue(_device, "cmdnum", StdStringFormat("%d",_nCmdnum++));
+
+		//throw std::exception("CResourceHandler::SendCommand bad program name");
+	}
+	_inputprogram=program;
+	//_partid=(LPCSTR) plan->_pParentPart->identifier;  //7 FIXME: _pParentPart points to nullish
+	_partid=plan->jobId;
+
+	return true;
+#endif
+
+
+	//jobs->Newworkorder();
+	//jobs->Update(_resourceHandlers);
+
+	/*for(int i=0; i < jobs->size() ; i++)
+	{
+		int _current = jobs->at(i)->_currentstep;
+		 only check this - if done
+		 check next - if done and free - else nothing...
+		Cell * cell= _cmsd->FindCellById((LPCSTR)  id);
+		int j = FindResourceHandler(jobs->at(i)->_ResourceRequired[_current]);
+		if(j<0) 
+			continue;
+		CResourceHandler * resource= _resourceHandlers[j];
+		if(	resource->outqueue.CanPop())
+		{
+			resource->outqueue.Pop();
+			job->at(i)->bDone[_current]=true;
+			 jobs->at(i)->_currentstep++;
+			int _current = jobs->at(i)->_currentstep;
+			Cell * cell= _cmsd->FindCellById((LPCSTR)  id);
+			j = FindResourceHandler( jobs->at(i)->_ResourceRequired[_current]);
+			if(j<0)
+				continue;
+			 resource= _resourceHandlers[j];
+		}
+		 Should push the next time...
+		if(	resource->inqueue.CanPush())
+		{
+			int nCurrentStep =jobs->at(i)->_currentstep;
+			if(nCurrentStep< 0 || nCurrentStep>= jobs->at(i)->MaxStep()) 
+			{
+				DebugBreak();
+			}
+			resource->inqueue.Push(jobs->at(i));
+
+		}
+		
+	}*/
+
+	 //UpdateResourceHandlers();
+	 //UpdateResourceHandlers();
+	 //DumpJobs(jobs);
+
+	 //void CJobHandler::GenerateReport()
+//{
+//	std::string tmp;
+//	for(int i=0 ; i< _job->partIds.size(); i++)
+//	{
+//		tmp+=StdStringFormat("Finished %s  Parts = %d\n",(LPCSTR) _job->partIds[i], finishedparts[i]); 
+//	}
+//	tmp+=StdStringFormat("Part Timing\n"); 
+//	tmp+=StdStringFormat("-----------\n"); 
+//	for(int i=0 ; i< _doneprocessplans.size(); i++)
+//	{
+//		tmp+=StdStringFormat("Part = %s\n",(LPCSTR) _doneprocessplans[i]->_pParentPart->identifier ); 
+//		for(int j=0 ; j< _doneprocessplans[i]->steps.size(); j++)
+//		{
+//			Process* process = _doneprocessplans[i]->FindProcess(_doneprocessplans[i]->steps[j]);
+//			CCellHandler * cell = _agentconfig->findCell((LPCSTR) process->resourcesRequired[0]);
+//			tmp+=StdStringFormat("Step[%d] %s Time=%4.2f\n", j, (LPCSTR) cell->identifier,_doneprocessplans[i]->clockedsteps[j] ); 
+//		}
+//	}	
+//	GLogger << INFO << tmp << std::endl;
+//}
+//void CJobCommands::Init(Job * job)
+//{	
+//	GLogger << INFO << "CJobHandler::Cycle()" << std::endl; 
+//	boost::timer delaytimer;
+//	COleDateTime now;
+//	HRESULT hr;
+//	int nHeartbeat=0;
+//	_mRunning=true;
+//	_set_se_translator( trans_func );  // correct thread?
+//	std::vector<bstr_t> partIds, partNum; 
+//	_job=job;
+//	
+//	hr = ::CoInitialize(NULL);
+//
+//	jobs.InitJobs(job); //complete job with multiple parts
+//}
+//void CJobHandler::CheckNewworkorder()
+//{	
+//	while(jobs.NewWorkorder()) 
+//	{
+//		int n =jobs.GetCurrentNuber();
+//		jobs.AddJob(_agentconfig,_cmsd, jobId,(LPCSTR) _job->partIds[0]);  // error FIXME
+//		std::string d= jobs.back()->Dump();
+//		OutputDebugString(d.c_str());
+//	}
+//}
+
+//void CJobHandler::CheckNewJob()
+//{
+//	CJobCommand * job = jobs.GetNextFreeJob();
+//	if(job!=NULL)
+//	{
+//		int n = job->_currentstep;
+//		CCellHandler * cell= job->currentcell[n];
+//		CResourceHandler  * resource;
+//		if(cell!=NULL)
+//			resource=cell->_resources[0];
+//		if(resource->CanPush())
+//		{
+//			resource.Push(job);
+//		}
+//		if(resource->CanPop())
+//		{
+//			job = resource.Pop();
+//		}
+//		::Sleep(1000);
+//
+//	}
+//}
+//void CJobHandler::Cycle()
+//{	
+//	int jobId=1;
+//	try {
+//		if(!jobs.AllFinished())
+//		{
+//
+//			if(jobs.NewWorkorder()) 
+//			{
+//				int n =jobs.GetCurrentNuber();
+//				jobs.AddJob(_agentconfig,_cmsd, jobId,(LPCSTR) _job->partIds[0]);  // error FIXME
+//				std::string d= jobs.back()->Dump();
+//				OutputDebugString(d.c_str());
+//			}
+//
+//			CJobCommand * job = jobs.GetNextFreeJob();
+//			if(job!=NULL)
+//			{
+//				int n = job->_currentstep;
+//				CCellHandler * cell= job->currentcell[n];
+//				if(cell!=NULL)
+//					cell->_resources[0]->job=job;
+//				::Sleep(1000);
+//
+//			}
+//		}
+//
+//	}
+//	catch(std::exception e)
+//	{
+//		AtlTrace("%s%s", "CJobHandler::Cycle() exception " , e.what());
+//	}
+//	catch(...)
+//	{
+//		AtlTrace("CJobHandler::Cycle() exception ");
+//	}
+//}
+//::PostMessage( _wndMain->m_hWnd , SIMULATION_RUN_DONE, 0, 0);
+
+//::CoUninitialize();
+//}
+void CJobCommands::DumpJobs(CJobCommands * jobs,std::vector<CResourceHandler * >&  _resourceHandlers)
+{
+	std::string tmp;
+	for(int i=0; i < jobs->size() ; i++)
+	{
+		tmp+=StdStringFormat("Job %s Part %s at step %d\n", jobs->at(i)->_jobId.c_str(), jobs->at(i)->_partid.c_str(),jobs->at(i)->_currentstep);
+		/*int _current = jobs->at(i)->_currentstep;
+		int j = FindResourceHandler(_resourceHandlers, jobs->at(i)->_ResourceRequired[_current]);
+		if(j<0) 
+			continue;
+		CResourceHandler * resource= _resourceHandlers[j];*/
+
+		for(int i=0 ; i<_resourceHandlers.size(); i++)
+		{
+			CResourceHandler *  _resourceHandler = _resourceHandlers[i];
+			tmp+= "\t"+_resourceHandler->ToString();
+		}
+	}
+	OutputDebugString(tmp.c_str());
+}
+
+
+
+template<typename T>
+int FindIndex(std::vector<T> &arr, T key)
+{
+	std::vector<T>::iterator it1= find(arr.begin(), arr.end(), key);
+	if(it1!=arr.end()) 
+		return	it1-arr.begin();
+	return -1;
+}
+
+
+
+//CResourceHandler * CResourceHandlersFind(std::string id)
+//{
+//	for(int i=0 ; i<size(); i++)
+//	{
+//		CResourceHandler *  _resourceHandler = at(i);
+//		if(_resourceHandler->_identifier==id)
+//			return _resourceHandler;
+//
+//	}
+//	return NULL;
+//}
+
+//int CJobCommands::FindResourceHandler(std::vector<CResourceHandler * >&  _resourceHandlers, int current, std::string id )
+//{	
+//	if(current >= _resourceHandlers.size())
+//		return -1;
+//	for(int i=0 ; i<_resourceHandlers.size(); i++)
+//	{
+//		CResourceHandler *  _resourceHandler = _resourceHandlers[i];
+//		//std::string id = _resourceHandlers[i]->_ResourceRequired[_current];
+//		if(_resourceHandler->_identifier==id)
+//			return i;
+//	}
+//	return -1;
+//}
+//LRESULT CJobCommands::UpdateResourceHandlers(std::vector<CResourceHandler * >&  _resourceHandlers)
+//{	
+//	for(int i=0 ; i<_resourceHandlers.size(); i++)
+//	{
+//		CResourceHandler *  _resourceHandler = _resourceHandlers[i];
+//		_resourceHandler-> Cycle();
+//	}
+//	return 0;
+//}
+
+void CJobCommand::MakeDone()
+{
+	if(_currentstep>= this->plan->steps.size())
+		return ;
+	bDone[_currentstep]=true;
+	_currentstep++;
+	int n = _currentstep;
+	int nMax =  plan->steps.size();
+	// move this to CJobCommands
+	/*if( n>=nMax)
+	{
+	archive.push_back( this);
+	find(this)
+	this->erase(this->begin() + i);
+	break;
+	}*/
+	}

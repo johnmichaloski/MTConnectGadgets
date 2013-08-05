@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2013-03-23T15:43:42" sender="local" version="1.1"/>
+<Devices>
+		<Device id="SMCO_PS_CAST1_BUFFER1id" uuid="SMCO_PS_CAST1_BUFFER1xxx" name="SMCO_PS_CAST1_BUFFER1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_BUFFER1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_BUFFER1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_BUFFER1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_BUFFER1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_BUFFER1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_BUFFER1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_BUFFER1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_BUFFER1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_BUFFER1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_BUFFER1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_BUFFER1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_BUFFER1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_BUFFER1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_BUFFER1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_BUFFER1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_BUFFER1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_BUFFER1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_BUFFER1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_BUFFER1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_BUFFER1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_BUFFER1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_BUFFER1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_BUFFER1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_BUFFER1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_BUFFER1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_BUFFER1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_BUFFER1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_BUFFER1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_BUFFER1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_ELV1id" uuid="SMCO_PS_CAST1_ELV1xxx" name="SMCO_PS_CAST1_ELV1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_ELV1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_ELV1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_ELV1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_ELV1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_ELV1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_ELV1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_ELV1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_ELV1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_ELV1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_ELV1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_ELV1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_ELV1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_ELV1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_ELV1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_ELV1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_ELV1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_ELV1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_ELV1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_ELV1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_ELV1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_ELV1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_ELV1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_ELV1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_ELV1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_ELV1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_ELV1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_ELV1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_ELV1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_ELV1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_CRS1id" uuid="SMCO_PS_CAST1_CRS1xxx" name="SMCO_PS_CAST1_CRS1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_CRS1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_CRS1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_CRS1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_CRS1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CRS1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CRS1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_CRS1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_CRS1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_CRS1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_CRS1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_CRS1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_CRS1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_CRS1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_CRS1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CRS1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_CRS1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CRS1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_CRS1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CRS1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CRS1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CRS1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_CRS1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_CRS1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_CRS1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_CRS1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_CRS1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_CRS1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_CRS1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_CRS1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_CI1id" uuid="SMCO_PS_CAST1_CI1xxx" name="SMCO_PS_CAST1_CI1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_CI1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_CI1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_CI1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_CI1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CI1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CI1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_CI1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_CI1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_CI1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_CI1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_CI1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_CI1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_CI1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_CI1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CI1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_CI1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CI1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_CI1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CI1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CI1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CI1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_CI1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_CI1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_CI1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_CI1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_CI1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_CI1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_CI1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_CI1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_AS1id" uuid="SMCO_PS_CAST1_AS1xxx" name="SMCO_PS_CAST1_AS1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_AS1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_AS1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_AS1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_AS1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_AS1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_AS1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_AS1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_AS1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_AS1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_AS1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_AS1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_AS1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_AS1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_AS1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_AS1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_AS1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_AS1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_AS1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_AS1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_AS1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_AS1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_AS1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_AS1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_AS1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_AS1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_AS1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_AS1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_AS1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_AS1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_CVRDELid" uuid="SMCO_PS_CAST1_CVRDELxxx" name="SMCO_PS_CAST1_CVRDEL">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_CVRDELavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_CVRDELc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_CVRDELsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_CVRDELct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CVRDELcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CVRDELcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_CVRDELctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_CVRDELcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_CVRDELccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_CVRDELlogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_CVRDELsystem" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_CVRDELpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_CVRDELpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_CVRDELFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CVRDELpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_CVRDELtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CVRDELlid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_CVRDELexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVRDELmode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVRDELcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVRDELcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_CVRDELheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_CVRDELpc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_CVRDELsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_CVRDELelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_CVRDELpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_CVRDELpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_CVRDELpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_CVRDELpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_CVS1id" uuid="SMCO_PS_CAST1_CVS1xxx" name="SMCO_PS_CAST1_CVS1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_CVS1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_CVS1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_CVS1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_CVS1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CVS1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CVS1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_CVS1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_CVS1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_CVS1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_CVS1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_CVS1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_CVS1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_CVS1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_CVS1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CVS1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_CVS1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CVS1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_CVS1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVS1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVS1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CVS1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_CVS1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_CVS1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_CVS1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_CVS1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_CVS1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_CVS1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_CVS1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_CVS1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_LG1id" uuid="SMCO_PS_CAST1_LG1xxx" name="SMCO_PS_CAST1_LG1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_LG1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_LG1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_LG1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_LG1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_LG1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_LG1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_LG1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_LG1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_LG1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_LG1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_LG1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_LG1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_LG1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_LG1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_LG1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_LG1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_LG1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_LG1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LG1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LG1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LG1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_LG1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_LG1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_LG1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_LG1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_LG1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_LG1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_LG1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_LG1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_RO1id" uuid="SMCO_PS_CAST1_RO1xxx" name="SMCO_PS_CAST1_RO1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_RO1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_RO1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_RO1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_RO1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_RO1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_RO1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_RO1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_RO1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_RO1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_RO1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_RO1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_RO1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_RO1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_RO1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_RO1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_RO1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_RO1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_RO1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_RO1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_RO1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_RO1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_RO1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_RO1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_RO1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_RO1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_RO1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_RO1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_RO1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_RO1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_FUR1id" uuid="SMCO_PS_CAST1_FUR1xxx" name="SMCO_PS_CAST1_FUR1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_FUR1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_FUR1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_FUR1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_FUR1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_FUR1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_FUR1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_FUR1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_FUR1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_FUR1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_FUR1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_FUR1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_FUR1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_FUR1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_FUR1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_FUR1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_FUR1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_FUR1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_FUR1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_FUR1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_FUR1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_FUR1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_FUR1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_FUR1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_FUR1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_FUR1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_FUR1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_FUR1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_FUR1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_FUR1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_EMP1id" uuid="SMCO_PS_CAST1_EMP1xxx" name="SMCO_PS_CAST1_EMP1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_EMP1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_EMP1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_EMP1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_EMP1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_EMP1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_EMP1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_EMP1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_EMP1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_EMP1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_EMP1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_EMP1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_EMP1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_EMP1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_EMP1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_EMP1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_EMP1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_EMP1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_EMP1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_EMP1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_EMP1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_EMP1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_EMP1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_EMP1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_EMP1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_EMP1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_EMP1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_EMP1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_EMP1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_EMP1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_CE1id" uuid="SMCO_PS_CAST1_CE1xxx" name="SMCO_PS_CAST1_CE1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_CE1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_CE1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_CE1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_CE1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CE1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_CE1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_CE1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_CE1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_CE1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_CE1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_CE1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_CE1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_CE1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_CE1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CE1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_CE1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_CE1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_CE1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CE1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CE1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_CE1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_CE1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_CE1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_CE1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_CE1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_CE1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_CE1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_CE1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_CE1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="SMCO_PS_CAST1_LWR1id" uuid="SMCO_PS_CAST1_LWR1xxx" name="SMCO_PS_CAST1_LWR1">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="SMCO_PS_CAST1_LWR1avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="SMCO_PS_CAST1_LWR1c" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="SMCO_PS_CAST1_LWR1sl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="SMCO_PS_CAST1_LWR1ct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_LWR1cs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="SMCO_PS_CAST1_LWR1cso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="SMCO_PS_CAST1_LWR1ctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="SMCO_PS_CAST1_LWR1cont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="SMCO_PS_CAST1_LWR1ccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="SMCO_PS_CAST1_LWR1logic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="SMCO_PS_CAST1_LWR1system" name="system_cond" />
+					</DataItems>
+					<Components>
+						<Path id="SMCO_PS_CAST1_LWR1path1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="SMCO_PS_CAST1_LWR1pgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="SMCO_PS_CAST1_LWR1Fact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_LWR1pid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="SMCO_PS_CAST1_LWR1tid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="SMCO_PS_CAST1_LWR1lid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="SMCO_PS_CAST1_LWR1exec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LWR1mode" category="EVENT" name="controllermode"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LWR1cmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="SMCO_PS_CAST1_LWR1cmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="SMCO_PS_CAST1_LWR1heartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="SMCO_PS_CAST1_LWR1pc" category="EVENT" name="PartCountAct" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="SMCO_PS_CAST1_LWR1systems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="SMCO_PS_CAST1_LWR1elec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="SMCO_PS_CAST1_LWR1pwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="SMCO_PS_CAST1_LWR1pwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="SMCO_PS_CAST1_LWR1pneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="SMCO_PS_CAST1_LWR1pneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+</Devices>
+</MTConnectDevices>

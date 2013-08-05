@@ -1,0 +1,553 @@
+
+
+
+*.obj;*.ilk;*.tlb;*.tli;*.tlh;*.tmp;*.rsp;*.pgc;*.pgd;*.meta;
+
+
+  // Default to a 10 second heartbeat
+  sprintf(mPong, "* PONG %d\n", aHeartbeatFreq);
+
+
+///// Checkingn for heartbeat from agent
+      Client *client = mClients[i];
+      if (FD_ISSET(client->socket(), &rset))
+      {
+        len = client->read(buffer, READ_BUFFER_LEN);
+        if (len > 0) 
+        {
+          // Check for heartbeat
+          if (strncmp(buffer, "* PING", 6) == 0)
+          {
+            if (!client->mHeartbeats)
+              client->mHeartbeats = true;
+            client->mLastHeartbeat = getTimestamp();
+            client->write(mPong);
+          }
+          else
+            printf("Received: %s", buffer);
+        }
+        else 
+          removeClientInternal(client);
+      }
+    }
+
+ // Check heartbeats
+  for (int i = mNumClients - 1; i >= 0; i--)
+  {
+    Client *client = mClients[i];
+    unsigned int now = getTimestamp();
+    if (client->mHeartbeats)
+    {
+      if (deltaTimestamp(now, client->mLastHeartbeat) > (unsigned int) mTimeout)
+      {
+        gLogger->warning("Client has not sent heartbeat in over %d ms, disconnecting",
+          mTimeout);
+        removeClientInternal(client);
+      }
+    }
+  }
+
+-p  7878  -s  "C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\ShdrPlayback\Debug\MTConnectShdr.txt"
+
+ std::string fn = "filename.conf";
+  if(fn.substr(fn.find_last_of(".") + 1) == "conf")
+  
+std::string getexepath()
+  {
+  char result[ MAX_PATH ];
+  return std::string( result, GetModuleFileName( NULL, result, MAX_PATH ) );
+  }
+  
+  // With STL string
+#include <string>
+
+char        szAppPath[MAX_PATH] = "";
+std::string strAppName;
+
+::GetModuleFileName(0, szAppPath, MAX_PATH);
+
+// Extract name
+strAppName = szAppPath;
+strAppName = strAppName.substr(strAppName.rfind("\\") + 1);
+
+
+
+// With CString
+char    szAppPath[MAX_PATH] = "";
+CString strAppName;
+
+::GetModuleFileName(0, szAppPath, MAX_PATH);
+
+// Extract name
+strAppName = szAppPath;
+strAppName = strAppName.Right(strAppName.ReverseFind('\\') + 1);
+/////////////////////////////////////////////////////////////////
+Trackbar:
+
+	CTrackBarCtrl m_TrackBar;
+		MESSAGE_HANDLER(WM_HSCROLL, OnHScroll)
+
+	LRESULT OnHScroll(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/);
+LRESULT CShdrFileEchoView::OnHScroll(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& /*bHandled*/)
+{		
+	// lParam The handle to the trackbar control.
+	double min,max,pos;
+
+	if (LOWORD(wParam)== TB_ENDTRACK && m_TrackBar.m_hWnd == (HWND) lParam)
+	{
+		max = m_TrackBar.GetRangeMax();
+		min = m_TrackBar.GetRangeMin();
+		pos = m_TrackBar.GetPos();
+		double diff = max-min;
+
+		this->_dOverride = (max - pos ) / ( .2 * diff) ; // 0 .. 5.0 factor
+	}
+
+	return 0;
+}
+
+
+TODO:
+
+
+FIXME:
+1) a.accept(*sock);
+exception when quitting.
+2) Need flush and not wait until next cycle
+
+
+I'm using boost::asio, and I have code like this:
+
+void CServer::Start(int port)
+{ 
+    tcp::acceptor acceptor(m_IoService, tcp::endpoint(tcp::v4(), port));
+
+    for ( ;; )
+    {
+        shared_ptr<tcp::socket> pSocket(new tcp::socket(m_IoService));
+
+        acceptor.accept(*pSocket);
+
+        HandleRequest(pSocket);
+    }
+}
+This code works, but I'd like to switch to using Acceptor::async_accept so that I can call Acceptor::cancel to stop receiving requests.
+
+So my new code looks like this:
+
+void CServer::StartAsync(int port)
+{ 
+    m_pAcceptor = shared_ptr<tcp::acceptor>( new tcp::acceptor(m_IoService, tcp::endpoint(tcp::v4(), port)) );
+
+    StartAccept();
+}
+
+void CServer::StopAsync()
+{
+    m_pAcceptor->cancel();
+}
+
+void CServer::StartAccept()
+{
+    shared_ptr<tcp::socket> pSocket(new tcp::socket(m_IoService));
+
+    m_pAcceptor->async_accept(*pSocket, bind(&CServer::HandleAccept, this, pSocket));   
+}
+
+void CServer::HandleAccept(shared_ptr<tcp::socket> pSocket)
+{
+    HandleRequest(pSocket);
+
+    StartAccept();
+}
+
+Ah, looks like to kick things off you need to run the IOService, e.g.:
+
+m_IoService.run();
+
+
+
+Tooltips for windows
+http://support.microsoft.com/kb/201540
+http://www.codeguru.com/forum/showthread.php?t=329065 
+
+//Find matching node in tree
+MSXML2::IXMLDOMNodePtr CCharacteristicFeatureRelation::GetNodeFromUniqueId(MSXML2::IXMLDOMNodePtr root, std::string id)
+{
+		std::string	xpath = StdStringFormat("//*[@id='%s']", id.c_str());
+		return	root->selectSingleNode(_bstr_t(xpath.c_str()));
+}
+
+
+//Read mpdes under branch
+MSXML2::IXMLDOMNodePtr root = _doc.GetNode();
+MSXML2::IXMLDOMNodeListPtr nodes = root->selectNodes(_bstr_t("//CharacteristicFeatureRelations/Relation"));
+for(int i=0; i< nodes->length; i++)
+
+
+bool CQMREx::IsA(MSXML2::IXMLDOMNodePtr node, std::string type)
+{
+	if(node==NULL)
+		return false;
+	OutputDebugString(StdStringFormat("Node Name = %s\n", (LPCTSTR) node->nodeName).c_str());
+	if(node->nodeName  == _bstr_t(type.c_str()))
+		return true;
+	return false;
+
+}
+
+_bstr_t ParseXMLDocument(char * xmlfile, char * xsdfile, char * xsdname)
+	{ 
+		_bstr_t parseError(L"");
+		try{
+			IXMLDOMParseErrorPtr  pError;
+			
+			// load the XML file
+			// ****** you need to use IXMLDOMDocument2 interface *********
+			HRESULT hr = m_pXMLDoc.CreateInstance(__uuidof(MSXML2::DOMDocument));
+			m_pXMLDoc->async =  VARIANT_FALSE; 
+			
+			hr = m_pXMLDoc->load(xmlfile /*"books.xml"*/);      
+			
+			//check on the parser error      
+			if(hr!=VARIANT_TRUE)
+			{
+				return checkParseError(m_pXMLDoc->parseError);
+			}
+			
+			//load the XSD file
+			if(xsdfile!=NULL)
+			{
+				hr = m_pXSDDoc.CreateInstance(__uuidof(MSXML2::DOMDocument));
+				m_pXSDDoc->async =  VARIANT_FALSE; 
+
+				hr = m_pXSDDoc->load(xsdfile /*"books.xsd"*/);
+
+				//check on the parser error      
+				if(hr!=VARIANT_TRUE)
+				{         
+					return checkParseError(m_pXSDDoc->parseError);
+				}
+
+				//create schemacache
+				hr = m_pSchemaCache.CreateInstance(__uuidof(MSXML2::XMLSchemaCache));
+				m_pXMLDoc->schemas = m_pSchemaCache.GetInterfacePtr();
+
+				//hook it up with XML Document
+				hr = m_pSchemaCache->add(xsdname /*"urn:books"*/, m_pXSDDoc.GetInterfacePtr());   
+
+				//call validate 
+				pError = m_pXMLDoc->validate();
+			}
+			//
+			//if(pError->errorCode != S_OK)
+			//{
+			//	parseError = _bstr_t("Error code: ")+ _bstr_t(pError->errorCode) +_bstr_t("\n") + _bstr_t("Reason: ")+ pError->Getreason();
+			//	MessageBox(NULL, (char*)parseError, "Parse Error",MB_OK);
+			//}
+			
+		}
+		catch(_com_error &e)
+		{
+			dump_com_error(e);
+		}
+		
+		return parseError;
+	}
+	
+	
+inline void IndentedPrint (int indent, char* format, ...)
+{
+    char m_Message[512];
+    va_list args;
+    va_start(args, format);
+    vsprintf_s(m_Message, format, args);
+    va_end(args);
+    printf ("%*s%s", indent, "\t", m_Message);
+}
+ 
+void DisplayAttribute (XmlNode node, int depth)
+{
+    IndentedPrint (depth, "type: %s name: %s value: %s \n",
+        NodeTypeString (node->nodeType),
+        (const char*) node->nodeName,
+        (const char*) (_bstr_t) node->nodeValue);
+}
+void DisplayNode (XmlNode node, int depth = 0);
+void DisplayNodes (XmlNodeList nodes, int depth)
+{
+    for (int i=0; i<nodes->length; i++)
+    {
+        DisplayNode (nodes->item[i], depth);
+    }
+}
+void DisplayNode (XmlNode node, int depth)
+{
+    IndentedPrint (depth, "type: %s name: %s",
+        NodeTypeString (node->nodeType),
+        (const char*) node->nodeName);
+ 
+    if (node->nodeType == MSXML2::NODE_TEXT)
+    {
+        IndentedPrint (0, "text: %s\n",
+            (const char*) (_bstr_t) node->nodeValue);
+    }
+    else
+    {
+        printf ("\n");
+ 
+        XmlNamedNodeMap attrMap = node->attributes;
+        if (attrMap)
+        {
+            for (int i=0; i<attrMap->length; i++)
+            {
+                DisplayAttribute (
+                    attrMap->item[i], depth);
+            }
+            IndentedPrint (depth, "\n");
+        }
+ 
+        XmlNodeList childNodes = node->childNodes;
+        if (childNodes)
+            DisplayNodes (childNodes, depth + 5);
+    }
+}
+void DisplayXPath (char* xmlFileName, char* xpath)
+{
+    XmlDocument xmlDoc (CLSID_DOMDocument60);
+ 
+    VARIANT_BOOL ok = xmlDoc->load(xmlFileName);
+    if (! ok)
+        throw Error ("Failed to load %s", xmlFileName);
+ 
+    printf ("Entire document\n");
+ 
+    DisplayNode (xmlDoc->documentElement, 5);
+ 
+    printf ("Nodes in %s\n", xpath);
+ 
+    XmlNodeList nodeList = xmlDoc->selectNodes(xpath);
+ 
+    DisplayNodes (nodeList, 5);
+}
+void main(int argc, char* argv[])
+{
+    ComInit com;
+    try
+    {
+        DisplayXPath ("books.xml", "//@*");
+    }
+    catch (Error e)
+    {
+        printf (e);
+    }
+    catch (_com_error e)
+    {
+        printf (e.ErrorMessage());
+    }
+    printf ("\nDone\n");
+    _getch ();
+}
+
+
+////////////////
+Stream Parse Date Time
+	std::stringstream Stream( s );
+	std::string AmPm;
+	char ThrowAway;
+	Stream >> Year >> ThrowAway >> Month >> ThrowAway >> Day >> ThrowAway ;
+	Stream >> Hour >> ThrowAway >> Minute >> ThrowAway >> Second >> ThrowAway >> Millisecond;
+
+
+
+
+// CAsyncAcceptor
+class CAsyncAcceptor
+{
+	socket_ptr m_pAcceptor;
+	boost::asio::io_service& _io_service;
+
+	void CAsyncAcceptor(boost::asio::io_service& io_service, short port) : _io_service(io_service)
+	{ 
+		m_pAcceptor = socket_ptr( new tcp::acceptor(io_service, tcp::endpoint(tcp::v4(), port)) );
+
+		StartAccept();
+	}
+
+	void StopAsync()
+	{
+		m_pAcceptor->cancel();
+	}
+
+	void StartAccept()
+	{
+		socket_ptr pSocket(new socket_ptr(_io_service));
+
+		m_pAcceptor->async_accept(*pSocket, bind(&CAsyncAcceptor::HandleAccept, this, pSocket));   
+	}
+
+	void HandleAccept(socket_ptr pSocket)
+	{
+		//HandleRequest(pSocket);
+
+		StartAccept();
+	}
+
+};////////////////////////////////////////////////////
+class Connection
+{
+public:
+    Connection(tcp::acceptor& acceptor)
+        : acceptor_(acceptor), socket_(acceptor.get_io_service(), tcp::v4())
+    {
+    }
+    void start()
+    {
+        acceptor_.get_io_service().post(boost::bind(&Connection::start_accept, this));
+    }
+private:
+    void start_accept()
+    {
+        acceptor_.async_accept(socket_,boost::bind(&Connection::handle_accept, this, 
+                placeholders::error));
+    }
+    void handle_accept(const boost::system::error_code& err)
+    {
+        if (err)
+        {
+                //Failed to accept the incoming connection.
+                disconnect();
+        }
+        else
+        {
+                count_ = 0;
+                async_read(socket_, buffer(&count_, sizeof(count_)),
+                        boost::bind(&Connection::handle_read_count,
+                        this, placeholders::error, placeholders::bytes_transferred));
+        }
+    }
+    void handle_read_count(const boost::system::error_code& err, std::size_t bytes_transferred)
+    {
+        if (err || (bytes_transferred != sizeof(count_))
+        {
+                //Failed to read the element count.
+                disconnect();
+        }
+        else
+        {
+                elements_.assign(count_, 0);
+                async_read(socket_, buffer(elements_), 
+                        boost::bind(&Connection::handle_read_elements, this,
+                        placeholders::error, placeholders::bytes_transferred));
+        }
+    }
+
+    void handle_read_elements(const boost::system::error_code& err, std::size_t bytes_transferred)
+    {
+        if (err || (bytes_transferred != count_ * sizeof(int)))
+        {
+                //Failed to read the request elements.
+                disconnect();
+        }
+        else
+        {
+                response_ = 1;
+                async_write(socket_, buffer(&response_, sizeof(response_)),
+                        boost::bind(&Connection::handle_write_response, this,
+                        placeholders::error, placeholders::bytes_transferred));
+        }
+    }
+    void handle_write_response(const boost::system::error_code& err, std::size_t bytes_transferred)
+    {
+        if (err)
+                disconnect();
+        else
+        {
+                //Start a fresh read 
+                count_ = 0;
+                async_read(socket_, buffer(&count_, sizeof(count_)),
+                        boost::bind(&Connection::handle_read_count,
+                        this, placeholders::error, placeholders::bytes_transferred));
+        }
+    }
+    void disconnect()
+    {
+        socket_.shutdown(tcp::socket::shutdown_both);
+        socket_.close();
+        socket_.open(tcp::v4());
+        start_accept();
+    }
+    tcp::acceptor& acceptor_;
+    tcp::socket socket_;
+    std::vector<int> elements_;
+    long count_;
+    long response_;
+};
+
+class Server : private boost::noncopyable
+{
+public:
+    Server(unsigned short port, unsigned short thread_pool_size, unsigned short conn_pool_size)
+        : acceptor_(io_service_, tcp::endpoint(tcp::v4(), port), true)
+    {
+        unsigned short i = 0;
+        for (i = 0; i < conn_pool_size; ++i)
+        {
+                ConnectionPtr conn(new Connection(acceptor_));
+                conn->start();
+                conn_pool_.push_back(conn);
+        }
+
+        // Start the pool of threads to run all of the io_services.
+        for (i = 0; i < thread_pool_size; ++i)
+        {
+                thread_pool_.create_thread(boost::bind(&io_service::run, &io_service_));
+        }
+    }   
+    ~Server()
+    {
+        io_service_.stop();
+        thread_pool_.join_all();
+    }
+
+private:
+    io_service io_service_;
+    tcp::acceptor acceptor_;
+    typedef boost::shared_ptr<Connection> ConnectionPtr;
+    std::vector<ConnectionPtr> conn_pool_;
+    boost::thread_group thread_pool_;
+};
+
+boost::function0<void> console_ctrl_function;
+
+BOOL WINAPI console_ctrl_handler(DWORD ctrl_type)
+{
+  switch (ctrl_type)
+  {
+  case CTRL_C_EVENT:
+  case CTRL_BREAK_EVENT:
+  case CTRL_CLOSE_EVENT:
+  case CTRL_SHUTDOWN_EVENT:
+    console_ctrl_function();
+    return TRUE;
+  default:
+    return FALSE;
+  }
+}
+
+void stop_server(Server* pServer)
+{
+    delete pServer;
+    pServer = NULL;
+}
+
+int main()
+{
+    Server *pServer = new Server(10255, 4, 20);
+    console_ctrl_function = boost::bind(stop_server, pServer);
+    SetConsoleCtrlHandler(console_ctrl_handler, TRUE);
+    while(true)
+    {
+        Sleep(10000);
+    }
+}

@@ -1,0 +1,868 @@
+CEchoService::initialize(int aArgc, const char *aArgv[])
+2/25/2013 4:47:23 PM: FATAL   [0] CEchoService::serviceThread()
+2/25/2013 4:47:28 PM: FATAL   [0] CHtmlTableSnapshots::Cycle()
+2/25/2013 4:47:28 PM: FATAL   [0] CHtmlTableSnapshots::Init()
+2/25/2013 4:47:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:29 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:29 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:29 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:31 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:31 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:31 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:32 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:32 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:32 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:32 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:32 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:33 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:33 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:33 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:33 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:33 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:34 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:34 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:34 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:34 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:34 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:35 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:35 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:35 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:35 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:35 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:36 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:36 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:36 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:36 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:36 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:37 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:37 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:37 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:37 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:37 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:39 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:39 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:39 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:39 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:39 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:40 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:40 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:40 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:40 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:40 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:41 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:41 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:41 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:41 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:41 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:42 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:42 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:42 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:42 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:42 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:43 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:43 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:43 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:43 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:43 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:44 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:44 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:44 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:44 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:44 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:45 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:45 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:45 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:45 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:45 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:46 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:46 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:46 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:46 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:46 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:48 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:48 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:48 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:48 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:48 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:49 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:49 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:49 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:49 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:49 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:50 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:50 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:50 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:50 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:50 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:51 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:51 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:51 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:51 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:51 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:52 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:52 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:52 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:52 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:52 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:53 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:53 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:53 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:53 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:53 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:54 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:54 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:54 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:54 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:54 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:56 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:56 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:56 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:56 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:56 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:57 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:57 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:57 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:57 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:57 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:58 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:58 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:58 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:58 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:58 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:59 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:47:59 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:47:59 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:47:59 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:47:59 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:00 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:00 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:00 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:00 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:00 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:01 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:01 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:01 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:01 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:01 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:02 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:02 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:02 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:02 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:02 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:03 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:03 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:03 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:03 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:03 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:05 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:05 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:05 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:05 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:05 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:06 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:06 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:06 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:06 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:06 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:07 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:07 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:07 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:07 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:07 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:08 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:08 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:08 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:08 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:08 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:09 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:09 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:09 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:09 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:09 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:10 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:10 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:10 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:10 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:10 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:11 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:11 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:11 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:11 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:11 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:12 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:12 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:12 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:12 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:12 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:14 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:14 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:14 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:14 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:14 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:15 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:15 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:15 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:15 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:15 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:16 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:16 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:16 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:16 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:16 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:17 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:17 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:17 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:17 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:17 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:18 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:18 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:18 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:18 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:18 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:19 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:19 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:19 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:19 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:19 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:20 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:20 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:20 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:20 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:20 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:21 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:21 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:21 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:21 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:21 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:23 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:23 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:23 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:23 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:23 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:24 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:24 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:24 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:24 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:24 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:25 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:25 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:25 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:25 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:25 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:26 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:26 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:26 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:26 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:26 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:27 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:27 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:27 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:27 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:27 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:28 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:28 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:28 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:28 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:28 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:29 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:29 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:29 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:31 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:31 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:31 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:32 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:32 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:32 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:32 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:32 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:33 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:33 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:33 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:33 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:33 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:34 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:34 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:34 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:34 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:34 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:35 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:35 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:35 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:35 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:35 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:37 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:37 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:37 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:37 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:37 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:38 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:38 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:38 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:38 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:38 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:39 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:39 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:39 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:39 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:39 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:40 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:40 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:40 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:40 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:40 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:41 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:41 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:41 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:41 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:41 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:42 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:42 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:42 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:42 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:42 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:43 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:43 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:43 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:43 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:43 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:45 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:45 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:45 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:45 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:45 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:46 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:46 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:46 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:46 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:46 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:47 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:47 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:47 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:47 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:47 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:48 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:48 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:48 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:48 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:48 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:49 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:49 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:49 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:49 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:49 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:51 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:51 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:51 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:51 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:51 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:52 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:52 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:52 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:52 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:52 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:53 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:53 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:53 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:53 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:53 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:54 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:54 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:54 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:54 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:54 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:55 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:55 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:55 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:55 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:55 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:56 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:56 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:56 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:56 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:56 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:57 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:57 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:57 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:57 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:57 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:58 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:48:58 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:48:58 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:48:58 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:48:58 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:00 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:00 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:00 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:00 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:00 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:01 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:01 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:01 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:01 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:01 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:02 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:02 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:02 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:02 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:02 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:03 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:03 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:03 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:03 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:03 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:04 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:04 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:04 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:04 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:04 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:05 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:05 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:05 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:05 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:05 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:06 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:06 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:06 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:06 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:06 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:07 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:07 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:07 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:07 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:07 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:09 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:09 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:09 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:09 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:09 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:10 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:10 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:10 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:10 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:10 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:11 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:11 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:11 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:11 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:11 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:12 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:12 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:12 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:12 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:12 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:13 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:13 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:13 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:13 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:13 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:14 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:14 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:14 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:14 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:14 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:15 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:15 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:15 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:15 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:15 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:16 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:16 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:16 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:16 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:16 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:18 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:18 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:18 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:18 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:18 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:19 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:19 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:19 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:19 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:19 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:20 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:20 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:20 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:20 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:20 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:21 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:21 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:21 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:21 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:21 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:22 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:22 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:22 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:22 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:22 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:23 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:23 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:23 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:23 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:23 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:24 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:24 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:25 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:25 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:25 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:26 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:26 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:26 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:26 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:26 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:27 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:27 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:27 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:27 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:27 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:28 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:28 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:28 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:28 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:28 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:29 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:29 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:29 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:29 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:30 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:30 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:30 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:30 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:30 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser Logged on: 1
+2/25/2013 4:49:31 PM: INFO    [3] GetWebBrowser TrayIcon Null
+2/25/2013 4:49:31 PM: FATAL   [0] FanucMTConnectAdapter::gatherDeviceData Exception Raised
+Fanuc Shdr trans_func - Code = 0xc0000005
+
+2/25/2013 4:49:31 PM: FATAL   [0] CHtmlTableSnapshots::Disconnect()
+2/25/2013 4:49:31 PM: INFO    [3] CHtmlTableSnapshots::GetWebBrowser()Fanuc Shdr trans_func - Code = 0xc0000005
+

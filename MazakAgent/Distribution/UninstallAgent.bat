@@ -1,0 +1,2 @@
+sc delete MazakAgent
+pause

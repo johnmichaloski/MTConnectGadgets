@@ -1,0 +1,100 @@
+<html>
+<head>
+<style type="text/css">
+
+body{
+margin: 0;
+padding: 0;
+border: 0;
+overflow: hidden;
+height: 100%; 
+max-height: 100%; 
+}
+
+#framecontentTop, #framecontentBottom{
+position: absolute; 
+top: 0; 
+left: 0; 
+width: 100%; 
+height: 130px; /*Height of top frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: navy;
+color: white;
+}
+
+#framecontentBottom{
+top: auto;
+bottom: 0; 
+height: 110px; /*Height of bottom frame div*/
+overflow: hidden; /*Disable scrollbars. Set to "scroll" to enable*/
+background-color: navy;
+color: white;
+}
+
+#maincontent{
+position: fixed; 
+top: 130px; /*Set top value to HeightOfTopFrameDiv*/
+left: 0;
+right: 0;
+bottom: 110px; /*Set bottom value to HeightOfBottomFrameDiv*/
+overflow: auto; 
+background: #fff;
+}
+
+.innertube{
+margin: 15px; /*Margins for inner DIV inside each DIV (to provide padding)*/
+}
+
+* html body{ /*IE6 hack*/
+padding: 130px 0 110px 0; /*Set value to (HeightOfTopFrameDiv 0 HeightOfBottomFrameDiv 0)*/
+}
+
+* html #maincontent{ /*IE6 hack*/
+height: 100%; 
+width: 100%; 
+}
+
+</style>
+
+<script type="text/javascript">
+/*** Temporary text filler function. Remove when deploying template. ***/
+var gibberish=["This is just some filler text", "Welcome to Dynamic Drive CSS Library", "Demo content nothing to read here"]
+function filltext(words){
+for (var i=0; i<words; i++)
+document.write(gibberish[Math.floor(Math.random()*3)]+" ")
+}
+</script>
+
+</head>
+
+<body>
+
+<div id="framecontentTop">
+<div class="innertube">
+
+<h1>CSS Top and Bottom Frames Layout</h1>
+<h3>Sample text here</h3>
+
+</div>
+</div>
+
+<div id="framecontentBottom">
+<div class="innertube">
+
+<h3>Sample text here</h3>
+
+</div>
+</div>
+
+
+<div id="maincontent">
+<div class="innertube">
+
+<h1>Dynamic Drive CSS Library</h1>
+<p><script type="text/javascript">filltext(255)</script></p>
+<p style="text-align: center">Credits: <a href="http://www.dynamicdrive.com/style/">Dynamic Drive CSS Library</a></p>
+
+</div>
+</div>
+</body>
+</html>

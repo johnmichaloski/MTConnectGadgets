@@ -1,0 +1,31 @@
+		<Device id="####M1" uuid="####xxx" name="NNNNNN">
+			<Description>GenericCommandDevice</Description>
+			<DataItems>
+	<DataItem type="ASSET_CHANGED" id="####JOB_1234" category="EVENT" name="JOB_1234"/>
+			<DataItem id="####avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+				<Controller id="####cont" name="controller">
+					<DataItems>
+
+						<DataItem type="CLOCK_TIME" id="####estimatedCompletion" category="SAMPLE" name="estimatedCompletion"/>						
+						<DataItem type="ASSET_CHANGED" id="####asset_partprogram" category="EVENT" name="asset_partprogram"/>						
+						<DataItem type="ASSET_CHANGED" id="####asset_tool" category="EVENT" name="asset_tool"/>						
+						<DataItem type="LINE" id="####heartbeat1" category="EVENT" name="heartbeat" />
+						<DataItem type="PROGRAM" id="####pgm" category="EVENT" name="program"/>
+						<DataItem type="TOOL_ID" id="####tid" category="EVENT" name="tools"/>
+						<DataItem type="PART_ID" id="####pid" category="EVENT" name="partid"/>
+						<DataItem type="PART_ID" id="####lid1" category="EVENT" name="lotid"/>
+						<DataItem type="PART_ID" id="####lid2" category="EVENT" name="sequence"/>
+						<DataItem type="PART_ID" id="####lid3" category="EVENT" name="operations"/>
+						<DataItem type="PART_ID" id="####lid4" category="EVENT" name="currentoperation"/>
+						<DataItem type="PART_ID" id="####lid5" category="EVENT" name="cells"/>
+						<DataItem type="PART_ID" id="####lid6" category="EVENT" name="job"/>
+						<DataItem type="CONTROLLER_MODE" id="####command" category="EVENT" name="command"/>
+						<DataItem type="CONTROLLER_MODE" id="####commandnum" category="EVENT" name="cmdnum"/>
+						<DataItem type="MESSAGE" category="EVENT" id="####opcmt" name="operator_cmt" />
+						<DataItem type="PART_COUNT" id="####pc" category="EVENT" name="partcount" />
+					</DataItems>
+				</Controller>
+			</Components>
+		</Device>

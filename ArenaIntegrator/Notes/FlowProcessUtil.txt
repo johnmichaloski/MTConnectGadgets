@@ -1,0 +1,71 @@
+Module: Flow            
+
+   Operands Contained in Dialog 'Flow':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Type                               Type                              
+   Source Regulator ID                Source Regulator ID               
+   Destination Regulator ID           Destination Regulator ID          
+   Quantity                           Quantity                          
+   Time                               Time                              
+   Signal Code                        Signal Code                       
+   Priority                           Priority                          
+   Allocation                         Allocation                        
+   Quantity Save Attribute            Quantity Save Attribute           
+   Storage ID                         Storage ID                        
+   Label                              Label                             
+   Mark Attribute                     Mark Attribute                    
+   NextLabel                          NextLabel                         
+   comments                                                             
+
+Module: Sensors         
+
+   Operands Contained in Dialog 'Sensors Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Sensors':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Name                               Name                              
+   Tank Name                          Tank Name                         
+   Location Type                      Location Type                     
+   Location                           Location                          
+   Crossing Direction                 Crossing Direction                
+   Block Label                        Block Label                       
+   Initial State                      Initial State                     
+
+Module: Tanks           
+
+   Operands Contained in Dialog 'Tanks Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Tanks':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Name                               Name                              
+   Capacity                           Capacity                          
+   Initial Level                      Initial Level                     
+   Report Statistics                  Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+
+   Operands Contained in Repeat Group 'Regulators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Regulator Name                     Regulator Name                    
+   Maximum Rate                       Maximum Rate                      
+   Time Units                         Time Units                        
+

@@ -1,0 +1,730 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "atlres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Neutral resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_NEU)
+#ifdef _WIN32
+LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+30600 DIALOGEX 0, 0, 242, 163
+STYLE DS_SETFONT | DS_CONTROL | WS_CHILD | WS_CAPTION
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "Formula",30600,4,4,33,11
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,34,8,204,1
+    LTEXT           "",30601,10,16,188,8
+    CONTROL         "",30602,"RichEdit20W",WS_VSCROLL | WS_TABSTOP | 0x804,9,26,221,22,WS_EX_CLIENTEDGE
+    LTEXT           "&Cell value:",30603,10,52,34,12
+    CONTROL         "",30604,"RichEdit20W",WS_VSCROLL | WS_HSCROLL | WS_TABSTOP | 0x804,70,51,161,12,WS_EX_CLIENTEDGE
+    LTEXT           "Names",30605,4,66,50,10
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,30,70,208,1
+    LTEXT           "&Name:",30606,10,80,47,8
+    CONTROL         "",30607,"RichEdit20W",WS_TABSTOP | 0x80,70,78,100,12,WS_EX_CLIENTEDGE
+    LTEXT           "Refers &to:",30608,10,94,45,8
+    CONTROL         "",30609,"RichEdit20W",WS_TABSTOP | 0x80,70,92,100,12,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Define",30613,176,78,54,12
+    LTEXT           "&All names:",30611,10,106,89,8
+    CONTROL         "",30612,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_SHOWSELALWAYS | LVS_NOCOLUMNHEADER | WS_BORDER | WS_TABSTOP,9,116,161,43,WS_EX_CLIENTEDGE
+    PUSHBUTTON      "&Remove",30610,176,116,54,12
+END
+
+#endif    // Neutral resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG  0, 0, 187, 102
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,130,81,50,14
+    CTEXT           "CMSDBuilder Application v1.0\n\n(c) Copyright 2012",IDC_STATIC,25,57,78,32
+    ICON            IDR_MAINFRAME,IDC_STATIC,55,26,18,20
+    GROUPBOX        "",IDC_STATIC,7,7,115,88
+END
+
+IDD_LISTSEL DIALOGEX 0, 0, 227, 217
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Property List"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "Properties",IDC_RULES,7,4,213,10
+    PUSHBUTTON      "&Add",IDC_ADD,170,18,50,14
+    PUSHBUTTON      "&Delete",IDC_DELETE,170,34,50,14
+    PUSHBUTTON      "Edit",IDC_EDITBUTTON,170,57,50,14
+    GROUPBOX        "Propertiy Definition",4512,7,92,213,78
+    LTEXT           "&Name:",4513,13,106,22,8
+    LTEXT           "Value:",4514,13,121,22,8
+    DEFPUSHBUTTON   "OK",IDOK,115,189,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,169,189,50,14
+    LISTBOX         IDC_LIST1,8,15,155,74,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_NAMEEDIT,69,105,141,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VALUEEDIT,69,120,141,13,ES_AUTOHSCROLL
+    LTEXT           "Units:",4515,13,137,22,8
+    EDITTEXT        IDC_UNITSEDIT,69,136,141,13,ES_AUTOHSCROLL
+    LTEXT           "Description:",4516,13,152,47,8
+    EDITTEXT        IDC_DESCREDIT,69,151,141,13,ES_AUTOHSCROLL
+END
+
+IDD_ADDRESS DIALOGEX 0, 0, 281, 145
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Check Address"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    GROUPBOX        "Address details",4512,7,4,209,110
+    LTEXT           "&Street:",4513,14,16,22,8
+    CONTROL         "",4096,"RichEdit20WPT",WS_VSCROLL | WS_TABSTOP | 0xd0c4,71,16,138,29
+    LTEXT           "&City:",4514,14,50,14,8
+    CONTROL         "",4097,"RichEdit20WPT",WS_TABSTOP | 0xc080,71,48,138,12
+    LTEXT           "S&tate/Province:",4515,14,66,54,8
+    CONTROL         "",4098,"RichEdit20WPT",WS_TABSTOP | 0xc080,71,64,138,12
+    LTEXT           "&ZIP/Postal code:",4516,14,82,54,8
+    CONTROL         "",4099,"RichEdit20WPT",WS_TABSTOP | 0xc080,71,80,138,12
+    LTEXT           "C&ountry/Region:",4517,14,98,54,8
+    CONTROL         "",4100,"REComboBox20W",WS_BORDER | WS_VSCROLL | WS_TABSTOP | 0x142,71,96,138,34
+    CONTROL         "S&how this again when address is incomplete or unclear",4224,
+                    "Button",BS_AUTOCHECKBOX | BS_TOP | BS_MULTILINE | WS_TABSTOP,7,121,205,10
+    DEFPUSHBUTTON   "OK",1,222,8,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",2,222,26,50,14,WS_GROUP
+    LTEXT           "DAL=on",1026,6,22,8,8
+END
+
+5001 DIALOG  0, 0, 243, 111
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Logon"
+FONT 8, "MS Shell Dlg"
+BEGIN
+    LTEXT           "Username:",4512,14,20,33,8
+    LTEXT           "Password:",4513,14,42,34,8
+    LTEXT           "Domain:",4514,14,64,27,8
+    EDITTEXT        4096,57,18,172,14,ES_AUTOHSCROLL
+    EDITTEXT        4097,57,39,172,14,ES_PASSWORD | ES_AUTOHSCROLL
+    EDITTEXT        4098,57,60,172,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",1,131,90,50,14
+    PUSHBUTTON      "Cancel",2,186,90,50,14
+    GROUPBOX        "Information",4515,7,7,229,75
+    LTEXT           "DAL=on",1026,0,0,0,0
+END
+
+IDD_PROPERTY DIALOGEX 0, 0, 160, 65
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Properties"
+FONT 8, "Tahoma", 0, 0, 0x1
+BEGIN
+    LTEXT           "Name:",4512,7,9,24,8
+    CONTROL         "",4096,"RichEdit20WPT",WS_TABSTOP | 0x4080,33,7,120,12
+    LTEXT           "Value:",4513,7,25,20,8
+    CONTROL         "",4097,"RichEdit20WPT",WS_DISABLED | WS_TABSTOP | 0x4880,33,23,120,12
+    CONTROL         "",4514,"Static",SS_ETCHEDHORZ,7,39,146,1
+    DEFPUSHBUTTON   "OK",1,26,45,50,14
+    PUSHBUTTON      "Cancel",2,83,45,50,14
+    CONTROL         "",4873,"NativeFontCtl",0x30,-6,0,6,6
+END
+
+IDD_PROJPROPERTIES DIALOG  0, 0, 246, 222
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Project Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Project &Title:",11426,10,5,79,8,NOT WS_GROUP
+    EDITTEXT        14368,10,14,226,12,ES_AUTOHSCROLL
+    LTEXT           "Analyst &Name:",14367,10,29,79,8,NOT WS_GROUP
+    EDITTEXT        11428,10,38,226,12,ES_AUTOHSCROLL
+    LTEXT           "Project &Description:",-1,10,53,79,8
+    EDITTEXT        14365,10,62,226,44,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_WANTRETURN
+    GROUPBOX        "Statistics Collection",14369,10,112,226,73
+    CONTROL         "&Costing",14370,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,124,39,10
+    CONTROL         "&Queues",11415,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,124,41,10
+    CONTROL         "Transp&orters",11420,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,124,55,10
+    CONTROL         "&Entities",11418,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,139,39,10
+    CONTROL         "&Processes",11422,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,139,49,10
+    CONTROL         "Con&veyors",11425,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,139,49,10
+    CONTROL         "&Resources",11430,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,154,50,10
+    CONTROL         "&Stations",11441,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,95,154,49,10
+    CONTROL         "&Activity Areas",11442,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,160,154,55,10
+    CONTROL         "Tan&ks",14385,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,25,170,36,10
+    LTEXT           "These settings are defaults for new documents.  They do not affect the current document.",10263,10,199,152,19
+END
+
+IDD_BREAKPOINT DIALOGEX 0, 0, 205, 142
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Break"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    LTEXT           "&Breakpoints:",-1,6,5,55,8
+    LISTBOX         14324,6,18,135,115,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_HSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add...",14325,147,59,50,14
+    PUSHBUTTON      "&Edit...",14326,147,77,50,14
+    PUSHBUTTON      "&Delete",14327,147,95,50,14
+    DEFPUSHBUTTON   "OK",1,147,17,50,14
+    PUSHBUTTON      "Cancel",2,147,35,50,14
+    PUSHBUTTON      "&Help",57670,147,119,50,14
+END
+
+IDD_REPLICATION DIALOG  0, 0, 246, 204
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_DISABLED | WS_CAPTION
+CAPTION "Replication Parameters"
+FONT 8, "MS Sans Serif"
+BEGIN
+    LTEXT           "Number of Replications:",14373,10,10,79,8,NOT WS_GROUP
+    EDITTEXT        14374,10,20,95,12,ES_AUTOHSCROLL
+    GROUPBOX        "Initialize Between Replications",14371,119,5,112,33
+    CONTROL         "Statistics",14372,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,125,20,44,10
+    CONTROL         "System",11416,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,185,20,39,10
+    LTEXT           "Start Date and Time:",-1,10,41,91,10
+    CONTROL         "DateTimePicker1",14376,"SysDateTimePick32",DTS_RIGHTALIGN | DTS_SHOWNONE | DTS_LONGDATEFORMAT | WS_TABSTOP,10,52,221,12
+    LTEXT           "Warm-up Period:",11433,10,68,79,8,NOT WS_GROUP
+    EDITTEXT        11429,10,79,95,12,ES_AUTOHSCROLL
+    LTEXT           "Time Units:",11437,120,68,79,8,NOT WS_GROUP
+    COMBOBOX        14375,120,79,111,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Replication Length:",11434,10,94,79,8,NOT WS_GROUP
+    EDITTEXT        11431,10,104,95,12,ES_AUTOHSCROLL
+    LTEXT           "Time Units:",11436,120,94,79,8,NOT WS_GROUP
+    COMBOBOX        11423,120,104,111,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Hours Per Day:",11435,10,121,79,8,NOT WS_GROUP
+    EDITTEXT        11432,10,130,95,12,ES_AUTOHSCROLL
+    LTEXT           "Base Time Units:",11438,120,121,79,8,NOT WS_GROUP
+    COMBOBOX        11427,120,130,111,70,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Terminating Condition:",11439,10,145,79,8,NOT WS_GROUP
+    EDITTEXT        11440,10,155,221,12,ES_AUTOHSCROLL
+    LTEXT           "These settings are defaults for new documents.  They do not affect the current document.",10263,9,179,152,19
+END
+
+7001 DIALOGEX 50, 50, 217, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_CONTEXTHELP
+CAPTION "Generate"
+FONT 8, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    CONTROL         "&Beta",7011,"Button",BS_AUTORADIOBUTTON | WS_GROUP,10,24,61,10
+    CONTROL         "&Erlang",7012,"Button",BS_AUTORADIOBUTTON,10,36,61,10
+    CONTROL         "E&xponential",7013,"Button",BS_AUTORADIOBUTTON,10,48,61,10
+    CONTROL         "&Gamma",7014,"Button",BS_AUTORADIOBUTTON,10,60,61,10
+    CONTROL         "&Johnson",7015,"Button",BS_AUTORADIOBUTTON,10,72,61,10
+    CONTROL         "&Lognormal",7016,"Button",BS_AUTORADIOBUTTON,10,84,61,10
+    CONTROL         "&Normal",7017,"Button",BS_AUTORADIOBUTTON,10,96,61,10
+    CONTROL         "&Poisson",7018,"Button",BS_AUTORADIOBUTTON,10,108,61,10
+    CONTROL         "&Triangular",7019,"Button",BS_AUTORADIOBUTTON,10,120,61,10
+    CONTROL         "&Uniform",7020,"Button",BS_AUTORADIOBUTTON,10,132,61,10
+    CONTROL         "&Weibull",7021,"Button",BS_AUTORADIOBUTTON,10,144,61,10
+    LTEXT           "Alpha&1:",7004,88,26,35,10
+    EDITTEXT        7005,127,23,79,13,ES_AUTOHSCROLL
+    LTEXT           "Alpha&2:",7022,88,42,35,10
+    EDITTEXT        7006,127,39,79,13,ES_AUTOHSCROLL
+    LTEXT           "M&in:",7023,88,58,35,10
+    EDITTEXT        7007,127,55,79,13,ES_AUTOHSCROLL
+    LTEXT           "M&ax:",7024,88,74,35,10
+    EDITTEXT        7008,127,71,79,13,ES_AUTOHSCROLL
+    LTEXT           "Number of &Data Points:",7025,85,110,84,10
+    EDITTEXT        7009,174,107,30,13,ES_AUTOHSCROLL
+    LTEXT           "&File Name:",7026,85,131,36,11
+    EDITTEXT        7010,85,142,119,13,ES_AUTOHSCROLL
+    PUSHBUTTON      "&Browse...",7002,168,126,36,14
+    DEFPUSHBUTTON   "OK",1,17,170,50,14
+    PUSHBUTTON      "Cancel",2,83,170,50,14
+    CONTROL         " &Allow Negative Values",7029,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,104,73,86,10
+    PUSHBUTTON      "&Help",57670,149,170,50,14
+    GROUPBOX        "Distribution",7027,5,9,70,153
+    GROUPBOX        "Parameters",-1,80,9,130,81
+    GROUPBOX        "",-1,80,97,130,65
+END
+
+IDD_SELECTIONLIST DIALOGEX 0, 0, 273, 190
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Selections"
+FONT 8, "Tahoma", 400, 0, 0x0
+BEGIN
+    LTEXT           "Items",-1,7,6,79,8
+    LISTBOX         IDC_LISTALL,7,17,102,131,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Add &>>",IDC_ADDBUTTON,113,16,50,14
+    PUSHBUTTON      "<&< Remove",IDC_REMOVEBUTTON,113,33,50,14
+    LTEXT           "Selected Items",-1,168,4,62,9
+    LISTBOX         IDC_SELECTEDLIST,167,15,102,131,LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Up",IDC_UPBUTTON,166,150,50,14
+    PUSHBUTTON      "&Down",IDC_DOWNBUTTON,219,150,50,14
+    DEFPUSHBUTTON   "OK",1,86,171,50,14
+    PUSHBUTTON      "Cancel",2,140,171,50,14
+    PUSHBUTTON      "SelectAll",IDC_SELECTALLBUTTON,113,51,50,14
+    PUSHBUTTON      "UnSelectAll",IDC_UNSELECTALLBUTTON,113,69,50,14
+END
+
+IDD_FORMVIEW1 DIALOGEX 0, 0, 213, 129
+STYLE DS_SETFONT | WS_CHILD | WS_VISIBLE | WS_VSCROLL | WS_HSCROLL
+EXSTYLE WS_EX_CONTROLPARENT
+FONT 8, "Arial", 400, 0, 0x0
+BEGIN
+END
+
+IDD_FORMVIEW DIALOGEX 0, 0, 451, 214
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_NOFAILCREATE | WS_CHILD | WS_VISIBLE | WS_BORDER
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CONTROL         "ListCtrl",IDC_LISTCTRL,"ListCtrl",WS_TABSTOP,7,7,437,200
+END
+
+IDD_MODULEDIALOG DIALOGEX 0, 0, 76, 27
+STYLE DS_SETFONT | DS_FIXEDSYS | DS_CONTROL | WS_CHILD | WS_VISIBLE | WS_DISABLED
+FONT 8, "MS Shell Dlg", 400, 0, 0x0
+BEGIN
+    CTEXT           "Name",IDC_MODULENAME,7,7,61,13
+END
+
+4015 DIALOG  0, 0, 248, 204
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "User Defined Types"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "&User defined types:",-1,7,7,67,8
+    LISTBOX         4085,7,17,176,53,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "&Add...",4080,191,17,50,14,WS_GROUP
+    PUSHBUTTON      "&Remove",4079,191,34,50,14
+    PUSHBUTTON      "Re&name...",4076,191,51,50,14
+    LTEXT           "Definition",-1,7,77,31,8
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ,44,81,198,1
+    LTEXT           "&Category:",4075,18,91,31,8
+    COMBOBOX        4086,59,89,98,65,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Type:",4074,18,108,31,8
+    COMBOBOX        4089,59,106,98,67,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Si&ze:",4073,18,125,31,8
+    COMBOBOX        4092,59,123,98,38,CBS_DROPDOWNLIST | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "&Precision:",4088,165,91,34,8
+    EDITTEXT        4091,201,89,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Scale:",4087,165,108,22,8
+    EDITTEXT        4090,201,106,32,12,ES_AUTOHSCROLL
+    LTEXT           "&Description:",-1,18,141,38,8
+    EDITTEXT        4078,59,139,180,31,ES_MULTILINE | ES_AUTOVSCROLL | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",-1,"Static",SS_ETCHEDHORZ | WS_GROUP,6,176,236,1
+    CONTROL         "Help",9,"Button",BS_OWNERDRAW | WS_GROUP | WS_TABSTOP,6,183,17,14
+    DEFPUSHBUTTON   "OK",1,137,183,50,14,WS_GROUP
+    PUSHBUTTON      "Cancel",2,191,183,50,14
+END
+
+6007 DIALOG  0, 0, 179, 174
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+CAPTION "Add Style"
+FONT 8, "Tahoma"
+BEGIN
+    LTEXT           "&Name:",-1,5,6,27,9
+    EDITTEXT        6006,5,18,115,14,ES_AUTOHSCROLL
+    CONTROL         "&Copy from:",6007,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,5,41,50,10
+    COMBOBOX        6005,5,54,115,60,CBS_DROPDOWNLIST | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LISTBOX         6004,5,73,115,92,LBS_SORT | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "OK",1,132,6,41,14
+    PUSHBUTTON      "Cancel",2,132,23,41,14
+    PUSHBUTTON      "&Help",57670,132,40,41,14
+END
+
+IDD_RELDISP_ZOOM DIALOG  0, 0, 246, 46
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Zoom"
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Slider1",8310,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,2,7,173,12
+    EDITTEXT        8309,6,22,26,12,ES_AUTOHSCROLL
+    LTEXT           "%",-1,35,25,8,8
+    DEFPUSHBUTTON   "OK",1,189,7,50,14
+    PUSHBUTTON      "Cancel",2,189,24,50,14
+END
+
+8663 DIALOG  0, 0, 235, 51
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Save changes"
+FONT 8, "MS Sans Serif"
+BEGIN
+    DEFPUSHBUTTON   "&Yes",1,7,30,50,14
+    PUSHBUTTON      "Yes to &all",8664,64,30,50,14
+    PUSHBUTTON      "&No",8665,121,30,50,14
+    PUSHBUTTON      "&Cancel",2,178,30,50,14
+    LTEXT           "text",8666,7,10,221,17
+END
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""atlres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR  16, 15
+BEGIN
+    BUTTON      ID_FILE_NEW
+    BUTTON      ID_FILE_OPEN
+    BUTTON      ID_FILE_SAVE
+    SEPARATOR
+    BUTTON      ID_EDIT_CUT
+    BUTTON      ID_EDIT_COPY
+    BUTTON      ID_EDIT_PASTE
+    BUTTON      ID_EDIT_UNDO
+    BUTTON      ID_EDIT_REDO
+    SEPARATOR
+    BUTTON      ID_FILE_PRINT
+    BUTTON      ID_APP_ABOUT
+    BUTTON      ID_ZOOM_IN
+    BUTTON      ID_ZOOM_OUT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP                  "C:\\Program Files\\NIST\\proj\\MTConnect\\Nist\\MTConnectGadgets\\CMSDBuilder\\res\\toolbar.bmp"
+IDB_TREEBITMAP          BITMAP                  "res\\classview_hc.bmp"
+IDB_LISTITEMS           BITMAP                  "res\\ListItems.bmp"
+IDB_BITMAP1             BITMAP                  "res\\Add.bmp"
+IDB_BITMAP2             BITMAP                  "res\\CopyHS.bmp"
+IDB_BITMAP3             BITMAP                  "res\\extra\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&New\tCtrl+N",                ID_FILE_NEW
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM SEPARATOR
+        MENUITEM "&Print...\tCtrl+P",           ID_FILE_PRINT
+        MENUITEM "Print Pre&view",              ID_FILE_PRINT_PREVIEW
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Run Arena Build",             ID_FILE_RUN
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Edit"
+    BEGIN
+        MENUITEM "&Undo\tCtrl+Z",               ID_EDIT_UNDO
+        MENUITEM "Redo\tCtrl+Y",                ID_EDIT_REDO
+        MENUITEM SEPARATOR
+        MENUITEM "Cu&t\tCtrl+X",                ID_EDIT_CUT
+        MENUITEM "&Copy\tCtrl+C",               ID_EDIT_COPY
+        MENUITEM "&Paste\tCtrl+V",              ID_EDIT_PASTE
+        MENUITEM SEPARATOR
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "CreateResourcesFromLayout",   ID_TOOLS_CREATERESOURCESFROM
+        MENUITEM "GoMotion",                    ID_FILE_GOMOTION
+        MENUITEM "KillShdrAdapters",            ID_TOOLS_KILLSHDRADAPTERS
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Toolbar",                    ID_VIEW_TOOLBAR
+        MENUITEM "&Status Bar",                 ID_VIEW_STATUS_BAR
+        MENUITEM "Tree &Pane",                  ID_VIEW_TREEPANE
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About CMSDBuilder...",       ID_APP_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\CMSDBuilder.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 95
+    END
+
+    IDD_LISTSEL, DIALOG
+    BEGIN
+        BOTTOMMARGIN, 189
+    END
+
+    IDD_ADDRESS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 279
+        BOTTOMMARGIN, 138
+    END
+
+    IDD_FORMVIEW1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 112
+    END
+
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 444
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 207
+    END
+
+    IDD_MODULEDIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 68
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 20
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "Y",            ID_EDIT_REDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x2L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904B0"
+        BEGIN
+            VALUE "FileDescription", "CMSDBuilder Module"
+            VALUE "FileVersion", "1, 0, 0, 1"
+            VALUE "InternalName", "CMSDBuilder"
+            VALUE "LegalCopyright", "Copyright 2012"
+            VALUE "OriginalFilename", "CMSDBuilder.exe"
+            VALUE "ProductName", "CMSDBuilder Module"
+            VALUE "ProductVersion", "1, 0, 0, 1"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_DIVIDER             CURSOR                  "res\\divider.cur"
+IDC_HYPERLINK           CURSOR                  "res\\hand.cur"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDR_MAINFRAME           "CMSDBuilder"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document\nNew"
+    ID_FILE_OPEN            "Open an existing document\nOpen"
+    ID_FILE_CLOSE           "Close the active document\nClose"
+    ID_FILE_SAVE            "Save the active document\nSave"
+    ID_FILE_SAVE_AS         "Save the active document with a new name\nSave As"
+    ID_FILE_PAGE_SETUP      "Change the printing options\nPage Setup"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options\nPrint Setup"
+    ID_FILE_PRINT           "Print the active document\nPrint"
+    ID_FILE_PRINT_PREVIEW   "Display full pages\nPrint Preview"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright\nAbout"
+    ID_APP_EXIT             "Quit the application; prompts to save documents\nExit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_NEXT_PANE            "Switch to the next window pane\nNext Pane"
+    ID_PREV_PANE            "Switch back to the previous window pane\nPrevious Pane"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_WINDOW_NEW           "Open another window for the active document\nNew Window"
+    ID_WINDOW_ARRANGE       "Arrange icons at the bottom of the window\nArrange Icons"
+    ID_WINDOW_CASCADE       "Arrange windows so they overlap\nCascade Windows"
+    ID_WINDOW_TILE_HORZ     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_TILE_VERT     "Arrange windows as non-overlapping tiles\nTile Windows"
+    ID_WINDOW_SPLIT         "Split the active window into panes\nSplit"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_CLEAR           "Erase the selection\nErase"
+    ID_EDIT_CLEAR_ALL       "Erase everything\nErase All"
+    ID_EDIT_COPY            "Copy the selection and put it on the Clipboard\nCopy"
+    ID_EDIT_CUT             "Cut the selection and put it on the Clipboard\nCut"
+    ID_EDIT_FIND            "Find the specified text\nFind"
+    ID_EDIT_PASTE           "Insert Clipboard contents\nPaste"
+    ID_EDIT_REPEAT          "Repeat the last action\nRepeat"
+    ID_EDIT_REPLACE         "Replace specific text with different text\nReplace"
+    ID_EDIT_SELECT_ALL      "Select the entire document\nSelect All"
+    ID_EDIT_UNDO            "Undo the last action\nUndo"
+    ID_EDIT_REDO            "Redo the previously undone action\nRedo"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar\nToggle ToolBar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar\nToggle StatusBar"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCSIZE          "Change the window size"
+    ATL_IDS_SCMOVE          "Change the window position"
+    ATL_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    ATL_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    ATL_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    ATL_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    ATL_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_SCRESTORE       "Restore the window to normal size"
+    ATL_IDS_SCTASKLIST      "Activate Task List"
+    ATL_IDS_MDICHILD        "Activate this window"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_IDLEMESSAGE     "Ready"
+END
+
+STRINGTABLE 
+BEGIN
+    ATL_IDS_MRU_FILE        "Open this document"
+END
+
+STRINGTABLE 
+BEGIN
+    ID_EDIT_UNDDO           "Undo the previously undone action\nUndo"
+END
+
+STRINGTABLE 
+BEGIN
+    IDD_FORMVIEW1           "NIST Shops"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+

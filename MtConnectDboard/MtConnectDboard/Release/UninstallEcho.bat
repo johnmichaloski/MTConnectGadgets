@@ -1,0 +1,2 @@
+MtConnectDboard.exe remove
+pause

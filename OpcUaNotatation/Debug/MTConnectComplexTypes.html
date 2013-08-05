@@ -1,0 +1,553 @@
+<html>
+<STYLE>P
+{
+	FONT-FAMILY: Myriad, sans-serif;
+	LINE-HEIGHT: 12pt;
+	MARGIN-BOTTOM: 0px;
+	MARGIN-LEFT: 10px;
+	MARGIN-TOP: 10px
+}
+H1
+{
+	BACKGROUND-COLOR: #003366;
+	BORDER-BOTTOM: #336699 6px solid;
+	COLOR: #ffffff;
+	FONT-SIZE: 130%;
+	FONT-WEIGHT: normal;
+	MARGIN: 0em 0em 0em -20px;
+	PADDING-BOTTOM: 8px;
+	PADDING-LEFT: 30px;
+	PADDING-TOP: 16px
+}
+table.gridtable {
+ 	BACKGROUND-COLOR: #f0f0e0;
+	BORDER-BOTTOM: #ffffff 0px solid;
+	BORDER-COLLAPSE: collapse;
+	BORDER-LEFT: #ffffff 0px solid;
+	BORDER-RIGHT: #ffffff 0px solid;
+	BORDER-TOP: #ffffff 0px solid;
+	FONT-SIZE: 9pt;
+	MARGIN-LEFT: 10px
+  }
+table.gridtable td {
+	BACKGROUND-COLOR: #e7e7ce;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	PADDING-LEFT: 3px
+  }
+table.gridtable th {
+	BACKGROUND-COLOR: #cecf9c;
+	BORDER-BOTTOM: #ffffff 1px solid;
+	BORDER-LEFT: #ffffff 1px solid;
+	BORDER-RIGHT: #ffffff 1px solid;
+	BORDER-TOP: #ffffff 1px solid;
+	COLOR: #000000;
+	FONT-WEIGHT: bold
+  }
+table.histogram {
+ 	BACKGROUND-COLOR: #f0f0e0;
+	border-width: 0px;
+	BORDER-COLLAPSE: collapse;
+	padding: 0px;
+	FONT-SIZE: 9pt;
+	MARGIN-LEFT: 0px
+  }
+table.histogram td {
+	BORDER-BOTTOM: #ffffff 0px solid;
+	BORDER-LEFT: #ffffff 0px solid;
+	BORDER-RIGHT: #ffffff 0px solid;
+	BORDER-TOP: #ffffff 0px solid;
+	PADDING: 0px
+	margin: 0px
+  }
+</STYLE><body>
+<p> 1.1 ActuatorType</p>
+<p>A component that causes motion</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ActuatorType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.2 AssetCountType</p>
+<p>The count of assets for a certain type</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>AssetCountType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>assetType</td><td align='left' style='width:100px'>AssetAttrType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr></table>
+<BR>
+<p> 1.3 AssetCountsType</p>
+<p>The number of assets by type</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>AssetCountsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>AssetCount</td><td align='left' style='width:100px'>AssetCountType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory(1..unbounded)</tr></table>
+<BR>
+<p> 1.4 AxesType</p>
+<p>A logical group of Axes representing a structural base</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>AxesType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.5 AxisType</p>
+<p>A abstract machine axis</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>AxisType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.6 ChannelType</p>
+<p>The calibration channel</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ChannelType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>number</td><td align='left' style='width:100px'>ChannelNumberType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>name</td><td align='left' style='width:100px'>NameType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Description</td><td align='left' style='width:100px'>DescriptionTextType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>CalibrationDate</td><td align='left' style='width:100px'>CalibrationDateType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>NextCalibrationDate</td><td align='left' style='width:100px'>NextCalibrationDateType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>CalibrationInitials</td><td align='left' style='width:100px'>CalibrationInitialsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr></table>
+<BR>
+<p> 1.7 ChannelsType</p>
+<p>A collection of channel calibration data</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ChannelsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Channel</td><td align='left' style='width:100px'>ChannelType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory(1..unbounded)</tr></table>
+<BR>
+<p> 1.8 CommonComponentType</p>
+<p>An abstract component that has an optional uuid</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>CommonComponentType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the ComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>uuid</td><td align='left' style='width:100px'>UuidType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr></table>
+<BR>
+<p> 1.9 ComponentConfigurationType</p>
+<p>The configuration data associated with this component. For example,
+        sensors may use 1451.5 or TEDS</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ComponentConfigurationType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'></td><td align='left' style='width:100px'></td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr></table>
+<BR>
+<p> 1.10 ComponentDescriptionType</p>
+<p>The descriptive information for this component. This can be manufacturer
+        specific</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ComponentDescriptionType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>manufacturer</td><td align='left' style='width:100px'>NameType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>model</td><td align='left' style='width:100px'>ModelType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>serialNumber</td><td align='left' style='width:100px'>SerialNumberType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>station</td><td align='left' style='width:100px'>StationType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr></table>
+<BR>
+<p> 1.11 ComponentType</p>
+<p>An abstract component type. This is a placeholder for all components</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ComponentType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>id</td><td align='left' style='width:100px'>IDType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>name</td><td align='left' style='width:100px'>NameType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>nativeName</td><td align='left' style='width:100px'>NameType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>sampleInterval</td><td align='left' style='width:100px'>SampleIntervalType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Description</td><td align='left' style='width:100px'>ComponentDescriptionType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Configuration</td><td align='left' style='width:100px'>ComponentConfigurationType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>DataItems</td><td align='left' style='width:100px'>DataItemsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Components</td><td align='left' style='width:100px'>ComponentsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr></table>
+<BR>
+<p> 1.12 ComponentsType</p>
+<p>A list of generic components</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ComponentsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'></td><td align='left' style='width:100px'></td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory(1..unbounded)</tr></table>
+<BR>
+<p> 1.13 ConfigurationType</p>
+<p>Abstract configuration</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ConfigurationType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<BR>
+<p> 1.14 ControllerType</p>
+<p>A controller</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ControllerType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.15 CoolantType</p>
+<p>A component representing the coolant system</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>CoolantType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the SystemType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.16 DataItemLimitsType</p>
+<p>A set of limits for a data item</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DataItemLimitsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<BR>
+<p> 1.17 DataItemType</p>
+<p>A abstract measurement</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DataItemType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>name</td><td align='left' style='width:100px'>NameType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>id</td><td align='left' style='width:100px'>IDType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>type</td><td align='left' style='width:100px'>DataItemEnumType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>subType</td><td align='left' style='width:100px'>DataItemSubEnumType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>statistic</td><td align='left' style='width:100px'>DataItemStatisticsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>units</td><td align='left' style='width:100px'>UnitsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>nativeUnits</td><td align='left' style='width:100px'>NativeUnitsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>nativeScale</td><td align='left' style='width:100px'>NativeScaleType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>category</td><td align='left' style='width:100px'>CategoryType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>coordinateSystem</td><td align='left' style='width:100px'>CoordinateSystemType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>sampleRate</td><td align='left' style='width:100px'>SampleRateType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>representation</td><td align='left' style='width:100px'>RepresentationType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>significantDigits</td><td align='left' style='width:100px'>SignificantDigitsValueType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Source</td><td align='left' style='width:100px'>SourceType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Constraints</td><td align='left' style='width:100px'>DataItemLimitsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr></table>
+<BR>
+<p> 1.18 DataItemValueElementType</p>
+<p>The value element</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DataItemValueElementType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<BR>
+<p> 1.19 DataItemsType</p>
+<p>A generic list of measurements for all axis</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DataItemsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>DataItem</td><td align='left' style='width:100px'>DataItemType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory(1..unbounded)</tr></table>
+<BR>
+<p> 1.20 DeviceType</p>
+<p>The top level component managed by the agent</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DeviceType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the ComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>iso841Class</td><td align='left' style='width:100px'>Iso841ClassType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>uuid</td><td align='left' style='width:100px'>UuidType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr></table>
+<BR>
+<p> 1.21 DevicesType</p>
+<p>The top level components</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DevicesType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Device</td><td align='left' style='width:100px'>DeviceType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory(1..unbounded)</tr></table>
+<BR>
+<p> 1.22 DoorType</p>
+<p>A door on the machine</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>DoorType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.23 ElectricType</p>
+<p>A component representing the coolant system</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>ElectricType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the SystemType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.24 HeaderType</p>
+<p>Message header for protocol information</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>HeaderType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>version</td><td align='left' style='width:100px'>VersionType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>creationTime</td><td align='left' style='width:100px'>CreationTimeType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>testIndicator</td><td align='left' style='width:100px'>TestIndicatorType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>instanceId</td><td align='left' style='width:100px'>InstanceIdType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>sender</td><td align='left' style='width:100px'>SenderType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>bufferSize</td><td align='left' style='width:100px'>BufferSizeType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>assetBufferSize</td><td align='left' style='width:100px'>AssetBufferSizeType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>assetCount</td><td align='left' style='width:100px'>AssetCountAttrType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Mandatory</td></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>AssetCounts</td><td align='left' style='width:100px'>AssetCountsType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..1)</tr></table>
+<BR>
+<p> 1.25 HydraulicType</p>
+<p>A component representing the hydraulic system</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>HydraulicType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the SystemType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.26 LinearType</p>
+<p>A linear axis</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>LinearType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the AxisType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.27 LubricationType</p>
+<p>A component representing the lubrication system</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>LubricationType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the SystemType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.28 MTConnectDevicesType</p>
+<p>The root node for MTConnect</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>MTConnectDevicesType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Header</td><td align='left' style='width:100px'>HeaderType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..0)</tr><tr><td align='left' style='width:100px'> HasComponent </td><td align='left' style='width:100px'> Object </td><td align='left' style='width:100px'>Devices</td><td align='left' style='width:100px'>DevicesType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional(0..0)</tr></table>
+<BR>
+<p> 1.29 PathType</p>
+<p>A path component</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>PathType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.30 PneumaticType</p>
+<p>A component representing the pneumatic system</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>PneumaticType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the SystemType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.31 PowerType</p>
+<p>DEPRECATED: A power measuring component</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>PowerType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.32 RotaryType</p>
+<p>A rotary axis that moves in a rotational manor</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>RotaryType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the AxisType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.33 SensorConfigurationType</p>
+<p>Calibration data for a sensor</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SensorConfigurationType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the ConfigurationType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.34 SensorType</p>
+<p>A sensor, this is not abstract to allow for easy extensibility.</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SensorType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.35 SourceType</p>
+<p>A native data source</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SourceType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>componentId</td><td align='left' style='width:100px'>SourceComponentIdType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr><tr><td align='left' style='width:100px'> HasProperty </td><td align='left' style='width:100px'> Variable </td><td align='left' style='width:100px'>dataItemId</td><td align='left' style='width:100px'>SourceDataItemIdType</td><td align='left' style='width:100px'>ProperyType</td><td align='left' style='width:100px'>Optional</td></tr></table>
+<BR>
+<p> 1.36 SpindleType</p>
+<p>DEPRECATED: A spindle axis that spins</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SpindleType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the AxisType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.37 SystemType</p>
+<p>A logical group of parts representing sub-system of the device</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SystemType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+<p> 1.38 SystemsType</p>
+<p>A grouping of all the systems of the device</p>
+<table class="gridtable" style='width:600px'>
+<tr> <th  align='left' style='width:100px'> Attribute </th><th align='left' style='width:500px'> Value </th></tr>
+<tr> <td align='left' style='width:100px'> BrowseName </td><td align='left' style='width:500px'>SystemsType </td></tr>
+<tr> <td align='left' style='width:100px'> IsAbstract </td><td align='left' style='width:500px'> False </td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+<tr><th align='left' style='width:100px'> Reference </th><th align='left' style='width:100px'> NodeClass </th><th align='left' style='width:100px'>BrowseName</th><th align='left' style='width:100px'>DataType</th><th align='left' style='width:100px'>TypeDefinition</th><th align='left' style='width:100px'>ModelingRule</th></tr></table>
+<table class="gridtable" style='width:600px'>
+<tr> <td align='left' style='width:600px'> Inherit the children of the CommonComponentType</td></tr>
+</table>
+<table class="gridtable" style='width:600px'>
+</table>
+<BR>
+</body></html>

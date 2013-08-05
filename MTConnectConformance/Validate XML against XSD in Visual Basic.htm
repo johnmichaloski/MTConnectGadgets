@@ -1,0 +1,915 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 12">
+<meta name=Originator content="Microsoft Word 12">
+<link rel=File-List
+href="Validate%20XML%20against%20XSD%20in%20Visual%20Basic_files/filelist.xml">
+<link rel=Edit-Time-Data
+href="Validate%20XML%20against%20XSD%20in%20Visual%20Basic_files/editdata.mso">
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author> </o:Author>
+  <o:Template>NormalEmail.dotm</o:Template>
+  <o:Revision>1</o:Revision>
+  <o:TotalTime>60</o:TotalTime>
+  <o:Created>2012-08-24T19:07:00Z</o:Created>
+  <o:Pages>1</o:Pages>
+  <o:Words>662</o:Words>
+  <o:Characters>3779</o:Characters>
+  <o:Lines>31</o:Lines>
+  <o:Paragraphs>8</o:Paragraphs>
+  <o:CharactersWithSpaces>4433</o:CharactersWithSpaces>
+  <o:Version>12.00</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]-->
+<link rel=themeData
+href="Validate%20XML%20against%20XSD%20in%20Visual%20Basic_files/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Validate%20XML%20against%20XSD%20in%20Visual%20Basic_files/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:Zoom>0</w:Zoom>
+  <w:TrackMoves/>
+  <w:TrackFormatting/>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>EN-US</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:DoNotExpandShiftReturn/>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+   <w:DontVertAlignCellWithSp/>
+   <w:DontBreakConstrainedForcedTables/>
+   <w:DontVertAlignInTxbx/>
+   <w:Word11KerningPairs/>
+   <w:CachedColBalance/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="true"
+  DefSemiHidden="true" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="267">
+  <w:LsdException Locked="false" Priority="0" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" Name="toc 9"/>
+  <w:LsdException Locked="false" Priority="35" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" Priority="10" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" Priority="1" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" Priority="11" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" Priority="22" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" Priority="59" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Table Grid"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" UnhideWhenUsed="false" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" SemiHidden="false"
+   UnhideWhenUsed="false" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" SemiHidden="false"
+   UnhideWhenUsed="false" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" QFormat="true" Name="TOC Heading"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-alt:"Calisto MT";
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1107304683 0 0 159 0;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;
+	mso-font-alt:Calibri;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-1610611985 1073750139 0 0 159 0;}
+@font-face
+	{font-family:Tahoma;
+	panose-1:2 11 6 4 3 5 4 4 2 4;
+	mso-font-alt:"Arial Black";
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:1627400839 -2147483648 8 0 66047 0;}
+@font-face
+	{font-family:Georgia;
+	panose-1:2 4 5 2 5 4 5 2 3 3;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:647 0 0 0 159 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:11.0pt;
+	font-family:"Calibri","sans-serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;
+	mso-bidi-font-family:"Times New Roman";}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Heading 1 Char";
+	mso-margin-top-alt:auto;
+	margin-right:0in;
+	mso-margin-bottom-alt:auto;
+	margin-left:0in;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:24.0pt;
+	font-family:"Times New Roman","serif";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+a:link, span.MsoHyperlink
+	{mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+pre
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"HTML Preformatted Char";
+	margin:0in;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Courier New";
+	mso-fareast-font-family:Calibri;
+	mso-fareast-theme-font:minor-latin;}
+span.Heading1Char
+	{mso-style-name:"Heading 1 Char";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Heading 1";
+	font-family:"Times New Roman","serif";
+	mso-ascii-font-family:"Times New Roman";
+	mso-hansi-font-family:"Times New Roman";
+	mso-bidi-font-family:"Times New Roman";
+	font-weight:bold;}
+span.HTMLPreformattedChar
+	{mso-style-name:"HTML Preformatted Char";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"HTML Preformatted";
+	font-family:"Courier New";
+	mso-ascii-font-family:"Courier New";
+	mso-hansi-font-family:"Courier New";
+	mso-bidi-font-family:"Courier New";}
+span.EmailStyle20
+	{mso-style-type:personal;
+	mso-style-noshow:yes;
+	mso-style-unhide:no;
+	font-family:"Calibri","sans-serif";
+	mso-ascii-font-family:Calibri;
+	mso-hansi-font-family:Calibri;
+	color:windowtext;}
+span.apple-converted-space
+	{mso-style-name:apple-converted-space;
+	mso-style-unhide:no;}
+span.rem
+	{mso-style-name:rem;
+	mso-style-unhide:no;}
+span.kwrd
+	{mso-style-name:kwrd;
+	mso-style-unhide:no;}
+span.html
+	{mso-style-name:html;
+	mso-style-unhide:no;}
+span.attr
+	{mso-style-name:attr;
+	mso-style-unhide:no;}
+span.str
+	{mso-style-name:str;
+	mso-style-unhide:no;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;
+	mso-header-margin:.5in;
+	mso-footer-margin:.5in;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Table Normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0in 5.4pt 0in 5.4pt;
+	mso-para-margin:0in;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman","serif";}
+</style>
+<![endif]-->
+</head>
+
+<body lang=EN-US link=blue vlink=purple style='tab-interval:.5in'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>From:<span style='mso-tab-count:
+1'>                                         </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Michaloski, John L.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>Sent:<span style='mso-tab-count:
+1'>                                           </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Friday, August 24, 2012 1:44
+PM<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>To:<span style='mso-tab-count:
+1'>                                               </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Michaloski, John L.<o:p></o:p></span></p>
+
+<p class=MsoNormal style='margin-left:120.0pt;text-indent:-120.0pt;tab-stops:
+120.0pt;mso-layout-grid-align:none;text-autospace:none'><b><span
+style='mso-bidi-font-family:Calibri;color:black'>Subject:<span
+style='mso-tab-count:1'>                                     </span></span></b><span
+style='mso-bidi-font-family:Calibri;color:black'>Validate XML against XSD in
+Visual Basic<o:p></o:p></span></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<h1 style='margin:0in;margin-bottom:.0001pt;background:whitesmoke'><span
+style='font-size:9.5pt;font-family:"Tahoma","sans-serif";mso-fareast-font-family:
+"Times New Roman";color:black'><a
+href="http://www.nonhostile.com/howto-validate-xml-xsd-in-vb6.asp"><span
+style='color:navy;text-decoration:none;text-underline:none'><br>
+VB6: Validate XML against XSD in Visual Basic</span></a><o:p></o:p></span></h1>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.5pt;
+font-family:"Georgia","serif";color:black'>This code requires a project
+reference to<span class=apple-converted-space>&nbsp;</span><b>Microsoft XML 4.0</b><span
+class=apple-converted-space>&nbsp;</span>available from Microsoft's<span
+class=apple-converted-space>&nbsp;</span><a
+href="http://www.microsoft.com/downloads/details.aspx?FamilyID=3144B72B-B4F2-46DA-B4B6-C5D7485F2B42&amp;displaylang=en"><span
+style='color:#000040'>Download Center</span></a><br>
+<br>
+This is a very simple example to demostrate the validation of a fragment of
+XML.<br>
+We want a validate than a element called sampleRoot has an attribute called
+myAttribute that can have a value of either 'animal', 'vegatable' or 'mineral'.<br>
+<br>
+<strong><span style='font-family:"Georgia","serif"'>Sample XSD</span></strong><br>
+This XSD defines our schema. We have to give it a namespace, for this example
+we're&nbsp;using&nbsp;urn:sample<o:p></o:p></span></p>
+
+<pre style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=rem><span style='font-size:10.5pt;color:green'>&lt;!-- two namespaces used, xsd schema and the one we're defining (targetNamespace) --&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:schema</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>xmlns:xs</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;<a
+href="http://www.w3.org/2001/XMLSchema">http://www.w3.org/2001/XMLSchema</a>&quot;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=attr><span style='font-size:10.5pt;color:red'>xmlns:n</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>=&quot;urn:sample&quot;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=attr><span style='font-size:10.5pt;color:red'>targetNamespace</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>=&quot;urn:sample&quot;&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>&lt;!-- define root element --&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:element</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>name</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;sampleRoot&quot;</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>type</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;n:sampleRootType&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>&lt;!-- define a datatype: sampleRootType --&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:complexType</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>name</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;sampleRootType&quot;&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:attribute</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>name</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;myAttribute&quot;</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>type</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;n:AnimalVegMineral&quot;</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>use</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;optional&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;/</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:complexType</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>&lt;!-- define a Animal/Veg/Mineral data type --&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:simpleType</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>name</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;AnimalVegMineral&quot;&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:restriction</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>base</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;xs:string&quot;&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:enumeration</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>value</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;animal&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:enumeration</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>value</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;vegatable&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:enumeration</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>value</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;mineral&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;/</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:restriction</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;/</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:simpleType</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'><o:p>&nbsp;</o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;/</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>xs:schema</span></span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'><o:p>&nbsp;</o:p></span></pre>
+
+<p class=MsoNormal style='background:white'><strong><span style='font-size:
+10.5pt;font-family:"Georgia","serif";color:black'>Samples of XML that Reference
+Our Schema Definition</span></strong><span style='font-size:10.5pt;font-family:
+"Georgia","serif";color:black'><br>
+XML documents that should conform to this schema must declare their namespace.
+The following fragments conform to the bove schema definition:<o:p></o:p></span></p>
+
+<pre style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>x:sampleRoot</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>xmlns:x</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;urn:sample&quot;</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>myAttribute</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;animal&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.5pt;
+font-family:"Georgia","serif";color:black'>The following fragments do not.<o:p></o:p></span></p>
+
+<pre style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>&lt;</span></span><span
+class=html><span style='font-size:10.5pt;color:maroon'>x:sampleRoot</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>xmlns:x</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;urn:sample&quot;</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=attr><span
+style='font-size:10.5pt;color:red'>myAttribute</span></span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>=&quot;piano&quot;/&gt;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre>
+
+<p class=MsoNormal style='margin-bottom:12.0pt;background:white'><strong><span
+style='font-size:10.5pt;font-family:"Georgia","serif";color:black'>Visual Basic
+Code to Validate an XML&nbsp;File against an XSD File</span></strong><span
+style='font-size:10.5pt;font-family:"Georgia","serif";color:black'><br>
+This function accepts the paths of two datafiles. An XML Schema Definition and
+an XML file.<o:p></o:p></span></p>
+
+<pre style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Private</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Function</span></span><span
+style='font-size:10.5pt;color:black'> Validate(</span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>ByVal</span></span><span style='font-size:
+10.5pt;color:black'> strXMLPath </span><span class=kwrd><span style='font-size:
+10.5pt;color:blue'>As</span></span><span style='font-size:10.5pt;color:black'> </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>String</span></span><span
+style='font-size:10.5pt;color:black'>, _<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>ByVal</span></span><span
+style='font-size:10.5pt;color:black'> strXSDPath </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> </span><span class=kwrd><span style='font-size:10.5pt;
+color:blue'>String</span></span><span style='font-size:10.5pt;color:black'>) </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>As</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Boolean</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'><o:p>&nbsp;</o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Dim</span></span><span
+style='font-size:10.5pt;color:black'> objSchemas </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.XMLSchemaCache40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Dim</span></span><span
+style='font-size:10.5pt;color:black'> objXML </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.DOMDocument40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Dim</span></span><span
+style='font-size:10.5pt;color:black'> objXSD </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.DOMDocument40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Dim</span></span><span
+style='font-size:10.5pt;color:black'> strNamespace </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> </span><span class=kwrd><span style='font-size:10.5pt;
+color:blue'>String</span></span><span style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Dim</span></span><span
+style='font-size:10.5pt;color:black'> objErr </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>As</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.IXMLDOMParseError<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' load XSD as DOM to populate in Schema Cache</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Set</span></span><span
+style='font-size:10.5pt;color:black'> objXSD = </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>New</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.DOMDocument40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objXSD.async = </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>False</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>If</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Not</span></span><span style='font-size:
+10.5pt;color:black'> objXSD.Load(strXSDPath) </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Then</span></span><span style='font-size:
+10.5pt;color:black'><o:p></o:p></span></pre><pre style='background:white'><span
+style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Err.Raise 1, </span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;Validate&quot;</span></span><span
+style='font-size:10.5pt;color:black'>, </span><span class=str><span
+style='font-size:10.5pt;color:#006080'>&quot;Load XSD failed: &quot;</span></span><span
+style='font-size:10.5pt;color:black'> &amp; objXSD.parseError.reason<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Else</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=rem><span style='font-size:10.5pt;color:green'>' get namespace name from XSD targetNamespace attribute</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; strNamespace = objXSD.documentElement.getAttribute(</span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;targetNamespace&quot;</span></span><span
+style='font-size:10.5pt;color:black'>)<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>End</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>If</span></span><span style='font-size:
+10.5pt;color:black'><o:p></o:p></span></pre><pre style='background:white'><span
+style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' populate schema cache</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Set</span></span><span
+style='font-size:10.5pt;color:black'> objSchemas = </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>New</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.XMLSchemaCache40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objSchemas.Add strNamespace, objXSD<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' load XML file (without validation - that comes later)</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Set</span></span><span
+style='font-size:10.5pt;color:black'> objXML = </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>New</span></span><span style='font-size:
+10.5pt;color:black'> MSXML2.DOMDocument40<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objXML.async = </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>False</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objXML.validateOnParse = </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>False</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; objXML.resolveExternals = </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>False</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' load XML, without any validation</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>If</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Not</span></span><span style='font-size:
+10.5pt;color:black'> objXML.Load(strXMLPath) </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Then</span></span><span style='font-size:
+10.5pt;color:black'><o:p></o:p></span></pre><pre style='background:white'><span
+style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Err.Raise 1, </span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;Validate&quot;</span></span><span
+style='font-size:10.5pt;color:black'>, </span><span class=str><span
+style='font-size:10.5pt;color:#006080'>&quot;Load XML failed: &quot;</span></span><span
+style='font-size:10.5pt;color:black'> &amp; objXML.parseError.reason<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>End</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>If</span></span><span style='font-size:
+10.5pt;color:black'><o:p></o:p></span></pre><pre style='background:white'><span
+style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' bind Schema Cache to DOM</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Set</span></span><span
+style='font-size:10.5pt;color:black'> objXML.schemas = objSchemas<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' does this XML measure up?</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Set</span></span><span
+style='font-size:10.5pt;color:black'> objErr = objXML.Validate()<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span
+class=rem><span style='font-size:10.5pt;color:green'>' any good?</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Validate = (objErr.errorCode = 0)<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>If</span></span><span
+style='font-size:10.5pt;color:black'> objErr.errorCode &lt;&gt; 0 </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>Then</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Err.Raise 1, </span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;Validate&quot;</span></span><span
+style='font-size:10.5pt;color:black'>, objErr.reason<o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>End</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>If</span></span><span style='font-size:
+10.5pt;color:black'><o:p></o:p></span></pre><pre style='background:white'><span
+style='font-size:10.5pt;color:black'><o:p>&nbsp;</o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; </span><span
+class=kwrd><span style='font-size:10.5pt;color:blue'>End</span></span><span
+style='font-size:10.5pt;color:black'> </span><span class=kwrd><span
+style='font-size:10.5pt;color:blue'>Function</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'><o:p>&nbsp;</o:p></span></pre>
+
+<p class=MsoNormal style='background:white'><span style='font-size:10.5pt;
+font-family:"Georgia","serif";color:black'>The above function could easily be
+adapted to load XML and XSD from string variables as opposed to data files.<br>
+<br>
+For situations where multiple XML validations are required, repeatedly
+populating and destroying the schema cache is clearly ineffecient and could be
+optimised.<br>
+<br>
+<strong><span style='font-family:"Georgia","serif"'>Examples Calling this
+Function</span></strong><o:p></o:p></span></p>
+
+<pre style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; Validate App.Path &amp; </span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;\sc-valid-tjh.xml&quot;</span></span><span
+style='font-size:10.5pt;color:black'>, App.Path &amp; </span><span class=str><span
+style='font-size:10.5pt;color:#006080'>&quot;\sc-tjh-min.xsd&quot;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre><pre
+style='background:white'><span style='font-size:10.5pt;color:black'>&nbsp;&nbsp;&nbsp; Validate App.Path &amp; </span><span
+class=str><span style='font-size:10.5pt;color:#006080'>&quot;\sc-valid.xml&quot;</span></span><span
+style='font-size:10.5pt;color:black'>, App.Path &amp; </span><span class=str><span
+style='font-size:10.5pt;color:#006080'>&quot;\sc-tjh-min.xsd&quot;</span></span><span
+style='font-size:10.5pt;color:black'><o:p></o:p></span></pre>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+</div>
+
+</body>
+
+</html>

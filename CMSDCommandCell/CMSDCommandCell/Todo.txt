@@ -1,0 +1,19 @@
+
+
+Now have pseudo Assembly line equipment
+
+Want to integrate buffering ( 4 after - starved)
+Want to have timing, queue size attached to resource 
+
+
+Assume in and out queue are 1 unless otherwise noted.
+
+Fri 04/05/13 11:51:12 AM
+*	Add timing - if broke - then fail and count statistics
+* NOT A RESOURCE 
+		<Resource>
+			<Identifier>SMCO:LINE1_PS_CAST1_BUFFER1</Identifier>
+			<Property><Name>OutQueue</Name><Value>1</Value></Property>
+			<Property><Name>InQueue</Name><Value>1</Value></Property>
+		</Resource>
+

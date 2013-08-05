@@ -1,0 +1,264 @@
+Module: Begin Script    
+
+   Operands Contained in Dialog 'Begin Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NextLabel (Hidden)                
+   Script Station (Hidden)           
+   script action (Hidden)            
+   script action dim (Hidden)        
+   Script Name List (Hidden)         
+   Script Type Exp (Hidden)          
+   Script Type Exp Val1 (Hidden)     
+   Script Type Exp Val2 (Hidden)     
+   Script Type Exp D (Hidden)        
+   ScriptNameERR (Hidden)            
+   Script Name                        Script Name                       
+   Seize Trunk                        Seize Trunk Group                 
+   Trunk Name                         Trunk Name                        
+
+Module: Queue for Agent 
+
+   Operands Contained in Dialog 'Queue for Agent':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NextLabel (Hidden)                
+   EntryLabel (Hidden)               
+   PreemptStation1 (Hidden)          
+   PreemptStation2 (Hidden)          
+   PreemptStation3 (Hidden)          
+   PreemptStation4 (Hidden)          
+   Name (Hidden)                     
+   AllList (Hidden)                  
+   Agent Type                         Agent Type                        
+   Group Name                         Agent Group                       
+   Par Group                          Parent Group                      
+   Par Group Set Rule                 Selection Rule                    
+
+
+   Operands Contained in Dialog 'Advanced':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SeizeInLabel (Hidden)             
+   SeizeOutLabel (Hidden)            
+   TalkInLabel (Hidden)              
+   TalkOutLabel (Hidden)             
+   AfterInLabel (Hidden)             
+   AfterOutLabel (Hidden)            
+   After Seizing Agent                After seizing agent               
+   After Talk TIme                    After talk time                   
+   After after call work              Prior to post contact work        
+
+Module: Remove from Queue
+
+   Operands Contained in Dialog 'Remove from Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+
+Module: Wait            
+
+   Operands Contained in Dialog 'Wait':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Name (Hidden)                     
+   Wait Time                          Wait Time                         
+
+Module: Priority        
+
+   Operands Contained in Dialog 'PriorityDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   AbsorInc                           Priority Change                   
+   Priority                           New Priority                      
+   PriorityDec                        Decrease Priority by              
+   PriorityInc                        Increase Priority by              
+
+Module: Message         
+
+   Operands Contained in Dialog 'MessageDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Message Time                       Message Wait Time                 
+   MessCB                             Disable Contact Back              
+   MessOut                            Disable Contact Return            
+
+Module: Disconnect      
+
+   Operands Contained in Dialog 'Disconnect':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   DisableCB                          Disable Contact Back              
+
+Module: Overflow        
+
+   Operands Contained in Dialog 'Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   OverflowCounter (Hidden)          
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Name (Hidden)                     
+   Source Queue                       Source Group                      
+   Destination Queue                  Destination Group                 
+
+Module: Transfer to Script
+
+   Operands Contained in Dialog 'Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   Name (Hidden)                     
+   Script Name TO                     Script Name                       
+   Release Trunk Group                Release Trunk Group               
+
+Module: Transfer to Agent
+
+   Operands Contained in Dialog 'Transfer to Agent':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Name (Hidden)                     
+   AllList (Hidden)                  
+   Agent Type                         Agent Type                        
+   Group Name                         Agent Group                       
+   Par Group                          Parent Group                      
+   Par Group Set Rule                 Selection Rule                    
+   Transfer Talk Time                 Transfer Talk Time                
+
+Module: Conference      
+
+   Operands Contained in Dialog 'Conference':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Name (Hidden)                     
+   AllList (Hidden)                  
+   Agent Type                         Agent Type                        
+   Group Name                         Agent Group                       
+   Par Group                          Parent Group                      
+   Par Group Set Rule                 Selection Rule                    
+   Conference Talk Time               Conference Talk Time              
+
+Module: Branch          
+
+   Operands Contained in Dialog 'BranchDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+
+
+   Operands Contained in Repeat Group 'Branch Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Cond1CallType (Hidden)            
+   AQValExp (Hidden)                 
+   TimeValExp (Hidden)               
+   Cond1Day (Hidden)                 
+   Delay (Hidden)                    
+   AMPMVar (Hidden)                  
+   V1 (Hidden)                       
+   V2 (Hidden)                       
+   DMid (Hidden)                     
+   DNoon (Hidden)                    
+   Hour12 (Hidden)                   
+   HourNot12 (Hidden)                
+   Cond1TOD (Hidden)                 
+   PriorValueExp (Hidden)            
+   AttValExp (Hidden)                
+   VarValExp (Hidden)                
+   ElseLabel (Hidden)                
+   Branch Condition (Hidden)         
+   Condition2 (Hidden)               
+   AAExp (Hidden)                    
+   AgentExpExpVal (Hidden)           
+   IfWithElse                         Branch Type                       
+   Condition1                         Condition                         
+   Call Type Val                      Contact Name                      
+   AAVal                              Agent Group                       
+   RandomProb                         Branching Probability             
+   MO1                                                                  
+   TimeVal                                                              
+   AQVal                              Agent Queue                       
+   MO                                                                   
+   NQVal                                                                
+   GenSIMANExp                        SIMAN Expression                  
+   Day Val                            Day                               
+   MO2                                                                  
+   AMPMSg                                                               
+   Hour                               Hour                              
+   Minute                             Minute                            
+   MO3                                                                  
+   PriorVal                                                             
+   AttName                            Contact Attribute Name            
+   AttMO                                                                
+   AttVal                                                               
+   VarName                            Global Variable Name              
+   VarMO                                                                
+   VarVal                                                               
+   AgentExpSG                         Agent Expression                  
+   Agent Group                        Agent Group                       
+   AEXPMO                                                               
+   AEXPVal                                                              
+
+Module: Assignment      
+
+   Operands Contained in Dialog 'Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LV (Hidden)                       
+   RV (Hidden)                       
+   PictureP (Hidden)                 
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   SG                                 Assignment Type                   
+   Att                                Contact Attribute Name            
+   Var                                Global Variable Name              
+   Picture                            Contact Picture Name              
+   Counter Name                       Counter Name                      
+   ValueV                             Value                             
+   Value                              Value                             
+   Increment                          Increment                         
+
+Module: End Script      
+
+   Operands Contained in Dialog 'End Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   InLabel (Hidden)                  
+
+Module: GoTo            
+
+   Operands Contained in Dialog 'GoTo':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Operand                            Operand                           
+

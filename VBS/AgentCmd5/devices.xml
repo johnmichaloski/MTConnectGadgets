@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2012-11-02T14:56:50" sender="local" version="1.1"/>
+<Devices>
+		<Device id="CNC1_RESOURCEid" uuid="CNC1_RESOURCExxx" name="CNC1_RESOURCE">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="CNC1_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="CNC1_RESOURCEc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="CNC1_RESOURCEsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="CNC1_RESOURCEct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC1_RESOURCEcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC1_RESOURCEcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="CNC1_RESOURCEctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="CNC1_RESOURCEcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="CNC1_RESOURCEccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="CNC1_RESOURCElogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="CNC1_RESOURCEsystem" name="condition" />
+					</DataItems>
+					<Components>
+						<Path id="CNC1_RESOURCEpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="CNC1_RESOURCEpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="CNC1_RESOURCEFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="CNC1_RESOURCEpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="CNC1_RESOURCEtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="CNC1_RESOURCElid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="CNC1_RESOURCEexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC1_RESOURCEmode" category="EVENT" name="mode"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC1_RESOURCEcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC1_RESOURCEcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="CNC1_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="CNC1_RESOURCEpc" category="EVENT" name="PartCount" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="CNC1_RESOURCEsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="CNC1_RESOURCEelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="CNC1_RESOURCEpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="CNC1_RESOURCEpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="CNC1_RESOURCEpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="CNC1_RESOURCEpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="CNC2_RESOURCEid" uuid="CNC2_RESOURCExxx" name="CNC2_RESOURCE">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="CNC2_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="CNC2_RESOURCEc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="CNC2_RESOURCEsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="CNC2_RESOURCEct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC2_RESOURCEcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC2_RESOURCEcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="CNC2_RESOURCEctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="CNC2_RESOURCEcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="CNC2_RESOURCEccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="CNC2_RESOURCElogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="CNC2_RESOURCEsystem" name="condition" />
+					</DataItems>
+					<Components>
+						<Path id="CNC2_RESOURCEpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="CNC2_RESOURCEpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="CNC2_RESOURCEFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="CNC2_RESOURCEpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="CNC2_RESOURCEtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="CNC2_RESOURCElid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="CNC2_RESOURCEexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC2_RESOURCEmode" category="EVENT" name="mode"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC2_RESOURCEcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC2_RESOURCEcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="CNC2_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="CNC2_RESOURCEpc" category="EVENT" name="PartCount" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="CNC2_RESOURCEsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="CNC2_RESOURCEelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="CNC2_RESOURCEpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="CNC2_RESOURCEpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="CNC2_RESOURCEpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="CNC2_RESOURCEpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="CNC3New_RESOURCEid" uuid="CNC3New_RESOURCExxx" name="CNC3New_RESOURCE">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="CNC3New_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="CNC3New_RESOURCEc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="CNC3New_RESOURCEsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="CNC3New_RESOURCEct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC3New_RESOURCEcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC3New_RESOURCEcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="CNC3New_RESOURCEctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="CNC3New_RESOURCEcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="CNC3New_RESOURCEccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="CNC3New_RESOURCElogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="CNC3New_RESOURCEsystem" name="condition" />
+					</DataItems>
+					<Components>
+						<Path id="CNC3New_RESOURCEpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="CNC3New_RESOURCEpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="CNC3New_RESOURCEFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="CNC3New_RESOURCEpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="CNC3New_RESOURCEtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="CNC3New_RESOURCElid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="CNC3New_RESOURCEexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3New_RESOURCEmode" category="EVENT" name="mode"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3New_RESOURCEcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3New_RESOURCEcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="CNC3New_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="CNC3New_RESOURCEpc" category="EVENT" name="PartCount" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="CNC3New_RESOURCEsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="CNC3New_RESOURCEelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="CNC3New_RESOURCEpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="CNC3New_RESOURCEpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="CNC3New_RESOURCEpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="CNC3New_RESOURCEpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="CNC3Old_RESOURCEid" uuid="CNC3Old_RESOURCExxx" name="CNC3Old_RESOURCE">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="CNC3Old_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="CNC3Old_RESOURCEc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="CNC3Old_RESOURCEsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="CNC3Old_RESOURCEct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC3Old_RESOURCEcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC3Old_RESOURCEcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="CNC3Old_RESOURCEctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="CNC3Old_RESOURCEcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="CNC3Old_RESOURCEccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="CNC3Old_RESOURCElogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="CNC3Old_RESOURCEsystem" name="condition" />
+					</DataItems>
+					<Components>
+						<Path id="CNC3Old_RESOURCEpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="CNC3Old_RESOURCEpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="CNC3Old_RESOURCEFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="CNC3Old_RESOURCEpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="CNC3Old_RESOURCEtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="CNC3Old_RESOURCElid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="CNC3Old_RESOURCEexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3Old_RESOURCEmode" category="EVENT" name="mode"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3Old_RESOURCEcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC3Old_RESOURCEcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="CNC3Old_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="CNC3Old_RESOURCEpc" category="EVENT" name="PartCount" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="CNC3Old_RESOURCEsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="CNC3Old_RESOURCEelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="CNC3Old_RESOURCEpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="CNC3Old_RESOURCEpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="CNC3Old_RESOURCEpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="CNC3Old_RESOURCEpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+		<Device id="CNC4_RESOURCEid" uuid="CNC4_RESOURCExxx" name="CNC4_RESOURCE">
+			<Description>Generic</Description>
+			<DataItems>
+				<DataItem id="CNC4_RESOURCEavail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+						<Rotary id="CNC4_RESOURCEc" name="C">
+							<DataItems>
+								<DataItem type="LOAD" id="CNC4_RESOURCEsl" category="SAMPLE" name="Sload" units="PERCENT"/>
+								<DataItem type="ANGLE"  id="CNC4_RESOURCEct" category="CONDITION" name="Ctravel"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC4_RESOURCEcs" category="SAMPLE" name="Srpm" subType="ACTUAL" units="REVOLUTION/MINUTE" nativeUnits="REVOLUTION/MINUTE"/>
+								<DataItem type="SPINDLE_SPEED" id="CNC4_RESOURCEcso" category="SAMPLE" name="Sovr" subType="OVERRIDE" units="PERCENT" nativeUnits="PERCENT"/>
+								<DataItem type="TEMPERATURE" id="CNC4_RESOURCEctemp" category="SAMPLE" name="Stemp"  units="CELSIUS" />
+							</DataItems>
+						</Rotary>
+				<Controller id="CNC4_RESOURCEcont" name="controller">
+					<DataItems>
+						<DataItem type="COMMUNICATIONS" category="CONDITION" id="CNC4_RESOURCEccond" name="comms_cond" />
+						<DataItem type="LOGIC_PROGRAM" category="CONDITION" id="CNC4_RESOURCElogic" name="logic_cond" />
+						<DataItem type="SYSTEM" category="CONDITION" id="CNC4_RESOURCEsystem" name="condition" />
+					</DataItems>
+					<Components>
+						<Path id="CNC4_RESOURCEpath1" name="path">
+							<DataItems>
+								<DataItem type="PROGRAM" id="CNC4_RESOURCEpgm" category="EVENT" name="program"/>
+								<DataItem type="PATH_FEEDRATE" id="CNC4_RESOURCEFact" category="SAMPLE" name="path_feedratefrt" units="MILLIMETER/SECOND" nativeUnits="FOOT/MINUTE" subType="ACTUAL" coordinateSystem="WORK"/>
+								<DataItem type="PART_ID" id="CNC4_RESOURCEpid" category="EVENT" name="partid"/>
+								<DataItem type="TOOL_ID" id="CNC4_RESOURCEtid" category="EVENT" name="tool"/>
+								<DataItem type="PART_ID" id="CNC4_RESOURCElid" category="EVENT" name="lotid"/>
+								<DataItem type="EXECUTION" id="CNC4_RESOURCEexec" category="EVENT" name="execution"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC4_RESOURCEmode" category="EVENT" name="mode"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC4_RESOURCEcmd" category="EVENT" name="command_echo"/>
+								<DataItem type="CONTROLLER_MODE" id="CNC4_RESOURCEcmdnum" category="EVENT" name="cmdnum_echo"/>
+								<DataItem type="LINE" id="CNC4_RESOURCEheartbeat1" category="EVENT" name="heartbeat" />
+								<DataItem type="PART_COUNT" id="CNC4_RESOURCEpc" category="EVENT" name="PartCount" />
+							</DataItems>
+						</Path>
+					</Components>
+				</Controller>
+				<Systems id="CNC4_RESOURCEsystems" name="systems">
+					<Components>
+ 						<Electric name="electric" id="CNC4_RESOURCEelec">
+							<DataItems>
+								<DataItem type="POWER_STATE" category="EVENT" id="CNC4_RESOURCEpwr" name="power" />
+								<DataItem type="TEMPERATURE" category="CONDITION" id="CNC4_RESOURCEpwrt" name="electric_temp" />
+							</DataItems>
+						</Electric>
+						<Pneumatic name="pneumatic" id="CNC4_RESOURCEpneumatic">
+							<DataItems>
+								<DataItem type="PRESSURE" category="CONDITION" id="CNC4_RESOURCEpneupress" name="pneu_cond" />
+							</DataItems>
+						</Pneumatic>
+					</Components>
+				</Systems>
+			</Components>
+		</Device>
+
+
+</Devices>
+</MTConnectDevices>

@@ -1,0 +1,54 @@
+
+
+
+1) Read all events, samples, conditions from Devices.xml file
+2) Post items into list control
+3) add update button
+
+
+[21:31:09.636] uncaught exception: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE)"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: file:///C:/Program%20Files/NIST/proj/MTConnect/Nist/VBS/Javascript/mt5alljsmtconnect.html :: updatetable :: line 154"  data: no]
+var element = document.evaluate( '//body//form/p/textarea' ,document, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null ).singleNodeValue;
+
+
+
+HRSRC hResource = FindResource(m_hInstance, MAKEINTRESOURCE(MY_RESOURCE_ID), L"TEXT");
+
+if (hResource)
+{
+    HGLOBAL hLoadedResource = LoadResource(m_hInstance, hResource);
+
+    if (hLoadedResource)
+    {
+        LPVOID pLockedResource = LockResource(hLoadedResource);
+
+        if (pLockedResource)
+        {
+            DWORD dwResourceSize = SizeofResource(m_hInstance, hResource);
+
+            if (0 != dwResourceSize)
+            {
+                 // Use pLockedResource and dwResourceSize however you want
+            }
+        }
+    }
+}
+
+http://127.0.0.1/asset/asset_partprogram?
+http://127.0.0.1/asset/asset_partprogram?type=PartProgram 
+
+<?xml version="1.0" encoding="UTF-8" ?> 
+- <MTConnectAssets xmlns:m="urn:mtconnect.org:MTConnectAssets:1.2" xmlns="urn:mtconnect.org:MTConnectAssets:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectAssets:1.2 http://www.mtconnect.org/schemas/MTConnectAssets_1.2.xsd">
+  <Header creationTime="2012-10-14T01:24:25Z" sender="mountaineer" instanceId="1350177582" version="1.2" assetBufferSize="1024" assetCount="1" /> 
+  <Assets>now i lay me down</Assets> 
+  </MTConnectAssets>
+  
+  		std::string aBody =  circle.GenerateXML(_qmr, (LPCSTR) vPartId );
+
+				// 	<DataItem type="ASSET_CHANGED" id="BORE_1232" category="EVENT" name="BORE_1232"/>
+				// THis will automatically be changed.
+				//std::string aBody = "<Part><Inspection><MeasurementResults/></Inspection></Part>";
+				std::string aId="BORE_1232";
+				std::string type="Part";
+				Device *device = _config->getAgent()->getDeviceByName(_device);
+
+				_config->getAgent()->addAsset(device, aId, aBody, type);

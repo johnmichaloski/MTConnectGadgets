@@ -1,0 +1,15 @@
+[CONFIG1]
+DevicesFolder=C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Devices
+Devices=CNC1_RESOURCE
+XmlDevices=Generic
+CmdIp=127.0.0.1:81/CNC1_RESOURCE
+HttpPort=80
+Sleep=5000
+
+[CONFIG]
+DevicesFolder=C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Devices
+Devices=CNC1_RESOURCE,CNC2_RESOURCE,CNC3New_RESOURCE,CNC3Old_RESOURCE,CNC4_RESOURCE
+XmlDevices=Generic,Generic,Generic,Generic,Generic
+CmdIp=127.0.0.1:81/CNC1_RESOURCE,127.0.0.1:81/CNC2_RESOURCE,127.0.0.1:81/CNC3New_RESOURCE,127.0.0.1:81/CNC3Old_RESOURCE,127.0.0.1:81/CNC4_RESOURCE
+HttpPort=80
+Sleep=5000

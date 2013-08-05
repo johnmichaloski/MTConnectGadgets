@@ -1,0 +1,655 @@
+Module: Assign          
+
+   Operands Contained in Dialog 'AssignDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StateLV (Hidden)                  
+   PicLV (Hidden)                    
+   LPR (Hidden)                      
+   CommaR (Hidden)                   
+   RPR (Hidden)                      
+   LP (Hidden)                       
+   Comma (Hidden)                    
+   RP (Hidden)                       
+   LV (Hidden)                       
+   RV (Hidden)                       
+   SG                                 Assignment Type                   
+   Att                                Attribute                         
+   Var                                Variable                          
+   VarRow                             Row                               
+   VarCol                             Column                            
+   Other                              Other                             
+   Picture                            Picture                           
+   PictSet                            Picture Set                       
+   PictMem                            Set Index                         
+   Res                                Resource                          
+   State                              State                             
+   ValueV                             Value                             
+   Rate                               Rate                              
+   Level                              Level                             
+   Value                              Value                             
+
+Module: Batch           
+
+   Operands Contained in Dialog 'BatchDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Qty                                Quantity                          
+   ByCrit                             Match Entities                    
+   Criteria                           Criterion                         
+   AttrSave                           New Attributes                    
+   PermTemp                                                             
+   QLabel                             Queue Label                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Queue Set                         
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QTimeStats                         Time in Queue Statistics          
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+
+
+   Operands Contained in Dialog 'Animate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   PicSG                                                                
+   Pic                                Picture                           
+   PSet                               Picture Set                       
+   PMem                               Set Index                         
+
+Module: Chance          
+
+   Operands Contained in Dialog 'ChanceDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label                              Label                             
+
+
+   Operands Contained in Repeat Group 'Branches':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SG                                                                   
+   Prob                               Probability                       
+   Next                               Next Label                        
+
+Module: Choose          
+
+   Operands Contained in Dialog 'ChooseDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Max1 (Hidden)                     
+   Max (Hidden)                      
+   SG                                                                   
+   MaxTake                            Maximum Branches Taken            
+   Label                              Label                             
+
+
+   Operands Contained in Repeat Group 'Branches':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   IfSG                                                                 
+   Condition                          Condition                         
+   Next                               Next Label                        
+
+Module: Count           
+
+   Operands Contained in Dialog 'CountDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SG                                 Counter Name                      
+   Counter                            Counter                           
+   Set                                Counter Set                       
+   Mem                                Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Inc                                Increment                         
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Create          
+
+   Operands Contained in Dialog 'CreateDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AssignNum (Hidden)                
+   Batch                              Batch Size                        
+   Offset                             First Creation                    
+   Interval                           Time Between                      
+   Max                                Max Batches                       
+   Mark                               Mark Time Attribute               
+   SGP1                                                                 
+   Pic1                               Initial Picture                   
+   PSet1                              Picture Set                       
+   PMem1                              Set Index                         
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   Comma (Hidden)                    
+   VarLV (Hidden)                    
+   SGAssn                             Assignment Type                   
+   Att                                Attribute                         
+   Other                              Other                             
+   Rate                               Rate                              
+   Level                              Level                             
+   Var                                Variable                          
+   Row                                Row                               
+   Col                                Column                            
+   Value1                             Value                             
+   Value                              Value                             
+
+Module: Delay           
+
+   Operands Contained in Dialog 'DelayDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DelayType                          Delay Type                        
+   Exp                                Expression                        
+   Static                             Static                            
+   Att                                Attribute                         
+   Storage                            Storage                           
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Dispose         
+
+   Operands Contained in Dialog 'DisposeDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label                              Label                             
+
+Module: Duplicate       
+
+   Operands Contained in Dialog 'DuplicateDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Duplicates':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Qty                                Quantity                          
+   NextRG                             To Label                          
+
+Module: Match           
+
+   Operands Contained in Dialog 'MatchDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Q1 (Hidden)                       
+   Q2 (Hidden)                       
+   Q3 (Hidden)                       
+   Q4 (Hidden)                       
+   Q5 (Hidden)                       
+   MatchNm                            Match Name                        
+   Num                                Number to Match                   
+   Att                                Based On Attribute                
+   Label1                             Incoming Labels                   
+   Label2                                                               
+   Label3                                                               
+   Label4                                                               
+   Label5                                                               
+   Disp1                              Dispose                           
+   Disp2                              Dispose                           
+   Disp3                              Dispose                           
+   Disp4                              Dispose                           
+   Disp5                              Dispose                           
+   L1Out                              Outgoing Labels                   
+   L2Out                                                                
+   L3Out                                                                
+   L4Out                                                                
+   L5Out                                                                
+
+Module: PickQueue       
+
+   Operands Contained in Dialog 'PickQueueDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Rule                               Rule                              
+   DispT                              Dispose of Balked Entities        
+   BalkTo                             Balk To                           
+   Label                              Label                             
+
+
+   Operands Contained in Repeat Group 'Enter One Per Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Next                               Queue Label                       
+   Comment                            Comment                           
+
+Module: PickStation     
+
+   Operands Contained in Dialog 'PickStationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Dim2 (Hidden)                     
+   Attrib (Hidden)                   
+   StSet (Hidden)                    
+   Dim1 (Hidden)                     
+   NE (Hidden)                       
+   NQ (Hidden)                       
+   NR (Hidden)                       
+   ExpV (Hidden)                     
+   Search (Hidden)                   
+   UniqueName                         PickStation Name                  
+   SG                                                                   
+   NET                                Number En Route to Station        
+   NQT                                Number in Queue                   
+   NRT                                Number of Resources Busy          
+   ExpT                               Expression                        
+   Att                                Store Station in Attribute        
+   MoveSG                                                               
+   RouteTm                            Route Time                        
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StationN (Hidden)                 
+   QueueN (Hidden)                   
+   ResN (Hidden)                     
+   HidExp (Hidden)                   
+   Station                            Station                           
+   Queue                              Queue                             
+   Res                                Resource                          
+   Exp                                Expression                        
+
+Module: Read            
+
+   Operands Contained in Dialog 'ReadDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SysFileN (Hidden)                 
+   Comment (Hidden)                  
+   SG                                                                   
+   File                               SIMAN File Name                   
+   SysFile                            OS File Name in Double Quotes     
+   FileSt                             File Type or Default Format       
+   Format                             If Overriding File Format         
+   End                                End Of File Action                
+   CommentCh                          Comment Character                 
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Read In':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Picture (Hidden)                  
+   LP (Hidden)                       
+   Comma (Hidden)                    
+   RP (Hidden)                       
+   V (Hidden)                        
+   ReadSG                             Variable Type                     
+   Att                                Attribute                         
+   Var                                Variable                          
+   VarRow                             Row                               
+   VarCol                             Column                            
+   Other                              Other                             
+
+Module: Release         
+
+   Operands Contained in Dialog 'ReleaseDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'ReleaseRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LParen (Hidden)                   
+   RParen (Hidden)                   
+   Comma (Hidden)                    
+   Select (Hidden)                   
+   SetOut (Hidden)                   
+   SetIn (Hidden)                    
+   SG                                 Resource Name                     
+   Res                                Resource                          
+   Set                                Resource Set                      
+   Rule                               Rule                              
+   Member                             Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Qty                                Release Quantity                  
+
+Module: Seize           
+
+   Operands Contained in Dialog 'SeizeDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Pri                                Priority                          
+   QLabel                             Queue Label                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'SeizeRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LParen (Hidden)                   
+   RParen (Hidden)                   
+   Comma (Hidden)                    
+   Select (Hidden)                   
+   SetOut (Hidden)                   
+   SetIn (Hidden)                    
+   resname (Hidden)                  
+   SG                                 Resource Name                     
+   Res                                Resource                          
+   Set                                Resource Set                      
+   Rule                               Rule                              
+   Att                                Store Index in Att                
+   Member                             Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Qty                                Seize Quantity                    
+   ResState                           Resource State                    
+   StP1 (Hidden)                     
+   StP2 (Hidden)                     
+   jvalue (Hidden)                   
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SharedP (Hidden)                  
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Queue Set                         
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QTimeStats                         Time in Queue Statistics          
+   SharedT                            Shared Queue                      
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+   QCap                               Capacity                          
+   BalkDisp                           Dispose of Balked Entities        
+   BalkLabel                          Balk Label                        
+
+Module: Signal          
+
+   Operands Contained in Dialog 'SignalDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SignalType                         Signal Type                       
+   Exp                                Expression                        
+   Static                             Static                            
+   Att                                Attribute                         
+   Limit                              Release Limit                     
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Split           
+
+   Operands Contained in Dialog 'SplitDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   General (Hidden)                  
+   MYes (Hidden)                     
+   NSYes (Hidden)                    
+   ISYes (Hidden)                    
+   Comma1 (Hidden)                   
+   Comma2 (Hidden)                   
+   MNSIS (Hidden)                    
+   SG                                                                   
+   M                                  Station                           
+   NS                                 Sequence                          
+   IS                                 Jobstep                           
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Attributes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Att                                Attribute                         
+
+
+   Operands Contained in Dialog 'Animate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Picture (Hidden)                  
+   PicSG                                                                
+
+Module: Station         
+
+   Operands Contained in Dialog 'StationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StationSG                          Station Name                      
+   Statn                              Station                           
+   StSet                              Station Set                       
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Dialog 'Station':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RecipeN (Hidden)                  
+   Recipe                             Recipe                            
+   StAtt                              Store Index in Attribute          
+   MarkEntry                          Mark Attribute Upon Entry         
+
+
+   Operands Contained in Repeat Group 'Static Value':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StaticN (Hidden)                  
+   Static                             Static                            
+   Value                              Value                             
+
+
+   Operands Contained in Repeat Group 'Station Set Members':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StMemberN (Hidden)                
+   MemRecipeN (Hidden)               
+   StMember                           Station                           
+   MemRecipe                          Recipe                            
+
+Module: Store           
+
+   Operands Contained in Dialog 'StoreDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SG                                 Storage Name                      
+   Storage                            Storage                           
+   Set                                Storage Set                       
+   Mem                                Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Tally           
+
+   Operands Contained in Dialog 'TallyDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   RP (Hidden)                       
+   IntBet (Hidden)                   
+   SG                                 Tally Name                        
+   Tal                                Tally                             
+   Set                                Tally Set                         
+   Mem                                Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   IBSG                               Type of Statistics                
+   Att                                Attribute                         
+   TypeExpr                           Expression                        
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Unstore         
+
+   Operands Contained in Dialog 'UnstoreDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SG                                 Storage Name                      
+   Storage                            Storage                           
+   Set                                Storage Set                       
+   Mem                                Set Index                         
+   Static                             Static                            
+   Attr                               Attribute                         
+   Expr                               Expression                        
+   Label                              Label                             
+   Next                               Next Label                        
+
+Module: Wait            
+
+   Operands Contained in Dialog 'WaitDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   signaltype                         Signal Type                       
+   Exp                                Expression                        
+   Static                             Static                            
+   Att                                Attribute                         
+   limit                              Release Limit                     
+   QLabel                             Queue Label                       
+   label                              Label                             
+   next                               Next Label                        
+
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DstNQQ (Hidden)                   
+   DstNQ (Hidden)                    
+   TalQTime (Hidden)                 
+   QueueTime (Hidden)                
+   QInfo (Hidden)                    
+   QInfoDim1 (Hidden)                
+   QSG                                Queue Name                        
+   QName                              Queue                             
+   QSet                               Queue Set                         
+   QMem                               Set Index                         
+   QStatic                            Static                            
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+   QNumStats                          # in Queue Statistics             
+   QRule                              Ranking Rule                      
+   RankingExp                         Expression                        
+   QTimeStats                         Time in Queue Statistics          
+
+Module: Write           
+
+   Operands Contained in Dialog 'WriteDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StdRpt (Hidden)                   
+   SysFileN (Hidden)                 
+   SG                                                                   
+   File                               SIMAN File Name                   
+   SysFile                            OS File Name in Double Quotes     
+   FileSt                             File Type or Default Format       
+   Format                             If Overriding File Format         
+   Label                              Label                             
+   Next                               Next Label                        
+
+
+   Operands Contained in Repeat Group 'Write Out':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LP (Hidden)                       
+   Comma (Hidden)                    
+   RP (Hidden)                       
+   V (Hidden)                        
+   WriteSG                            Variable Type                     
+   Att                                Attribute                         
+   Var                                Variable                          
+   VarRow                             Row                               
+   VarCol                             Column                            
+   Exp                                Expression                        
+

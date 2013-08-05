@@ -1,0 +1,2670 @@
+Module: Machine         
+
+   Operands Contained in Dialog 'Machine':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   largeur_val (Hidden)              
+   debitNomB (Hidden)                
+   largeur (Hidden)                  
+   debitNetIn (Hidden)               
+   debitPre (Hidden)                 
+   debitPreIn (Hidden)               
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   VitNet (Hidden)                   
+   VitNetOut (Hidden)                
+   VitPre (Hidden)                   
+   Encours (Hidden)                  
+   Encours_val (Hidden)              
+   DebitNetOut (Hidden)              
+   DebitNetOut_Val (Hidden)          
+   etat (Hidden)                     
+   etatPre (Hidden)                  
+   type (Hidden)                     
+   etat_val (Hidden)                 
+   etatPre_val (Hidden)              
+   type_val1 (Hidden)                
+   debitNom (Hidden)                 
+   Nb (Hidden)                       
+   type_val4 (Hidden)                
+   labelreg (Hidden)                 
+   ContYes (Hidden)                  
+   ContNo (Hidden)                   
+   pere_index1_bf (Hidden)           
+   pere (Hidden)                     
+   pere_index2_b (Hidden)            
+   pere_value1_bf (Hidden)           
+   pere_value2_b (Hidden)            
+   in_label1 (Hidden)                
+   in_label2F (Hidden)               
+   in_label3 (Hidden)                
+   in_label4 (Hidden)                
+   in_label5 (Hidden)                
+   in_label6 (Hidden)                
+   in_label7 (Hidden)                
+   in_label8 (Hidden)                
+   in_label9 (Hidden)                
+   in_label10 (Hidden)               
+   LiquidDrive (Hidden)              
+   NoLiquidDrive (Hidden)            
+   ContainerDrive (Hidden)           
+   NoContainerDrive (Hidden)         
+   type_val5 (Hidden)                
+   pere_index2_filler (Hidden)       
+   pere_value2_f (Hidden)            
+   pere_value3_f (Hidden)            
+   pere_value4_f (Hidden)            
+   pere_value6_f (Hidden)            
+   VitNomC (Hidden)                  
+   LongueurC (Hidden)                
+   type_val0 (Hidden)                
+   Overline (Hidden)                 
+   over_index (Hidden)               
+   over_val1 (Hidden)                
+   over_val2 (Hidden)                
+   pere_index1_filler (Hidden)       
+   Machine_State (Hidden)            
+   Machine_StateVal (Hidden)         
+   Machine_GoodOutputRate (Hidden)   
+   Machine_GoodOutputRateVal (Hidden)
+   Machine_UnitsInsideNAC (Hidden)   
+   Machine_UnitsInsideNACVal (Hidden)
+   Machine_InputRate (Hidden)        
+   Machine_InputRateVal (Hidden)     
+   Machine_UnitsProcessed (Hidden)   
+   Machine_UnitsProcessedVal (Hidden)
+   Machine_GoodUnitsProd (Hidden)    
+   Machine_GoodUnitsProdVal (Hidden) 
+   Machine_SpeedFactor (Hidden)      
+   Machine_SpeedFactorVal (Hidden)   
+   Machine_RunSpeed (Hidden)         
+   Machine_RunSpeedVal (Hidden)      
+   Machine_BaseNomRunSpeed (Hidden)  
+   Machine_BaseNomRunSpeedVal (Hidden)
+   Machine_OutPutRate (Hidden)       
+   Machine_OutputRateVal (Hidden)    
+   Machine_OutputRateNACVal (Hidden) 
+   Machine_Product (Hidden)          
+   Machine_ProductVal (Hidden)       
+   Machine_BaseNomRunSpeedValNAC (Hidden)
+   DimensionUnits (Hidden)           
+   DimensionUnitsVal (Hidden)        
+   OperatorOption (Hidden)           
+   OperatorOptionVal (Hidden)        
+   Machine_UnitsInside (Hidden)      
+   Machine_UnitsInsideVal (Hidden)   
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   in_label2 (Hidden)                
+   Machine_Capacity (Hidden)         
+   Machine_CapacityVal (Hidden)      
+   NoLoss (Hidden)                   
+   V_debitNomB_Category (Hidden)     
+   V_pere_Category (Hidden)          
+   V_debitNom_Category (Hidden)      
+   V_VitNomC_Category (Hidden)       
+   V_LongueurC_Category (Hidden)     
+   V_VitNet_Category (Hidden)        
+   V_VitNetOut_Category (Hidden)     
+   V_largeur_Category (Hidden)       
+   V_debitNet_Category (Hidden)      
+   V_debitNetIn_Category (Hidden)    
+   V_OverLine_Category (Hidden)      
+   V_debitPre_Category (Hidden)      
+   V_debitPreIn_Category (Hidden)    
+   V_conso_Category (Hidden)         
+   V_MAJ_Category (Hidden)           
+   V_etat_Category (Hidden)          
+   V_etatPre_Category (Hidden)       
+   V_type_Category (Hidden)          
+   V_VitPre_Category (Hidden)        
+   V_Encours_Category (Hidden)       
+   V_debitNetOut_Category (Hidden)   
+   V_conso_ClearOption (Hidden)      
+   Machine_UnitsLost (Hidden)        
+   Machine_UnitsLostVal (Hidden)     
+   ConveyCyclesPerMinDefault (Hidden)
+   BaseVitNom_valC (Hidden)          
+   Machine_BaseRunSpeed (Hidden)     
+   Machine_BaseRunSpeedVal (Hidden)  
+   Machine_NomRunSpeed (Hidden)      
+   Machine_NomRunSpeedVal (Hidden)   
+   Machine_BaseOutPutRate (Hidden)   
+   Machine_BaseOutputRateVal (Hidden)
+   Machine_BaseOutputRateNACVal (Hidden)
+   Machine_BaseGoodOutputRate (Hidden)
+   Machine_BaseGoodOutputRateVal (Hidden)
+   Machine_BaseInputRate (Hidden)    
+   Machine_BaseInputRateVal (Hidden) 
+   MachineStatistics (Hidden)        
+   MachineStatisticsVal (Hidden)     
+   Unit Density One (Hidden)         
+   Machine_CapacityNACAdvVal (Hidden)
+   Machine_NomRunSpeedValNAC (Hidden)
+   Width One (Hidden)                
+   Machine_NomRunSpeedValNACAdv (Hidden)
+   Machine_BaseNomRunSpeedValNACAd (Hidden)
+   ConvNominalRunSpeedVar (Hidden)   
+   ConvNominalVelocityVar (Hidden)   
+   ConvNomRunSpeedCtrlCat (Hidden)   
+   ConvNomRunSpeedResCat (Hidden)    
+   ConvNominalVelocityCtrlCat (Hidden)
+   ConvNominalVelocityResCat (Hidden)
+   ConvLengthVar (Hidden)            
+   ConvLengthCtrlCat (Hidden)        
+   ConvLengthResCat (Hidden)         
+   ConvWidthVar (Hidden)             
+   ConvWidthCtrlCat (Hidden)         
+   ConvWidthResCat (Hidden)          
+   ConvCapacityVar (Hidden)          
+   ConvCapacityCtrlCat (Hidden)      
+   ConvCapacityResCat (Hidden)       
+   Machine_CapacityNAC (Hidden)      
+   nom                                Name                              
+   Machine Type                       Type                              
+   BFirst                             Machine Begins a Line             
+   BLast                              Machine Ends a Line               
+   CyclesPerMin                       Cycles/Minute                     
+   Largueur_valB                      Units/Cycle                       
+   unitsA                             Assemblies/Cycle                  
+   unitsF                             Containers/Cycle                  
+   VitNom_valC                        Nominal Run Speed (Units/Min)     
+   Nominal Velocity                   Nominal Velocity                  
+   Length                             Length                            
+   Width                              Width                             
+   Unit Density                       Unit Density                      
+   Capacity                           Capacity                          
+   OverLineToggle                     Container Volumes                 
+   VolumeUnitaire                     Volume                            
+   Controls                           Controls                          
+   Loss                               Loss                              
+   ProdChg                            Production and                    
+   Reliability                        Reliability                       
+   SchedStop                          Scheduled                         
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Repeat Group 'Branches':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   dummy (Hidden)                    
+   LineDescription                    Line Name                         
+   fraction                           Units Per Assembly                
+
+
+   Operands Contained in Dialog 'VolumesDBox':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Volumes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Reference                          Product Name                      
+   Volume                             Volume                            
+
+
+   Operands Contained in Dialog 'Run Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Accel (Hidden)                    
+   regul (Hidden)                    
+   regulPre (Hidden)                 
+   regulPre_val (Hidden)             
+   V_regul_Category (Hidden)         
+   V_regulPre_Category (Hidden)      
+   Active                             Initially Active                  
+   InitSF                             Initial Speed Factor              
+   debitNom_valB                      debitNom_valB                     
+   FstrokesF                          FstrokesF                         
+   strokesA                           strokesA                          
+   Longueur_valF                      Longueur_valF                     
+   Longueur_valC                      Longueur_valC                     
+
+
+   Operands Contained in Dialog 'Acceleration':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   acc (Hidden)                      
+   lowvalue (Hidden)                 
+   FixedInc (Hidden)                 
+   value1 (Hidden)                   
+   dec (Hidden)                      
+   lowvalueb (Hidden)                
+   FixedIncb (Hidden)                
+   value1b (Hidden)                  
+   2St (Hidden)                      
+   3St (Hidden)                      
+   4St (Hidden)                      
+   5St (Hidden)                      
+   2StD (Hidden)                     
+   3StD (Hidden)                     
+   4StD (Hidden)                     
+   5StD (Hidden)                     
+   AccCheck                           Acceleration                      
+   AccSteps                           Max Number of Steps               
+   value2                             Step 2                            
+   value3                             Step 3                            
+   value4                             Step 4                            
+   value5                             Step 5                            
+   DecCheck                           Deceleration                      
+   DecSteps                           Max Number of Steps               
+   value2b                            Step 2                            
+   value3b                            Step 3                            
+   value4b                            Step 4                            
+   value5b                            Step 5                            
+
+
+   Operands Contained in Dialog 'ControlsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   C1 (Hidden)                       
+   C2 (Hidden)                       
+   C3 (Hidden)                       
+   C4 (Hidden)                       
+   C5 (Hidden)                       
+   C6 (Hidden)                       
+   C7 (Hidden)                       
+   C8 (Hidden)                       
+   C9 (Hidden)                       
+   C10 (Hidden)                      
+   C11 (Hidden)                      
+   S1 (Hidden)                       
+   S2 (Hidden)                       
+   S3 (Hidden)                       
+   C12 (Hidden)                      
+   C13 (Hidden)                      
+   C14 (Hidden)                      
+   BaseIntValue (Hidden)             
+   GoodOutputEval                                                       
+   TimeInt                            Every                             
+   IntValue                                                             
+   ProdCt                             Every                             
+   CountValue                                                           
+
+
+   Operands Contained in Repeat Group 'Control':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nom_action (Hidden)               
+   NSYMnom_action (Hidden)           
+   numblk_label (Hidden)             
+   lastvalue (Hidden)                
+   NoAction (Hidden)                 
+   Nolabel (Hidden)                  
+   sensitivity (Hidden)              
+   V_lastvalue_Category (Hidden)     
+   controle_num                       Number                            
+   ControlName                        Name                              
+   Actions                            Take Actions                      
+   DiscEnt                            Create Discrete Entity            
+   Label                              Send to Label                     
+
+
+   Operands Contained in Repeat Group 'ControlCond':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   and (Hidden)                      
+   nomvalue (Hidden)                 
+   times (Hidden)                    
+   EqualOperator (Hidden)            
+   CondEndComma (Hidden)             
+   CondStartComma (Hidden)           
+   abs (Hidden)                      
+   mod (Hidden)                      
+   plusepsilon (Hidden)              
+   LessThanEpsilon (Hidden)          
+   AtLeastModulo (Hidden)            
+   Parameter                          If                                
+   CompOp                             Is                                
+   ParameterValue                     Value                             
+   ParameterState                     Is                                
+   ParameterBlocked                   Is                                
+   ParameterProduct                   Is                                
+   Other                              Condition                         
+
+
+   Operands Contained in Dialog 'ActionsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nbaction (Hidden)                 
+   Action_Exp (Hidden)               
+   Action_Index1 (Hidden)            
+   Action_Index2 (Hidden)            
+
+
+   Operands Contained in Repeat Group 'ActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   maj_type1 (Hidden)                
+   ActionRegul (Hidden)              
+   ActionName (Hidden)               
+   ActionDummy (Hidden)              
+   maj_type2 (Hidden)                
+   maj_type3 (Hidden)                
+   maj_type4 (Hidden)                
+   Action_Value1 (Hidden)            
+   Action_Value2 (Hidden)            
+   Action_Value3 (Hidden)            
+   Action_Value4 (Hidden)            
+   ActionZero (Hidden)               
+   ActionOne (Hidden)                
+   HInventoryName (Hidden)           
+   ActionMinusSign (Hidden)          
+   MachineSetName (Hidden)           
+   ConveyorSetName (Hidden)          
+   MemberNumber (Hidden)             
+   SymbolNumber (Hidden)             
+   maj_type6 (Hidden)                
+   HConvValveExt (Hidden)            
+   ActMaxBegin (Hidden)              
+   ActMaxEnd (Hidden)                
+   ActANINTBegin (Hidden)            
+   ActANINTEnd (Hidden)              
+   maj_type7 (Hidden)                
+   ActNum (Hidden)                   
+   ActionTwo (Hidden)                
+   BlockNum (Hidden)                 
+   ActionLostProduction (Hidden)     
+   HLP (Hidden)                      
+   maj_type8 (Hidden)                
+   maj_type9 (Hidden)                
+   V_InventoryName_Category (Hidden) 
+   ActType                            Type                              
+   MachName                           Machine Name                      
+   ConvName                           Conveyor Name                     
+   SwitchName                         Switch Name                       
+   ConvLnkName                        Conveyor Link Name                
+   ValveName                          Valve Name                        
+   PalName                            Palletizer Name                   
+   VariableName                       Variable Name                     
+   InventoryName                      Storage Name                      
+   Speed                              New Speed Factor                  
+   LostProduction                     New Lost Production (0-100%)      
+   Direction                          New Direction                     
+   IncInv                             Number of Pallets                 
+   DecInv                             Number of Pallets                 
+   VarValue                           Value                             
+
+
+   Operands Contained in Dialog 'LossDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AfterFail                          Lost Units after Failures         
+   afterStart                         Lost Units after Stops            
+   afterover                          Lost Units after Changeovers      
+   dented                             Initial Lost Production           
+
+
+   Operands Contained in Dialog 'Prod':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   PlanInOperand (Hidden)            
+   OverType                           Changeover Type                   
+   OverType2                          Changeover Type                   
+   PlanID                             Production Plan Name              
+   ProduceProductType                 Plan Quantities Refer To          
+   QoperOver                          Changeover Operators              
+
+
+   Operands Contained in Repeat Group 'References':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseOverDelayEntry (Hidden)       
+   refID                              Product Name                      
+   OverDelayEntry                     Setup Time                        
+   OverDelayEntry TimeUnits           Time Units                        
+
+
+   Operands Contained in Dialog 'Operators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom4 (Hidden)                   
+   operstates4 (Hidden)              
+   bskill4                            Skill Adjustment                  
+   HList_Nom4                         Operator State                    
+   ProdPriority                       Priority                          
+
+
+   Operands Contained in Repeat Group 'ProdOpers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select4 (Hidden)                  
+   paren4_1 (Hidden)                 
+   paren4_2 (Hidden)                 
+   comma4 (Hidden)                   
+   attr4 (Hidden)                    
+   suffix4 (Hidden)                  
+   oper4skill (Hidden)               
+   IncrementNS4 (Hidden)             
+   Opertype4                          Operator Type                     
+   Operator4                          Operator Name                     
+   Operator4b                         Group Name                        
+   ProdRule                           Selection Rule                    
+   ProdSetMem                         Group Member                      
+
+
+   Operands Contained in Dialog 'ReliabilityDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   UpTimeMTBF (Hidden)               
+   ReliabilityMTBF (Hidden)          
+   BaseUpTimeTTR (Hidden)            
+   BaseTimeSpan (Hidden)             
+   BaseReliabilityTTR (Hidden)       
+   Reliability Type                   Define Downtimes Using            
+   ExpectedUptime                     Expected Uptime (0-100%)          
+   UpTimeTTR                          Time to Repair                    
+   UpTimeTTR TimeUnits                Time Units                        
+   TimeSpan                           Time Span                         
+   TimeSpan TimeUnits                 Time Units                        
+   Probability                        Reliability for Time Span         
+   ReliabilityTTR                     Time to Repair                    
+   ReliabilityTTR TimeUnits           Time Units                        
+   QOperFail1                         Repair Operators                  
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseFailuresTBF (Hidden)          
+   BaseFailuresTTR (Hidden)          
+   FailNumber                         Failure Number                    
+   FailName                           Failure Name                      
+   Trigger Type                       Trigger Type                      
+   Uptime Type                        Uptime Type                       
+   FailuresTBF                        Time Betw Failures                
+   FailuresTBF TimeUnits              Time Units                        
+   FailuresCBF                        Count Betw Failures (Units)       
+   FailuresTTR                        Time to Repair                    
+   FailuresTTR TimeUnits              Time Units                        
+   QOperFail2                         Repair Operators                  
+
+
+   Operands Contained in Dialog 'Operators3':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom3 (Hidden)                   
+   operstates3 (Hidden)              
+   bskill3                            Skill Adjustment                  
+   HList_Nom3                         Operator State                    
+   Fail2Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail2Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select3 (Hidden)                  
+   paren3_1 (Hidden)                 
+   paren3_2 (Hidden)                 
+   comma3 (Hidden)                   
+   attr3 (Hidden)                    
+   suffix3 (Hidden)                  
+   oper3skill (Hidden)               
+   IncrementNS3 (Hidden)             
+   Opertype3                          Operator Type                     
+   Operator3                          Operator Name                     
+   Operator3b                         Group Name                        
+   Fail2Rule                          Selection Rule                    
+   Fail2SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'Operators2':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom2 (Hidden)                   
+   operstates2 (Hidden)              
+   bskill2                            Skill Adjustment                  
+   HList_Nom2                         Operator State                    
+   Fail1Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail1Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select2 (Hidden)                  
+   paren2_1 (Hidden)                 
+   paren2_2 (Hidden)                 
+   comma2 (Hidden)                   
+   attr2 (Hidden)                    
+   suffix2 (Hidden)                  
+   oper2skill (Hidden)               
+   IncrementNS2 (Hidden)             
+   Opertype2                          Operator Type                     
+   Operator2                          Operator Name                     
+   Operator2b                         Group Name                        
+   Fail1Rule                          Selection Rule                    
+   Fail1SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'SchedDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RegenerateSchedule                 Repeat the Stops                  
+   QoperStops                         Stoppage Operators                
+
+
+   Operands Contained in Repeat Group 'ScheduledStops':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseTBTS (Hidden)                 
+   BaseTimeDown (Hidden)             
+   TBTS                               Time Before Stop                  
+   TBTS TimeUnits                     Time Units                        
+   TimeDown                           Stop Duration                     
+   TimeDown TimeUnits                 Time Units                        
+
+
+   Operands Contained in Dialog 'Operators1':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom1 (Hidden)                   
+   operstates1 (Hidden)              
+   bskill1                            Skill Adjustment                  
+   HList_nom1                         Operator State                    
+   StopPriority                       Priority                          
+
+
+   Operands Contained in Repeat Group 'StopOpers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select1 (Hidden)                  
+   paren1_1 (Hidden)                 
+   paren1_2 (Hidden)                 
+   comma1 (Hidden)                   
+   attr1 (Hidden)                    
+   suffix1 (Hidden)                  
+   oper1skill (Hidden)               
+   IncrementNS1 (Hidden)             
+   Opertype1                          Operator Type                     
+   Operator1                          Operator Name                     
+   Operator1b                         Group Name                        
+   StopRule                           Selection Rule                    
+   StopSetMem                         Group Member                      
+
+
+   Operands Contained in Dialog 'StatsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CostperBaseTimeUnit (Hidden)      
+   CostperHour                        Cost/Hour                         
+   CostperGood                        Cost/Good Unit                    
+   CostperLost                        Cost/Lost Unit                    
+
+
+   Operands Contained in Dialog 'AnimationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Animate1                           State Indicator                   
+   Animate2                           Blocked/Starved Symbols           
+   Animate3                           Product Picture                   
+   Animate4                           Variables Table                   
+
+Module: Conveyor        
+
+   Operands Contained in Dialog 'Conveyor':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   longueur (Hidden)                 
+   largeur (Hidden)                  
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   VitNom (Hidden)                   
+   VitNet (Hidden)                   
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   VitPre (Hidden)                   
+   Encours (Hidden)                  
+   Encours_val (Hidden)              
+   nb_nea (Hidden)                   
+   nea_val (Hidden)                  
+   nb_nec (Hidden)                   
+   nec_val (Hidden)                  
+   regul_val (Hidden)                
+   seucou (Hidden)                   
+   accuvit (Hidden)                  
+   accuDeb (Hidden)                  
+   difflu (Hidden)                   
+   difflu2 (Hidden)                  
+   entDFV (Hidden)                   
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   def_st_Oui (Hidden)               
+   def_st_Non (Hidden)               
+   nbcapteur (Hidden)                
+   etatPre (Hidden)                  
+   etatPre_valA (Hidden)             
+   fils (Hidden)                     
+   fils_index1 (Hidden)              
+   fils_index2A (Hidden)             
+   pere (Hidden)                     
+   pere_index1A (Hidden)             
+   pere_index2 (Hidden)              
+   pere_value1 (Hidden)              
+   pere_value2 (Hidden)              
+   regul (Hidden)                    
+   labelreg (Hidden)                 
+   ContYes (Hidden)                  
+   ContNo (Hidden)                   
+   Conveyor_State (Hidden)           
+   Conveyor_StateVal (Hidden)        
+   Conveyor_GoodOutputRate (Hidden)  
+   Conveyor_GoodOutputRateVal (Hidden)
+   Conveyor_UnitsInside (Hidden)     
+   Conveyor_UnitsInsideVal (Hidden)  
+   Conveyor_InputRate (Hidden)       
+   Conveyor_InputRateVal (Hidden)    
+   Conveyor_UnitsProcessed (Hidden)  
+   Conveyor_UnitsProcessedVal (Hidden)
+   Conveyor_GoodUnitsProd (Hidden)   
+   Conveyor_GoodUnitsProdVal (Hidden)
+   Conveyor_SpeedFactor (Hidden)     
+   Conveyor_SpeedFactorVal (Hidden)  
+   Conveyor_RunSpeed (Hidden)        
+   Conveyor_RunSpeedVal (Hidden)     
+   Conveyor_NomRunSpeed (Hidden)     
+   Conveyor_NomRunSpeedVal (Hidden)  
+   Conveyor_OutPutRate (Hidden)      
+   Conveyor_OutputRateVal (Hidden)   
+   etat (Hidden)                     
+   etat_val (Hidden)                 
+   Conveyor_Product (Hidden)         
+   Conveyor_ProductVal (Hidden)      
+   H_InvSet (Hidden)                 
+   H_InvSetnmA (Hidden)              
+   DimensionUnits (Hidden)           
+   DimensionUnitsVal (Hidden)        
+   OperatorOption (Hidden)           
+   OperatorOptionVal (Hidden)        
+   Conveyor_UnitsTraveling (Hidden)  
+   Conveyor_UnitsTravelingVal (Hidden)
+   Conveyor_UnitsAccumulated (Hidden)
+   Conveyor_UnitsAccumulatedVal (Hidden)
+   Conveyor_Capacity (Hidden)        
+   Conveyor_CapacityVal (Hidden)     
+   ConveyorLengthCtrl (Hidden)       
+   ConveyorWidthCtrl (Hidden)        
+   NoLoss (Hidden)                   
+   V_pere_Category (Hidden)          
+   V_longueur_Category (Hidden)      
+   V_largeur_Category (Hidden)       
+   V_conso_Category (Hidden)         
+   V_MAJ_Category (Hidden)           
+   V_VitNom_Category (Hidden)        
+   V_VitNet_Category (Hidden)        
+   V_debitNet_Category (Hidden)      
+   V_VitPre_Category (Hidden)        
+   V_Encours_Category (Hidden)       
+   V_nb_nea_Category (Hidden)        
+   V_nb_nec_Category (Hidden)        
+   V_seucou_Category (Hidden)        
+   V_accuVit_Category (Hidden)       
+   V_accuDeb_Category (Hidden)       
+   V_difflu_Category (Hidden)        
+   V_difflu2_Category (Hidden)       
+   V_etatPre_Category (Hidden)       
+   V_fils_Category (Hidden)          
+   V_etat_Category (Hidden)          
+   V_regul_Category (Hidden)         
+   V_entDFV_Category (Hidden)        
+   V_nbcapteur_Category (Hidden)     
+   FluidUnitsSw (Hidden)             
+   FluidUnitsVal (Hidden)            
+   V_conso_ClearOption (Hidden)      
+   Conveyor_UnitsLost (Hidden)       
+   Conveyor_UnitsLostVal (Hidden)    
+   Conveyor_BaseRunSpeed (Hidden)    
+   Conveyor_BaseRunSpeedVal (Hidden) 
+   Conveyor_BaseNomRunSpeed (Hidden) 
+   Conveyor_BaseNomRunSpeedVal (Hidden)
+   Conveyor_BaseOutPutRate (Hidden)  
+   Conveyor_BaseOutputRateVal (Hidden)
+   Conveyor_BaseGoodOutputRate (Hidden)
+   Conveyor_BaseGoodOutputRateVal (Hidden)
+   Conveyor_BaseInputRate (Hidden)   
+   Conveyor_BaseInputRateVal (Hidden)
+   ConveyorStatistics (Hidden)       
+   ConveyorStatisticsVal (Hidden)    
+   V_Length_Category (Hidden)        
+   V_Width_Category (Hidden)         
+   ConveyorNominalVelocityCtrl (Hidden)
+   V_NominalVelocity_Category (Hidden)
+   V_NominalVelocity_ResCategory (Hidden)
+   V_Length_ResCategory (Hidden)     
+   V_Width_ResCategory (Hidden)      
+   Conveyor_Length (Hidden)          
+   Conveyor_Width (Hidden)           
+   Conveyor_LengthVal (Hidden)       
+   Conveyor_WidthVal (Hidden)        
+   nom                                Name                              
+   VitNom_val                         Nominal Velocity                  
+   Longueur_val                       Length                            
+   largeur_val                        Width                             
+   densite                            Unit Density                      
+   def_start                          Automatic Upstream Restart        
+   Controls                           Controls                          
+   Loss                               Loss                              
+   Sensor                             Sensors                           
+   Reliability                        Reliability                       
+   SchedStop                          Scheduled                         
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'ControlsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   C1 (Hidden)                       
+   C2 (Hidden)                       
+   C3 (Hidden)                       
+   C4 (Hidden)                       
+   C5 (Hidden)                       
+   C6 (Hidden)                       
+   C7 (Hidden)                       
+   C8 (Hidden)                       
+   C9 (Hidden)                       
+   C10 (Hidden)                      
+   C11 (Hidden)                      
+   S1 (Hidden)                       
+   S2 (Hidden)                       
+   S3 (Hidden)                       
+   C12 (Hidden)                      
+   C13 (Hidden)                      
+   C14 (Hidden)                      
+   BaseIntValue (Hidden)             
+   GoodOutputEval                                                       
+   TimeInt                            Every                             
+   IntValue                                                             
+   ProdCt                             Every                             
+   CountValue                                                           
+
+
+   Operands Contained in Repeat Group 'Control':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nom_action (Hidden)               
+   NSYMnom_action (Hidden)           
+   numblk_label (Hidden)             
+   lastvalue (Hidden)                
+   NoAction (Hidden)                 
+   Nolabel (Hidden)                  
+   sensitivity (Hidden)              
+   V_lastvalue_Category (Hidden)     
+   controle_num                       Number                            
+   ControlName                        Name                              
+   Actions                            Take Actions                      
+   DiscEnt                            Create Discrete Entity            
+   Label                              Send to Label                     
+
+
+   Operands Contained in Repeat Group 'ControlCond':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   and (Hidden)                      
+   nomvalue (Hidden)                 
+   times (Hidden)                    
+   EqualOperator (Hidden)            
+   CondEndComma (Hidden)             
+   CondStartComma (Hidden)           
+   abs (Hidden)                      
+   mod (Hidden)                      
+   plusepsilon (Hidden)              
+   LessThanEpsilon (Hidden)          
+   AtLeastModulo (Hidden)            
+   Parameter                          If                                
+   CompOp                             Is                                
+   Other                              Condition                         
+   ParameterValue                     Value                             
+   ParameterState                     Is                                
+   ParameterBlocked                   Is                                
+   ParameterProduct                   Is                                
+
+
+   Operands Contained in Dialog 'ActionsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nbaction (Hidden)                 
+   Action_Exp (Hidden)               
+   Action_Index1 (Hidden)            
+   Action_Index2 (Hidden)            
+
+
+   Operands Contained in Repeat Group 'ActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   maj_type1 (Hidden)                
+   ActionRegul (Hidden)              
+   ActionName (Hidden)               
+   ActionDummy (Hidden)              
+   maj_type2 (Hidden)                
+   maj_type3 (Hidden)                
+   maj_type4 (Hidden)                
+   Action_Value1 (Hidden)            
+   Action_Value2 (Hidden)            
+   Action_Value3 (Hidden)            
+   Action_Value4 (Hidden)            
+   ActionZero (Hidden)               
+   ActionOne (Hidden)                
+   HInventoryName (Hidden)           
+   ActionMinusSign (Hidden)          
+   MachineSetName (Hidden)           
+   ConveyorSetName (Hidden)          
+   MemberNumber (Hidden)             
+   SymbolNumber (Hidden)             
+   maj_type6 (Hidden)                
+   HConvValveExt (Hidden)            
+   ActMaxBegin (Hidden)              
+   ActMaxEnd (Hidden)                
+   ActANINTBegin (Hidden)            
+   ActANINTEnd (Hidden)              
+   maj_type7 (Hidden)                
+   ActNum (Hidden)                   
+   ActionTwo (Hidden)                
+   BlockNum (Hidden)                 
+   ActionLostProduction (Hidden)     
+   HLP (Hidden)                      
+   maj_type8 (Hidden)                
+   maj_type9 (Hidden)                
+   V_InventoryName_Category (Hidden) 
+   ActType                            Type                              
+   MachName                           Machine Name                      
+   ConvName                           Conveyor Name                     
+   SwitchName                         Switch Name                       
+   ConvLnkName                        Conveyor Link Name                
+   ValveName                          Valve Name                        
+   PalName                            Palletizer Name                   
+   VariableName                       Variable Name                     
+   InventoryName                      Storage Name                      
+   Speed                              New Speed Factor                  
+   LostProduction                     New Lost Production (0-100%)      
+   Direction                          New Direction                     
+   IncInv                             Number of Pallets                 
+   DecInv                             Number of Pallets                 
+   VarValue                           Value                             
+
+
+   Operands Contained in Dialog 'LossDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AfterFail                          Lost Units after Failures         
+   afterStart                         Lost Units after Stops            
+   dented                             Initial Lost Production           
+
+
+   Operands Contained in Dialog 'SensorsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Nbcapteur_val (Hidden)            
+
+
+   Operands Contained in Repeat Group 'Sensors':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   action_val (Hidden)               
+   FM (Hidden)                       
+   FD (Hidden)                       
+   defCond (Hidden)                  
+   CoefUnit2 (Hidden)                
+   CoefUnit1 (Hidden)                
+   Sensor_idx (Hidden)               
+   Snumblk_label (Hidden)            
+   Snbaction (Hidden)                
+   nom_action2 (Hidden)              
+   NSYMnom_Saction (Hidden)          
+   NSYMnom_SactionDummy (Hidden)     
+   Sdummy_label (Hidden)             
+   SnbactionIndex2 (Hidden)          
+   BaseTimeOn (Hidden)               
+   BaseTimeOff (Hidden)              
+   Sensor_nom                         Name                              
+   Qunite                             Sensor is Located                 
+   sensor_pos                         Location                          
+   action_type                        Activate Sensor When              
+   TimeOn                             Time ON (Seconds)                 
+   TimeOff                            Time OFF (Seconds)                
+   AddCondS                           Additional Condition              
+   sensor_cond                                                          
+   SActions                           Take Actions                      
+   SDiscEnt                           Create Discrete Entity            
+   SLabel                             Send to Label                     
+
+
+   Operands Contained in Dialog 'SActionsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'SActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SDecInv (Hidden)                  
+   Smaj_type (Hidden)                
+   Sdummy2 (Hidden)                  
+   defCondb (Hidden)                 
+   SActionRegul (Hidden)             
+   SActionName (Hidden)              
+   SHInventoryName (Hidden)          
+   SActionStorage (Hidden)           
+   SActionVariable (Hidden)          
+   ActionType1 (Hidden)              
+   ActionType2 (Hidden)              
+   ActionType3 (Hidden)              
+   SMachineSetName (Hidden)          
+   SConveyorSetName (Hidden)         
+   SMemberNumber (Hidden)            
+   SSymbolNumber (Hidden)            
+   ActionType4 (Hidden)              
+   SActionLink (Hidden)              
+   SActionZero (Hidden)              
+   SActionOne (Hidden)               
+   SActionFils (Hidden)              
+   DummySActionFils (Hidden)         
+   SActionBlocked (Hidden)           
+   SActMaxBegin (Hidden)             
+   SActMaxEnd (Hidden)               
+   SActANINTBegin (Hidden)           
+   SActANINTEnd (Hidden)             
+   SActionSwitch (Hidden)            
+   SActionTwo (Hidden)               
+   SActionNum (Hidden)               
+   ActionType5 (Hidden)              
+   SHLP (Hidden)                     
+   SNSYMLostProduction (Hidden)      
+   ActionType6 (Hidden)              
+   ActionType7 (Hidden)              
+   SLossOutputRate (Hidden)          
+   SLossInputRate (Hidden)           
+   V_SInventoryName_Category (Hidden)
+   SActType                           Type                              
+   SMachName                          Machine Name                      
+   SConvName                          Conveyor Name                     
+   SConvLnkName                       Conveyor Link Name                
+   SValveName                         Valve Name                        
+   SPalName                           Palletizer Name                   
+   SVariableName                      Variable Name                     
+   SInventoryName                     Storage Name                      
+   SSwitchName                        Switch Name                       
+   SSpeed                             New Speed Factor                  
+   SIncInv                            Number of Pallets                 
+   SDirection                         New Direction                     
+   SLostProduction                    New Lost Production (0-100%)      
+   SVarValue                          Value                             
+
+
+   Operands Contained in Dialog 'ReliabilityDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   UpTimeMTBF (Hidden)               
+   ReliabilityMTBF (Hidden)          
+   BaseUpTimeTTR (Hidden)            
+   BaseTimeSpan (Hidden)             
+   BaseReliabilityTTR (Hidden)       
+   Reliability Type                   Define Downtimes Using            
+   ExpectedUptime                     Expected Uptime (0-100%)          
+   UpTimeTTR                          Time to Repair                    
+   UpTimeTTR TimeUnits                Time Units                        
+   TimeSpan                           Time Span                         
+   TimeSpan TimeUnits                 Time Units                        
+   Probability                        Reliability for Time Span         
+   ReliabilityTTR                     Time to Repair                    
+   ReliabilityTTR TimeUnits           Time Units                        
+   QOperFail1                         Repair Operators                  
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Trigger Type (Hidden)             
+   BaseFailuresTBF (Hidden)          
+   BaseFailuresTTR (Hidden)          
+   FailNumber                         Failure Number                    
+   FailName                           Failure Name                      
+   Uptime Type                        Uptime Type                       
+   FailuresTBF                        Time Betw Failures                
+   FailuresTBF TimeUnits              Time Units                        
+   FailuresCBF                        Count Betw Failures (Units)       
+   FailuresTTR                        Time to Repair                    
+   FailuresTTR TimeUnits              Time Units                        
+   QOperFail2                         Repair Operators                  
+
+
+   Operands Contained in Dialog 'Operators3':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom3 (Hidden)                   
+   operstates3 (Hidden)              
+   bskill3                            Skill Adjustment                  
+   HList_Nom3                         Operator State                    
+   Fail2Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail2Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select3 (Hidden)                  
+   paren3_1 (Hidden)                 
+   paren3_2 (Hidden)                 
+   comma3 (Hidden)                   
+   attr3 (Hidden)                    
+   suffix3 (Hidden)                  
+   oper3skill (Hidden)               
+   IncrementNS3 (Hidden)             
+   Opertype3                          Operator Type                     
+   Operator3                          Operator Name                     
+   Operator3b                         Group Name                        
+   Fail2Rule                          Selection Rule                    
+   Fail2SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'Operators2':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom2 (Hidden)                   
+   operstates2 (Hidden)              
+   bskill2                            Skill Adjustment                  
+   HList_Nom2                         Operator State                    
+   Fail1Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail1Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select2 (Hidden)                  
+   paren2_1 (Hidden)                 
+   paren2_2 (Hidden)                 
+   comma2 (Hidden)                   
+   attr2 (Hidden)                    
+   suffix2 (Hidden)                  
+   oper2skill (Hidden)               
+   IncrementNS2 (Hidden)             
+   Opertype2                          Operator Type                     
+   Operator2                          Operator Name                     
+   Operator2b                         Group Name                        
+   Fail1Rule                          Selection Rule                    
+   Fail1SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'SchedDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RegenerateSchedule                 Repeat the Stops                  
+   QoperStops                         Stoppage Operators                
+
+
+   Operands Contained in Repeat Group 'ScheduledStops':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseTBTS (Hidden)                 
+   BaseTimeDown (Hidden)             
+   TBTS                               Time Before Stop                  
+   TBTS TimeUnits                     Time Units                        
+   TimeDown                           Stop Duration                     
+   TimeDown TimeUnits                 Time Units                        
+
+
+   Operands Contained in Dialog 'Operators1':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom1 (Hidden)                   
+   operstates1 (Hidden)              
+   bskill1                            Skill Adjustment                  
+   HList_nom1                         Operator State                    
+   StopPriority                       Priority                          
+
+
+   Operands Contained in Repeat Group 'StopOpers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select1 (Hidden)                  
+   paren1_1 (Hidden)                 
+   paren1_2 (Hidden)                 
+   comma1 (Hidden)                   
+   attr1 (Hidden)                    
+   suffix1 (Hidden)                  
+   oper1skill (Hidden)               
+   IncrementNS1 (Hidden)             
+   Opertype1                          Operator Type                     
+   Operator1                          Operator Name                     
+   Operator1b                         Group Name                        
+   StopRule                           Selection Rule                    
+   StopSetMem                         Group Member                      
+
+
+   Operands Contained in Dialog 'StatsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CostperBaseTimeUnit (Hidden)      
+   CostperHour                        Cost/Hour                         
+   CostperGood                        Cost/Good Unit                    
+   CostperLost                        Cost/Lost Unit                    
+
+
+   Operands Contained in Dialog 'AnimationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Animate1                           State Indicator  Accumulation     
+   Animate2                           Blocked/Starved Symbols           
+   Animate3                           Product Picture                   
+   Animate4                           Variables Table                   
+
+Module: Machine Link    
+
+   Operands Contained in Dialog 'MachineLink':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nom (Hidden)                      
+   VitNom_val (Hidden)               
+   Longueur_val (Hidden)             
+   largeur_val (Hidden)              
+   densite (Hidden)                  
+   labelreg (Hidden)                 
+   longueur (Hidden)                 
+   largeur (Hidden)                  
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   VitNom (Hidden)                   
+   VitNet (Hidden)                   
+   VitNet_val (Hidden)               
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   VitPre (Hidden)                   
+   VitPre_val (Hidden)               
+   Encours (Hidden)                  
+   Encours_val (Hidden)              
+   nb_nea (Hidden)                   
+   nea_val (Hidden)                  
+   nb_nec (Hidden)                   
+   nec_val (Hidden)                  
+   regul (Hidden)                    
+   regul_val (Hidden)                
+   seucou (Hidden)                   
+   accuvit (Hidden)                  
+   accuVit_val (Hidden)              
+   accuDeb (Hidden)                  
+   difflu (Hidden)                   
+   difflu2 (Hidden)                  
+   entDFV (Hidden)                   
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   H_InvSet (Hidden)                 
+   H_InvSetnmA (Hidden)              
+   etat (Hidden)                     
+   etat_val (Hidden)                 
+   etatPre (Hidden)                  
+   etatPre_valA (Hidden)             
+   Conveyor_Product (Hidden)         
+   Conveyor_ProductVal (Hidden)      
+   V_VitNom_Category (Hidden)        
+   V_longueur_Category (Hidden)      
+   V_largeur_Category (Hidden)       
+   V_conso_Category (Hidden)         
+   V_MAJ_Category (Hidden)           
+   V_VitNet_Category (Hidden)        
+   V_debitNet_Category (Hidden)      
+   V_VitPre_Category (Hidden)        
+   V_Encours_Category (Hidden)       
+   V_nb_nea_Category (Hidden)        
+   V_nb_nec_Category (Hidden)        
+   V_regul_Category (Hidden)         
+   V_seucou_Category (Hidden)        
+   V_accuvit_Category (Hidden)       
+   V_accuDeb_Category (Hidden)       
+   V_difflu_Category (Hidden)        
+   V_difflu2_Category (Hidden)       
+   V_entDFV_Category (Hidden)        
+   V_etat_Category (Hidden)          
+   V_etatPre_Category (Hidden)       
+   V_conso_ClearOption (Hidden)      
+
+Module: Conveyor Link   
+
+   Operands Contained in Dialog 'Conveyor Link':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   fraction (Hidden)                 
+   out_label (Hidden)                
+   dummy (Hidden)                    
+   labelreg (Hidden)                 
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   NoOutProduct (Hidden)             
+   State Variable (Hidden)           
+   State Variable Val (Hidden)       
+   nom                                Name                              
+   Animation                          Animation                         
+
+Module: Merge           
+
+   Operands Contained in Dialog 'Merge':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   debitNom_val (Hidden)             
+   largeur_val (Hidden)              
+   largeur (Hidden)                  
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   debitNom (Hidden)                 
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   debitNetIn (Hidden)               
+   debitPre (Hidden)                 
+   debitPreIn (Hidden)               
+   regul (Hidden)                    
+   regul_val (Hidden)                
+   regulPre (Hidden)                 
+   regulPre_val (Hidden)             
+   etat (Hidden)                     
+   etat_val (Hidden)                 
+   etatPre (Hidden)                  
+   etatPre_val (Hidden)              
+   type (Hidden)                     
+   type_val (Hidden)                 
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   NoOutProduct (Hidden)             
+   Machine_Product (Hidden)          
+   Machine_ProductVal (Hidden)       
+   V_DebitNom_Category (Hidden)      
+   V_largeur_Category (Hidden)       
+   V_conso_Category (Hidden)         
+   V_MAJ_Category (Hidden)           
+   V_debitNet_Category (Hidden)      
+   V_DebitNetIn_Category (Hidden)    
+   V_DebitPre_Category (Hidden)      
+   V_DebitPreIn_Category (Hidden)    
+   V_regul_Category (Hidden)         
+   V_regulPre_Category (Hidden)      
+   V_etat_Category (Hidden)          
+   V_etatPre_Category (Hidden)       
+   V_type_Category (Hidden)          
+   V_conso_ClearOption (Hidden)      
+   nom                                Name                              
+   OutProduct                         Outbound Product Name             
+
+Module: Split           
+
+   Operands Contained in Dialog 'Split':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   HFixed (Hidden)                   
+   Hadjustable (Hidden)              
+   labelreg (Hidden)                 
+   Machine_Product (Hidden)          
+   Machine_ProductVal (Hidden)       
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   nom                                Name                              
+   Type                               Type                              
+
+
+   Operands Contained in Repeat Group 'Branches':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   out_label (Hidden)                
+   dummy (Hidden)                    
+   NoOutProduct (Hidden)             
+   fraction                           Percentage [0..100%]              
+   OutProduct                         Outbound Product Name             
+
+Module: Switch          
+
+   Operands Contained in Dialog 'Switch':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   out1 (Hidden)                     
+   out2 (Hidden)                     
+   IniL1 (Hidden)                    
+   IniL0 (Hidden)                    
+   IniR1 (Hidden)                    
+   IniR0 (Hidden)                    
+   labelreg (Hidden)                 
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   Machine_Product (Hidden)          
+   Machine_ProductVal (Hidden)       
+   BaseChangeDelay (Hidden)          
+   nom                                Name                              
+   Qover                              Switch On                         
+   ChangeDelay                        Time to Switch (Min)              
+   SwitchPos                          Initial Direction                 
+   ChangeCount1                       Left Count Until Switch           
+   ChangeCount2                       Right Count Until Switch          
+   Animation                          Animation                         
+
+
+   Operands Contained in Repeat Group 'choix':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LchoixOn (Hidden)                 
+   LchoixOff (Hidden)                
+   RchoixOn (Hidden)                 
+   RchoixOff (Hidden)                
+   ref_ID                             Product Name                      
+   Lane                               Send To                           
+
+Module: Operator        
+
+   Operands Contained in Dialog 'Operator':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   OperatorState (Hidden)            
+   AlwaysAvailable (Hidden)          
+   CategoryType (Hidden)             
+   SkillFactorExp (Hidden)           
+   SkillFactor1DArrayIndex (Hidden)  
+   OperatorStatistics (Hidden)       
+   OperatorStatisticsVal (Hidden)    
+   AutoStatsGenerate (Hidden)        
+   Operator Name                      Name                              
+   Skill Factor                       Skill Factor                      
+   Capacity Type                      Type                              
+   Schedule Name                      Schedule Name                     
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'Statistics Dialog':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CostperBaseTimeUnit (Hidden)      
+   CostPerHour                        Cost/Hour                         
+
+
+   Operands Contained in Dialog 'AnimationDialog':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StateAnimation                     State Indicator                   
+   StatisticAnimation                 Statistics Table                  
+
+Module: Operator Group  
+
+   Operands Contained in Dialog 'Operator Group':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   OperatorGroupStatistics (Hidden)  
+   OperatorGroupStatisticsVal (Hidden)
+   Set Name                           Name                              
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Repeat Group 'Operators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Operator List Name (Hidden)       
+   SkillFactorValue (Hidden)         
+   SkillFactorExp (Hidden)           
+   Operator Name                      Operator Name                     
+   SetSkillFactor                     Skill Factor in Group             
+
+Module: Operator Schedule
+
+   Operands Contained in Dialog 'Operator Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumDays (Hidden)                  
+   VarIDPtr (Hidden)                 
+   Monday (Hidden)                   
+   MondayVal (Hidden)                
+   Tuesday (Hidden)                  
+   TuesdayVal (Hidden)               
+   Wednesday (Hidden)                
+   WednesdayVal (Hidden)             
+   Thursday (Hidden)                 
+   ThursdayVal (Hidden)              
+   Friday (Hidden)                   
+   FridayVal (Hidden)                
+   Saturday (Hidden)                 
+   SaturdayVal (Hidden)              
+   Sunday (Hidden)                   
+   SundayVal (Hidden)                
+   NumDays_D (Hidden)                
+   Today_D (Hidden)                  
+   DailyInfoExp (Hidden)             
+   DailyExpStuff (Hidden)            
+   V_VarIDPtr_Category (Hidden)      
+   1DayBaseTime (Hidden)             
+   Identifier                         Name                              
+   Planning Horizon Units             Type                              
+   Timeslot                           Timeslot (in minutes)             
+
+
+   Operands Contained in Repeat Group 'Day':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumAppts (Hidden)                 
+   NumAppts0 (Hidden)                
+   NumAppts1 (Hidden)                
+   NumApptsExp (Hidden)              
+   Week2                              Week                              
+   Week4                              Week                              
+   Today                              Day of Week                       
+
+
+   Operands Contained in Repeat Group 'Todays Availability':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Delay (Hidden)                    
+   AMPMVar (Hidden)                  
+   V1 (Hidden)                       
+   V2 (Hidden)                       
+   DumNumAppts (Hidden)              
+   Delay2 (Hidden)                   
+   AMPMVar2 (Hidden)                 
+   V12 (Hidden)                      
+   V22 (Hidden)                      
+   Activetime (Hidden)               
+   DMid (Hidden)                     
+   DNoon (Hidden)                    
+   DMid2 (Hidden)                    
+   DNoon2 (Hidden)                   
+   Hour12 (Hidden)                   
+   HourNot12 (Hidden)                
+   Hour12_2 (Hidden)                 
+   HourNot12_2 (Hidden)              
+   Minute60 (Hidden)                 
+   Minute2_60 (Hidden)               
+   Agent State                        Operator State                    
+   AMPMSg                                                               
+   Hour                               Hour                              
+   Minute15                           Minute                            
+   Minute30                           Minute                            
+   AMPMSg2                                                              
+   Hour2                              Hour                              
+   Minute2_15                         Minute                            
+   Minute2_30                         Minute                            
+
+
+   Operands Contained in Dialog 'Daily Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumAppts_D (Hidden)               
+   NumAppts0_D (Hidden)              
+   NumAppts1_D (Hidden)              
+   NumApptsExp_D (Hidden)            
+
+
+   Operands Contained in Repeat Group 'Todays Availability_D':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Delay_D (Hidden)                  
+   AMPMVar_D (Hidden)                
+   V1_D (Hidden)                     
+   V2_D (Hidden)                     
+   DumNumAppts_D (Hidden)            
+   Delay2_D (Hidden)                 
+   AMPMVar2_D (Hidden)               
+   V12_D (Hidden)                    
+   V22_D (Hidden)                    
+   Activetime_D (Hidden)             
+   DMid_D (Hidden)                   
+   DNoon_D (Hidden)                  
+   DMid2_D (Hidden)                  
+   DNoon2_D (Hidden)                 
+   Hour12_D (Hidden)                 
+   HourNot12_D (Hidden)              
+   Hour12_2_D (Hidden)               
+   HourNot12_2_D (Hidden)            
+   Minute60_D (Hidden)               
+   Minute2_60_D (Hidden)             
+   Agent State_D                      Operator State                    
+   AMPMSg_D                                                             
+   Hour_D                             Hour                              
+   Minute15_D                         Minute                            
+   Minute30_D                         Minute                            
+   AMPMSg2_D                                                            
+   Hour2_D                            Hour                              
+   Minute2_15_D                       Minute                            
+   Minute2_30_D                       Minute                            
+
+Module: Palletizer      
+
+   Operands Contained in Dialog 'Palletizer':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   largeur_val (Hidden)              
+   largeur (Hidden)                  
+   debitNetIn (Hidden)               
+   debitPre (Hidden)                 
+   debitPreIn (Hidden)               
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   etat (Hidden)                     
+   etatPre (Hidden)                  
+   type (Hidden)                     
+   etat_val (Hidden)                 
+   etatPre_val (Hidden)              
+   pere_index1_bf (Hidden)           
+   pere (Hidden)                     
+   pere_index2_b (Hidden)            
+   pere_value1_bf (Hidden)           
+   pere_value2_b (Hidden)            
+   type_val0 (Hidden)                
+   debitNom (Hidden)                 
+   Longueur (Hidden)                 
+   Longueur2 (Hidden)                
+   StockUnit (Hidden)                
+   MaxStock (Hidden)                 
+   StockLevel (Hidden)               
+   StockIndex (Hidden)               
+   FullFlag (Hidden)                 
+   EmptyFlag (Hidden)                
+   Machine_State (Hidden)            
+   Machine_StateVal (Hidden)         
+   Machine_UnitsProcessed (Hidden)   
+   Machine_UnitsProcessedVal (Hidden)
+   Machine_GoodUnitsProd (Hidden)    
+   Machine_GoodUnitsProdVal (Hidden) 
+   Machine_SpeedFactor (Hidden)      
+   Machine_SpeedFactorVal (Hidden)   
+   Machine_Product (Hidden)          
+   Machine_ProductVal (Hidden)       
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   Machine_PalletLevel (Hidden)      
+   Machine_PalletLevelVal (Hidden)   
+   OperatorOption (Hidden)           
+   OperatorOptionVal (Hidden)        
+   labelreg (Hidden)                 
+   ContYes (Hidden)                  
+   ContNo (Hidden)                   
+   StoragePlaced (Hidden)            
+   NoLoss (Hidden)                   
+   V_Outstock_Category (Hidden)      
+   V_Longueur_Category (Hidden)      
+   V_debitNom_Category (Hidden)      
+   V_largeur_Category (Hidden)       
+   V_Longueur2_Category (Hidden)     
+   V_pere_Category (Hidden)          
+   V_etat_Category (Hidden)          
+   V_conso_Category (Hidden)         
+   V_debitPreIn_Category (Hidden)    
+   V_MAJ_Category (Hidden)           
+   V_etatPre_Category (Hidden)       
+   V_debitPre_Category (Hidden)      
+   V_debitNetIn_Category (Hidden)    
+   V_type_Category (Hidden)          
+   V_debitNet_Category (Hidden)      
+   V_conso_ClearOption (Hidden)      
+   Machine_UnitsLost (Hidden)        
+   Machine_UnitsLostVal (Hidden)     
+   PalType (Hidden)                  
+   type_val2 (Hidden)                
+   type_val1 (Hidden)                
+   V_PalType_Category (Hidden)       
+   BaseTBP (Hidden)                  
+   BaseTBL (Hidden)                  
+   BaseDebitNom_Val (Hidden)         
+   Machine_GoodOutputRate (Hidden)   
+   Machine_GoodOutputRateVal (Hidden)
+   Machine_InputRate (Hidden)        
+   Machine_InputRateVal (Hidden)     
+   Machine_RunSpeed (Hidden)         
+   Machine_RunSpeedVal (Hidden)      
+   Machine_BaseNomRunSpeed (Hidden)  
+   Machine_BaseNomRunSpeedVal (Hidden)
+   Machine_OutPutRate (Hidden)       
+   Machine_OutputRateVal (Hidden)    
+   Machine_BaseRunSpeed (Hidden)     
+   Machine_BaseRunSpeedVal (Hidden)  
+   Machine_NomRunSpeed (Hidden)      
+   Machine_NomRunSpeedVal (Hidden)   
+   Machine_BaseOutPutRate (Hidden)   
+   Machine_BaseOutputRateVal (Hidden)
+   Machine_BaseGoodOutputRate (Hidden)
+   Machine_BaseGoodOutputRateVal (Hidden)
+   Machine_BaseInputRate (Hidden)    
+   Machine_BaseInputRateVal (Hidden) 
+   PalletizerStatistics (Hidden)     
+   PalletizerStatisticsVal (Hidden)  
+   nom                                Name                              
+   Palletizer Type                    Type                              
+   Outstock                           Storage Name                      
+   Longueur_val                       Units/Layer                       
+   debitNom_Val                       Nom. Run Speed (Layers/Min)       
+   TBL                                Time Between Layers (Min)         
+   Longueur2_val                      Layers/Pallet                     
+   TBP                                Time Between Pallets (Min)        
+   Controls                           Controls                          
+   Loss                               Loss                              
+   ProdChg                            Production and                    
+   Reliability                        Reliability                       
+   SchedStop                          Scheduled                         
+   DiscreteEntityLogic                Discrete Entity                   
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'Run Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   regul (Hidden)                    
+   regulPre (Hidden)                 
+   regulPre_val (Hidden)             
+   V_regul_Category (Hidden)         
+   V_regulPre_Category (Hidden)      
+   Active                             Initially Active                  
+   InitSF                             Initial Speed Factor              
+
+
+   Operands Contained in Dialog 'ControlsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   S1 (Hidden)                       
+   S2 (Hidden)                       
+   S3 (Hidden)                       
+   C1 (Hidden)                       
+   C2 (Hidden)                       
+   C3 (Hidden)                       
+   C4 (Hidden)                       
+   C5 (Hidden)                       
+   C6 (Hidden)                       
+   C7 (Hidden)                       
+   C8 (Hidden)                       
+   C9 (Hidden)                       
+   C10 (Hidden)                      
+   C11 (Hidden)                      
+   C12 (Hidden)                      
+   C13 (Hidden)                      
+   C14 (Hidden)                      
+   BaseIntValue (Hidden)             
+   TimeInt                            Every                             
+   IntValue                                                             
+   ProdCt                             Every                             
+   CountValue                                                           
+   GoodOutputEval                                                       
+
+
+   Operands Contained in Repeat Group 'Control':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nom_action (Hidden)               
+   NSYMnom_action (Hidden)           
+   numblk_label (Hidden)             
+   lastvalue (Hidden)                
+   NoAction (Hidden)                 
+   Nolabel (Hidden)                  
+   sensitivity (Hidden)              
+   V_lastvalue_Category (Hidden)     
+   controle_num                       Number                            
+   ControlName                        Name                              
+   Actions                            Take Actions                      
+   DiscEnt                            Create Discrete Entity            
+   Label                              Send to Label                     
+
+
+   Operands Contained in Repeat Group 'ControlCond':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   and (Hidden)                      
+   nomvalue (Hidden)                 
+   times (Hidden)                    
+   EqualOperator (Hidden)            
+   CondEndComma (Hidden)             
+   CondStartComma (Hidden)           
+   abs (Hidden)                      
+   mod (Hidden)                      
+   plusepsilon (Hidden)              
+   LessThanEpsilon (Hidden)          
+   AtLeastModulo (Hidden)            
+   ParameterPal                       If                                
+   ParameterDePal                     If                                
+   CompOp                             Is                                
+   ParameterValue                     Value                             
+   ParameterState                     Is                                
+   ParameterBlocked                   Is                                
+   ParameterProduct                   Is                                
+   Other                              Condition                         
+
+
+   Operands Contained in Dialog 'ActionsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   nbaction (Hidden)                 
+   Action_Exp (Hidden)               
+   Action_Index1 (Hidden)            
+   Action_Index2 (Hidden)            
+
+
+   Operands Contained in Repeat Group 'ActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   maj_type1 (Hidden)                
+   ActionRegul (Hidden)              
+   ActionName (Hidden)               
+   ActionDummy (Hidden)              
+   maj_type2 (Hidden)                
+   maj_type3 (Hidden)                
+   maj_type4 (Hidden)                
+   Action_Value1 (Hidden)            
+   Action_Value2 (Hidden)            
+   Action_Value3 (Hidden)            
+   Action_Value4 (Hidden)            
+   ActionZero (Hidden)               
+   ActionOne (Hidden)                
+   HInventoryName (Hidden)           
+   ActionMinusSign (Hidden)          
+   MachineSetName (Hidden)           
+   ConveyorSetName (Hidden)          
+   MemberNumber (Hidden)             
+   SymbolNumber (Hidden)             
+   maj_type6 (Hidden)                
+   HConvValveExt (Hidden)            
+   ActMaxBegin (Hidden)              
+   ActMaxEnd (Hidden)                
+   ActANINTBegin (Hidden)            
+   ActANINTEnd (Hidden)              
+   maj_type7 (Hidden)                
+   ActNum (Hidden)                   
+   ActionTwo (Hidden)                
+   BlockNum (Hidden)                 
+   ActionLostProduction (Hidden)     
+   HLP (Hidden)                      
+   maj_type8 (Hidden)                
+   maj_type9 (Hidden)                
+   V_InventoryName_Category (Hidden) 
+   ActType                            Type                              
+   MachName                           Machine Name                      
+   ConvName                           Conveyor Name                     
+   SwitchName                         Switch Name                       
+   ConvLnkName                        Conveyor Link Name                
+   ValveName                          Valve Name                        
+   PalName                            Palletizer Name                   
+   VariableName                       Variable Name                     
+   InventoryName                      Storage Name                      
+   Speed                              New Speed Factor                  
+   LostProduction                     New Lost Production (0-100%)      
+   Direction                          New Direction                     
+   IncInv                             Number of Pallets                 
+   DecInv                             Number of Pallets                 
+   VarValue                           Value                             
+
+
+   Operands Contained in Dialog 'LossDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AfterFail                          Lost Units after Failures         
+   afterStart                         Lost Units after Stops            
+   afterover                          Lost Units after Changeovers      
+   dented                             Initial Lost Production           
+
+
+   Operands Contained in Dialog 'Prod':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   PlanInOperand (Hidden)            
+   OverType                           Changeover Type                   
+   OverType2                          Changeover Type                   
+   PlanID                             Production Plan Name              
+   ProduceProductType                 Plan Quantities Refer To          
+   QoperOver                          Changeover Operators              
+
+
+   Operands Contained in Repeat Group 'References':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseOverDelayEntry (Hidden)       
+   refID                              Product Name                      
+   OverDelayEntry                     Setup Time                        
+   OverDelayEntry TimeUnits           Time Units                        
+
+
+   Operands Contained in Dialog 'Operators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom4 (Hidden)                   
+   operstates4 (Hidden)              
+   bskill4                            Skill Adjustment                  
+   HList_Nom4                         Operator State                    
+   ProdPriority                       Priority                          
+
+
+   Operands Contained in Repeat Group 'ProdOpers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select4 (Hidden)                  
+   paren4_1 (Hidden)                 
+   paren4_2 (Hidden)                 
+   comma4 (Hidden)                   
+   attr4 (Hidden)                    
+   suffix4 (Hidden)                  
+   oper4skill (Hidden)               
+   IncrementNS4 (Hidden)             
+   Opertype4                          Operator Type                     
+   Operator4                          Operator Name                     
+   Operator4b                         Group Name                        
+   ProdRule                           Selection Rule                    
+   ProdSetMem                         Group Member                      
+
+
+   Operands Contained in Dialog 'ReliabilityDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   UpTimeMTBF (Hidden)               
+   ReliabilityMTBF (Hidden)          
+   BaseUpTimeTTR (Hidden)            
+   BaseTimeSpan (Hidden)             
+   BaseReliabilityTTR (Hidden)       
+   Reliability Type                   Define Downtimes Using            
+   ExpectedUptime                     Expected Uptime (0-100%)          
+   UpTimeTTR                          Time to Repair                    
+   UpTimeTTR TimeUnits                Time Units                        
+   TimeSpan                           Time Span                         
+   TimeSpan TimeUnits                 Time Units                        
+   Probability                        Reliability for Time Span         
+   ReliabilityTTR                     Time to Repair                    
+   ReliabilityTTR TimeUnits           Time Units                        
+   QOperFail1                         Repair Operators                  
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseFailuresTBF (Hidden)          
+   BaseFailuresTTR (Hidden)          
+   FailNumber                         Failure Number                    
+   FailName                           Failure Name                      
+   Trigger Type                       Trigger Type                      
+   Uptime Type                        Uptime Type                       
+   FailuresTBF                        Time Betw Failures                
+   FailuresTBF TimeUnits              Time Units                        
+   FailuresCBF                        Count Betw Failures (Units)       
+   FailuresTTR                        Time to Repair                    
+   FailuresTTR TimeUnits              Time Units                        
+   QOperFail2                         Repair Operators                  
+
+
+   Operands Contained in Dialog 'Operators3':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom3 (Hidden)                   
+   operstates3 (Hidden)              
+   bskill3                            Skill Adjustment                  
+   HList_Nom3                         Operator State                    
+   Fail2Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail2Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select3 (Hidden)                  
+   paren3_1 (Hidden)                 
+   paren3_2 (Hidden)                 
+   comma3 (Hidden)                   
+   attr3 (Hidden)                    
+   suffix3 (Hidden)                  
+   oper3skill (Hidden)               
+   IncrementNS3 (Hidden)             
+   Opertype3                          Operator Type                     
+   Operator3                          Operator Name                     
+   Operator3b                         Group Name                        
+   Fail2Rule                          Selection Rule                    
+   Fail2SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'Operators2':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom2 (Hidden)                   
+   operstates2 (Hidden)              
+   bskill2                            Skill Adjustment                  
+   HList_Nom2                         Operator State                    
+   Fail1Priority                      Priority                          
+
+
+   Operands Contained in Repeat Group 'Fail1Opers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select2 (Hidden)                  
+   paren2_1 (Hidden)                 
+   paren2_2 (Hidden)                 
+   comma2 (Hidden)                   
+   attr2 (Hidden)                    
+   suffix2 (Hidden)                  
+   oper2skill (Hidden)               
+   IncrementNS2 (Hidden)             
+   Opertype2                          Operator Type                     
+   Operator2                          Operator Name                     
+   Operator2b                         Group Name                        
+   Fail1Rule                          Selection Rule                    
+   Fail1SetMem                        Group Member                      
+
+
+   Operands Contained in Dialog 'SchedDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RegenerateSchedule                 Repeat the Stops                  
+   QoperStops                         Stoppage Operators                
+
+
+   Operands Contained in Repeat Group 'ScheduledStops':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseTBTS (Hidden)                 
+   BaseTimeDown (Hidden)             
+   TBTS                               Time Before Stop                  
+   TBTS TimeUnits                     Time Units                        
+   TimeDown                           Stop Duration                     
+   TimeDown TimeUnits                 Time Units                        
+
+
+   Operands Contained in Dialog 'Operators1':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   H_nom1 (Hidden)                   
+   operstates1 (Hidden)              
+   bskill1                            Skill Adjustment                  
+   HList_nom1                         Operator State                    
+   StopPriority                       Priority                          
+
+
+   Operands Contained in Repeat Group 'StopOpers':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   select1 (Hidden)                  
+   paren1_1 (Hidden)                 
+   paren1_2 (Hidden)                 
+   comma1 (Hidden)                   
+   attr1 (Hidden)                    
+   suffix1 (Hidden)                  
+   oper1skill (Hidden)               
+   IncrementNS1 (Hidden)             
+   Opertype1                          Operator Type                     
+   Operator1                          Operator Name                     
+   Operator1b                         Group Name                        
+   StopRule                           Selection Rule                    
+   StopSetMem                         Group Member                      
+
+
+   Operands Contained in Dialog 'DiscreteLogic':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Outgoing (Hidden)                 
+   EntLayerSweptOn                    Layer is Added to Pallet          
+   EntPalletStored                    Pallet is Added to Storage        
+   EntBlocked                         Blocked by Full Storage           
+   EntPalletUnStored                  Pallet is Removed from Storage    
+   EntLayerSweptOff                   Layer is Removed from Pallet      
+   EntStarved                         Starved by Empty Storage          
+   EntOutLayerOn                      Next Label Layer                  
+   EntOutPalletStored                 Next Label Pallet                 
+   EntOutBlocked                      Next Label Blocked                
+   EntOutStarved                      Next Label Starved                
+   EntOutLayerOff                     Next Label Layer                  
+   EntOutPalletUnStored               Next Label Pallet                 
+
+
+   Operands Contained in Dialog 'StatsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CostperBaseTimeUnit (Hidden)      
+   CostperHour                        Cost/Hour                         
+   CostperGood                        Cost/Good Unit                    
+   CostperLost                        Cost/Lost Unit                    
+   CostPerLayer                       Cost/Layer                        
+   CostPerPallet                      Cost/Pallet                       
+
+
+   Operands Contained in Dialog 'AnimationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Animate1                           State Indicator                   
+   Animate2                           Blocked/Starved Symbols           
+   Animate3                           Product Picture                   
+   Animate4                           Variables Table                   
+
+Module: Storage         
+
+   Operands Contained in Dialog 'Storage':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StockUnit (Hidden)                
+   StockIndex (Hidden)               
+   FullFlag (Hidden)                 
+   EmptyFlag (Hidden)                
+   StorageLevel (Hidden)             
+   StorageLevelVal (Hidden)          
+   StoragePlaced (Hidden)            
+   V_Stock_Category (Hidden)         
+   StorageStatistics (Hidden)        
+   StorageStatisticsVal (Hidden)     
+   Stock                              Name                              
+   StockLevel                         Initial Inventory (Pallets)       
+   MaxStock                           Capacity (Pallets)                
+   DiscreteEnt                                                          
+   Statistics                         Statistics                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'Discrete':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Incoming                           Incoming Entity Logic             
+   AddLabel                           Add Label                         
+   RemoveLabel                        Remove Label                      
+   AddPallet                          Add a Pallet to Storage           
+   RemovePallet                       Remove a Pallet from Storage      
+   Outgoing                           Outgoing Entity Logic             
+   StorageEmpty                       The Storage is Empty              
+   StorageFull                        The Storage is Full               
+   NextLabelEmpty                     Next Label Empty                  
+   NextLabelFull                      Next Label Full                   
+
+
+   Operands Contained in Dialog 'StatsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CostperBaseTimeUnit (Hidden)      
+   CostperDay                         Cost/Pallet/Day                   
+
+
+   Operands Contained in Dialog 'AnimationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Animate1                           Level Indicator                   
+   Animate2                           Statistics Table                  
+
+Module: Valve           
+
+   Operands Contained in Dialog 'Valve':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   in_label (Hidden)                 
+   fraction (Hidden)                 
+   out_label (Hidden)                
+   dummy (Hidden)                    
+   labelreg (Hidden)                 
+   MachineSetMember (Hidden)         
+   MachineSetID (Hidden)             
+   NoOutProduct (Hidden)             
+   Valve_NomOutputRate (Hidden)      
+   Valve_NomOutputRateVal (Hidden)   
+   Valve_State (Hidden)              
+   Valve_StateVal (Hidden)           
+   Valve_BaseNomOutputRate (Hidden)  
+   Valve_BaseNomOutputRateVal (Hidden)
+   nom                                Name                              
+   type                               Type                              
+   Nominal                            Maximum Rate                      
+   Nominal TimeUnits                  Time Units                        
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'Run Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Initial State                      Initial State                     
+
+Module: Tank            
+
+   Operands Contained in Dialog 'Tank':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   VitNom_val (Hidden)               
+   largeur_val (Hidden)              
+   densite (Hidden)                  
+   longueur (Hidden)                 
+   largeur (Hidden)                  
+   conso (Hidden)                    
+   MAJ (Hidden)                      
+   VitNom (Hidden)                   
+   VitNet (Hidden)                   
+   VitNet_val (Hidden)               
+   debitNet (Hidden)                 
+   debitNet_val (Hidden)             
+   VitPre (Hidden)                   
+   VitPre_valA (Hidden)              
+   Encours (Hidden)                  
+   Encours_val (Hidden)              
+   nb_nea (Hidden)                   
+   nb_nec (Hidden)                   
+   nec_val (Hidden)                  
+   regul_val (Hidden)                
+   seucou (Hidden)                   
+   accuvit (Hidden)                  
+   accuVit_val (Hidden)              
+   accuDeb (Hidden)                  
+   difflu (Hidden)                   
+   difflu2 (Hidden)                  
+   entDFV (Hidden)                   
+   in_label (Hidden)                 
+   out_label (Hidden)                
+   def_start (Hidden)                
+   def_st_Oui (Hidden)               
+   def_st_Non (Hidden)               
+   nbcapteur (Hidden)                
+   etatPre (Hidden)                  
+   etatPre_valA (Hidden)             
+   fils (Hidden)                     
+   fils_index1 (Hidden)              
+   fils_index2A (Hidden)             
+   pere (Hidden)                     
+   pere_index1A (Hidden)             
+   pere_index2 (Hidden)              
+   pere_value1 (Hidden)              
+   pere_value2 (Hidden)              
+   regul (Hidden)                    
+   Conveyor_State (Hidden)           
+   Conveyor_StateVal (Hidden)        
+   Conveyor_UnitsInside (Hidden)     
+   Conveyor_UnitsInsideVal (Hidden)  
+   Conveyor_UnitsProcessed (Hidden)  
+   Conveyor_UnitsProcessedVal (Hidden)
+   Conveyor_GoodUnitsProd (Hidden)   
+   Conveyor_GoodUnitsProdVal (Hidden)
+   Conveyor_SpeedFactor (Hidden)     
+   Conveyor_SpeedFactorVal (Hidden)  
+   etat (Hidden)                     
+   etat_val (Hidden)                 
+   Conveyor_Product (Hidden)         
+   Conveyor_ProductVal (Hidden)      
+   H_InvSet (Hidden)                 
+   H_InvSetnmA (Hidden)              
+   DimensionUnits (Hidden)           
+   DimensionUnitsVal (Hidden)        
+   OperatorOption (Hidden)           
+   OperatorOptionVal (Hidden)        
+   Conveyor_UnitsTraveling (Hidden)  
+   Conveyor_UnitsTravelingVal (Hidden)
+   Conveyor_UnitsAccumulated (Hidden)
+   Conveyor_UnitsAccumulatedVal (Hidden)
+   Conveyor_Capacity (Hidden)        
+   Conveyor_CapacityVal (Hidden)     
+   Conveyor_Length (Hidden)          
+   Conveyor_LengthVal (Hidden)       
+   Conveyor_Width (Hidden)           
+   Conveyor_WidthVal (Hidden)        
+   V_VitNom_Category (Hidden)        
+   V_longueur_Category (Hidden)      
+   V_largeur_Category (Hidden)       
+   V_pere_Category (Hidden)          
+   V_conso_Category (Hidden)         
+   V_MAJ_Category (Hidden)           
+   V_VitNet_Category (Hidden)        
+   V_debitNet_Category (Hidden)      
+   V_VitPre_Category (Hidden)        
+   V_Encours_Category (Hidden)       
+   V_nb_nea_Category (Hidden)        
+   V_nb_nec_Category (Hidden)        
+   V_seucou_Category (Hidden)        
+   V_accuvit_Category (Hidden)       
+   V_accuDeb_Category (Hidden)       
+   V_difflu_Category (Hidden)        
+   V_difflu2_Category (Hidden)       
+   V_entDFV_Category (Hidden)        
+   V_etatPre_Category (Hidden)       
+   V_fils_Category (Hidden)          
+   V_etat_Category (Hidden)          
+   V_regul_Category (Hidden)         
+   V_nbcapteur_Category (Hidden)     
+   V_conso_ClearOption (Hidden)      
+   Conveyor_GoodOutputRate (Hidden)  
+   Conveyor_GoodOutputRateVal (Hidden)
+   Conveyor_InputRate (Hidden)       
+   Conveyor_InputRateVal (Hidden)    
+   Conveyor_RunSpeed (Hidden)        
+   Conveyor_RunSpeedVal (Hidden)     
+   Conveyor_NomRunSpeed (Hidden)     
+   Conveyor_NomRunSpeedVal (Hidden)  
+   Conveyor_OutPutRate (Hidden)      
+   Conveyor_OutputRateVal (Hidden)   
+   Conveyor_BaseRunSpeed (Hidden)    
+   Conveyor_BaseRunSpeedVal (Hidden) 
+   Conveyor_BaseNomRunSpeed (Hidden) 
+   Conveyor_BaseNomRunSpeedVal (Hidden)
+   Conveyor_BaseOutPutRate (Hidden)  
+   Conveyor_BaseOutputRateVal (Hidden)
+   Conveyor_BaseGoodOutputRate (Hidden)
+   Conveyor_BaseGoodOutputRateVal (Hidden)
+   Conveyor_BaseInputRate (Hidden)   
+   Conveyor_BaseInputRateVal (Hidden)
+   nom                                Name                              
+   Longueur_val                       Capacity                          
+   nea_val                            Initial Level                     
+   Sensor                             Sensors                           
+   Animation                          Animation                         
+
+
+   Operands Contained in Dialog 'SensorsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Nbcapteur_val (Hidden)            
+
+
+   Operands Contained in Repeat Group 'Sensors':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   action_val (Hidden)               
+   FM (Hidden)                       
+   FD (Hidden)                       
+   defCond (Hidden)                  
+   CoefUnit2 (Hidden)                
+   CoefUnit1 (Hidden)                
+   Sensor_idx (Hidden)               
+   Snumblk_label (Hidden)            
+   Snbaction (Hidden)                
+   nom_action2 (Hidden)              
+   NSYMnom_Saction (Hidden)          
+   NSYMnom_SactionDummy (Hidden)     
+   Sdummy_label (Hidden)             
+   SnbactionIndex2 (Hidden)          
+   BaseTimeOn (Hidden)               
+   BaseTimeOff (Hidden)              
+   Sensor_nom                         Name                              
+   Qunite                             Sensor is Located                 
+   sensor_pos                         Location                          
+   action_type                        Activate Sensor When              
+   TimeOn                             Time ON (Seconds)                 
+   AddCondS                           Additional Condition              
+   TimeOff                            Time OFF (Seconds)                
+   sensor_cond                                                          
+   SActions                           Take Actions                      
+   SDiscEnt                           Create Discrete Entity            
+   SLabel                             Send to Label                     
+
+
+   Operands Contained in Dialog 'SActionsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'SActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SDecInv (Hidden)                  
+   Smaj_type (Hidden)                
+   Sdummy2 (Hidden)                  
+   defCondb (Hidden)                 
+   SActionRegul (Hidden)             
+   SActionName (Hidden)              
+   SHInventoryName (Hidden)          
+   SActionStorage (Hidden)           
+   SActionVariable (Hidden)          
+   ActionType1 (Hidden)              
+   ActionType2 (Hidden)              
+   ActionType3 (Hidden)              
+   SMachineSetName (Hidden)          
+   SConveyorSetName (Hidden)         
+   SMemberNumber (Hidden)            
+   SSymbolNumber (Hidden)            
+   ActionType4 (Hidden)              
+   SActionLink (Hidden)              
+   SActionZero (Hidden)              
+   SActionOne (Hidden)               
+   SActionFils (Hidden)              
+   DummySActionFils (Hidden)         
+   SActionBlocked (Hidden)           
+   SActMaxBegin (Hidden)             
+   SActMaxEnd (Hidden)               
+   SActANINTBegin (Hidden)           
+   SActANINTEnd (Hidden)             
+   SActionSwitch (Hidden)            
+   SActionTwo (Hidden)               
+   SActionNum (Hidden)               
+   ActionType5 (Hidden)              
+   SHLP (Hidden)                     
+   SNSYMLostProduction (Hidden)      
+   ActionType6 (Hidden)              
+   ActionType7 (Hidden)              
+   SLossOutputRate (Hidden)          
+   SLossInputRate (Hidden)           
+   V_SInventoryName_Category (Hidden)
+   SActType                           Type                              
+   SMachName                          Machine Name                      
+   SConvName                          Conveyor Name                     
+   SConvLnkName                       Conveyor Link Name                
+   SValveName                         Valve Name                        
+   SPalName                           Palletizer Name                   
+   SVariableName                      Variable Name                     
+   SInventoryName                     Storage Name                      
+   SSwitchName                        Switch Name                       
+   SSpeed                             New Speed Factor                  
+   SIncInv                            Number of Pallets                 
+   SDirection                         New Direction                     
+   SLostProduction                    New Lost Production (0-100%)      
+   SVarValue                          Value                             
+
+
+   Operands Contained in Dialog 'AnimationDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Animate1                           Level Indicator                   
+   Animate2                           Variables Table                   
+
+Module: Product         
+
+   Operands Contained in Dialog 'Product':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   ProductName                        Name                              
+
+Module: Production Plans
+
+   Operands Contained in Dialog 'Production Plans':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Production Plan Parameters':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Index (Hidden)                    
+   PlanID                             Name                              
+
+
+   Operands Contained in Repeat Group 'Products':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BaseSetupTime (Hidden)            
+   Product Name                       Product Name                      
+   Setup Time                         Setup Time                        
+   Setup Time TimeUnits               Time Units                        
+   Quantity                           Quantity (Units)                  
+
+Module: Actions         
+
+   Operands Contained in Dialog 'Actions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   lastvalue (Hidden)                
+   Action_Exp (Hidden)               
+   Action_Index1 (Hidden)            
+   Action_Index2 (Hidden)            
+   C1 (Hidden)                       
+   C2 (Hidden)                       
+   C3 (Hidden)                       
+   C4 (Hidden)                       
+   C5 (Hidden)                       
+   C6 (Hidden)                       
+   C7 (Hidden)                       
+   C8 (Hidden)                       
+   C9 (Hidden)                       
+   C10 (Hidden)                      
+   condition_handle (Hidden)         
+   Condition_expr3 (Hidden)          
+   Condition_expr4 (Hidden)          
+   condition_index1 (Hidden)         
+   Condition_expr1 (Hidden)          
+   Condition_expr2 (Hidden)          
+   Condition_expr5 (Hidden)          
+   condition_index2 (Hidden)         
+   C11 (Hidden)                      
+   C12 (Hidden)                      
+   S1 (Hidden)                       
+   S2 (Hidden)                       
+   S3 (Hidden)                       
+   C13 (Hidden)                      
+   C14 (Hidden)                      
+   C15 (Hidden)                      
+   V_lastvalue_Category (Hidden)     
+   Name                               Name                              
+   in_label                           Label                             
+   out_label                          Next Label                        
+   Last                               Dispose Entity                    
+
+
+   Operands Contained in Repeat Group 'ActionsRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   HInventoryName (Hidden)           
+   maj_type1 (Hidden)                
+   ActionRegul (Hidden)              
+   ActionName (Hidden)               
+   ActionDummy (Hidden)              
+   maj_type2 (Hidden)                
+   maj_type3 (Hidden)                
+   maj_type4 (Hidden)                
+   ActionZero (Hidden)               
+   ActionOne (Hidden)                
+   Action_Value1 (Hidden)            
+   Action_Value3 (Hidden)            
+   Action_Value4 (Hidden)            
+   ActionMinusSign (Hidden)          
+   MachineSetName (Hidden)           
+   ConveyorSetName (Hidden)          
+   SymbolNumber (Hidden)             
+   MemberNumber (Hidden)             
+   maj_type5 (Hidden)                
+   maj_type6 (Hidden)                
+   HConvValveExt (Hidden)            
+   Action_Value2 (Hidden)            
+   ActMaxBegin (Hidden)              
+   ActMaxEnd (Hidden)                
+   ActANINTBegin (Hidden)            
+   ActANINTEnd (Hidden)              
+   maj_type7 (Hidden)                
+   ActionTwo (Hidden)                
+   BlockNumber (Hidden)              
+   ActionNum (Hidden)                
+   ActionLostProduction (Hidden)     
+   HLP (Hidden)                      
+   maj_type8 (Hidden)                
+   maj_type9 (Hidden)                
+   V_InventoryName_Category (Hidden) 
+   ActType                            Type                              
+   MachName                           Machine Name                      
+   ConvName                           Conveyor Name                     
+   SwitchName                         Switch Name                       
+   ConvLnkName                        Conveyor Link Name                
+   ValveName                          Valve Name                        
+   PalName                            Palletizer Name                   
+   VariableName                       Variable Name                     
+   InventoryName                      Storage Name                      
+   Direction                          New Direction                     
+   Speed                              New Speed Factor                  
+   LostProduction                     New Lost Production (0-100%)      
+   IncInv                             Number of Pallets                 
+   DecInv                             Number of Pallets                 
+   VarValue                           Value                             
+
+Module: Label           
+
+   Operands Contained in Dialog 'Label':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NextLabel (Hidden)                
+   Name                               Name                              
+
+Module: Simulate        
+
+   Operands Contained in Dialog 'Simulate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   ctl_oui (Hidden)                  
+   ctl_non (Hidden)                  
+   DllName (Hidden)                  
+   DimensionUnitsSw (Hidden)         
+   D1 (Hidden)                       
+   D2 (Hidden)                       
+   DimensionUnitsVal (Hidden)        
+   OperatorStateSet (Hidden)         
+   AvailableState (Hidden)           
+   IdleType (Hidden)                 
+   UnAvailableState (Hidden)         
+   OperatorStateSet2 (Hidden)        
+   InactiveType (Hidden)             
+   OperatorStateSet3 (Hidden)        
+   LunchState (Hidden)               
+   OperatorStateSet4 (Hidden)        
+   BreakState (Hidden)               
+   OperatorOption (Hidden)           
+   OperatorOptionVal (Hidden)        
+   O1 (Hidden)                       
+   O2 (Hidden)                       
+   MachSetnm (Hidden)                
+   ConvSetnm (Hidden)                
+   MachSet (Hidden)                  
+   ConvSet (Hidden)                  
+   dummyM (Hidden)                   
+   dummyC (Hidden)                   
+   WorkingOpState (Hidden)           
+   OperatorStateSet5 (Hidden)        
+   Replication (Hidden)              
+   HoursPerDay (Hidden)              
+   BaseUpdateInterval (Hidden)       
+   MachineStatisticsSw (Hidden)      
+   MachineStatisticsVal (Hidden)     
+   ConveyorStatisticsSw (Hidden)     
+   ConveyorStatisticsVal (Hidden)    
+   PalletizerStatisticsSw (Hidden)   
+   PalletizerStatisticsVal (Hidden)  
+   OperatorStatisticsSw (Hidden)     
+   OperatorStatisticsVal (Hidden)    
+   OperatorGroupStatisticsSw (Hidden)
+   OperatorGroupStatisticsVal (Hidden)
+   StorageStatisticsSw (Hidden)      
+   StorageStatisticsVal (Hidden)     
+   MachStat1 (Hidden)                
+   MachStat0 (Hidden)                
+   ConvStat1 (Hidden)                
+   ConvStat0 (Hidden)                
+   PalStat1 (Hidden)                 
+   PalStat0 (Hidden)                 
+   OpStat1 (Hidden)                  
+   OpStat0 (Hidden)                  
+   OpGroupStat1 (Hidden)             
+   OpGroupStat0 (Hidden)             
+   StorStat1 (Hidden)                
+   StorStat0 (Hidden)                
+   PkgHighRiskMode (Hidden)          
+   PkgHighRiskModeCtrlCategory (Hidden)
+   PkgHighRiskModeResCategory (Hidden)
+   DimensionUnits                     Length/Width Units                
+   ModuleArraySize                    Max Number of Modules             
+   UpdateInterval                     Max Time Btw. Updates (Min)       
+   toggle_control                                                       
+   OperatorConstraints                Disable Operator Constraints      
+   MachineStatistics                  Machines                          
+   ConveyorStatistics                 Conveyors                         
+   PalletizerStatistics               Palletizers                       
+   OperatorStatistics                 Operators                         
+   OperatorGroupStatistics            Operator Groups                   
+   StorageStatistics                  Storages                          
+

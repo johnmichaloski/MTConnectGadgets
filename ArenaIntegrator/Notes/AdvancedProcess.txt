@@ -1,0 +1,483 @@
+Module: Delay           
+
+   Operands Contained in Dialog 'Delay':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+   ValueAdded                         Allocation                        
+   DelayType                          Delay Time                        
+   Units                              Units                             
+
+Module: Dropoff         
+
+   Operands Contained in Dialog 'Dropoff':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Next Label Drop (Hidden)          
+   AllAttributes (Hidden)            
+   Name                               Name                              
+   Number                             Quantity                          
+   Starting Rank                      Starting Rank                     
+   Member Attributes                  Member Attributes                 
+
+
+   Operands Contained in Repeat Group 'Attributes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Attribute Name                     Attribute Name                    
+
+Module: Hold            
+
+   Operands Contained in Dialog 'Hold':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   QLabel (Hidden)                   
+   Next Label (Hidden)               
+   QSetMem (Hidden)                  
+   HoldLabel (Hidden)                
+   AutoQSet (Hidden)                 
+   Name                               Name                              
+   Type                               Type                              
+   Value                              Wait for Value                    
+   Limit                              Limit                             
+   Condition                          Condition                         
+   QSG                                Queue Type                        
+   QSGInfinite                        Queue Type                        
+   QName                              Queue Name                        
+   QSet                               Set Name                          
+   QMem                               Set Index                         
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+
+Module: Match           
+
+   Operands Contained in Dialog 'Match':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Q1 (Hidden)                       
+   Q2 (Hidden)                       
+   Q3 (Hidden)                       
+   Q4 (Hidden)                       
+   Q5 (Hidden)                       
+   Label1 (Hidden)                   
+   Label3 (Hidden)                   
+   Label5 (Hidden)                   
+   Next Label2 (Hidden)              
+   Next Label4 (Hidden)              
+   Next Label5 (Hidden)              
+   Label2 (Hidden)                   
+   Label4 (Hidden)                   
+   Next Label1 (Hidden)              
+   Next Label3 (Hidden)              
+   Name                               Name                              
+   Num                                Number to Match                   
+   Type                               Type                              
+   Att                                Attribute Name                    
+
+Module: Pickup          
+
+   Operands Contained in Dialog 'Pickup':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+   Quantity                           Quantity                          
+   Queue Name                         Queue Name                        
+   Starting Rank                      Starting Rank                     
+
+Module: ReadWrite       
+
+   Operands Contained in Dialog 'ReadWrite':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Access Type (Hidden)              
+   RECORDSETKeyword (Hidden)         
+   Name                               Name                              
+   Type                               Type                              
+   File Name                          Arena File Name                   
+   Format                             Overriding File Format            
+   Recordset ID                       Recordset ID                      
+   Record Number                      Record Number                     
+
+
+   Operands Contained in Repeat Group 'Variables':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   2DArrayIndexes (Hidden)           
+   1DArrayIndex (Hidden)             
+   Variable Type                      Type                              
+   Att                                Attribute Name                    
+   Var                                Variable Name                     
+   Row                                Row                               
+   Column                             Column                            
+   Other                              Other                             
+
+Module: Release         
+
+   Operands Contained in Dialog 'Release':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'Resources':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NameRuleR1 (Hidden)               
+   NameRuleR2 (Hidden)               
+   AutoSet (Hidden)                  
+   Resource Type                      Type                              
+   Resource Name                      Resource Name                     
+   Attribute Name                     Attribute Name                    
+   Expression                         Expression                        
+   Set Name                           Set Name                          
+   Quantity                           Quantity                          
+   Release Rule                       Release Rule                      
+   Input Attribute                    Set Index                         
+
+Module: Remove          
+
+   Operands Contained in Dialog 'Remove':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Next Label Removed (Hidden)       
+   Name                               Name                              
+   Queue Name                         Queue Name                        
+   Rank of Entity                     Rank of Entity                    
+
+Module: Seize           
+
+   Operands Contained in Dialog 'Seize':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   QLabel (Hidden)                   
+   Next Label (Hidden)               
+   QSetMem (Hidden)                  
+   SLabel (Hidden)                   
+   AutoQSet (Hidden)                 
+   Name                               Name                              
+   Allocation                         Allocation                        
+   Priority                           Priority                          
+   QSG                                Queue Type                        
+   QName                              Queue Name                        
+   QSet                               Set Name                          
+   QMem                               Set Index                         
+   QAttr                              Attribute                         
+   QExp                               Expression                        
+
+
+   Operands Contained in Repeat Group 'Resources':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NameRuleS (Hidden)                
+   NameMember (Hidden)               
+   NameRuleR1 (Hidden)               
+   NameRuleR2 (Hidden)               
+   RealSave (Hidden)                 
+   AutoSet (Hidden)                  
+   Resource Type                      Type                              
+   Resource Name                      Resource Name                     
+   Attribute Name                     Attribute Name                    
+   Expression                         Expression                        
+   Set Name                           Set Name                          
+   Quantity                           Quantity                          
+   Selection Rule                     Selection Rule                    
+   Save Attribute                     Save Attribute                    
+   Input Attribute                    Set Index                         
+   State                              Resource State                    
+
+Module: Search          
+
+   Operands Contained in Dialog 'Search':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label Found (Hidden)         
+   Group (Hidden)                    
+   Next Label None (Hidden)          
+   Name                               Name                              
+   Type                               Type                              
+   Queue Name                         Queue Name                        
+   Starting Value                     Starting Value                    
+   Ending Value                       Ending Value                      
+   Search Condition                   Search Condition                  
+
+Module: Signal          
+
+   Operands Contained in Dialog 'Signal':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+   Value                              Signal Value                      
+   Limit                              Limit                             
+
+Module: Store           
+
+   Operands Contained in Dialog 'Store':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   SetMem (Hidden)                   
+   Auto Set Name (Hidden)            
+   Name                               Name                              
+   Type                               Type                              
+   Storage Name                       Storage Name                      
+   Set Name                           Set Name                          
+   Attribute                          Attribute                         
+   Expression                         Expression                        
+   Set Index                          Set Index                         
+
+Module: Unstore         
+
+   Operands Contained in Dialog 'Unstore':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   SetMem (Hidden)                   
+   Auto Set Name (Hidden)            
+   Name                               Name                              
+   Type                               Type                              
+   Storage Name                       Storage Name                      
+   Set Name                           Set Name                          
+   Attribute                          Attribute                         
+   Expression                         Expression                        
+   Set Index                          Set Index                         
+
+Module: Adjust Variable 
+
+   Operands Contained in Dialog 'Adjust Variable':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   RealVar (Hidden)                  
+   2DArrayIndexes (Hidden)           
+   1DArrayIndex (Hidden)             
+   Variable (Hidden)                 
+   Default Update Interval (Hidden)  
+   Base Update Interval (Hidden)     
+   Name                               Name                              
+   Variable Type                      Variable Type                     
+   Variable Name                      Variable Name                     
+   Row                                Row                               
+   Column                             Column                            
+   To Value                           To Value                          
+   Rate                               Rate                              
+   Rate TimeUnits                     Units                             
+   Update Interval                    Update Interval                   
+   Update Interval TimeUnits          Units                             
+   Allocation                         Allocation                        
+
+Module: Advanced Set    
+
+   Operands Contained in Dialog 'Advanced Set':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   QueueSet (Hidden)                 
+   OtherSet (Hidden)                 
+   StorageSet (Hidden)               
+   Name                               Name                              
+   Type                               Set Type                          
+
+
+   Operands Contained in Repeat Group 'Members':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Queue Element (Hidden)            
+   Storage Element (Hidden)          
+   Queue Name                         Queue Name                        
+   Other                              Other                             
+   Storage Name                       Storage Name                      
+
+Module: Expression      
+
+   Operands Contained in Dialog 'Expression ':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+   Dim1                               Rows                              
+   Dim2                               Columns                           
+
+
+   Operands Contained in Repeat Group 'Expression Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Expression Value                  
+
+Module: Failure         
+
+   Operands Contained in Dialog 'Failure':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FailUpProp (Hidden)               
+   failDownProp (Hidden)             
+   Name                               Name                              
+   FailType                           Type                              
+   FailUp                             Up Time                           
+   Up Time Units                      Up Time Units                     
+   FailCt                             Count                             
+   failDown                           Down Time                         
+   Down Time Units                    Down Time Units                   
+   State                              Uptime in this State only         
+
+Module: File            
+
+   Operands Contained in Dialog 'File':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CommentValue (Hidden)             
+   OSFileProperty (Hidden)           
+   WKSFileStructureProperty (Hidden) 
+   ExcelFileBrowserFilter (Hidden)   
+   AccessFileBrowserFilter (Hidden)  
+   XMLFileBrowserFilter (Hidden)     
+   TextFileBrowserFilter (Hidden)    
+   WKSFileBrowserFilter (Hidden)     
+   Name                               Name                              
+   Access Type                        Access Type                       
+   OSFile                             Operating System File Name        
+   Connection String                  Connection String                 
+   Structure                          Structure                         
+   EOF                                End of File Action                
+   Initialize Option                  Initialize Option                 
+   Comment                            Comment Character                 
+
+
+   Operands Contained in Repeat Group 'Recordsets':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CommandTextProperty (Hidden)      
+   Recordset Name List (Hidden)      
+   adCmdTableDirect (Hidden)         
+   adCmdTable (Hidden)               
+   Recordset Name                     Recordset Name                    
+   Named Range                        Named Range                       
+   Table Name                         Table Name                        
+   CommandText                        CommandText                       
+   CommandType                        CommandType                       
+
+Module: StateSet        
+
+   Operands Contained in Dialog 'StateSet':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'States':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StateNameList (Hidden)            
+   StateName                          State Name                        
+   StateType                          Associate With                    
+
+Module: Statistic       
+
+   Operands Contained in Dialog 'Statistic':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DSTATExp (Hidden)                 
+   DStatLabel (Hidden)               
+   DStatOutputFile (Hidden)          
+   OutputExp (Hidden)                
+   OutputLabel (Hidden)              
+   outputOutputFile (Hidden)         
+   FreqOutputFile (Hidden)           
+   Tally Category (Hidden)           
+   Counter Category (Hidden)         
+   DStatCategory (Hidden)            
+   outputCategory (Hidden)           
+   Freqcategory (Hidden)             
+   FExp (Hidden)                     
+   ValueStateProp (Hidden)           
+   Tally Output FileDQ (Hidden)      
+   CounterOutputFileDQ (Hidden)      
+   DStatDataType (Hidden)            
+   FreqDataType (Hidden)             
+   FreqProcID (Hidden)               
+   DStatProcID (Hidden)              
+   OutputDataType (Hidden)           
+   OutputProcID (Hidden)             
+   DStatName (Hidden)                
+   FrequencyName (Hidden)            
+   OutputName (Hidden)               
+   Name                               Name                              
+   Type                               Type                              
+   Tally                              Tally Name                        
+   Tally Output File                  Tally Output File                 
+   Counter                            Counter Name                      
+   CLimit                             Limit                             
+   CInit                              Initialization Option             
+   CounterOutputFile                  Counter Output File               
+   DExp                               Expression                        
+   DLabel                             Report Label                      
+   DOutputFile                        Output File                       
+   ValueState                         Frequency Type                    
+   FValue                             Expression                        
+   FRes                               Resource Name                     
+   FLabel                             Report Label                      
+   FOutputFile                        Output File                       
+
+
+   Operands Contained in Repeat Group 'Categories':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CatList (Hidden)                  
+   ValueRange                         Constant or Range                 
+   Value1                             Value                             
+   Value2                             High Value                        
+   Category                           Category Name                     
+   ExcInc                             Category Option                   
+
+Module: Storage         
+
+   Operands Contained in Dialog 'Storage':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+

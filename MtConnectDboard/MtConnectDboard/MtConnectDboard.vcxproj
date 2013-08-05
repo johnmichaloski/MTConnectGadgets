@@ -1,0 +1,196 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Template|Win32">
+      <Configuration>Template</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{E9C07696-2B39-49EC-AA97-B1BB4A92C941}</ProjectGuid>
+    <RootNamespace>MtConnectDboard</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.30319.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug10\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Debug10\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">true</LinkIncremental>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release10\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Release10\Intermediate\</IntDir>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</LinkIncremental>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\ListControl;C:\Program Files\NIST\src\boost_1_44_0;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\Math;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\src;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\ListControl;C:\Program Files\NIST\src\boost_1_44_0;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\Math;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\src;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\ListControl;C:\Program Files\NIST\src\boost_1_44_0;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\Math;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\src;$(IncludePath)</IncludePath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;$(LibraryPath)</LibraryPath>
+    <LibraryPath Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)MtConnectDboard.tlb</TypeLibraryName>
+      <HeaderFileName>MtConnectDboard.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>MtConnectDboard_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>MtConnectDboard_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.;..\src;..\math;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <GenerateStublessProxies>true</GenerateStublessProxies>
+      <TypeLibraryName>$(IntDir)MtConnectDboard.tlb</TypeLibraryName>
+      <HeaderFileName>MtConnectDboard.h</HeaderFileName>
+      <DllDataFileName>
+      </DllDataFileName>
+      <InterfaceIdentifierFileName>MtConnectDboard_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>MtConnectDboard_p.c</ProxyFileName>
+    </Midl>
+    <ClCompile>
+      <AdditionalIncludeDirectories>.;..\src;..\math;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;STRICT;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ExceptionHandling>Async</ExceptionHandling>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0409</Culture>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Template|Win32'">
+    <Link>
+      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\OdbcArchiver.cpp" />
+    <ClCompile Include="DataArchiver.cpp" />
+    <ClCompile Include="logger.cpp" />
+    <ClCompile Include="MicroInterpreter.cpp" />
+    <ClCompile Include="MtConnectDboard.cpp" />
+    <ClCompile Include="MTConnectStreamsParser.cpp" />
+    <ClCompile Include="service.cpp" />
+    <ClCompile Include="Snapshots.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\AlarmHandler.cpp" />
+    <ClCompile Include="..\src\DataDictionary.cpp" />
+    <ClCompile Include="..\src\DBLogger.cpp" />
+    <ClCompile Include="..\src\ExcelArchiver.cpp" />
+    <ClCompile Include="..\Math\mtrand.cpp" />
+    <ClCompile Include="..\src\Registry.cpp" />
+    <ClCompile Include="..\Math\rv.cpp" />
+    <ClCompile Include="..\Math\SimMath.cpp" />
+    <ClCompile Include="..\Math\SimMathTest.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\OdbcArchiver.h" />
+    <ClInclude Include="DataArchiver.h" />
+    <ClInclude Include="logger.hpp" />
+    <ClInclude Include="MtConnectDboard.h" />
+    <ClInclude Include="MTConnectStreamsParser.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="service.hpp" />
+    <ClInclude Include="Snapshots.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="..\src\AlarmHandler.h" />
+    <ClInclude Include="..\src\Config.h" />
+    <ClInclude Include="..\src\DataDictionary.h" />
+    <ClInclude Include="..\src\DBLogger.h" />
+    <ClInclude Include="..\src\dcomutils.h" />
+    <ClInclude Include="..\src\ExcelArchiver.h" />
+    <ClInclude Include="..\src\Logger.h" />
+    <ClInclude Include="..\src\Registry.h" />
+    <ClInclude Include="..\src\StdStringFcn.h" />
+    <ClInclude Include="..\src\Thread.h" />
+    <ClInclude Include="..\src\trayiconimpl.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\clear.ico" />
+    <None Include="res\idle.ico" />
+    <None Include="res\idr_main.ico" />
+    <None Include="res\MtConnectDboard.ico" />
+    <None Include="res\stop.ico" />
+    <None Include="authenticate.txt" />
+    <None Include="Notes.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="MtConnectDboard.rc" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="MtConnectDboard.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

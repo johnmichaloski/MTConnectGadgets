@@ -1,0 +1,263 @@
+<!doctype HTML public "-//W3C//DTD HTML 4.0 Frameset//EN">
+
+<html>
+
+<head>
+<title>Sample Work Flow</title>
+<meta http-equiv="content-type" content="text/html; charset=windows-1252">
+<meta name="generator" content="RoboHelp by eHelp Corporation www.ehelp.com">
+<link rel="StyleSheet" href="RSIhtmlhelp.css"><style title="hcp" type="text/css">
+<!--
+img.hcp1 { border:none; float:none; border-style:none; }
+span.hcp2 { font-weight:bold; }
+ol.hcp3 { list-style:decimal; }
+-->
+</style>
+</head>
+<body><script type="text/javascript" language="JavaScript1.2" x-save-method="compute-relative" src="ehlpdhtm.js"></script>
+<script type="text/javascript"
+		language=JavaScript1.2>
+<!-- 
+if( typeof( kadovFilePopupInit ) != 'function' ) kadovFilePopupInit = new Function();if( typeof( kadovTextPopupInit ) != 'function' ) kadovTextPopupInit = new Function();
+ //-->
+</script>
+
+<div class=x-popup-text id=POPUP81216778  style='display: none; position: absolute' >
+<p><img src="TPESample.gif" x-maintain-ratio="TRUE" style="width:630px; height:442px;" width="630" height="442" border="0" class="hcp1"></p>
+</div>
+
+<div class=x-popup-text id=POPUP81251117  style='display: none; position: absolute' >
+<p><img src="ExceptionSample.gif" x-maintain-ratio="TRUE" style="width:474px; height:414px;" width="474" height="414" border="0" class="hcp1"></p>
+</div>
+
+<div class=x-popup-text id=POPUP80216555  style='display: none; position: absolute' >
+<p><img src="CompositeSample.gif" x-maintain-ratio="TRUE" style="width:682px; height:480px;" width="682" height="480" border="0" class="hcp1"></p>
+</div>
+
+<h1>Sample Work Flow &nbsp;</h1>
+
+<p class=bodytext><a href="Time_Patterns_Window.htm"><img src="Black_Page.gif" x-save-file="TRUE" x-save-method="compute-relative" style="width:18px; height:16px;" width="18" height="16" border="0" class="hcp1"></a> 
+ <a href="Time_Patterns_Window.htm">Back to Overview of the Time Pattern 
+ Editors</a></p>
+
+<p class=bodytext>This simple example illustrates <span style="x-text-underline: normal; /*begin!kadov{{*/ text-decoration: underline; /*}}end!kadov*/ ">one</span> 
+ way to create a Time Pattern for a standard work shift, create an exception 
+ to a resource, then associate our Time Pattern with that resource.</p>
+
+<p class=bodytext
+	style="color: #000000;">The resource in this example is a Resource 
+ named Worker. Please note that the Worker resource must be defined in 
+ Arena before these actions can be performed. Attach the Basic Process 
+ template, then double-click on the <a href="ArenaBasicProcess.chm::/Resource_.htm">Resource 
+ module</a>. In the spreadsheet interface, double-click to add a new row 
+ and create a Resource with the Name <span class="hcp2">Worker 
+ </span>and a<span class="hcp2"> </span>Type<span class="hcp2"> 
+ </span>of<span class="hcp2"> Based on Schedule</span>. When 
+ using Calendar Schedules, the Schedule Rule for the Resource must be Preempt.</p>
+
+<p class=bodytext
+	style="font-weight: bold;">Creating the Time Pattern</p>
+
+<p class=bodytext>Our standard work shift runs Monday through Friday, from 
+ the hours of 9:00 am to 12:00 pm, then from 1:00 pm (13:00) to 5:00 pm 
+ (17:00). Workers are Available when on duty. To create this time pattern:</p>
+
+<ol>
+	
+	<li class=kadov-p-Cstepfirst><p class=stepfirst>Open the Time Pattern 
+ Editor by choosing <span class="hcp2">Edit &gt; Calendar 
+ Schedules &gt; Time Patterns...</span> from the main menu. </p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>In the Time Patterns area on 
+ the left, right-click on the <span class="hcp2">My Time 
+ Patterns</span> folder and rename it <span class="hcp2">Work 
+ Schedules</span>.</p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>Right-click on the <span class="hcp2">Work 
+ Schedules</span> folder and choose <span class="hcp2">New 
+ Time Pattern</span>. The Time Pattern will be named New Time Pattern by 
+ default. Rename it <span class="hcp2">Work Week Schedule</span>.</p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>Because our work week spans only 
+ 5 days, and our daily shift will only span 7 hours out of 24, it is easiest 
+ to start with a state of Unavailable. Choose the following:</p></li>
+</ol>
+
+<p class=steptext><span class="hcp2">Time Pattern Type:</span> 
+ Capacity<span class="hcp2"><br>
+Default Value Type:</span> State<span class="hcp2"><br>
+Default Value:</span> Unavailable<span class="hcp2"><br>
+Duration (click on ellipsis):</span> 1 Week<span class="hcp2"><br>
+Scale Factor:</span> 1</p>
+
+<ol start="6" type="1" class="hcp3">
+	
+	<li class=kadov-p-Cstep><p class=step>Now we define the availability 
+ of our Worker resource using Time Spans.<br>
+	Right-click in the Time Spans area and choose <span class="hcp2">New 
+ Time Span</span>. The Time Span dialog will open.</p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>Choose the following:</p></li>
+</ol>
+
+<p class=steptext><span class="hcp2">Value Type:</span> State<span class="hcp2"><br>
+Value:</span> Available<span class="hcp2"><br>
+Start Day:</span> Monday 9 hr, 0 min<span class="hcp2"><br>
+End Day:</span> Monday 12 hr, 0 min<br>
+Click <span class="hcp2">OK</span>.<br>
+<br>
+Add Time Spans for Monday afternoon, Tuesday, Wednesday, Thursday, and 
+ Friday the same way. Note that military time must be used.</p>
+
+<p class=step>&nbsp;</p>
+
+<p class=bodytext>You will notice that the Lock Times checkbox is checked 
+ by default and cannot be changed. This is because this time pattern is 
+ one week in duration.</p>
+
+<p class=bodytext>A bar graph representing the Time Pattern will appear 
+ in the lower right. You can navigate this bar graph using the button bar 
+ next to it. Right-click on the chart to change its properties. </p>
+
+<p class=bodytext
+	style="color: #000000;">Note that Time Patterns can also be viewed 
+ and defined via the <a href="ArenaBasicProcess.chm::/Schedule_.htm">Schedule 
+ Module</a> in the Arena Basic Process panel. Time Patterns defined in 
+ this way will appear in the Time Pattern Editors, provided that the <span class="hcp2">Format Type</span> is specified as <span class="hcp2">Calendar</span>. 
+ However, Time Spans must always be defined using the Time Patterns Editor.</p>
+
+<ol start="8" type="1" class="hcp3">
+	
+	<li class=kadov-p-Cstep><p class=step>Click <span class="hcp2">OK</span>.</p></li>
+</ol>
+
+<p class=bodytext><a class=expandspot
+					x-use-popup=#POPUP81216778
+					x-popup-type=expanding
+					href="javascript:kadovTextPopup(this)"
+					id=a1>Click here to see what the Time Pattern Editor 
+ will look like when you are done.</a><script type="text/javascript"
+	language=JavaScript1.2><!--
+kadovTextPopupInit('a1');
+//--></script></p>
+
+<p class=bodytext
+	style="font-weight: bold;">Creating an Exception</p>
+
+<p class=bodytext>Our plant is closed on Labor Day, so our Workers will 
+ not be available that day. To create this Exception:</p>
+
+<ol>
+	
+	<li class=kadov-p-Cstep><p class=step>Open the Exceptions Editor by 
+ choosing <span class="hcp2">Edit &gt; Calendar Schedules 
+ &gt; Exceptions...</span> from the main menu. </p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>In the Exceptions Editor, choose 
+ <span class="hcp2">Exception &gt; New...</span> The Exception 
+ dialog will open.</p></li>
+</ol>
+
+<ol start=3>
+	
+	<li class=kadov-p-Cstep><p class=step>Enter or choose the following:<span class="hcp2"><br>
+	Description:</span> Labor Day Holiday<span class="hcp2"><br>
+	Exception Type:</span> Capacity<span class="hcp2"><br>
+	Value Type:</span> State<span class="hcp2"><br>
+	Value:</span> Unavailable<span class="hcp2"><br>
+	Start Date:</span> Monday, September 1, 2003 &nbsp;0 
+ hr, 0 min<span class="hcp2"><br>
+	End Date:</span> Monday, September 1, 2003 &nbsp;24 
+ hr, 0 min</p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>In the Elements area, click on 
+ the + sign next to the Resources folder. Choose the Worker resource, then 
+ click &gt; &nbsp;to 
+ add it to the Application area. &nbsp;</p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>Click <span class="hcp2">OK</span>. 
+ &nbsp;This exception 
+ is now tied to the Worker resource. This Exception will now appear in 
+ the Exceptions Editor. Click <span class="hcp2">OK</span> 
+ again.</p></li>
+</ol>
+
+<p class=bodytext
+	style="color: #000000;">Exceptions to resources do not display in Arena. 
+ </p>
+
+<p class=bodytext><a class=dropspot
+					x-use-popup=#POPUP81251117
+					x-popup-type=pulldown
+					href="javascript:kadovTextPopup(this)"
+					id=a2>Click here to see what the Exception dialog will 
+ look like when you are done.</a><script type="text/javascript"
+															language=JavaScript1.2><!--
+kadovTextPopupInit('a2');
+//--></script><br>&nbsp;</p>
+
+<p class=bodytext
+	style="font-weight: bold;">Associating a Time Pattern with a Resource</p>
+
+<p class=bodytext>Now that we have defined a Time Pattern and an Exception, 
+ we can associate our Time Pattern with our Resource.</p>
+
+<ol>
+	
+	<li class=kadov-p-Cstep><p class=step>Open the Composite Time Patterns 
+ Editor by choosing <span class="hcp2">Edit &gt; Calendar 
+ Schedules &gt; Display Composite...</span> from the main menu. </p></li>
+	
+	<li class=kadov-p-Cstep><p class=step>In the Elements area, click on 
+ the + sign next to the Resources folder. Then click on the + sign next 
+ to the Worker resource. Choose <span class="hcp2">Capacity</span>.</p></li>
+</ol>
+
+<p class=steptext>Note that the Exception we defined earlier appears in 
+ the Exceptions area. This is because the Labor Day Holiday Exception is 
+ tied to the Worker resource. You can right click in this area to define 
+ additional Exceptions, or edit the existing Exception. Any Exceptions 
+ created here will appear in the Exceptions Editor.</p>
+
+<ol start="3" type="1" class="hcp3">
+	
+	<li class=kadov-p-Cstep><p class=step>Choose the following:<span class="hcp2"><br>
+	Value Type:</span> Time Pattern<span class="hcp2"><br>
+	Value:</span> Work Week Schedule</p></li>
+</ol>
+
+<ol start="4" type="1" class="hcp3">
+	
+	<li class=kadov-p-Cstep><p class=step>Click <span class="hcp2">OK</span>.</p></li>
+</ol>
+
+<p class=bodytext><a class=dropspot
+					x-use-popup=#POPUP80216555
+					x-popup-type=pulldown
+					href="javascript:kadovTextPopup(this)"
+					id=a3>Click here to see what the Composite Time Patterns 
+ dialog will look like when you are done.</a><script 
+ type="text/javascript"
+	language=JavaScript1.2><!--
+kadovTextPopupInit('a3');
+//--></script></p>
+
+<p class=bodytext
+	style="color: #000000;">In Arena, you can tie your time pattern to 
+ a resource, and view or edit information defined in the Composite Time 
+ Patterns Editor by using the <a href="ArenaBasicProcess.chm::/Resource_.htm">Resource</a> 
+ module. </p>
+
+<p class=todoheading>What do you want to do?</p>
+
+<p class=todobullet><a href="Time_Pattern_Editor.htm">Learn more about 
+ the Time Pattern Editor</a></p>
+
+<p class=todobullet><a href="Exceptions_Editor.htm">Learn more about the 
+ Exceptions Editor</a></p>
+
+<p class=todobullet><a href="Composite_Time_Patterns_Editor.htm">Learn 
+ more about the Composite Time Patterns Editor</a></p>
+
+</body>
+</html>

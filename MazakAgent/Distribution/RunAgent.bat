@@ -1,0 +1,3 @@
+.\MazakAgent.exe debug
+pause
+

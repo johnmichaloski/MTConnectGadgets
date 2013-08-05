@@ -1,0 +1,31 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MTCFanucAgent", "MTCFanucAgent.vcproj", "{A1F3E73D-1B1C-41AF-BF07-7F865768029B}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Fanuc15MAgentInstall", "Fanuc15MAgentInstall\Fanuc15MAgentInstall.vdproj", "{6FB4E1D1-E82B-4BDA-923F-62F28839ED56}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MyCustom15MAction", "MyCustom15MAction\MyCustom15MAction.vcproj", "{79923006-F71E-4B77-8B4B-B60E9BE29B87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A1F3E73D-1B1C-41AF-BF07-7F865768029B}.Debug|Win32.ActiveCfg = Debug|Win32
+		{A1F3E73D-1B1C-41AF-BF07-7F865768029B}.Debug|Win32.Build.0 = Debug|Win32
+		{A1F3E73D-1B1C-41AF-BF07-7F865768029B}.Release|Win32.ActiveCfg = Release|Win32
+		{A1F3E73D-1B1C-41AF-BF07-7F865768029B}.Release|Win32.Build.0 = Release|Win32
+		{6FB4E1D1-E82B-4BDA-923F-62F28839ED56}.Debug|Win32.ActiveCfg = Debug
+		{6FB4E1D1-E82B-4BDA-923F-62F28839ED56}.Debug|Win32.Build.0 = Debug
+		{6FB4E1D1-E82B-4BDA-923F-62F28839ED56}.Release|Win32.ActiveCfg = Release
+		{6FB4E1D1-E82B-4BDA-923F-62F28839ED56}.Release|Win32.Build.0 = Release
+		{79923006-F71E-4B77-8B4B-B60E9BE29B87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{79923006-F71E-4B77-8B4B-B60E9BE29B87}.Debug|Win32.Build.0 = Debug|Win32
+		{79923006-F71E-4B77-8B4B-B60E9BE29B87}.Release|Win32.ActiveCfg = Release|Win32
+		{79923006-F71E-4B77-8B4B-B60E9BE29B87}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

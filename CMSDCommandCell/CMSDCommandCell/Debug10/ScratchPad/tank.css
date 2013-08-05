@@ -1,0 +1,250 @@
+@charset "iso-8859-1";
+
+/*******************************************************************************
+*  tank.css : 2005.09.01
+* -----------------------------------------------------------------------------
+*  
+*******************************************************************************/
+
+
+/* begin with generic selectors so that they can be overridden if needed
+ * by classes deeper in the stylesheet
+ */
+.clear
+{
+	clear: both;
+	padding-bottom: 1px;	/* for Gecko-based browsers */
+	margin-bottom: -1px;	/* for Gecko-based browsers */
+}
+* html .clear
+{
+	padding: 0;
+	margin: 0;
+}
+.hide
+{
+	display: none !important;
+}
+.inside
+{
+	/* glitch in IE caused by vertical padding in this class, so 0 padding is
+	 * set here and those blocks that need the vertical padding must be 
+	 * applied to the parent element. the purpose of this class is to provide
+	 * horizontal padding without using hacks to get around IE's broken box 
+	 * model. so it's okay to apply vertical padding to the parent element, 
+	 * just not horizontal padding.
+	 */
+	padding: 0 14px;
+}
+
+/* The core Tank! layout structure begins here. No surprises here. Basic
+ * negative margins (skidoo) layout structure with the added benefit of
+ * forcing #pageWrapper to go the full height of the viewport even if the
+ * content isn't tall enough to otherwise foce that height.
+ *
+ * Theme-related stuff (colors, fonts, etc...) are in the tank_theme.css
+ * stylesheet, although 'default' values could be included within this
+ * stylesheet.
+ */
+html, body
+{
+	height: 100%;	/* need to set the height on these two elements to 100%,
+			   otherwise child elements such as #pageWrapper, when
+			   its height is set to 100%, will only go as height as
+			   the needed to contain the content within the 
+			   element */
+}
+body
+{
+	margin: 0;
+	padding: 0;	/* no padding here, we put it as margin values on 
+			   #pageWrapper. padding/margin values here will break
+			   the min-width emulation for IE */
+} 
+#pageWrapper
+{
+	border: solid 1px #000;
+	border-width: 0 1px;
+	margin: 0 20px 0 140px;	/* this value defines the margins surrounding the
+				   layout and how much of the body element's 
+				   background color will show through. since we're
+				   using a 100% height hack, vertical margins don't
+				   belong here */
+	min-width: 700px;
+	width: auto;
+	min-height: 100%;
+	_height: 100%;	/* if we didn't use the hack, and just set height to 100%
+			   then some browsers will stop the #pageWrapper block
+			   at 100% the height of the window. any content that
+			   doesn't fit within that space will overflow but the
+			   background colors of the columns will not carry. Ugly. */
+}
+* html #pageWrapper
+{
+	word-wrap: break-word;	/* invalid CSS but keeps IE from breaking 
+				   horribly under narrow viewports */
+}
+#masthead
+{
+	padding: 10px;
+	border-bottom: solid 1px #000;
+}
+#masthead h1, #masthead h2
+{
+	margin: 0;
+	padding: 0;
+}
+#outerColumnContainer
+{
+	border-right: solid 16em #fff;
+	z-index: 1;
+}
+#innerColumnContainer
+{
+	border-right: solid 1px #000;
+	margin: 0 -1px 0 0;	/* -1px to make room for the 1px border. this is not
+				   part of the negative margins hack used to create
+				   multiple columns. */
+	width: 100%;
+	z-index: 2;
+}
+#contentColumn, #rightColumn
+{
+	float: left;
+	overflow: visible;
+	/* \*/ position: relative;	/* drop-down menus go transparent if this is 
+					   left in for IE/Mac to see. Very odd. */
+}
+#rightColumn
+{
+	margin: 0 -16em 0 1px;
+	width: 16em;
+}
+* html #rightColumn { margin-left: -10px; /* keep ppl from saying it doesn't work in IE
+					     6 even though it clearly states this is a 
+					     WIP */
+}
+#contentColumn
+{
+	margin-right: -1px;
+	width: 100%;
+}
+* html #contentColumn
+{			/* * html #rightColumn */
+	overflow: hidden;	/* this is because IE 6 and earlier do not handle overflow
+				   properly. visible overflow forces the overflowing block
+				   to grow to contain the oversized child element. this can
+				   break the layout. so we hide content. */
+}
+#rightColumn h3
+{
+	position: relative;
+	z-index: 999;
+}
+* html #rightColumn h3
+{
+	display: inline-block;
+}
+#footer
+{
+	border-top: solid 1px #000;
+	text-align: center;
+}
+#footer p
+{
+	/* #footer is also assigned the .inside class so padding is being 
+	 * applied already. we don't need the paragraph gutterspace on top 
+	 * of it. since the footer is only one paragraph, we can just kill 
+	 * all gutterspace on all p elements in #footer. but if you plan on 
+	 * having more than one p element, go ahead and kill this rule and 
+	 * remove the .inside class assignment from #footer in the HTML
+	 */
+	padding: 0;
+	margin: 0;
+}
+
+/* twoColumns class for implementing a simple 2-column structure wherever you need it
+ * inside the content column. 
+ */
+div.twoColumns
+{
+	margin: 14px 0;
+	width: 100%;
+}
+div.twoColumns div.leftColumn, 
+div.twoColumns div.rightColumn
+{
+	float: left;
+	width: 50%;
+	overflow: visible;	/* fix for IE italics bug */
+}
+div.twoColumns div.leftColumn
+{
+	margin-right: -1px;
+	border-right: solid 1px #000;
+}
+div.twoColumns div.rightColumn
+{
+	margin-right: -2px;
+	border-left: solid 1px #000;
+}
+div.twoColumns div.leftColumn div.inside
+{
+	padding-left: 0;
+}
+div.twoColumns div.rightColumn div.inside
+{
+	padding-right: 0;
+}
+
+/* Miscellaneous things layout-related, but not core to the layout itself.
+ */
+p.fontsize-set, div.colorPicker
+{
+	_padding-top: 1px;	/* keep IE from putting in too much padding */
+	text-align: center;
+}
+p.fontsize-set img
+{
+	border-width: 0;
+	margin: 0 3px;
+}
+div.colorPicker a
+{
+	display: block;
+	width: 12px;
+	height: 12px;
+	margin: 0 5px;
+	float: left;
+	padding: 0;
+	line-height: 0;
+	font-size: 0;
+	background-color: #dc8;	/* default color picker */
+}
+
+/* style-switcher will use anchors converted to block elements with no
+ * content. set the background-color property to whatever value that particular
+ * swatch should be
+ */
+a#colorPicker-blue
+{
+	background-color: #abe;
+}
+a#colorPicker-green
+{
+	background-color: #aca;
+}
+a#colorPicker-camille
+{
+	background-color: #e77;
+}
+a#colorPicker-gray
+{
+	background-color: #ccc;
+}
+a#colorPicker-black
+{
+	background-color: #000;
+}
+
+/******************************************************************************/

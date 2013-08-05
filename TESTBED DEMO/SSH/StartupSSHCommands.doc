@@ -1,0 +1,599 @@
+{\rtf1\ansi\ansicpg1252\deff0\deflang1033{\fonttbl{\f0\fswiss\fcharset0 Arial;}{\f1\fmodern\fprq1\fcharset0 Courier New;}}
+{\*\generator Msftedit 5.41.15.1515;}\viewkind4\uc1\pard\f0\fs20 Microsoft Windows XP [Version 5.1.2600]\par
+(C) Copyright 1985-2001 Microsoft Corp.\par
+\par
+C:\\Documents and Settings\\simuser>ssh-add\par
+Could not open a connection to your authentication agent.\par
+\par
+C:\\Documents and Settings\\simuser>ssh-agent\par
+SSH_AUTH_SOCK=/tmp/ssh-fN0KgRUcE8Hy/agent.1056; export SSH_AUTH_SOCK;\par
+SSH_AGENT_PID=1068; export SSH_AGENT_PID;\par
+echo Agent pid 1068;\par
+\par
+C:\\Documents and Settings\\simuser>set SSH_AUTH_SOCK=/tmp/ssh-fN0KgRUcE8Hy/agent.\par
+1056\par
+\par
+C:\\Documents and Settings\\simuser>set SSH_AGENT_PID=1068\par
+\par
+C:\\Documents and Settings\\simuser>ssh-add\par
+\par
+C:\\Documents and Settings\\simuser>ssh-add -l\par
+The agent has no identities.\par
+\par
+C:\\Documents and Settings\\simuser>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is CC32-A185\par
+\par
+ Directory of C:\\Documents and Settings\\simuser\par
+\par
+07/19/2012  10:42 AM    <DIR>          .\par
+07/19/2012  10:42 AM    <DIR>          ..\par
+07/19/2012  10:52 AM    <DIR>          Desktop\par
+07/16/2012  10:43 AM    <DIR>          Favorites\par
+07/19/2012  04:12 PM    <DIR>          My Documents\par
+07/19/2012  10:44 AM               600 PUTTY.RND\par
+06/12/2012  03:23 AM    <DIR>          Start Menu\par
+               1 File(s)            600 bytes\par
+               6 Dir(s)  73,471,709,184 bytes free\par
+\par
+C:\\Documents and Settings\\simuser>cd "My Documents"\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>dir\par
+ Volume in drive C has no label.\par
+ Volume Serial Number is CC32-A185\par
+\par
+ Directory of C:\\Documents and Settings\\simuser\\My Documents\par
+\par
+07/19/2012  04:12 PM    <DIR>          .\par
+07/19/2012  04:12 PM    <DIR>          ..\par
+07/19/2012  10:59 AM    <DIR>          .ssh\par
+07/17/2012  05:56 PM               308 agent.cfg\par
+07/17/2012  05:07 PM    <DIR>          Debug\par
+07/17/2012  05:56 PM             2,617 devices.xml\par
+07/19/2012  10:44 AM    <DIR>          gomotion\par
+07/16/2012  10:43 AM    <DIR>          My Music\par
+07/16/2012  10:43 AM    <DIR>          My Pictures\par
+07/17/2012  05:07 PM    <DIR>          Release\par
+07/19/2012  09:58 AM       228,178,504 SFU35SEL_EN.exe\par
+07/19/2012  10:43 AM    <DIR>          ulapi\par
+07/19/2012  02:32 PM    <DIR>          Visual Studio 2010\par
+07/19/2012  10:40 AM    <DIR>          Windows XP Additions\par
+               3 File(s)    228,181,429 bytes\par
+              11 Dir(s)  73,471,774,720 bytes free\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh-add .ssh\\id_rsa\par
+cygwin warning:\par
+  MS-DOS style path detected: .ssh\\id_rsa\par
+  Preferred POSIX equivalent is: .ssh/id_rsa\par
+  CYGWIN environment variable option "nodosfilewarning" turns off this warning.\par
+  Consult the user's guide for more details about POSIX paths:\par
+    http://cygwin.com/cygwin-ug-net/using.html#using-pathnames\par
+Identity added: .ssh\\id_rsa (.ssh\\id_rsa)\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh-add -l\par
+2048 38:9e:ca:ea:c6:6b:43:f4:20:9a:c4:f0:de:e6:c9:46 .ssh\\id_rsa (RSA)\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>start\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>\par
+\par
+\par
+=============================================================================\par
+Microsoft Windows XP [Version 5.1.2600]\par
+(C) Copyright 1985-2001 Microsoft Corp.\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro ls\par
+The authenticity of host 'monstro (192.168.16.4)' can't be established.\par
+RSA key fingerprint is d5:c7:39:83:9d:94:9a:4e:dc:13:80:99:76:56:60:e9.\par
+Are you sure you want to continue connecting (yes/no)? yes\par
+Warning: Permanently added 'monstro,192.168.16.4' (RSA) to the list of known hos\par
+ts.\par
+Desktop\par
+Documents\par
+Downloads\par
+Music\par
+Pictures\par
+Public\par
+Templates\par
+Videos\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro ls\par
+Desktop\par
+Documents\par
+Downloads\par
+Music\par
+Pictures\par
+Public\par
+Templates\par
+Videos\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro /usr/local/proj/gomot\par
+ion/testing/startmtc.sh -i /usr/local/proj/gomotion/etc/genhex1.ini -p 7879\par
+++ basename ../bin/gorun\par
++ USAGE='Usage : gorun [-i <inifile>] [-u unix | rtai] [-m <name of main>] [-s]\par
+[-d] [-k]'\par
+++ uname -r\par
+++ cut -f 1,2 -d .\par
++ UTS_RELEASE=2.6\par
+++ dirname ../bin/gorun\par
++ thisdir=../bin\par
++ inifile=\par
++ do_wait=\par
++ use_gosh=\par
++ debugarg=\par
++ debugval=0\par
++ killgo=\par
++ '[' -f ../bin/../rtaidir ']'\par
++ do_rtai=no\par
++ u_arg=unix\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ inifile=/usr/local/proj/gomotion/etc/genhex1.ini\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ do_wait=1\par
++ getopts 'i:u:m:swdk?' c\par
++ '[' x/usr/local/proj/gomotion/etc/genhex1.ini = x ']'\par
++ '[' '!' -f /usr/local/proj/gomotion/etc/genhex1.ini ']'\par
++ '[' x = x ']'\par
++ main=gomain\par
++ mainmod=gomain_mod\par
++ '[' -f ../bin/../ulapi_dir ']'\par
++ . ../bin/../ulapi_dir\par
+++ ULAPI_DIR=/usr/local/ulapi\par
+++ /usr/local/ulapi/bin/inifind HOWMANY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_HOWMANY=6\par
++ '[' x6 = x ']'\par
+++ /usr/local/ulapi/bin/inifind NSECS_PER_PERIOD RTAPI_HAL /usr/local/proj/gomot\par
+ion/etc/genhex1.ini\par
++ RTAPI_HAL_NSECS_PER_PERIOD=50000\par
++ '[' x50000 = x ']'\par
+++ /usr/local/ulapi/bin/inifind TYPE GO_STEPPER /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ GO_STEPPER_TYPE=\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_STEPPER /usr/local/proj/gomotion/etc/\par
+genhex1.ini\par
++ GO_STEPPER_SHM_KEY=\par
++ '[' x = x ']'\par
++ GO_STEPPER_SHM_KEY=0\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TRAJ /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TRAJ_SHM_KEY=202\par
++ '[' x202 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TOOL /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TOOL_SHM_KEY=602\par
++ '[' x602 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SHM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SEM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SEM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind EXT_INIT_STRING GOMOTION /usr/local/proj/gomotio\par
+n/etc/genhex1.ini\par
++ EXT_INIT_STRING=I\par
++ '[' xI = x ']'\par
+++ /usr/local/ulapi/bin/inifind KINEMATICS TRAJ /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ KINEMATICS=genhexkins\par
++ '[' xgenhexkins = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_LOG /usr/local/proj/gomotion/etc/genh\par
+ex1.ini\par
++ GO_LOG_SHM_KEY=1002\par
++ '[' x1002 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_IO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ GO_IO_SHM_KEY=2002\par
++ '[' x2002 = x ']'\par
++ pid1=0\par
++ pid2=0\par
++ pid3=0\par
++ '[' xno = xyes ']'\par
++ '[' x = xyes ']'\par
++ '[' '!' x = x ']'\par
++ pid2=3537\par
++ '[' '!' x602 = x ']'\par
++ pid3=3538\par
++ ../bin/gomain DEBUG=0 TRAJ_SHM_KEY=202 SERVO_HOWMANY=6 SERVO_SHM_KEY=102 SERVO\par
+_SEM_KEY=102 EXT_INIT_STRING=I KINEMATICS=genhexkins GO_LOG_SHM_KEY=1002 GO_IO_S\par
+HM_KEY=2002\par
++ '[' '!' x = x ']'\par
++ ../bin/gocfg -i /usr/local/proj/gomotion/etc/genhex1.ini -u unix\par
++ ../bin/toolmain DEBUG=0 TOOL_SHM_KEY=602\par
+2012-07-23T15:25:04.387416Z - Info: Server started, waiting on port 7879\par
+Application initialization failed: no display name and no $DISPLAY environment v\par
+ariable\par
+Error in startup script: invalid command name "gotk_set_timeout"\par
+    while executing\par
+"gotk_set_timeout forever"\par
+    (file "../scripts/testmtc.tcl" line 5)\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro /usr/local/proj/gomot\par
+ion/testing/startmtc.sh -i /usr/local/proj/gomotion/etc/genhex1.ini -p 7879\par
+++ basename ../bin/gorun\par
++ USAGE='Usage : gorun [-i <inifile>] [-u unix | rtai] [-m <name of main>] [-s]\par
+[-d] [-k]'\par
+++ uname -r\par
+++ cut -f 1,2 -d .\par
++ UTS_RELEASE=2.6\par
+++ dirname ../bin/gorun\par
++ thisdir=../bin\par
++ inifile=\par
++ do_wait=\par
++ use_gosh=\par
++ debugarg=\par
++ debugval=0\par
++ killgo=\par
++ '[' -f ../bin/../rtaidir ']'\par
++ do_rtai=no\par
++ u_arg=unix\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ inifile=/usr/local/proj/gomotion/etc/genhex1.ini\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ do_wait=1\par
++ getopts 'i:u:m:swdk?' c\par
++ '[' x/usr/local/proj/gomotion/etc/genhex1.ini = x ']'\par
++ '[' '!' -f /usr/local/proj/gomotion/etc/genhex1.ini ']'\par
++ '[' x = x ']'\par
++ main=gomain\par
++ mainmod=gomain_mod\par
++ '[' -f ../bin/../ulapi_dir ']'\par
++ . ../bin/../ulapi_dir\par
+++ ULAPI_DIR=/usr/local/ulapi\par
+++ /usr/local/ulapi/bin/inifind HOWMANY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_HOWMANY=6\par
++ '[' x6 = x ']'\par
+++ /usr/local/ulapi/bin/inifind NSECS_PER_PERIOD RTAPI_HAL /usr/local/proj/gomot\par
+ion/etc/genhex1.ini\par
++ RTAPI_HAL_NSECS_PER_PERIOD=50000\par
++ '[' x50000 = x ']'\par
+++ /usr/local/ulapi/bin/inifind TYPE GO_STEPPER /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ GO_STEPPER_TYPE=\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_STEPPER /usr/local/proj/gomotion/etc/\par
+genhex1.ini\par
++ GO_STEPPER_SHM_KEY=\par
++ '[' x = x ']'\par
++ GO_STEPPER_SHM_KEY=0\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TRAJ /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TRAJ_SHM_KEY=202\par
++ '[' x202 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TOOL /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TOOL_SHM_KEY=602\par
++ '[' x602 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SHM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SEM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SEM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind EXT_INIT_STRING GOMOTION /usr/local/proj/gomotio\par
+n/etc/genhex1.ini\par
++ EXT_INIT_STRING=I\par
++ '[' xI = x ']'\par
+++ /usr/local/ulapi/bin/inifind KINEMATICS TRAJ /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ KINEMATICS=genhexkins\par
++ '[' xgenhexkins = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_LOG /usr/local/proj/gomotion/etc/genh\par
+ex1.ini\par
++ GO_LOG_SHM_KEY=1002\par
++ '[' x1002 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_IO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ GO_IO_SHM_KEY=2002\par
++ '[' x2002 = x ']'\par
++ pid1=0\par
++ pid2=0\par
++ pid3=0\par
++ '[' xno = xyes ']'\par
++ '[' x = xyes ']'\par
++ '[' '!' x = x ']'\par
++ pid2=4539\par
++ '[' '!' x602 = x ']'\par
++ pid3=4540\par
++ ../bin/gomain DEBUG=0 TRAJ_SHM_KEY=202 SERVO_HOWMANY=6 SERVO_SHM_KEY=102 SERVO\par
+_SEM_KEY=102 EXT_INIT_STRING=I KINEMATICS=genhexkins GO_LOG_SHM_KEY=1002 GO_IO_S\par
+HM_KEY=2002\par
++ '[' '!' x = x ']'\par
++ ../bin/gocfg -i /usr/local/proj/gomotion/etc/genhex1.ini -u unix\par
++ ../bin/toolmain DEBUG=0 TOOL_SHM_KEY=602\par
+2012-07-23T15:43:43.406654Z - Info: Server started, waiting on port 7879\par
++ '[' 0 -ne 0 ']'\par
++ '[' '!' x1 = x ']'\par
++ wait 4539\par
+inifile is /usr/local/proj/gomotion/etc/genhex1.ini\par
+2012-07-23T15:43:50.408690Z - Info: Connected to: 192.168.16.7 on port 1357\par
+Killed by signal 2.\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstrol killall gomain\par
+ssh: Could not resolve hostname monstrol: hostname nor servname provided, or not\par
+ known\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall gomain\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall toolmain\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstrol killall taskloop\par
+ssh: Could not resolve hostname monstrol: hostname nor servname provided, or not\par
+ known\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall taskloop\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall go_adapter\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall gotk\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>\par
+\par
+=====================================================\par
+\f1\fs16 Microsoft Windows XP [Version 5.1.2600]\par
+(C) Copyright 1985-2001 Microsoft Corp.\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro ls\par
+The authenticity of host 'monstro (192.168.16.4)' can't be established.\par
+RSA key fingerprint is d5:c7:39:83:9d:94:9a:4e:dc:13:80:99:76:56:60:e9.\par
+Are you sure you want to continue connecting (yes/no)? yes\par
+Warning: Permanently added 'monstro,192.168.16.4' (RSA) to the list of known hos\par
+ts.\par
+Desktop\par
+Documents\par
+Downloads\par
+Music\par
+Pictures\par
+Public\par
+Templates\par
+Videos\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro ls\par
+Desktop\par
+Documents\par
+Downloads\par
+Music\par
+Pictures\par
+Public\par
+Templates\par
+Videos\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro /usr/local/proj/gomot\par
+ion/testing/startmtc.sh -i /usr/local/proj/gomotion/etc/genhex1.ini -p 7879\par
+++ basename ../bin/gorun\par
++ USAGE='Usage : gorun [-i <inifile>] [-u unix | rtai] [-m <name of main>] [-s]\par
+[-d] [-k]'\par
+++ uname -r\par
+++ cut -f 1,2 -d .\par
++ UTS_RELEASE=2.6\par
+++ dirname ../bin/gorun\par
++ thisdir=../bin\par
++ inifile=\par
++ do_wait=\par
++ use_gosh=\par
++ debugarg=\par
++ debugval=0\par
++ killgo=\par
++ '[' -f ../bin/../rtaidir ']'\par
++ do_rtai=no\par
++ u_arg=unix\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ inifile=/usr/local/proj/gomotion/etc/genhex1.ini\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ do_wait=1\par
++ getopts 'i:u:m:swdk?' c\par
++ '[' x/usr/local/proj/gomotion/etc/genhex1.ini = x ']'\par
++ '[' '!' -f /usr/local/proj/gomotion/etc/genhex1.ini ']'\par
++ '[' x = x ']'\par
++ main=gomain\par
++ mainmod=gomain_mod\par
++ '[' -f ../bin/../ulapi_dir ']'\par
++ . ../bin/../ulapi_dir\par
+++ ULAPI_DIR=/usr/local/ulapi\par
+++ /usr/local/ulapi/bin/inifind HOWMANY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_HOWMANY=6\par
++ '[' x6 = x ']'\par
+++ /usr/local/ulapi/bin/inifind NSECS_PER_PERIOD RTAPI_HAL /usr/local/proj/gomot\par
+ion/etc/genhex1.ini\par
++ RTAPI_HAL_NSECS_PER_PERIOD=50000\par
++ '[' x50000 = x ']'\par
+++ /usr/local/ulapi/bin/inifind TYPE GO_STEPPER /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ GO_STEPPER_TYPE=\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_STEPPER /usr/local/proj/gomotion/etc/\par
+genhex1.ini\par
++ GO_STEPPER_SHM_KEY=\par
++ '[' x = x ']'\par
++ GO_STEPPER_SHM_KEY=0\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TRAJ /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TRAJ_SHM_KEY=202\par
++ '[' x202 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TOOL /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TOOL_SHM_KEY=602\par
++ '[' x602 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SHM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SEM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SEM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind EXT_INIT_STRING GOMOTION /usr/local/proj/gomotio\par
+n/etc/genhex1.ini\par
++ EXT_INIT_STRING=I\par
++ '[' xI = x ']'\par
+++ /usr/local/ulapi/bin/inifind KINEMATICS TRAJ /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ KINEMATICS=genhexkins\par
++ '[' xgenhexkins = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_LOG /usr/local/proj/gomotion/etc/genh\par
+ex1.ini\par
++ GO_LOG_SHM_KEY=1002\par
++ '[' x1002 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_IO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ GO_IO_SHM_KEY=2002\par
++ '[' x2002 = x ']'\par
++ pid1=0\par
++ pid2=0\par
++ pid3=0\par
++ '[' xno = xyes ']'\par
++ '[' x = xyes ']'\par
++ '[' '!' x = x ']'\par
++ pid2=3537\par
++ '[' '!' x602 = x ']'\par
++ pid3=3538\par
++ ../bin/gomain DEBUG=0 TRAJ_SHM_KEY=202 SERVO_HOWMANY=6 SERVO_SHM_KEY=102 SERVO\par
+_SEM_KEY=102 EXT_INIT_STRING=I KINEMATICS=genhexkins GO_LOG_SHM_KEY=1002 GO_IO_S\par
+HM_KEY=2002\par
++ '[' '!' x = x ']'\par
++ ../bin/gocfg -i /usr/local/proj/gomotion/etc/genhex1.ini -u unix\par
++ ../bin/toolmain DEBUG=0 TOOL_SHM_KEY=602\par
+2012-07-23T15:25:04.387416Z - Info: Server started, waiting on port 7879\par
+Application initialization failed: no display name and no $DISPLAY environment v\par
+ariable\par
+Error in startup script: invalid command name "gotk_set_timeout"\par
+    while executing\par
+"gotk_set_timeout forever"\par
+    (file "../scripts/testmtc.tcl" line 5)\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro /usr/local/proj/gomot\par
+ion/testing/startmtc.sh -i /usr/local/proj/gomotion/etc/genhex1.ini -p 7879\par
+++ basename ../bin/gorun\par
++ USAGE='Usage : gorun [-i <inifile>] [-u unix | rtai] [-m <name of main>] [-s]\par
+[-d] [-k]'\par
+++ uname -r\par
+++ cut -f 1,2 -d .\par
++ UTS_RELEASE=2.6\par
+++ dirname ../bin/gorun\par
++ thisdir=../bin\par
++ inifile=\par
++ do_wait=\par
++ use_gosh=\par
++ debugarg=\par
++ debugval=0\par
++ killgo=\par
++ '[' -f ../bin/../rtaidir ']'\par
++ do_rtai=no\par
++ u_arg=unix\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ inifile=/usr/local/proj/gomotion/etc/genhex1.ini\par
++ getopts 'i:u:m:swdk?' c\par
++ case $c in\par
++ do_wait=1\par
++ getopts 'i:u:m:swdk?' c\par
++ '[' x/usr/local/proj/gomotion/etc/genhex1.ini = x ']'\par
++ '[' '!' -f /usr/local/proj/gomotion/etc/genhex1.ini ']'\par
++ '[' x = x ']'\par
++ main=gomain\par
++ mainmod=gomain_mod\par
++ '[' -f ../bin/../ulapi_dir ']'\par
++ . ../bin/../ulapi_dir\par
+++ ULAPI_DIR=/usr/local/ulapi\par
+++ /usr/local/ulapi/bin/inifind HOWMANY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_HOWMANY=6\par
++ '[' x6 = x ']'\par
+++ /usr/local/ulapi/bin/inifind NSECS_PER_PERIOD RTAPI_HAL /usr/local/proj/gomot\par
+ion/etc/genhex1.ini\par
++ RTAPI_HAL_NSECS_PER_PERIOD=50000\par
++ '[' x50000 = x ']'\par
+++ /usr/local/ulapi/bin/inifind TYPE GO_STEPPER /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ GO_STEPPER_TYPE=\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_STEPPER /usr/local/proj/gomotion/etc/\par
+genhex1.ini\par
++ GO_STEPPER_SHM_KEY=\par
++ '[' x = x ']'\par
++ GO_STEPPER_SHM_KEY=0\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TRAJ /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TRAJ_SHM_KEY=202\par
++ '[' x202 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY TOOL /usr/local/proj/gomotion/etc/genhex\par
+1.ini\par
++ TOOL_SHM_KEY=602\par
++ '[' x602 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SHM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SEM_KEY SERVO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ SERVO_SEM_KEY=102\par
++ '[' x102 = x ']'\par
+++ /usr/local/ulapi/bin/inifind EXT_INIT_STRING GOMOTION /usr/local/proj/gomotio\par
+n/etc/genhex1.ini\par
++ EXT_INIT_STRING=I\par
++ '[' xI = x ']'\par
+++ /usr/local/ulapi/bin/inifind KINEMATICS TRAJ /usr/local/proj/gomotion/etc/gen\par
+hex1.ini\par
++ KINEMATICS=genhexkins\par
++ '[' xgenhexkins = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_LOG /usr/local/proj/gomotion/etc/genh\par
+ex1.ini\par
++ GO_LOG_SHM_KEY=1002\par
++ '[' x1002 = x ']'\par
+++ /usr/local/ulapi/bin/inifind SHM_KEY GO_IO /usr/local/proj/gomotion/etc/genhe\par
+x1.ini\par
++ GO_IO_SHM_KEY=2002\par
++ '[' x2002 = x ']'\par
++ pid1=0\par
++ pid2=0\par
++ pid3=0\par
++ '[' xno = xyes ']'\par
++ '[' x = xyes ']'\par
++ '[' '!' x = x ']'\par
++ pid2=4539\par
++ '[' '!' x602 = x ']'\par
++ pid3=4540\par
++ ../bin/gomain DEBUG=0 TRAJ_SHM_KEY=202 SERVO_HOWMANY=6 SERVO_SHM_KEY=102 SERVO\par
+_SEM_KEY=102 EXT_INIT_STRING=I KINEMATICS=genhexkins GO_LOG_SHM_KEY=1002 GO_IO_S\par
+HM_KEY=2002\par
++ '[' '!' x = x ']'\par
++ ../bin/gocfg -i /usr/local/proj/gomotion/etc/genhex1.ini -u unix\par
++ ../bin/toolmain DEBUG=0 TOOL_SHM_KEY=602\par
+2012-07-23T15:43:43.406654Z - Info: Server started, waiting on port 7879\par
++ '[' 0 -ne 0 ']'\par
++ '[' '!' x1 = x ']'\par
++ wait 4539\par
+inifile is /usr/local/proj/gomotion/etc/genhex1.ini\par
+2012-07-23T15:43:50.408690Z - Info: Connected to: 192.168.16.7 on port 1357\par
+Killed by signal 2.\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstrol killall gomain\par
+ssh: Could not resolve hostname monstrol: hostname nor servname provided, or not\par
+ known\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall gomain\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall toolmain\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstrol killall taskloop\par
+ssh: Could not resolve hostname monstrol: hostname nor servname provided, or not\par
+ known\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall taskloop\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall go_adapter\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>ssh monstro killall gotk\par
+\par
+C:\\Documents and Settings\\simuser\\My Documents>\f0\fs20\par
+}
+ 

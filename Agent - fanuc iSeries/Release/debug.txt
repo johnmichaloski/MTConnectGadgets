@@ -1,0 +1,36 @@
+MTConnect Agent Service Started Fri May 31 13:26:14 2013
+MTConnect Agent Service Started Fri May 31 13:26:14 2013
+2013-05-31T17:26:14.0565Z: FATAL [1] DebugLevel=5
+2013-05-31T17:26:14.0565Z: FATAL [2] Protocol=HSSB
+2013-05-31T17:26:14.0565Z: FATAL [3] ScanDelay=1000
+2013-05-31T17:26:14.0565Z: FATAL [4] FanucPort=0
+2013-05-31T17:26:14.0565Z: FATAL [5] FocasDelay=1000
+2013-05-31T17:26:14.0565Z: FATAL [6] ResetAtMidnight=1
+2013-05-31T17:26:14.0612Z: FATAL [7] Agent will Reset from now    1.0000 
+2013-05-31T17:26:14.0628Z: FATAL [8] CCmdHandler::Cycle()
+2013-05-31T17:26:16.0628ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:16.0628Z15iSeries::connect Using Protocol=HSSB
+2013-05-31T17:26:16.0628ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:16.0628Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:16.0628Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error
+2013-05-31T17:26:16.0628Z15iSeries::connect FAILED Power = OFF
+2013-05-31T17:26:17.0628ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:17.0628ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:17.0628Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:17.0628Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error
+2013-05-31T17:26:18.0627ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:18.0627ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:18.0627Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:18.0627Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error
+2013-05-31T17:26:19.0627ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:19.0627ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:19.0627Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:19.0627Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error
+2013-05-31T17:26:20.0627ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:20.0627ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:20.0627Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:20.0627Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error
+2013-05-31T17:26:21.0627ZFanucMTConnectAdapter::gatherDeviceData
+2013-05-31T17:26:21.0627ZiSeries::connect HSSB cnc_allclibhndl2 Port=0
+2013-05-31T17:26:21.0627Z15iSeries::connect cnc_allclibhndl3 Result: -3
+2013-05-31T17:26:21.0627Z15iSeries::connect cnc_allclibhndl3 Error : EW_MMCSYS - emm386 or mmcsys install error

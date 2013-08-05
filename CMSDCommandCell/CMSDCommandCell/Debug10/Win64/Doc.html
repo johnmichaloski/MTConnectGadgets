@@ -1,0 +1,188 @@
+<HTML>
+<HEAD>
+ <title>Precision Sand Casting Saginaw MI</title>
+<STYLE>
+table.gridtable {
+  BACKGROUND-COLOR: #f0f0e0;
+ BORDER-BOTTOM: #ffffff 0px solid;
+ BORDER-COLLAPSE: collapse;
+ BORDER-LEFT: #ffffff 0px solid;
+ BORDER-RIGHT: #ffffff 0px solid;
+ BORDER-TOP: #ffffff 0px solid;
+ FONT-SIZE: 9pt;
+ MARGIN-LEFT: 10px
+  }
+table.gridtable td {
+ BACKGROUND-COLOR: #e7e7ce;
+ BORDER-BOTTOM: #ffffff 1px solid;
+ BORDER-LEFT: #ffffff 1px solid;
+ BORDER-RIGHT: #ffffff 1px solid;
+ BORDER-TOP: #ffffff 1px solid;
+ PADDING-LEFT: 3px
+  }
+table.gridtable th {
+ BACKGROUND-COLOR: #cecf9c;
+ BORDER-BOTTOM: #ffffff 1px solid;
+ BORDER-LEFT: #ffffff 1px solid;
+ BORDER-RIGHT: #ffffff 1px solid;
+ BORDER-TOP: #ffffff 1px solid;
+ COLOR: #000000;
+ FONT-WEIGHT: bold
+  }
+</STYLE>
+<script language="javascript" src="./js/graphael/raphael.js" type="text/javascript"></script>
+<script language="javascript" src="./js/graphael/g.raphael.js" type="text/javascript"></script>
+<script language="javascript" src="./js/graphael/g.pie.js" type="text/javascript"></script> 
+	 <script>
+	         window.onload = function () {
+	             var r = Raphael("holder"),
+	                pie = r.piechart(320, 240, 100, [  7.4292,  1.2097,  0.0000,707.5495,  1.2097 ],
+               { legend: ["%%.%% - blocked","%%.%% - down","%%.%% - off","%%.%% - production","%%.%% - repair"],	legendpos: "west", href: ["http://raphaeljs.com", "http://g.raphaeljs.com"]});
+	            r.text(320, 100, "Cell Resource State Use").attr({ font: "20px sans-serif" });
+	            pie.hover(function () {
+	                this.sector.stop();
+	                this.sector.scale(1.1, 1.1, this.cx, this.cy);
+	                if (this.label) {
+	                    this.label[0].stop();
+	                    this.label[0].attr({ r: 7.5 });
+	                    this.label[1].attr({ "font-weight": 800 });
+	                 }
+	             }, function () {
+	                this.sector.animate({ transform: 's1 1 ' + this.cx + ' ' + this.cy }, 500, "bounce");
+	                if (this.label) {
+	                   this.label[0].animate({ r: 5 }, 500, "bounce");
+	                   this.label[1].attr({ "font-weight": 400 });
+	               }
+	           });
+	       };
+	   </script>
+</HEAD>
+<h1>Precision Casting</h1>
+<p> 
+Casting has seen over 5000 years of technological advances. The precision casting process at GM is dedicated to making 8-cylinder aluminum engine blocks. The molten aluminum process is responsible for melting the aluminum, refining the melt, and adjusting the molten chemistry. Once molten, the aluminum is degassed, leveled, and laundered to remove deleterious gases before being tapped to flow into cores. Cores are made of sand which is poured into molding machines to create the contours of the casting, pressed and heated to bind the sand. Since the sand casting process is an expendable mold metal casting process, the core process builds a new sand core for each casting.  Overall, core parts are molded from sand and binding elements, assembled into the engine block core, and then dried before casting. The casting and finishing process is where the molten aluminum flows into the sand cast core, after which, the casting is cooled and then casting sand is removed from around the now solidified aluminum engine block by shakeout, trim, and degating operations.
+		<p> 
+<img alt="Smiley face"
+src="C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\TESTBED DEMO\AgentCmd\GMCasting\Pics\CastingProcess.jpg"  width="75%"  />
+<p>
+<h2>Casting Line 1 Performance</h2>
+<BR> Part FilledCoveredCorePackage Number Made = 100
+<br>Time elapsed 15478.0000 in seconds
+<TABLE class="gridtable">
+<TR><TH>Machine</TH><TH>Blocked<BR>(Seconds)</BR></TH><TH>Starved<BR>(Seconds)</BR></TH><TH>Down<BR>(Seconds)</BR></TH><TH>Repair<BR>(Seconds)</BR></TH><TH>Production<BR>(Seconds)</BR></TH><TH>Off<BR>(Seconds)</BR></TH><TH>Utility<BR>Costs</BR></TH><TH>Description</TH>
+</TR>
+<TR>
+<TD> LINE1_PS_CAST1_ELV1</TD><TD align="right"> 146.0000</TD><TD align="right"> 13032.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17780.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 20.0565</TD><TD> Elevator</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CRS1</TD><TD align="right"> 152.0000</TD><TD align="right"> 13363.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17443.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  0.0000</TD><TD> Package Insert</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD align="right"> 154.0000</TD><TD align="right"> 13460.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17344.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 30.6524</TD><TD> Chill Insert</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_AS1</TD><TD align="right"> 224.0000</TD><TD align="right"> 15307.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 15416.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  0.0000</TD><TD> Alloy Insert</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CVRDEL</TD><TD align="right"> 224.0000</TD><TD align="right"> 15308.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 15416.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  0.0000</TD><TD> Cover Delivery</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CVS1</TD><TD align="right"> 144.0000</TD><TD align="right"> 12928.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17886.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  1.1353</TD><TD> Cover Insert</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LG1</TD><TD align="right"> 150.0000</TD><TD align="right"> 13227.0000</TD><TD align="right"> 5.0000</TD><TD align="right"> 5.0000</TD><TD align="right"> 17571.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  9.8390</TD><TD> Load Gantry</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_RO1</TD><TD align="right"> 224.0000</TD><TD align="right"> 15305.0000</TD><TD align="right"> 2.0000</TD><TD align="right"> 2.0000</TD><TD align="right"> 15414.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 13.6233</TD><TD> Rollover</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_FUR1</TD><TD align="right"> 224.0000</TD><TD align="right"> 15308.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 15416.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  0.0000</TD><TD> Heated Well Furnance</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EMP1</TD><TD align="right"> 210.0000</TD><TD align="right"> 14959.0000</TD><TD align="right"> 361.0000</TD><TD align="right"> 361.0000</TD><TD align="right"> 15068.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $  1.1353</TD><TD> EM Pump</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EG1</TD><TD align="right"> 144.0000</TD><TD align="right"> 13120.0000</TD><TD align="right"> 4.0000</TD><TD align="right"> 4.0000</TD><TD align="right"> 17686.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 29.8955</TD><TD> Exit Gantry</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD align="right"> 140.0000</TD><TD align="right"> 12902.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17916.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 30.6524</TD><TD> Chill Extractor</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD align="right"> 150.0000</TD><TD align="right"> 13369.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> 17439.0000</TD><TD align="right"> 0.0000</TD><TD align="right"> $ 21.5702</TD><TD> Lowerator</TD></TR>
+</TABLE>
+<br><h1>Casting Line 1 Utility Costs By Item</h1>
+<P>Factory equipment can be modeled by state machines. 
+Using a state model, resource cost-function can be modeled be time in a state.
+The basic state machine formalism is given as: OFF, PROCESSING(Busy), FAULTED(Down), BLOCKED and STARVED.
+<P>The Off state indicates that the process equipment is not in use (unpowered).  
+The Processing state indicates the equipment is working to produce product.  
+The Starved state indicates that there are missing input materials so the equipment is paused.  
+If the storage facility for the process output is full, the process is in the Blocked state and the equipment delays processing.
+When equipment has a break down or fault, the process stops and the equipment is in the Faulted state. 
+The numbers for repair for a piece of equipment when it has a break down or fault, indicate the equipment is immediately in the repair state although this is unlikely. 
+<P><br><TABLE class="gridtable">
+<TR><TH>Machine</TH><TH>Units</TH><TH>Name</TH><TH>State</TH><TH>Time</TH><TH>Cost</TH>
+</TR>
+<TR>
+<TD> LINE1_PS_CAST1_ELV1</TD><TD> KWH</TD><TD> Upper Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_ELV1</TD><TD> KWH</TD><TD> Lower Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_ELV1</TD><TD> KWH</TD><TD> Lower Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_ELV1</TD><TD> KWH</TD><TD> Hydraulic Unit Pump</TD><TD> any</TD><TD> 172.011</TD><TD> $18.9212</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD> KWH</TD><TD> Upper Elevator Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD> KWH</TD><TD> Lower Elevator Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD> KWH</TD><TD> Exit Conveyor W/Blow Off</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD> KWH</TD><TD> Hydraulic Unit Pump</TD><TD> any</TD><TD> 258.017</TD><TD> $28.3819</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CI1</TD><TD> KWH</TD><TD> Hydraulic Unit Recirc Pump</TD><TD> any</TD><TD> 10.3207</TD><TD> $1.13527</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CVS1</TD><TD> KWH</TD><TD> Infeed Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CVS1</TD><TD> KWH</TD><TD> Insertion Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CVS1</TD><TD> KWH</TD><TD> Exit Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LG1</TD><TD> KWH</TD><TD> XAxis Travel</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LG1</TD><TD> KWH</TD><TD> YAxis Travel</TD><TD> any</TD><TD> 86.0056</TD><TD> $9.46062</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_RO1</TD><TD> KWH</TD><TD> Index Table</TD><TD> any</TD><TD> 17.2011</TD><TD> $1.89212</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_RO1</TD><TD> KWH</TD><TD> Hydraulic Motor 1</TD><TD> any</TD><TD> 51.6033</TD><TD> $5.67636</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_RO1</TD><TD> KWH</TD><TD> Hydraulic Motor 2</TD><TD> any</TD><TD> 51.6033</TD><TD> $5.67636</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_RO1</TD><TD> KWH</TD><TD> Recirc Pump</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EMP1</TD><TD> KWH</TD><TD> Preheat Oven</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EMP1</TD><TD> KWH</TD><TD> Cooling Motor 1</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EMP1</TD><TD> KWH</TD><TD> Cooling Motor 2</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EG1</TD><TD> KWH</TD><TD> Unload Grantry XAxis Travel</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EG1</TD><TD> KWH</TD><TD> Unload Grantry YAxis Trave</TD><TD> any</TD><TD> 86.0056</TD><TD> $9.46062</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EG1</TD><TD> KWH</TD><TD> Load/Unload Grantry Hydraulic Unit Pump</TD><TD> any</TD><TD> 172.011</TD><TD> $18.9212</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_EG1</TD><TD> KWH</TD><TD> Load/Unload Grantry Hydraulic Unit Recirc Pump</TD><TD> any</TD><TD> 10.3207</TD><TD> $1.13527</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD> KWH</TD><TD> Inlet Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD> KWH</TD><TD> Upper Elevator Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD> KWH</TD><TD> Lower Elevator Conveyor</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD> KWH</TD><TD> Hydraulic Unit Pump</TD><TD> any</TD><TD> 258.017</TD><TD> $28.3819</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_CE1</TD><TD> KWH</TD><TD> Hyd. Unit Recirc Pump</TD><TD> any</TD><TD> 10.3207</TD><TD> $1.13527</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Double Deck Exit Upper Conveyor 1</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Double Deck Exit Upper Conveyor 2</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Double Deck Exit Lower Conveyor 1</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Double Deck Exit Lower Conveyor 2</TD><TD> any</TD><TD> 3.44022</TD><TD> $0.378424</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Hydraulic Unit Pump</TD><TD> any</TD><TD> 172.011</TD><TD> $18.9212</TD></TR>
+<TR>
+<TD> LINE1_PS_CAST1_LWR1</TD><TD> KWH</TD><TD> Hyd. Unit Recirc Pump</TD><TD> any</TD><TD> 10.3207</TD><TD> $1.13527</TD></TR>
+</TABLE>
+<div id="holder";"></div>
+</BODY>
+</HTML>

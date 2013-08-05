@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.mtconnect.org/schemas/MTConnectDevices_1.2.xsd">
+<Header bufferSize="130000" instanceId="1" creationTime="2009-11-13T02:31:40" sender="local" version="1.1"/>
+	<Devices>
+		<Device id="M1" uuid="xxx" name="M1">
+			<Description>PCDMIS 2010</Description>
+			<DataItems>
+				<DataItem id="avail" name="avail"  type="AVAILABILITY" category="EVENT"/>
+			</DataItems>
+			<Components>
+				<Controller id="cont" name="controller">
+					<DataItems>
+
+						<DataItem type="CLOCK_TIME" id="estimatedCompletion" category="SAMPLE" name="estimatedCompletion"/>						
+						<DataItem type="ASSET_CHANGED" id="asset_partprogram" category="EVENT" name="asset_partprogram"/>						
+						<DataItem type="ASSET_CHANGED" id="asset_tool" category="EVENT" name="asset_tool"/>						
+						<DataItem type="LINE" id="heartbeat1" category="EVENT" name="heartbeat" />
+						<DataItem type="PROGRAM" id="pgm" category="EVENT" name="program"/>
+						<DataItem type="TOOL_ID" id="tid" category="EVENT" name="tools"/>
+						<DataItem type="PART_ID" id="pid" category="EVENT" name="partid"/>
+						<DataItem type="PART_ID" id="lid" category="EVENT" name="lotid"/>
+						<DataItem type="CONTROLLER_MODE" id="command" category="EVENT" name="command"/>
+						<DataItem type="CONTROLLER_MODE" id="commandnum" category="EVENT" name="cmdnum"/>
+						<DataItem type="MESSAGE" category="EVENT" id="opcmt" name="operator_cmt" />
+						<DataItem type="PART_COUNT" id="pc" category="EVENT" name="partcount" />
+
+						<DataItem type="PROGRAM" id="alarm" category="EVENT" name="alarm" />
+						<DataItem type="EXECUTION" id="execution" category="EVENT" name="execution" />
+						<DataItem type="POWER" id="power" category="EVENT" name="power" />
+						<DataItem type="CONTROLLER_MODE" id="mode" category="EVENT" name="controllermode" />
+					</DataItems>
+				</Controller>
+			</Components>
+		</Device>
+	</Devices>
+</MTConnectDevices>

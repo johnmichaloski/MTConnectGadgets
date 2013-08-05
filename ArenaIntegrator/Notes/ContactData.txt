@@ -1,0 +1,1404 @@
+Module: Configuration   
+
+   Operands Contained in Dialog 'Configuration':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   REPLICATE (Hidden)                
+   Day_Length (Hidden)               
+   Week_Length (Hidden)              
+   Month_Length (Hidden)             
+   2Week_Length (Hidden)             
+   Res Data (Hidden)                 
+   ResDataD2 (Hidden)                
+   RepDays (Hidden)                  
+   Day_Days (Hidden)                 
+   Week_Days (Hidden)                
+   Month_Days (Hidden)               
+   2Week_Days (Hidden)               
+   RealLength (Hidden)               
+   Res Variables (Hidden)            
+   ResVarD2 (Hidden)                 
+   ResVarD1 (Hidden)                 
+   time units (Hidden)               
+   RepDaysRes (Hidden)               
+   RepDaysCat (Hidden)               
+   Res DataCat (Hidden)              
+   Res DataRes (Hidden)              
+   ResVarCat (Hidden)                
+   ResVarRes (Hidden)                
+   Planning Horizon Units             Planning Horizon                  
+
+
+   Operands Contained in Repeat Group 'Trunk Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TrunkCap (Hidden)                 
+   Trunk Data Dim (Hidden)           
+   Trunk Data (Hidden)               
+   Trunk Data Name (Hidden)          
+   Script Exp (Hidden)               
+   Trunk Group Capacity Var (Hidden) 
+   Trunk Group Capacity (Hidden)     
+   OScript Exp (Hidden)              
+   NumberOfTrunks (Hidden)           
+   Trunk Group Capacity VarCat (Hidden)
+   Trunk Group Capacity VarRes (Hidden)
+   Trunk GroupCat (Hidden)           
+   Trunk GroupAutoStats (Hidden)     
+   Trunk Group                        Trunk Group                       
+   Trunk Capacity                     Trunk Capacity                    
+   Inbound Calls                      Inbound Contacts                  
+   Script                             Inbound Contact Script            
+   Priority                           Inbound Contact Priority          
+   Outbound Calls                     Outbound Contacts                 
+   OScript                            Outbound Contact Script           
+   OPriority                          Outbound Contact Priority         
+   TrunkCost                          Trunk Cost/Hour                   
+
+
+   Operands Contained in Dialog 'Advanced':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   dll (Hidden)                      
+   Number of Replications             Number of Replications            
+   Initialize System                  Initialize System                 
+   Initialize Statistics              Initialize Statistics             
+   Max Agents                         Max Number of Agent Groups        
+
+Module: Contact         
+
+   Operands Contained in Dialog 'Contact':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Total Calls (Hidden)              
+   ScriptVal (Hidden)                
+   Call Type Exp Name (Hidden)       
+   Call Type Exp Name Value (Hidden) 
+   Call Type Exp (Hidden)            
+   Call Type Exp Dim (Hidden)        
+   CT FlowTime (Hidden)              
+   CT NumIn (Hidden)                 
+   ScriptValNO (Hidden)              
+   CT Service Time (Hidden)          
+   CT NumAbandon (Hidden)            
+   CT NumBlocked (Hidden)            
+   CT Ans60 (Hidden)                 
+   CT NumEnter (Hidden)              
+   CT NumProcess (Hidden)            
+   CT HandleTime (Hidden)            
+   CT NumDisconnected (Hidden)       
+   CT NumMessage (Hidden)            
+   CT CB Disconnect (Hidden)         
+   CT CB Blocked (Hidden)            
+   CT CB Abandoned (Hidden)          
+   CT CB Terminated (Hidden)         
+   CT ScriptTran (Hidden)            
+   CT CB Message (Hidden)            
+   CR Script Atb Val (Hidden)        
+   ScriptValAg (Hidden)              
+   CR Agent Atb Val (Hidden)         
+   Out Script Atb Val (Hidden)       
+   Out Agent Atb Val (Hidden)        
+   Out Agent Trunk Script (Hidden)   
+   CT CR Returned (Hidden)           
+   CT CR Abandoned (Hidden)          
+   CT CR MessTime (Hidden)           
+   CT COut Returned (Hidden)         
+   CT COut Abandoned (Hidden)        
+   CT COut Created (Hidden)          
+   CreateInLabel (Hidden)            
+   CreateOutLabel (Hidden)           
+   NTC (Hidden)                      
+   Call Type Type Var (Hidden)       
+   CallTypeTypeValue (Hidden)        
+   CPNumSchedVar (Hidden)            
+   CPNumSchedVarValue (Hidden)       
+   ExpoTalk Time (Hidden)            
+   Name (Hidden)                     
+   Unique (Hidden)                   
+   ContactType                        Contact Type                      
+   InOut                              Option                            
+   Call Type                          Contact Name                      
+   Call Pattern                       Pattern                           
+   Talk Time                          Expected Talk Time                
+   Trunk Group                        Trunk Group                       
+   Call Return Tog                    Contact Return                    
+
+
+   Operands Contained in Dialog 'Call Back':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Blocked                            Blocked                           
+   CBB Probability                    Probability                       
+   CBB Wait Time                      Wait Time                         
+   Disconnected                       Disconnected                      
+   CBD Probability                    Probability                       
+   CBD Wait Time                      Wait Time                         
+   Message                            Message                           
+   CBM Probability                    Probability                       
+   CBM Wait Time                      Wait Time                         
+   Abandoned                          Abandoned                         
+   CBA Probability                    Probability                       
+   CBA Wait Time                      Wait Time                         
+   Terminated                         Served                            
+   CBT Probability                    Probability                       
+   CBT Wait Time                      Wait Time                         
+
+
+   Operands Contained in Dialog 'Outbound Contact ':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Pre Work                           Pre Work                          
+   Connection Time                    Connection Time                   
+   Prob of Connection                 Probability of Connection         
+   Time BT Tries                      Time Between Attempts             
+   Max Tries                          Max Number of Attempts            
+
+
+   Operands Contained in Dialog 'Advanced':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   PrAtbVal (Hidden)                 
+   TalkTimeValO (Hidden)             
+   PictureEle (Hidden)               
+   InLabel (Hidden)                  
+   OutLabel (Hidden)                 
+   Override Trunk Priority            Override Trunk Priority           
+   Priority                           Override Trunk Priority           
+   Override Trunk Script              Override Trunk Script             
+   ScriptOrAgent                      Script or Agent                   
+   Call Routing Script                Call Routing Script               
+   Agent Type                         Agent Type                        
+   Group Name                         Agent Group                       
+   Par Group                          Parent Group                      
+   Par Group Set Rule                 Selection Rule                    
+   Talk Time Override                 Talk Time Distribution            
+   After Call Time                    After Contact Time                
+   Service Level                      Service Level (seconds)           
+   CanPreempt                         Can Preempt                       
+   CanBePreempted                     Can Be Preempted                  
+   Picture                            Contact Picture Name              
+   CreateCall                         Create Contact                    
+
+
+   Operands Contained in Dialog 'AssignmentsDB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AttVar (Hidden)                   
+   AssignValue (Hidden)              
+   NumberOfAssignments (Hidden)      
+   VarCat (Hidden)                   
+   VarResp (Hidden)                  
+   SG                                 Assignment Type                   
+   Att                                Contact Attribute Name            
+   Value                              Value                             
+   Var                                Global Variable Name              
+   ValueV                             Value                             
+
+
+   Operands Contained in Dialog 'Abandonment':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Wait Time                          Wait Time Until Abandonment       
+
+
+   Operands Contained in Dialog 'Contact Return':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   CRPriority                         Priority                          
+   ScriptOrAgentCR                    Script or Agent                   
+   CR Script                          Contact Return Script             
+   Agent TypeCR                       Agent Type                        
+   Group NameCR                       Contact Return Agent Group        
+   Par GroupCR                        Contact Return Parent Group       
+   Par Group Set RuleCR               Selection Rule                    
+   CRPre Work                         Pre Work                          
+   CRConnection Time                  Connection Time                   
+   CRProb of Connection               Probability of Connection         
+   CRMax Tries                        Max Number of Attempts            
+   CRTime BT Tries                    Time Between Attempts             
+
+Module: Pattern         
+
+   Operands Contained in Dialog 'Pattern':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Arrival Name_whichone (Hidden)    
+   Arrival Data (Hidden)             
+   Arrival Name_whichday (Hidden)    
+   Arrival Data_Day (Hidden)         
+   ArrivalNameVar (Hidden)           
+   Schedule Name (Hidden)            
+   Schedule Type (Hidden)            
+   Schedule Time Units (Hidden)      
+   CPNumSchedVar (Hidden)            
+   CPNumSchedVarValueDay (Hidden)    
+   CPNumSchedVarValueWeek (Hidden)   
+   CPNumSchedVarValueBiWk (Hidden)   
+   CPNumSchedVarValueMonth (Hidden)  
+   ScaleFactor (Hidden)              
+   Name (Hidden)                     
+   ArrivalNameVarCat (Hidden)        
+   ArrivalNameVarResp (Hidden)       
+   CPNumSchedVarCat (Hidden)         
+   CPNumSchedVarRes (Hidden)         
+   Arrival Name_whichdayCat (Hidden) 
+   Arrival Name_whichdayRes (Hidden) 
+   Arrival Name_whichonecat (Hidden) 
+   Arrival Name_whichoneres (Hidden) 
+   Week1 (Hidden)                    
+   Week24 (Hidden)                   
+   Week14 (Hidden)                   
+   Week34 (Hidden)                   
+   Week44 (Hidden)                   
+   Monday (Hidden)                   
+   Tuesday (Hidden)                  
+   Wednesday (Hidden)                
+   Thursday (Hidden)                 
+   Friday (Hidden)                   
+   Saturday (Hidden)                 
+   Sunday (Hidden)                   
+   Arrival Name                       Pattern                           
+   Planning Horizon Units             Planning Horizon                  
+   Timeslot                           Timeslot (in minutes)             
+   Scale Factor                       Scale Factor                      
+
+
+   Operands Contained in Repeat Group 'Daily Arrival PatternRG':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Day (Hidden)                      
+   Index (Hidden)                    
+   Arrival Data Member (Hidden)      
+   PadMonA (Hidden)                  
+   PadMonB (Hidden)                  
+   PadTueA (Hidden)                  
+   PadTueB (Hidden)                  
+   PadWedA (Hidden)                  
+   PadWedB (Hidden)                  
+   PadThuA (Hidden)                  
+   PadThuB (Hidden)                  
+   PadFriA (Hidden)                  
+   PadFriB (Hidden)                  
+   PadSatA (Hidden)                  
+   PadSatB (Hidden)                  
+   PadSunA (Hidden)                  
+   PadSunB (Hidden)                  
+   PadA (Hidden)                     
+   PadB (Hidden)                     
+   PadMonABi2 (Hidden)               
+   PadMonBBi2 (Hidden)               
+   PadTueABi2 (Hidden)               
+   PadTueBBi2 (Hidden)               
+   PadWedABi2 (Hidden)               
+   PadWedBBi2 (Hidden)               
+   PadThuABi2 (Hidden)               
+   PadThuBBi2 (Hidden)               
+   PadFriABi2 (Hidden)               
+   PadFriBBi2 (Hidden)               
+   PadSatABi2 (Hidden)               
+   PadSatBBi2 (Hidden)               
+   PadSunABi2 (Hidden)               
+   PadSunBBi2 (Hidden)               
+   PadMonABi1 (Hidden)               
+   PadMonBBi1 (Hidden)               
+   PadTueABi1 (Hidden)               
+   PadTueBBi1 (Hidden)               
+   PadWedABi1 (Hidden)               
+   PadWedBBi1 (Hidden)               
+   PadThuABi1 (Hidden)               
+   PadThuBBi1 (Hidden)               
+   PadFriABi1 (Hidden)               
+   PadFriBBi1 (Hidden)               
+   PadSatABi1 (Hidden)               
+   PadSatBBi1 (Hidden)               
+   PadSunABi1 (Hidden)               
+   PadSunBBi1 (Hidden)               
+   PadABi160 (Hidden)                
+   PadBBi160 (Hidden)                
+   PadABi260 (Hidden)                
+   PadBBi260 (Hidden)                
+   PadABi60 (Hidden)                 
+   PadBBi60 (Hidden)                 
+   PadMonAW2 (Hidden)                
+   PadMonBW2 (Hidden)                
+   PadTueAW2 (Hidden)                
+   PadTueBW2 (Hidden)                
+   PadWedAW2 (Hidden)                
+   PadWedBW2 (Hidden)                
+   PadThuAW2 (Hidden)                
+   PadThuBW2 (Hidden)                
+   PadFriAW2 (Hidden)                
+   PadFriBW2 (Hidden)                
+   PadSatAW2 (Hidden)                
+   PadSatBW2 (Hidden)                
+   PadSunAW2 (Hidden)                
+   PadSunBW2 (Hidden)                
+   PadMonAW1 (Hidden)                
+   PadMonBW1 (Hidden)                
+   PadTueAW1 (Hidden)                
+   PadTueBW1 (Hidden)                
+   PadWedAW1 (Hidden)                
+   PadWedBW1 (Hidden)                
+   PadThuAW1 (Hidden)                
+   PadThuBW1 (Hidden)                
+   PadFriAW1 (Hidden)                
+   PadFriBW1 (Hidden)                
+   PadSatAW1 (Hidden)                
+   PadSatBW1 (Hidden)                
+   PadSunAW1 (Hidden)                
+   PadSunBW1 (Hidden)                
+   PadAW160 (Hidden)                 
+   PadBW160 (Hidden)                 
+   PadAW260 (Hidden)                 
+   PadBW260 (Hidden)                 
+   PadAW60 (Hidden)                  
+   PadBW60 (Hidden)                  
+   PadMonAW4 (Hidden)                
+   PadMonBW4 (Hidden)                
+   PadTueAW4 (Hidden)                
+   PadTueBW4 (Hidden)                
+   PadWedAW4 (Hidden)                
+   PadWedBW4 (Hidden)                
+   PadThuAW4 (Hidden)                
+   PadThuBW4 (Hidden)                
+   PadFriAW4 (Hidden)                
+   PadFriBW4 (Hidden)                
+   PadSatAW4 (Hidden)                
+   PadSatBW4 (Hidden)                
+   PadSunAW4 (Hidden)                
+   PadSunBW4 (Hidden)                
+   PadMonAW3 (Hidden)                
+   PadMonBW3 (Hidden)                
+   PadTueAW3 (Hidden)                
+   PadTueBW3 (Hidden)                
+   PadWedAW3 (Hidden)                
+   PadWedBW3 (Hidden)                
+   PadThuAW3 (Hidden)                
+   PadThuBW3 (Hidden)                
+   PadFriAW3 (Hidden)                
+   PadFriBW3 (Hidden)                
+   PadSatAW3 (Hidden)                
+   PadSatBW3 (Hidden)                
+   PadSunAW3 (Hidden)                
+   PadSunBW3 (Hidden)                
+   PadAW360 (Hidden)                 
+   PadBW360 (Hidden)                 
+   PadAW460 (Hidden)                 
+   PadBW460 (Hidden)                 
+   DayCat (Hidden)                   
+   DayRes (Hidden)                   
+   Weeks4                             Week                              
+   Weeks2                             Week                              
+   Day Of Week                        Day Of Week                       
+   12to1am                            Midnight - 100                    
+   1to2am                             100 - 200                         
+   2to3am                             200 - 300                         
+   3to4am                             300 - 400                         
+   4to5am                             400 - 500                         
+   5to6am                             500 - 600                         
+   6to7am                             600 - 700                         
+   7to8am                             700 - 800                         
+   8to9am                             800 - 900                         
+   9to10am                            900 - 1000                        
+   10to11am                           1000 - 1100                       
+   11to12am                           1100 - Noon                       
+   12to1pm                            Noon - 100                        
+   1to2pm                             100 - 200                         
+   2to3pm                             200 - 300                         
+   3to4pm                             300 - 400                         
+   4to5pm                             400 - 500                         
+   5to6pm                             500 - 600                         
+   6to7pm                             600 - 700                         
+   7to8pm                             700 - 800                         
+   8to9pm                             800 - 900                         
+   9to10pm                            900 - 1000                        
+   10to11pm                           1000 - 1100                       
+   11to12pm                           1100 - Midnight                   
+
+
+   Operands Contained in Dialog 'Daily Arrival Pattern':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Day_Day (Hidden)                  
+   Index_day (Hidden)                
+   Arrival Data Member_Day (Hidden)  
+   12to1am_dayval (Hidden)           
+   12to1am_daydur (Hidden)           
+   1to2am_dayval (Hidden)            
+   1to2am_daydur (Hidden)            
+   2to3am_dayval (Hidden)            
+   2to3am_daydur (Hidden)            
+   3to4am_dayval (Hidden)            
+   3to4am_daydur (Hidden)            
+   4to5am_dayval (Hidden)            
+   4to5am_daydur (Hidden)            
+   5to6am_dayval (Hidden)            
+   5to6am_daydur (Hidden)            
+   6to7am_dayval (Hidden)            
+   6to7am_daydur (Hidden)            
+   7to8am_dayval (Hidden)            
+   7to8am_daydur (Hidden)            
+   8to9am_dayval (Hidden)            
+   8to9am_daydur (Hidden)            
+   9to10am_dayval (Hidden)           
+   9to10am_daydur (Hidden)           
+   10to11am_dayval (Hidden)          
+   10to11am_daydur (Hidden)          
+   11to12am_dayval (Hidden)          
+   11to12am_daydur (Hidden)          
+   12to1pm_dayval (Hidden)           
+   12to1pm_daydur (Hidden)           
+   1to2pm_dayval (Hidden)            
+   1to2pm_daydur (Hidden)            
+   2to3pm_dayval (Hidden)            
+   2to3pm_daydur (Hidden)            
+   3to4pm_dayval (Hidden)            
+   3to4pm_daydur (Hidden)            
+   4to5pm_dayval (Hidden)            
+   4to5pm_daydur (Hidden)            
+   5to6pm_dayval (Hidden)            
+   5to6pm_daydur (Hidden)            
+   6to7pm_dayval (Hidden)            
+   6to7pm_daydur (Hidden)            
+   7to8pm_dayval (Hidden)            
+   7to8pm_daydur (Hidden)            
+   8to9pm_dayval (Hidden)            
+   8to9pm_daydur (Hidden)            
+   9to10pm_dayval (Hidden)           
+   9to10pm_daydur (Hidden)           
+   10to11pm_dayval (Hidden)          
+   10to11pm_daydur (Hidden)          
+   11to12pm_dayval (Hidden)          
+   11to12pm_daydur (Hidden)          
+   Day_Daycat (Hidden)               
+   Day_DayRes (Hidden)               
+   12to1am_day                        Midnight - 100                    
+   1to2am_day                         100 - 200                         
+   2to3am_day                         200 - 300                         
+   3to4am_day                         300 - 400                         
+   4to5am_day                         400 - 500                         
+   5to6am_day                         500 - 600                         
+   6to7am_day                         600 - 700                         
+   7to8am_day                         700 - 800                         
+   8to9am_day                         800 - 900                         
+   9to10am_day                        900 - 1000                        
+   10to11am_day                       1000 - 1100                       
+   11to12am_day                       1100 - Noon                       
+   12to1pm_day                        Noon - 100                        
+   1to2pm_day                         100 - 200                         
+   2to3pm_day                         200 - 300                         
+   3to4pm_day                         300 - 400                         
+   4to5pm_day                         400 - 500                         
+   5to6pm_day                         500 - 600                         
+   6to7pm_day                         600 - 700                         
+   7to8pm_day                         700 - 800                         
+   8to9pm_day                         800 - 900                         
+   9to10pm_day                        900 - 1000                        
+   10to11pm_day                       1000 - 1100                       
+   11to12pm_day                       1100 - Midnight                   
+
+
+   Operands Contained in Dialog 'Daily Arrival Pattern_30':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Day_Day30 (Hidden)                
+   Index_day30 (Hidden)              
+   Arrival Data Member_Day30 (Hidden)
+   12to1230am_dayval (Hidden)        
+   12to1230am_daydur (Hidden)        
+   1230to1am_dayval (Hidden)         
+   1230to1am_daydur (Hidden)         
+   1to130am_dayval (Hidden)          
+   1to130am_daydur (Hidden)          
+   130to2am_dayval (Hidden)          
+   130to2am_daydur (Hidden)          
+   2to230am_dayval (Hidden)          
+   2to230am_daydur (Hidden)          
+   230to3am_dayval (Hidden)          
+   230to3am_daydur (Hidden)          
+   3to330am_dayval (Hidden)          
+   3to330am_daydur (Hidden)          
+   330to4am_dayval (Hidden)          
+   330to4am_daydur (Hidden)          
+   4to430am_dayval (Hidden)          
+   4to430am_daydur (Hidden)          
+   430to5am_dayval (Hidden)          
+   430to5am_daydur (Hidden)          
+   5to530am_dayval (Hidden)          
+   5to530am_daydur (Hidden)          
+   530to6am_dayval (Hidden)          
+   530to6am_daydur (Hidden)          
+   6to630am_dayval (Hidden)          
+   6to630am_daydur (Hidden)          
+   630to7am_dayval (Hidden)          
+   630to7am_daydur (Hidden)          
+   7to730am_dayval (Hidden)          
+   7to730am_daydur (Hidden)          
+   730to8am_dayval (Hidden)          
+   730to8am_daydur (Hidden)          
+   8to830am_dayval (Hidden)          
+   8to830am_daydur (Hidden)          
+   830to9am_dayval (Hidden)          
+   830to9am_daydur (Hidden)          
+   9to930am_dayval (Hidden)          
+   9to930am_daydur (Hidden)          
+   930to10am_dayval (Hidden)         
+   930to10am_daydur (Hidden)         
+   10to1030am_dayval (Hidden)        
+   10to1030am_daydur (Hidden)        
+   1030to11am_dayval (Hidden)        
+   1030to11am_daydur (Hidden)        
+   11to1130am_dayval (Hidden)        
+   11to1130am_daydur (Hidden)        
+   1130toNoon_dayval (Hidden)        
+   1130toNoon_daydur (Hidden)        
+   Noonto1230pm_dayval (Hidden)      
+   Noonto1230pm_daydur (Hidden)      
+   1230to1pm_dayval (Hidden)         
+   1230to1pm_daydur (Hidden)         
+   1to130pm_dayval (Hidden)          
+   1to130pm_daydur (Hidden)          
+   130to2pm_dayval (Hidden)          
+   130to2pm_daydur (Hidden)          
+   2to230pm_dayval (Hidden)          
+   2to230pm_daydur (Hidden)          
+   230to3pm_dayval (Hidden)          
+   230to3pm_daydur (Hidden)          
+   3to330pm_dayval (Hidden)          
+   3to330pm_daydur (Hidden)          
+   330to4pm_dayval (Hidden)          
+   330to4pm_daydur (Hidden)          
+   4to430pm_dayval (Hidden)          
+   4to430pm_daydur (Hidden)          
+   430to5pm_dayval (Hidden)          
+   430to5pm_daydur (Hidden)          
+   5to530pm_dayval (Hidden)          
+   5to530pm_daydur (Hidden)          
+   530to6pm_dayval (Hidden)          
+   530to6pm_daydur (Hidden)          
+   6to630pm_dayval (Hidden)          
+   6to630pm_daydur (Hidden)          
+   630to7pm_dayval (Hidden)          
+   630to7pm_daydur (Hidden)          
+   7to730pm_dayval (Hidden)          
+   7to730pm_daydur (Hidden)          
+   730to8pm_dayval (Hidden)          
+   730to8pm_daydur (Hidden)          
+   8to830pm_dayval (Hidden)          
+   8to830pm_daydur (Hidden)          
+   830to9pm_dayval (Hidden)          
+   830to9pm_daydur (Hidden)          
+   9to930pm_dayval (Hidden)          
+   9to930pm_daydur (Hidden)          
+   930to10pm_dayval (Hidden)         
+   930to10pm_daydur (Hidden)         
+   10to1030pm_dayval (Hidden)        
+   10to1030pm_daydur (Hidden)        
+   1030to11pm_dayval (Hidden)        
+   1030to11pm_daydur (Hidden)        
+   11to1130pm_dayval (Hidden)        
+   11to1130pm_daydur (Hidden)        
+   1130toMidnight_dayval (Hidden)    
+   1130toMidnight_daydur (Hidden)    
+   Day_Day30Cat (Hidden)             
+   Day_Day30Res (Hidden)             
+   12to1230am_day                     Midnight - 1230                   
+   1230to1am_day                      1230 - 100                        
+   1to130am_day                       100 - 130                         
+   130to2am_day                       130 - 200                         
+   2to230am_day                       200 - 230                         
+   230to3am_day                       230 - 300                         
+   3to330am_day                       300 - 330                         
+   330to4am_day                       330 - 400                         
+   4to430am_day                       400 - 430                         
+   430to5am_day                       430 - 500                         
+   5to530am_day                       500 - 530                         
+   530to6am_day                       530 - 600                         
+   6to630am_day                       600 - 630                         
+   630to7am_day                       630 - 700                         
+   7to730am_day                       700 - 730                         
+   730to8am_day                       730 - 800                         
+   8to830am_day                       800 - 830                         
+   830to9am_day                       830 - 900                         
+   9to930am_day                       900 - 930                         
+   930to10am_day                      930 - 1000                        
+   10to1030am_day                     1000 - 1030                       
+   1030to11am_day                     1030 - 1100                       
+   11to1130am_day                     1100 - 1130                       
+   1130toNoon_day                     1130 - Noon                       
+   Noonto1230pm_day                   Noon - 1230                       
+   1230to1pm_day                      1230 - 100                        
+   1to130pm_day                       100 - 130                         
+   130to2pm_day                       130 - 200                         
+   2to230pm_day                       200 - 230                         
+   230to3pm_day                       230 - 300                         
+   3to330pm_day                       300 - 330                         
+   330to4pm_day                       330 - 400                         
+   4to430pm_day                       400 - 430                         
+   430to5pm_day                       430 - 500                         
+   5to530pm_day                       500 - 530                         
+   530to6pm_day                       530 - 600                         
+   6to630pm_day                       600 - 630                         
+   630to7pm_day                       630 - 700                         
+   7to730pm_day                       700 - 730                         
+   730to8pm_day                       730 - 800                         
+   8to830pm_day                       800 - 830                         
+   830to9pm_day                       830 - 900                         
+   9to930pm_day                       900 - 930                         
+   930to10pm_day                      930 - 1000                        
+   10to1030pm_day                     1000 - 1030                       
+   1030to11pm_day                     1030 - 1100                       
+   11to1130pm_day                     1100 - 1130                       
+   1130toMidnight_day                 1130 - Midnight                   
+
+
+   Operands Contained in Repeat Group 'Daily Arrival PatternRG_30':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Index_30 (Hidden)                 
+   Day_30 (Hidden)                   
+   Arrival Data Member_30 (Hidden)   
+   PadMonA30 (Hidden)                
+   PadMonB30 (Hidden)                
+   PadTueA30 (Hidden)                
+   PadTueB30 (Hidden)                
+   PadWedA30 (Hidden)                
+   PadWedB30 (Hidden)                
+   PadThuA30 (Hidden)                
+   PadThuB30 (Hidden)                
+   PadFriA30 (Hidden)                
+   PadFriB30 (Hidden)                
+   PadSatA30 (Hidden)                
+   PadSatB30 (Hidden)                
+   PadSunA30 (Hidden)                
+   PadSunB30 (Hidden)                
+   PadA30 (Hidden)                   
+   PadB30 (Hidden)                   
+   PadMonABi230 (Hidden)             
+   PadMonBBi230 (Hidden)             
+   PadTueABi230 (Hidden)             
+   PadTueBBi230 (Hidden)             
+   PadWedABi230 (Hidden)             
+   PadWedBBi230 (Hidden)             
+   PadThuABi230 (Hidden)             
+   PadThuBBi230 (Hidden)             
+   PadFriABi230 (Hidden)             
+   PadFriBBi230 (Hidden)             
+   PadSatABi230 (Hidden)             
+   PadSatBBi230 (Hidden)             
+   PadSunABi230 (Hidden)             
+   PadSunBBi230 (Hidden)             
+   PadMonABi130 (Hidden)             
+   PadMonBBi130 (Hidden)             
+   PadTueABi130 (Hidden)             
+   PadTueBBi130 (Hidden)             
+   PadWedABi130 (Hidden)             
+   PadWedBBi130 (Hidden)             
+   PadThuABi130 (Hidden)             
+   PadThuBBi130 (Hidden)             
+   PadFriABi130 (Hidden)             
+   PadFriBBi130 (Hidden)             
+   PadSatABi130 (Hidden)             
+   PadSatBBi130 (Hidden)             
+   PadSunABi130 (Hidden)             
+   PadSunBBi130 (Hidden)             
+   PadABi130 (Hidden)                
+   PadBBi130 (Hidden)                
+   PadABi230 (Hidden)                
+   PadBBi230 (Hidden)                
+   PadABi30 (Hidden)                 
+   PadBBi30 (Hidden)                 
+   PadMonAW230 (Hidden)              
+   PadMonBW230 (Hidden)              
+   PadTueAW230 (Hidden)              
+   PadTueBW230 (Hidden)              
+   PadWedAW230 (Hidden)              
+   PadWedBW230 (Hidden)              
+   PadThuAW230 (Hidden)              
+   PadThuBW230 (Hidden)              
+   PadFriAW230 (Hidden)              
+   PadFriBW230 (Hidden)              
+   PadSatAW230 (Hidden)              
+   PadSatBW230 (Hidden)              
+   PadSunAW230 (Hidden)              
+   PadSunBW230 (Hidden)              
+   PadMonAW130 (Hidden)              
+   PadMonBW130 (Hidden)              
+   PadTueAW130 (Hidden)              
+   PadTueBW130 (Hidden)              
+   PadWedAW130 (Hidden)              
+   PadWedBW130 (Hidden)              
+   PadThuAW130 (Hidden)              
+   PadThuBW130 (Hidden)              
+   PadFriAW130 (Hidden)              
+   PadFriBW130 (Hidden)              
+   PadSatAW130 (Hidden)              
+   PadSatBW130 (Hidden)              
+   PadSunAW130 (Hidden)              
+   PadSunBW130 (Hidden)              
+   PadAW130 (Hidden)                 
+   PadBW130 (Hidden)                 
+   PadAW230 (Hidden)                 
+   PadBW230 (Hidden)                 
+   PadAW30 (Hidden)                  
+   PadBW30 (Hidden)                  
+   PadMonAW430 (Hidden)              
+   PadMonBW430 (Hidden)              
+   PadTueAW430 (Hidden)              
+   PadTueBW430 (Hidden)              
+   PadWedAW430 (Hidden)              
+   PadWedBW430 (Hidden)              
+   PadThuAW430 (Hidden)              
+   PadThuBW430 (Hidden)              
+   PadFriAW430 (Hidden)              
+   PadFriBW430 (Hidden)              
+   PadSatAW430 (Hidden)              
+   PadSatBW430 (Hidden)              
+   PadSunAW430 (Hidden)              
+   PadSunBW430 (Hidden)              
+   PadMonAW330 (Hidden)              
+   PadMonBW330 (Hidden)              
+   PadTueAW330 (Hidden)              
+   PadTueBW330 (Hidden)              
+   PadWedAW330 (Hidden)              
+   PadWedBW330 (Hidden)              
+   PadThuAW330 (Hidden)              
+   PadThuBW330 (Hidden)              
+   PadFriAW330 (Hidden)              
+   PadFriBW330 (Hidden)              
+   PadSatAW330 (Hidden)              
+   PadSatBW330 (Hidden)              
+   PadSunAW330 (Hidden)              
+   PadSunBW330 (Hidden)              
+   PadAW330 (Hidden)                 
+   PadBW330 (Hidden)                 
+   PadAW430 (Hidden)                 
+   PadBW430 (Hidden)                 
+   Day_30Cat (Hidden)                
+   Day_30Res (Hidden)                
+   Weeks4_30                          Week                              
+   Weeks2_30                          Week                              
+   Day Of Week_30                     Day Of Week                       
+   12to1230am                         Midnight - 1230                   
+   1230to1am                          1230 - 100                        
+   1to130am                           100 - 130                         
+   130to2am                           130 - 200                         
+   2to230am                           200 - 230                         
+   230to3am                           230 - 300                         
+   3to330am                           300 - 330                         
+   330to4am                           330 - 400                         
+   4to430am                           400 - 430                         
+   430to5am                           430 - 500                         
+   5to530am                           500 - 530                         
+   530to6am                           530 - 600                         
+   6to630am                           600 - 630                         
+   630to7am                           630 - 700                         
+   7to730am                           700 - 730                         
+   730to8am                           730 - 800                         
+   8to830am                           800 - 830                         
+   830to9am                           830 - 900                         
+   9to930am                           900 - 930                         
+   930to10am                          930 - 1000                        
+   10to1030am                         1000 - 1030                       
+   1030to11am                         1030 - 1100                       
+   11to1130am                         1100 - 1130                       
+   1130toNoon                         1130 - Noon                       
+   Noonto1230pm                       Noon - 1230                       
+   1230to1pm                          1230 - 100                        
+   1to130pm                           100 - 130                         
+   130to2pm                           130 - 200                         
+   2to230pm                           200 - 230                         
+   230to3pm                           230 - 300                         
+   3to330pm                           300 - 330                         
+   330to4pm                           330 - 400                         
+   4to430pm                           400 - 430                         
+   430to5pm                           430 - 500                         
+   5to530pm                           500 - 530                         
+   530to6pm                           530 - 600                         
+   6to630pm                           600 - 630                         
+   630to7pm                           630 - 700                         
+   7to730pm                           700 - 730                         
+   730to8pm                           730 - 800                         
+   8to830pm                           800 - 830                         
+   830to9pm                           830 - 900                         
+   9to930pm                           900 - 930                         
+   930to10pm                          930 - 1000                        
+   10to1030pm                         1000 - 1030                       
+   1030to11pm                         1030 - 1100                       
+   11to1130pm                         1100 - 1130                       
+   1130toMidnight                     1130 - Midnight                   
+
+Module: Agent           
+
+   Operands Contained in Dialog 'Agent':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   AgentCapRes (Hidden)              
+   AgentGroupInfo (Hidden)           
+   InfoIndex (Hidden)                
+   CapKey (Hidden)                   
+   GroupSet (Hidden)                 
+   QueueID (Hidden)                  
+   RankCrit (Hidden)                 
+   RankExp (Hidden)                  
+   GroupResProp (Hidden)             
+   AgentCapResState (Hidden)         
+   AgentCapResList (Hidden)          
+   Agent Group Set (Hidden)          
+   Agent Group Set Mem (Hidden)      
+   Agent Group SetP (Hidden)         
+   Agent Group Set MemP (Hidden)     
+   Agent Group SetLWTV (Hidden)      
+   Agent Group Set MemLWT (Hidden)   
+   Agent Group LWT (Hidden)          
+   Agent Type Exp (Hidden)           
+   Agent Type Exp Val1 (Hidden)      
+   GroupSet List2 (Hidden)           
+   AgentCapResList3 (Hidden)         
+   Agent Type Exp Val2 (Hidden)      
+   Agent Type Exp D (Hidden)         
+   Agent Type Exp Val3P (Hidden)     
+   Agent Type Exp Val3C (Hidden)     
+   Agent Type QueueNum (Hidden)      
+   AgentCapResList4 (Hidden)         
+   Shared (Hidden)                   
+   Agent Storeage ID (Hidden)        
+   Parent Skill Priority (Hidden)    
+   numbermem (Hidden)                
+   Agent Resource Name (Hidden)      
+   Agent Capacity Var (Hidden)       
+   Agent Capacity (Hidden)           
+   Schedule Var (Hidden)             
+   Group Types (Hidden)              
+   AgentGroupMember (Hidden)         
+   AllAgents (Hidden)                
+   agentinexp (Hidden)               
+   agentoutexp (Hidden)              
+   parinexp (Hidden)                 
+   paroutexp (Hidden)                
+   AllParentSetMember (Hidden)       
+   AllParentSet (Hidden)             
+   AllParentSetMemberAG (Hidden)     
+   AllParentSetAG (Hidden)           
+   ParentGroupLevel (Hidden)         
+   ParentGroupLevelDim (Hidden)      
+   InUtilVar (Hidden)                
+   OutUtilVar (Hidden)               
+   InUtilVarP (Hidden)               
+   OutUtilVarP (Hidden)              
+   Parent Storeage Set (Hidden)      
+   Name (Hidden)                     
+   Schedule VarCat (Hidden)          
+   Schedule VarResponse (Hidden)     
+   Agent Capacity VarCat (Hidden)    
+   Agent Capacity VarRes (Hidden)    
+   Agent Group LWTCat (Hidden)       
+   Agent Group LWTRes (Hidden)       
+   AgentCapResCat (Hidden)           
+   QueueIDNoAutoStats (Hidden)       
+   AgentCapResAutoStats (Hidden)     
+   Idle Cost Prop (Hidden)           
+   UseCost (Hidden)                  
+   CallUtilVarP (Hidden)             
+   EmailUtilVarP (Hidden)            
+   FaxUtilVarP (Hidden)              
+   WebHitUtilVarP (Hidden)           
+   OtherUtilVarP (Hidden)            
+   Agent Group                        Agent Name                        
+   Agent Group Type                   Agent Type                        
+   DisconnectP                        Clear Queue when Off Duty         
+   Number of Agents                   Max Number Available              
+   Schedule                           Schedule                          
+   Disconnect                         Clear Queue when Off Duty         
+   Hourly Cost                        Busy Cost/Hour                    
+   Idle Cost                          Idle Cost/Hour                    
+   Per Use Cost                       Per Use Cost                      
+
+
+   Operands Contained in Dialog 'Agent Skill ':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Call TypesP':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TDDExpNameP (Hidden)              
+   TDDExpNameDP (Hidden)             
+   NumberOfCallsP (Hidden)           
+   Call TypeP                         Contact Name                      
+   Agent Skill PriorityP              Agent Skill Priority              
+
+
+   Operands Contained in Dialog 'Talk Time':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Call TypesT':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TDDExpName (Hidden)               
+   TDDExpNameD (Hidden)              
+   Agent Skill PriorityNO (Hidden)   
+   AgentCallVar (Hidden)             
+   NumberOfCallsT (Hidden)           
+   AgentCallVarCategory (Hidden)     
+   AgentCallVarResponse (Hidden)     
+   Call TypeT                         Contact Name                      
+   Talk Time Multiplier               Talk Time Multiplier              
+   Conference Time Multiplier         Conference Time Multiplier        
+   Pr Override                                                          
+   Agent Skill Priority               Agent Skill Priority              
+
+
+   Operands Contained in Repeat Group 'GroupSetMem':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   LWTVarG (Hidden)                  
+   NumberOfMembers (Hidden)          
+   LWTVarGControl (Hidden)           
+   LWTVarGReposnse (Hidden)          
+   Agent Group ID                     Agent Group                       
+   Preference                         Preference                        
+
+Module: Schedule        
+
+   Operands Contained in Dialog 'Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumDays (Hidden)                  
+   VarIDPtr (Hidden)                 
+   Monday (Hidden)                   
+   MondayVal (Hidden)                
+   Tuesday (Hidden)                  
+   TuesdayVal (Hidden)               
+   Wednesday (Hidden)                
+   WednesdayVal (Hidden)             
+   Thursday (Hidden)                 
+   ThursdayVal (Hidden)              
+   Friday (Hidden)                   
+   FridayVal (Hidden)                
+   Saturday (Hidden)                 
+   SaturdayVal (Hidden)              
+   Sunday (Hidden)                   
+   SundayVal (Hidden)                
+   NumDays_D (Hidden)                
+   Today_D (Hidden)                  
+   DailyInfoExp (Hidden)             
+   DailyExpStuff (Hidden)            
+   Name (Hidden)                     
+   VarIDPtrCat (Hidden)              
+   VarIDPtrRes (Hidden)              
+   Identifier                         Schedule Name                     
+   Planning Horizon Units             Planning Horizon                  
+   Timeslot                           Timeslot (in minutes)             
+
+
+   Operands Contained in Repeat Group 'Day':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumAppts (Hidden)                 
+   NumAppts0 (Hidden)                
+   NumAppts1 (Hidden)                
+   NumApptsExp (Hidden)              
+   Week2                              Week                              
+   Week4                              Week                              
+   Today                              Day of Week                       
+
+
+   Operands Contained in Repeat Group 'Todays Availability':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Delay (Hidden)                    
+   AMPMVar (Hidden)                  
+   V1 (Hidden)                       
+   V2 (Hidden)                       
+   DumNumAppts (Hidden)              
+   Delay2 (Hidden)                   
+   AMPMVar2 (Hidden)                 
+   V12 (Hidden)                      
+   V22 (Hidden)                      
+   Activetime (Hidden)               
+   DMid (Hidden)                     
+   DNoon (Hidden)                    
+   DMid2 (Hidden)                    
+   DNoon2 (Hidden)                   
+   Hour12 (Hidden)                   
+   HourNot12 (Hidden)                
+   Hour12_2 (Hidden)                 
+   HourNot12_2 (Hidden)              
+   Minute60 (Hidden)                 
+   Minute2_60 (Hidden)               
+   CapChange (Hidden)                
+   Agent State B (Hidden)            
+   Agent State AB (Hidden)           
+   Agent State A (Hidden)            
+   Agent State                        Agent State                       
+   Agent State_Inc                    Agent State                       
+   Capacity Change                    Alter Capacity by                 
+   Integer Value                      Capacity Change                   
+   Adherence Factor 1                 Schedule Adherence Factor         
+   AMPMSg                             Shift Begins at                   
+   Hour                               Hour                              
+   Minute15                           Minute                            
+   Minute30                           Minute                            
+   AMPMSg2                            Shift Ends at                     
+   Hour2                              Hour                              
+   Minute2_15                         Minute                            
+   Minute2_30                         Minute                            
+
+
+   Operands Contained in Dialog 'Daily Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumAppts_D (Hidden)               
+   NumAppts0_D (Hidden)              
+   NumAppts1_D (Hidden)              
+   NumApptsExp_D (Hidden)            
+
+
+   Operands Contained in Repeat Group 'Todays Availability_D':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Delay_D (Hidden)                  
+   AMPMVar_D (Hidden)                
+   V1_D (Hidden)                     
+   V2_D (Hidden)                     
+   DumNumAppts_D (Hidden)            
+   Delay2_D (Hidden)                 
+   AMPMVar2_D (Hidden)               
+   V12_D (Hidden)                    
+   V22_D (Hidden)                    
+   Activetime_D (Hidden)             
+   DMid_D (Hidden)                   
+   DNoon_D (Hidden)                  
+   DMid2_D (Hidden)                  
+   DNoon2_D (Hidden)                 
+   Hour12_D (Hidden)                 
+   HourNot12_D (Hidden)              
+   Hour12_2_D (Hidden)               
+   HourNot12_2_D (Hidden)            
+   Minute60_D (Hidden)               
+   Minute2_60_D (Hidden)             
+   CapChangeDay (Hidden)             
+   Agent State_D                      Agent State                       
+   Agent State_DInc                   Agent State                       
+   Capacity Change Day                Alter Capacity by                 
+   Integer Value Day                  Group Capacity                    
+   Adherence Factor 2                 Schedule Adherence Factor         
+   AMPMSg_D                           Shift Begins at                   
+   Hour_D                             Hour                              
+   Minute15_D                         Minute                            
+   Minute30_D                         Minute                            
+   AMPMSg2_D                          Shift Ends at                     
+   Hour2_D                            Hour                              
+   Minute2_15_D                       Minute                            
+   Minute2_30_D                       Minute                            
+
+Module: Report          
+
+   Operands Contained in Dialog 'Report':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   OutFileName (Hidden)              
+   Answered (Hidden)                 
+   Format (Hidden)                   
+   TimeSlot (Hidden)                 
+   PeriodInDay (Hidden)              
+   OldTISAvg (Hidden)                
+   SIMANOutputFileName (Hidden)      
+   cm (Hidden)                       
+   OldTISNum (Hidden)                
+   OldSLCount (Hidden)               
+   OldATAvg (Hidden)                 
+   OldATNum (Hidden)                 
+   OldTTAvg (Hidden)                 
+   OldTTNum (Hidden)                 
+   OldHTAvg (Hidden)                 
+   OldHTNum (Hidden)                 
+   OldESTAvg (Hidden)                
+   OldESTNum (Hidden)                
+   TalkTime (Hidden)                 
+   HandleTime (Hidden)               
+   STime (Hidden)                    
+   ATime (Hidden)                    
+   TTime (Hidden)                    
+   HTime (Hidden)                    
+   ETime (Hidden)                    
+   LastDay (Hidden)                  
+   SLCount (Hidden)                  
+   OldOvCount (Hidden)               
+   OvCount (Hidden)                  
+   Agent (Hidden)                    
+   NR (Hidden)                       
+   OldNRAvg (Hidden)                 
+   MR (Hidden)                       
+   OldMRAvg (Hidden)                 
+   ABusy (Hidden)                    
+   ASched (Hidden)                   
+   TNR (Hidden)                      
+   OldTNRAvg (Hidden)                
+   TBusy (Hidden)                    
+   _R (Hidden)                       
+   CWai (Hidden)                     
+   CSys (Hidden)                     
+   OldCreCount (Hidden)              
+   CCre (Hidden)                     
+   OldBacCount (Hidden)              
+   CBac (Hidden)                     
+   OldBloCount (Hidden)              
+   CBlo (Hidden)                     
+   OldEntCount (Hidden)              
+   CEnt (Hidden)                     
+   OldAbaCount (Hidden)              
+   CAba (Hidden)                     
+   OldDisCount (Hidden)              
+   CDis (Hidden)                     
+   OldMesCount (Hidden)              
+   CMes (Hidden)                     
+   OldHanCount (Hidden)              
+   CHan (Hidden)                     
+   CAns (Hidden)                     
+   ELTime (Hidden)                   
+   OldOutAbanCount (Hidden)          
+   COutAban (Hidden)                 
+   OldCreCountCat (Hidden)           
+   OldCreCountRes (Hidden)           
+   OldBacCountCat (Hidden)           
+   OldBacCountRes (Hidden)           
+   OldBloCountCat (Hidden)           
+   OldBloCountRea (Hidden)           
+   OldEntCountCat (Hidden)           
+   OldEntCountRes (Hidden)           
+   OldAbaCountCat (Hidden)           
+   OldAbaCountRes (Hidden)           
+   OldDisCountCat (Hidden)           
+   OldDisCountRes (Hidden)           
+   OldMesCountCat (Hidden)           
+   OldMesCountRes (Hidden)           
+   OldHanCountCat (Hidden)           
+   OldHanCountRes (Hidden)           
+   OldOutAbanCountCat (Hidden)       
+   OldOutAbanCountRes (Hidden)       
+   OldNRAvgCat (Hidden)              
+   OldNRAvgRes (Hidden)              
+   ABusyCat (Hidden)                 
+   ABusyRes (Hidden)                 
+   OldMRAvgCat (Hidden)              
+   OldMRAvgRes (Hidden)              
+   ASchedCat (Hidden)                
+   ASchedRes (Hidden)                
+   OldTNRAvgCat (Hidden)             
+   OldTNRAvgRes (Hidden)             
+   TBusyCat (Hidden)                 
+   TBusyRes (Hidden)                 
+   OldESTNumCat (Hidden)             
+   OldESTNumRes (Hidden)             
+   OldESTAvgCat (Hidden)             
+   OldESTAvgRes (Hidden)             
+   HandleTimeCat (Hidden)            
+   HandleTimeRes (Hidden)            
+   OldHTNumCat (Hidden)              
+   OldHTNumRes (Hidden)              
+   OldHTAvgCat (Hidden)              
+   OldHTAvgRes (Hidden)              
+   TalkTimeCat (Hidden)              
+   TalkTimeRes (Hidden)              
+   OldTTNumCat (Hidden)              
+   OldTTNumRes (Hidden)              
+   OldTTAvgcat (Hidden)              
+   OldTTAvgRes (Hidden)              
+   OldATNumCat (Hidden)              
+   OldATNumRes (Hidden)              
+   OldATAvgCat (Hidden)              
+   OldATAvgRes (Hidden)              
+   OldSLCountCat (Hidden)            
+   OldSLCountRes (Hidden)            
+   OldTISNumCat (Hidden)             
+   OldTISNumRes (Hidden)             
+   OldTISAvgcat (Hidden)             
+   OldTISAvgRes (Hidden)             
+   OldOvCountCat (Hidden)            
+   OldOvCountRes (Hidden)            
+   OldTNRAvgClear (Hidden)           
+   TBusyClear (Hidden)               
+   OldNRAvgClear (Hidden)            
+   ABusyClear (Hidden)               
+   OldMRAvgClear (Hidden)            
+   ASchedClear (Hidden)              
+   OldCreCountClear (Hidden)         
+   OldBacCountClear (Hidden)         
+   OldBloCountClear (Hidden)         
+   OldEntCountClear (Hidden)         
+   OldAbaCountClear (Hidden)         
+   OldDisCountClear (Hidden)         
+   OldMesCountClear (Hidden)         
+   OldHanCountClear (Hidden)         
+   OldOutAbanCountClear (Hidden)     
+   OldTISAvgClear (Hidden)           
+   OldTISNumClear (Hidden)           
+   OldSLCountClear (Hidden)          
+   OldATAvgClear (Hidden)            
+   OldATNumClear (Hidden)            
+   OldTTAvgClear (Hidden)            
+   OldTTNumClear (Hidden)            
+   TalkTimeClear (Hidden)            
+   OldHTAvgClear (Hidden)            
+   OldHTNumClear (Hidden)            
+   HandleTimeClear (Hidden)          
+   OldESTAvgClear (Hidden)           
+   OldESTNumClear (Hidden)           
+   OldOvCountClear (Hidden)          
+   StatTypeContactTimes (Hidden)     
+   StatTypeContactCounts (Hidden)    
+   StatTypeOther (Hidden)            
+   Statistic Type                     Report Type                       
+   Call Type                          Contact Name                      
+   Agent Group                        Agent Group                       
+   Parent Group                       Parent Group                      
+   Trunk Group                        Trunk Group                       
+   Source Group                       Source Group                      
+   Dest Group                         Destination Group                 
+   Time Interval                      Time Interval (minutes)           
+   Form of Output                     Form of Output                    
+   Output File                        Output File                       
+
+
+   Operands Contained in Dialog 'Options':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TimesYes (Hidden)                 
+   TimesNo (Hidden)                  
+   ZeroTimeCt (Hidden)               
+   Ast (Hidden)                      
+   Sp (Hidden)                       
+   Ind (Hidden)                      
+   ZeroTimeCtCat (Hidden)            
+   ZeroTimeCtRes (Hidden)            
+   DAgent                                                               
+   DOver                                                                
+   ZeroTimes                          Exclude empty time slots          
+   Highlight                          Highlight time slots with a       
+   DTimes                                                               
+   DCounts                                                              
+   DTrunk                                                               
+   GTLT                                                                 
+   CondValue                                                            
+
+Module: Animate         
+
+   Operands Contained in Dialog 'Animate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TNOW (Hidden)                     
+   Total (Hidden)                    
+   Count Total (Hidden)              
+   Agent Total (Hidden)              
+   Util (Hidden)                     
+   Busy (Hidden)                     
+   Available (Hidden)                
+   PAgent Total (Hidden)             
+   PUtil (Hidden)                    
+   PBusy (Hidden)                    
+   PAvailable (Hidden)               
+   Trunk Total (Hidden)              
+   TrunkUtil (Hidden)                
+   TrunkBusy (Hidden)                
+   TrunkAvail (Hidden)               
+   TCAbandon (Hidden)                
+   TCAnswer (Hidden)                 
+   TCBlock (Hidden)                  
+   TCCreate (Hidden)                 
+   TCDisconnect (Hidden)             
+   TCInSystem (Hidden)               
+   TCOffer (Hidden)                  
+   TCMessage (Hidden)                
+   TCXMin (Hidden)                   
+   TCWait1 (Hidden)                  
+   CBAbandon (Hidden)                
+   CBBlock (Hidden)                  
+   CBDisconnect (Hidden)             
+   CBTerminate (Hidden)              
+   PerAbandon (Hidden)               
+   PerBlock (Hidden)                 
+   PerService (Hidden)               
+   TmHandle (Hidden)                 
+   TmSpeed (Hidden)                  
+   TmCC (Hidden)                     
+   CB Total (Hidden)                 
+   Perct Total (Hidden)              
+   Time Total (Hidden)               
+   TCWait2 (Hidden)                  
+   OverCounter (Hidden)              
+   OverUI (Hidden)                   
+   CBMessage (Hidden)                
+   Day (Hidden)                      
+   TotalDay (Hidden)                 
+   Data Object                        Data Object                       
+   Agentname                          Agent Group                       
+   AgentInfo                          Agent Data                        
+   PAgentname                         Parent Group                      
+   TrunkName                          Trunk Group                       
+   TrunkInfo                          Trunk Data                        
+   OverSourceQ                        Source Group                      
+   OverDestQ                          Destination Group                 
+   Call Type                          Contact Name                      
+   CallStatType                       Contact Statistic Type            
+   CallInfo                           Contact Data                      
+   CBInfo                             Contact Back Data                 
+   PerctInfo                          Call Percentages                  
+   TimeInfo                           Call Time Data                    
+   Other                              Other Data                        
+   Variable                           Variable                          
+   Level                              Level                             
+   Histogram                          Histogram                         
+   Plot                               Plot                              
+   Clock1                             Analog Clock                      
+   Clock2                             Digital Clock                     
+   PAgentInfo                         Parent Data                       
+
+Module: Script          
+
+   Operands Contained in Dialog 'Script':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Operand                            Operand                           
+

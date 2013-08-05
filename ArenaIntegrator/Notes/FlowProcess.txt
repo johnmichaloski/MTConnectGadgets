@@ -1,0 +1,192 @@
+Module: Tank            
+
+   Operands Contained in Dialog 'Tank':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NextLabel (Hidden)                
+   Tank Regulator Set (Hidden)       
+   Label (Hidden)                    
+   PkgOutputVarName (Hidden)         
+   PkgInputVarName (Hidden)          
+   Name                               Name                              
+   Capacity                           Capacity                          
+   Initial Level                      Initial Level                     
+   Packaging Input Connection         Packaging Input Connection        
+   Packaging Output Connection        Packaging Output Connection       
+   Animation                          Animation                         
+   Report Statistics                  Report Statistics                 
+
+
+   Operands Contained in Repeat Group 'Regulators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Reg Name (Hidden)                 
+   ResAutoStatsProperty (Hidden)     
+   Regulator Name                     Regulator Name                    
+   Maximum Rate                       Maximum Rate                      
+   Maximum Rate TimeUnits             Units                             
+
+Module: Sensor          
+
+   Operands Contained in Dialog 'Sensor':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Next Label (Hidden)               
+   Block Label (Hidden)              
+   TankName (Hidden)                 
+   Name                               Name                              
+   Tank Name                          Tank Name                         
+   Location Type                      Location Type                     
+   Level                              Level                             
+   Percentage                         Percentage (0-100)                
+   Crossing Direction                 Crossing Direction                
+   Initial State                      Initial State                     
+   Create Discrete Entity             Create Discrete Entity            
+   Animation                          Animation                         
+
+
+   Operands Contained in Repeat Group 'Actions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RealVar (Hidden)                  
+   Action Type                        Action Type                       
+   Regulator Name                     Regulator Name                    
+   New Maximum Rate                   New Maximum Rate                  
+   New Maximum Rate TimeUnits         Units                             
+   Signal Value                       Signal Value                      
+   Variable Name                      Variable Name                     
+   New Value                          New Value                         
+
+Module: Flow            
+
+   Operands Contained in Dialog 'Flow':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Storage Name (Hidden)             
+   SourceSet (Hidden)                
+   DestinationSet (Hidden)           
+   Name                               Name                              
+   Type                               Type                              
+   Source Regulator Type              Source Regulator Type             
+   Source Regulator Name              Regulator Name                    
+   Source Regulator Set Name          Regulator Set Name                
+   Source Set Index                   Set Index                         
+   Source Attribute Name              Attribute Name                    
+   Source Expression                  Expression                        
+   Destination Regulator Type         Destination Regulator Type        
+   Destination Regulator Name         Regulator Name                    
+   Destination Regulator Set Name     Regulator Set Name                
+   Destination Set Index              Set Index                         
+   Destination Attribute Name         Attribute Name                    
+   Destination Expression             Expression                        
+   Quantity                           Quantity                          
+   Time                               Time                              
+   Time TimeUnits                     Units                             
+   Signal Value                       Signal Value                      
+   Priority                           Priority                          
+   Allocation                         Allocation                        
+   Quantity Save Attribute            Quantity Save Attribute           
+
+Module: Regulate        
+
+   Operands Contained in Dialog 'Regulate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'Maximum Rate Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RegSet (Hidden)                   
+   Regulator Type                     Regulator Type                    
+   Regulator Name                     Regulator Name                    
+   Regulator Set Name                 Regulator Set Name                
+   Set Index                          Set Index                         
+   Attribute Name                     Attribute Name                    
+   Expression                         Expression                        
+   New Maximum Rate                   New Maximum Rate                  
+   New Maximum Rate TimeUnits         Units                             
+
+Module: Seize Regulator 
+
+   Operands Contained in Dialog 'Seize Regulator':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Queue Name (Hidden)               
+   Name                               Name                              
+   Priority                           Priority                          
+
+
+   Operands Contained in Repeat Group 'Regulators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SELECT Expression (Hidden)        
+   Specific Member (Hidden)          
+   RuleNumberArgument (Hidden)       
+   Regulator Type                     Regulator Type                    
+   Regulator Name                     Regulator Name                    
+   Attribute Name                     Attribute Name                    
+   Expression                         Expression                        
+   Regulator Set Name                 Regulator Set Name                
+   Selection Rule                     Selection Rule                    
+   Set Index                          Set Index                         
+   Rule Number                        Rule Number                       
+   Save Attribute                     Save Attribute                    
+
+Module: Release Regulator
+
+   Operands Contained in Dialog 'Release Regulator':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'Regulators':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Specific Member (Hidden)          
+   SELECT Expression (Hidden)        
+   Regulator Type                     Regulator Type                    
+   Regulator Name                     Regulator Name                    
+   Attribute Name                     Attribute Name                    
+   Expression                         Expression                        
+   Regulator Set Name                 Regulator Set Name                
+   Release Rule                       Release Rule                      
+   Set Index                          Set Index                         
+
+Module: Regulator Set   
+
+   Operands Contained in Dialog 'Regulator Set':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'Members':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Member Property (Hidden)          
+   Regulator Name                     Regulator Name                    
+

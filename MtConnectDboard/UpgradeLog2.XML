@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="MtConnectDboard">
+</Property><Property Name="Solution File" Value="C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard.sln">
+</Property><Property Name="User Options File" Value="C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard.suo">
+</Property><Property Name="Date" Value="Thursday, November 29, 2012">
+</Property><Property Name="Time" Value="14:13 PM">
+</Property><Property Name="Log Number" Value="2">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="MtConnectDboard.sln" Description="File successfully backed up as C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="MtConnectDboard.suo" Description="File successfully backed up as C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard.suo.old">
+</Event><Event ErrorLevel="0" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="Converting project file 'C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard\MtConnectDboard.vcproj'.">
+</Event><Event ErrorLevel="1" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="MSB8012: $(TargetPath) ('C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard\Debug\MtConnectDboard.exe') does not match the Linker's OutputFile property value 'Debug\MtConnectDboard.exe' ('C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\Debug\MtConnectDboard.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="MSB8012: $(TargetPath) ('C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard\Release\MtConnectDboard.exe') does not match the Linker's OutputFile property value 'Release\MtConnectDboard.exe' ('C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\Release\MtConnectDboard.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="Done converting to new project file 'C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\MtConnectDboard\MtConnectDboard\MtConnectDboard.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="MtConnectDboard" Source="MtConnectDboard\MtConnectDboard.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="MtConnectDboard.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="MtConnectDboard.sln" Description="Converted">
+</Event></UpgradeLog>

@@ -1,0 +1,1216 @@
+Module: ActivityAreas   
+
+   Operands Contained in Dialog 'ActivityAreas Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'ActivityAreas':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+   Organization Level                 Organization Level                
+   Parent Activity Area               Parent Activity Area              
+   Report Statistics                  Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+Module: Arrivals        
+
+   Operands Contained in Dialog 'Arrivals Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Arrivals':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+   Type                               Type                              
+   TypeId                             Type ID                           
+   Time                               Time                              
+   Interval                           Interval or Key                   
+   Offset                             Offset                            
+   MaxBatches                         Max Batches                       
+   MaxTime                            Max Time                          
+   BatchSize                          Batch Size                        
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Attribute                          Variable ID                       
+   Value                              Value                             
+
+Module: Attributes      
+
+   Operands Contained in Dialog 'Attributes Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Attributes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DataTypeReal (Hidden)             
+   DataTypeQuotedString (Hidden)     
+   Number                             Number                            
+   AName                              Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+   Data Type                          Data Type                         
+
+
+   Operands Contained in Repeat Group 'Initial Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Value                             
+
+Module: Begin           
+
+   Operands Contained in Dialog 'Begin Statement':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   Listing                            Listing                           
+   RunControl                         Run Controller                    
+
+Module: Blockages       
+
+   Operands Contained in Dialog 'Blockages Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Blockages':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   BlockageName                       Name                              
+   InitBkgs                           Initial Blockages                 
+   GlobalPriority                     Global Priority                   
+   GPExp                              Priority Expression               
+
+Module: Continuous      
+
+   Operands Contained in Dialog 'Continuous Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   NumDifEq                           Number of Dif. Equations          
+   NumStateEq                         Number of State Equations         
+   MinStep                            Minimum Step Size                 
+   MaxStep                            Maximum Step Size                 
+   Interval                           Save Point Interval               
+   Method                             Method                            
+   AbsError                           Absolute Error                    
+   RelError                           Relative Error                    
+   Severity                           Severity                          
+   CrossSeverity                      Cross Severity                    
+
+Module: Conveyors       
+
+   Operands Contained in Dialog 'Conveyors Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Conveyors':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   ConvName                           Name                              
+   SegmentSet                         Segment Set ID                    
+   Vel                                Velocity                          
+   CellSize                           Cell Size                         
+   Status                             Status                            
+   MaxPerEnt                          Max Cells Per Entity              
+   Type                               Type                              
+   EntSize                            Accumulation Length               
+   ReportStatistics                   Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+Module: Counters        
+
+   Operands Contained in Dialog 'Counters Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Counters':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   CounterName                        Name                              
+   Limit                              Limit                             
+   InitOpt                            Initial Option                    
+   OutFile                            Output File                       
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   Category                           Category                          
+   ProcessID                          Identifier                        
+
+Module: CStats          
+
+   Operands Contained in Dialog 'CStats Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'CStats':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Variable                           SIMAN Expression                  
+   CstatName                          Name                              
+   OutFile                            Output File                       
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   Category                           Category                          
+   ProcessID                          Identifier                        
+
+Module: Discrete        
+
+   Operands Contained in Dialog 'Discrete Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   Entities                           Max Number of Entities            
+   Attributes                         Number of Attributes              
+   Queues                             Largest Queue Number              
+   Stations                           Largest Station Number            
+   AnimAttb                           Animation Attribute               
+
+Module: Distances       
+
+   Operands Contained in Dialog 'Distances Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Distances':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+
+
+   Operands Contained in Repeat Group 'Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegStaID                           Starting Station ID               
+   EndStaID                           Ending Station ID                 
+   Distance                           Distance                          
+
+Module: Distributions   
+
+   Operands Contained in Dialog 'Distributions Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Distributions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Distname                           Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+
+
+   Operands Contained in Repeat Group 'Expressions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Expression                         Expression                        
+
+Module: DStats          
+
+   Operands Contained in Dialog 'DStats Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'DStats':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Expression                         SIMAN Expression                  
+   DstatName                          Name                              
+   OutFile                            Output File                       
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   Category                           Category                          
+   ProcessID                          Identifier                        
+
+Module: Entities        
+
+   Operands Contained in Dialog 'Entities Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Entities':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Entity Type                        Entity Type                       
+   Initial Picture                    Initial Picture                   
+   HoldingCostRate                    Holding Cost/Hour                 
+   VACost                             Initial VA Cost                   
+   NVACost                            Initial NVA Cost                  
+   WaitCost                           Initial Wait Cost                 
+   TranCost                           Initial Transfer Cost             
+   OtherCost                          Initial Other Cost                
+   ReportStatistics                   Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+Module: Events          
+
+   Operands Contained in Dialog 'Events Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Events':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+   Variable                           Crossing Variable                 
+   Direction                          Crossing Direction                
+   Threshold                          Threshold Value                   
+   Tol                                Crossing Tolerance                
+
+Module: Expressions     
+
+   Operands Contained in Dialog 'Expressions Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Expressions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   ExpName                            Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+
+
+   Operands Contained in Repeat Group 'Expression Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Expression                         Expression                        
+
+Module: Failures        
+
+   Operands Contained in Dialog 'Failures Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   FailName                           Name                              
+   Type                               Type                              
+   Between                            Time or Count Between             
+   Duration                           Duration                          
+   State                              State                             
+
+Module: Files           
+
+   Operands Contained in Dialog 'Files Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Files':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   FileName                           Identifier                        
+   FileDesc                           System Name                       
+   Access                             Access Type                       
+   AccessLength                       Access Length                     
+   Structure                          Structure                         
+   EndOpt                             End of File Action                
+   Comment                            Comment Character                 
+   InitOpt                            Initialize Option                 
+
+
+   Operands Contained in Repeat Group 'Recordsets':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Recordset Name                     Recordset Name                    
+   Recordset CommandText              Recordset CommandText             
+   Recordset CommandType              Recordset CommandType             
+
+Module: Frequencies     
+
+   Operands Contained in Dialog 'Frequencies Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Frequencies':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   FreqKey                            Type                              
+   Expression                         Expression                        
+   FreqName                           Name                              
+   OutFile                            Output File                       
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   DBCategory                         Category                          
+   ProcessID                          Identifier                        
+
+
+   Operands Contained in Repeat Group 'Categories':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   ConsOrRange                        Value Or Range                    
+   Val1                               Value                             
+   Val2                               High Value                        
+   Category                           Category                          
+   RestrColumn                        Category Option                   
+
+Module: Include         
+
+   Operands Contained in Dialog 'Include':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   FileDesc                           File Description                  
+
+Module: Initialize      
+
+   Operands Contained in Dialog 'Initialize Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Initialize':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Variable                           Variable                          
+   Value                              Value                             
+
+Module: Intersections   
+
+   Operands Contained in Dialog 'Intersections Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Intersections':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   IntName                            Name                              
+   Length                             Travel Length                     
+   R                                  Link Selection Rule               
+   RuleAttr                           Rule Attribute ID                 
+   VelChange                          Velocity Change Factor            
+
+Module: Levels          
+
+   Operands Contained in Dialog 'Levels Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Levels':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   LevelName                          Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+
+
+   Operands Contained in Repeat Group 'Initial Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Value                             
+
+Module: Links           
+
+   Operands Contained in Dialog 'Links Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Links':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   LinkName                           Name                              
+   BegIntxID                          Beginning Intersection ID         
+   BegDir                             Beginning Direction               
+   EndIntxID                          Ending Intersection ID            
+   EndDir                             Ending Direction                  
+   Zones                              Number of Zones                   
+   Length                             Length of Each Zone               
+   Type                               Link Type                         
+   Velchange                          Velocity Change Factor            
+
+Module: Networks        
+
+   Operands Contained in Dialog 'Networks Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Networks':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   NetworkName                        Name                              
+
+
+   Operands Contained in Repeat Group 'Links':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegLinkId                          Starting Link                     
+   EndLinkID                          Ending Link                       
+
+Module: Nicknames       
+
+   Operands Contained in Dialog 'Nicknames Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Nicknames':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NicknameID                         Nickname                          
+   SMName                             Name or Constant                  
+
+Module: Outputs         
+
+   Operands Contained in Dialog 'Outputs Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Outputs':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Expression                         SIMAN Expression                  
+   OutFile                            Output File                       
+   OutProcID                          Name                              
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   Category                           Category                          
+   ProcessID                          Identifier                        
+
+Module: Parameters      
+
+   Operands Contained in Dialog 'Parameters Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Parameters':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   ParamName                          Name                              
+
+
+   Operands Contained in Repeat Group 'Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Value                             
+
+Module: Pictures        
+
+   Operands Contained in Dialog 'Pictures Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Pictures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   PiictureName                       Name                              
+
+Module: Project         
+
+   Operands Contained in Dialog 'Project':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   Title                              Title                             
+   Analyst                            Analyst Name                      
+   Month                              Date                              
+   Day                                                                  
+   Year                                                                 
+   SummaryReport                      Summary Report                    
+   Costing                            Costing                           
+   Queues                             Queues                            
+   Transporters                       Transporters                      
+   Entities                           Entities                          
+   Processes                          Processes                         
+   Conveyors                          Conveyors                         
+   Resources                          Resources                         
+   Stations                           Stations                          
+   Activity Areas                     Activity Areas                    
+   Tanks                              Tanks                             
+
+Module: Queues          
+
+   Operands Contained in Dialog 'Queues Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Queues':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   QueueName                          Name                              
+   Ranking                            Ranking Criterion                 
+   RankExp                            Rule Expression                   
+   QBlock                             Associated Block                  
+   ReportStatistics                   Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+Module: Rankings        
+
+   Operands Contained in Dialog 'Rankings Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Rankings':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   QueueID                            Identifier                        
+   Ranking                            Ranking Criterion                 
+   RuleExp                            Rule Expression                   
+
+Module: Rates           
+
+   Operands Contained in Dialog 'Rates Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Rates':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   RateName                           Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+
+
+   Operands Contained in Repeat Group 'Initial Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Value                             
+
+Module: Recipes         
+
+   Operands Contained in Dialog 'Recipes Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Recipes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RecipeName                         Name                              
+
+
+   Operands Contained in Repeat Group 'Statics':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StaticName                         Static Name                       
+   ValueExpr                          Value                             
+
+Module: Redirects       
+
+   Operands Contained in Dialog 'Redirects Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Redirects':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   RedirectName                       Name                              
+   NetworkId                          Network ID                        
+
+
+   Operands Contained in Repeat Group 'Intersections':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   BegIntxID                          Beginning Intersection ID         
+   EndIntxID                          Ending Intersection ID            
+   NextIntxID                         Next Intersection ID              
+
+Module: Replicate       
+
+   Operands Contained in Dialog 'Replicate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   NumReps                            Number of Replications            
+   BeginTime                          Beginning Time                    
+   Simulation Start Date              Simulation Start Date             
+   Length                             Replication Length                
+   Term Condition                     Terminating Condition             
+   InitSys                            Initialize System                 
+   InitStats                          Initialize Statistics             
+   WarmUp                             Warm-Up Period                    
+   dll name                           DLL Name in Double Quotes         
+   HrsPerDay                          Hours Per Day                     
+   BaseTimeUnits                      Base Time Units                   
+   RunInExecutionMode                 Run in Execution Mode             
+   AdvanceTimeUsingRealTimeFactor                                       
+   RealTimeFactor                     Real Time Factor                  
+   Include Fractional Resource                                          
+
+Module: Reportlines     
+
+   Operands Contained in Dialog 'Reportlines DB':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Reportlines':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Name                               Name                              
+   RepId                              Report Id                         
+   Format                             Format                            
+
+
+   Operands Contained in Repeat Group 'Expressions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Expression                         Label                             
+
+Module: Reports         
+
+   Operands Contained in Dialog 'Reports Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Reports':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Name                               Name                              
+   FileDesc                           System Name                       
+   Title                              Title                             
+   Heading                            Heading                           
+   Sort                               Sort                              
+   Format                             Format                            
+
+Module: Resources       
+
+   Operands Contained in Dialog 'Resources Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Resources':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DefaultResType (Hidden)           
+   Number                             Number                            
+   ResourceName                       Name                              
+   Capacity                           Capacity or Schedule              
+   CapExp                             Real or Sched ID                  
+   EntRule                            Capacity Entity Rule              
+   Base Efficiency                    Base Efficiency                   
+   Efficiency Schedule ID             Efficiency Schedule ID            
+   StateSetId                         StateSet ID                       
+   InitialState                       Initial State                     
+   NonStationary                      Define as Non-Stationary          
+   BusyCost                           Busy/Hour                         
+   IdleCost                           Idle/Hour                         
+   UsageCost                          Per Use                           
+   CategoryType                       Control Category                  
+   ReportStatistics                   Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+
+   Operands Contained in Dialog 'Details':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Starting Location (Hidden)        
+   ResourceType                       Resource Type                     
+   PositionID                         Initial Station                   
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FailureKey (Hidden)               
+   FailId                             Failure ID                        
+   FEntRule                           Failure Entity Rule               
+
+Module: Rules           
+
+   Operands Contained in Dialog 'Rules Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Rules':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+   Rule                               Selection Rule                    
+   RuleId                             Rule Expression                   
+
+Module: Schedules       
+
+   Operands Contained in Dialog 'Schedules Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Schedules':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+   SchedType                          Schedule Type                     
+   ScaleFactor                        Scale Factor                      
+   Format Type                        Format Type                       
+   TimeUnits                          Time Units                        
+
+
+   Operands Contained in Repeat Group 'Capacities':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Capacity                           Value                             
+   Duration                           Time Duration                     
+
+Module: Seeds           
+
+   Operands Contained in Dialog 'Seeds Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Seeds':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Stream                             Identifier                        
+   Seed                               Seed Value                        
+   InitOpt                            Initialize Option                 
+
+Module: Segments        
+
+   Operands Contained in Dialog 'Segments Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Segments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NumberName                         Identifier                        
+   BegStaID                           Beginning Station                 
+
+
+   Operands Contained in Repeat Group 'Next Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NextStaID                          Next Station                      
+   Length                             Length                            
+
+Module: Sequences       
+
+   Operands Contained in Dialog 'Sequences Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Sequences':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   SeqName                            Name                              
+
+
+   Operands Contained in Repeat Group 'Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StationId                          Station ID                        
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Variable                           Variable                          
+   Value                              Value                             
+
+Module: Sets            
+
+   Operands Contained in Dialog 'Sets Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Sets':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   SetName                            Name                              
+
+
+   Operands Contained in Repeat Group 'Members':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Member                             Member ID                         
+
+Module: Statesets       
+
+   Operands Contained in Dialog 'Statesets Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Statesets':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   StateSetName                       Name                              
+
+
+   Operands Contained in Repeat Group 'States':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   SN                                 State Name                        
+   Type                               StateSet Type                     
+
+Module: Statics         
+
+   Operands Contained in Dialog 'Statics Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Statics':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   StaticName                         Name                              
+   Value                              Default Value                     
+
+Module: Stations        
+
+   Operands Contained in Dialog 'Stations Elements':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Stations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   StationName                        Name                              
+   IntxID                             Intersection ID                   
+   RecipeId                           Recipe ID                         
+   Associated ActivityArea            Associated ActivityArea           
+   Report Statistics                  Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+Module: Storages        
+
+   Operands Contained in Dialog 'Storages Elements':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Storages':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   StorageName                        Name                              
+
+Module: Tables          
+
+   Operands Contained in Dialog 'Tables Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Tables':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   TableName                          Name                              
+   XLow                               Low Value                         
+   XInc                               Fixed Increment                   
+
+
+   Operands Contained in Repeat Group 'Dependent Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Yi                                 Variable Value                    
+
+Module: Tallies         
+
+   Operands Contained in Dialog 'Tallies Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Tallies':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   TallyName                          Name                              
+   OutFile                            Output File                       
+   RepId                              Report ID                         
+   DataType                           Data Type                         
+   Category                           Category                          
+   ProcessID                          Identifier                        
+
+Module: Tasks           
+
+   Operands Contained in Dialog 'Tasks Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Tasks':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   Task Name                          Name                              
+   ExecExpr                           Execute                           
+   Format                             Format                            
+
+
+   Operands Contained in Repeat Group 'Parameters':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Parameter                          Parameter                         
+
+Module: Trace           
+
+   Operands Contained in Dialog 'Trace':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Handle (Hidden)                   
+   BegTime                            Beginning Time                    
+   EndTime                            Ending Time                       
+   Condition                          Condition                         
+
+
+   Operands Contained in Repeat Group 'Expressions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Expression                         Expression                        
+
+Module: Transporters    
+
+   Operands Contained in Dialog 'Transporters Elements':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Transporters':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Number                             Number                            
+   TranName                           Name                              
+   NumUnits                           Number of Units                   
+   Map                                System Map Type                   
+   MapId                              Map ID                            
+   Control                            Control                           
+   Vel                                Velocity                          
+   Accel                              Acceleration                      
+   Decel                              Deceleration                      
+   TurnVel                            Turning Velocity                  
+   ReportStatistics                   Report Statistics                 
+   Category                           Category                          
+   Identifier                         Identifier                        
+
+
+   Operands Contained in Repeat Group 'Unit Data':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Position                           Initial Position                  
+   PositionId1                        Position ID                       
+   PositionId2                        Zone                              
+   Status                             Initial Status                    
+   SizeType                           Vehicle Size                      
+   Size                               Size Integer                      
+
+Module: Variables       
+
+   Operands Contained in Dialog 'Variables Element':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+
+
+   Operands Contained in Repeat Group 'Variables':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   DataTypeReal (Hidden)             
+   DataTypeQuotedString (Hidden)     
+   Number                             Number                            
+   VarName                            Name                              
+   Index1                             1-D Array Index                   
+   Index2                             2-D Array Index                   
+   Data Type                          Data Type                         
+   ClearOption                        Clear Option                      
+   CategoryType                       Control Category                  
+   ResponseCategory                   Response Category                 
+
+
+   Operands Contained in Repeat Group 'Initial Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value                              Value                             
+

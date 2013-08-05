@@ -1,0 +1,1 @@
+wscript.exe //d //x "C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\VBS\MTConnectPage-1.4.vbs"

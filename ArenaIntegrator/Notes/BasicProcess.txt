@@ -1,0 +1,675 @@
+Module: Create          
+
+   Operands Contained in Dialog 'Create':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Next Label (Hidden)               
+   EXPO (Hidden)                     
+   EndParen (Hidden)                 
+   Real Max (Hidden)                 
+   NSEXPO (Hidden)                   
+   Seconds (Hidden)                  
+   Minutes (Hidden)                  
+   Hours (Hidden)                    
+   Days (Hidden)                     
+   UnitConv (Hidden)                 
+   EndParenU (Hidden)                
+   Process_Use (Hidden)              
+   V_NumberOut (Hidden)              
+   V_Stats (Hidden)                  
+   V_Category (Hidden)               
+   PocketLevel (Hidden)              
+   RealSchedule (Hidden)             
+   Name                               Name                              
+   Entity Type                        Entity Type                       
+   Interarrival Type                  Type                              
+   Schedule                           Schedule Name                     
+   Value                              Value                             
+   Expression                         Expression                        
+   Units                              Units                             
+   Batch Size                         Entities per Arrival              
+   Max Batches                        Max Arrivals                      
+   First Creation                     First Creation                    
+
+Module: Dispose         
+
+   Operands Contained in Dialog 'Dispose':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   V_NumberOut (Hidden)              
+   V_Stats (Hidden)                  
+   V_Category (Hidden)               
+   Name                               Name                              
+   EntStats                           Record Entity Statistics          
+
+Module: Process         
+
+   Operands Contained in Dialog 'Process':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   TriaDelay (Hidden)                
+   UnifNormDelay (Hidden)            
+   ConsExpDelay (Hidden)             
+   QueueName (Hidden)                
+   V_VACost (Hidden)                 
+   V_NVACost (Hidden)                
+   V_WaitCost (Hidden)               
+   V_VATime (Hidden)                 
+   V_NVATime (Hidden)                
+   V_WaitTime (Hidden)               
+   ProcessList (Hidden)              
+   Process_Use (Hidden)              
+   V_TranCost (Hidden)               
+   V_OtherCost (Hidden)              
+   V_TranTime (Hidden)               
+   V_OtherTime (Hidden)              
+   Costing_Use (Hidden)              
+   V_AnyCost (Hidden)                
+   V_AnyTime (Hidden)                
+   V_WaitCost2 (Hidden)              
+   V_WaitTime2 (Hidden)              
+   Tran (Hidden)                     
+   NotTran (Hidden)                  
+   V_VACostStats (Hidden)            
+   V_VACostCatgy (Hidden)            
+   V_NVACostStats (Hidden)           
+   V_NVACostCatgy (Hidden)           
+   V_WaitCostStats (Hidden)          
+   V_WaitCostCatgy (Hidden)          
+   V_TranCostStats (Hidden)          
+   V_TranCostCatgy (Hidden)          
+   V_OtherCostStats (Hidden)         
+   V_OtherCostCatgy (Hidden)         
+   V_VATimeStats (Hidden)            
+   V_VATimeCatgy (Hidden)            
+   V_NVATimeStats (Hidden)           
+   V_NVATimeCatgy (Hidden)           
+   V_WaitTimeStats (Hidden)          
+   V_WaitTimeCatgy (Hidden)          
+   V_TranTimeStats (Hidden)          
+   V_TranTimeCatgy (Hidden)          
+   V_OtherTimeStats (Hidden)         
+   V_OtherTimeCatgy (Hidden)         
+   V_AnyCostStats (Hidden)           
+   V_AnyCostCatgy (Hidden)           
+   V_AnyTimeStats (Hidden)           
+   V_AnyTimeCatgy (Hidden)           
+   V_WaitCost2Stats (Hidden)         
+   V_WaitCost2Catgy (Hidden)         
+   V_WaitTime2Stats (Hidden)         
+   V_WaitTime2Catgy (Hidden)         
+   V_NumberOut (Hidden)              
+   V_NumberOutStats (Hidden)         
+   V_NumberOutCategory (Hidden)      
+   V_NumberIn (Hidden)               
+   V_NumberInStats (Hidden)          
+   V_NumberInCategory (Hidden)       
+   Name                               Name                              
+   Type                               Type                              
+   Action                             Action                            
+   Priority                           Priority                          
+   DelayType                          Delay Type                        
+   Units                              Units                             
+   ValueAdded                         Allocation                        
+   Min                                Minimum                           
+   Value                              Value                             
+   Max                                Maximum                           
+   StDev                              Std Dev                           
+   Expression                         Expression                        
+   ReportStatistics                   Report Statistics                 
+
+
+   Operands Contained in Repeat Group 'Resources':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   NameRuleS (Hidden)                
+   NameMember (Hidden)               
+   NameRuleR1 (Hidden)               
+   NameRuleR2 (Hidden)               
+   AutoSet (Hidden)                  
+   Resource Type                      Type                              
+   Resource Name                      Resource Name                     
+   Set Name                           Set Name                          
+   Quantity                           Quantity                          
+   Selection Rule                     Selection Rule                    
+   Save Attribute                     Save Attribute                    
+   Input Attribute                    Set Index                         
+
+Module: Decide          
+
+   Operands Contained in Dialog 'Decide':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label Yes (Hidden)           
+   Next Label No (Hidden)            
+   Typeis (Hidden)                   
+   TrueUV (Hidden)                   
+   FalseUV (Hidden)                  
+   If_N (Hidden)                     
+   With_N (Hidden)                   
+   ElseUV (Hidden)                   
+   V_NumberOutTrue (Hidden)          
+   V_StatsTrue (Hidden)              
+   V_CategoryTrue (Hidden)           
+   V_NumberOutFalse (Hidden)         
+   V_StatsFalse (Hidden)             
+   V_CategoryFalse (Hidden)          
+   Percent True Expr (Hidden)        
+   2DArrayIndexes (Hidden)           
+   1DArrayIndex (Hidden)             
+   RealVar (Hidden)                  
+   Name                               Name                              
+   Type                               Type                              
+   Percent True                       Percent True                      
+   If                                 If                                
+   VNamed                             Named                             
+   Row                                Row                               
+   Column                             Column                            
+   ANamed                             Named                             
+   TypeNamed                          Named                             
+   Is                                 Is                                
+   Value                              Value                             
+
+
+   Operands Contained in Repeat Group 'Conditions':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   N Typeis (Hidden)                 
+   N Next Label Yes (Hidden)         
+   UV (Hidden)                       
+   N Percent True Expr (Hidden)      
+   N 2DArrayIndexes (Hidden)         
+   N 1DArrayIndex (Hidden)           
+   N RealVar (Hidden)                
+   N Percent True                     Percent True                      
+   N If                               If                                
+   N VNamed                           Named                             
+   N Row                              Row                               
+   N Column                           Column                            
+   N ANamed                           Named                             
+   N TypeNamed                        Named                             
+   N Is                               Is                                
+   N Value                            Value                             
+
+Module: Batch           
+
+   Operands Contained in Dialog 'Batch':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   QueueName (Hidden)                
+   V_NumberOut (Hidden)              
+   V_Stats (Hidden)                  
+   V_Category (Hidden)               
+   Name                               Name                              
+   Type                               Type                              
+   Batch Size                         Batch Size                        
+   Save Criterion                     Save Criterion                    
+   Rule                               Rule                              
+   Attribute                          Attribute Name                    
+   Representative Entity Type         Representative Entity Type        
+
+Module: Separate        
+
+   Operands Contained in Dialog 'Separate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label Orig (Hidden)          
+   Next Label (Hidden)               
+   OrigUV (Hidden)                   
+   DupUV (Hidden)                    
+   All (Hidden)                      
+   V_NumberOutOrig (Hidden)          
+   V_StatsOrig (Hidden)              
+   V_CategoryOrig (Hidden)           
+   V_NumberOutDup (Hidden)           
+   V_StatsDup (Hidden)               
+   V_CategoryDup (Hidden)            
+   Name                               Name                              
+   Type                               Type                              
+   Cost                               Percent Cost to Duplicates        
+   Number                             # of Duplicates                   
+   Member Attributes                  Member Attributes                 
+
+
+   Operands Contained in Repeat Group 'Attributes':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Attribute Name                     Attribute Name                    
+
+Module: Assign          
+
+   Operands Contained in Dialog 'Assign':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   Name                               Name                              
+
+
+   Operands Contained in Repeat Group 'Assignments':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Pic (Hidden)                      
+   EType (Hidden)                    
+   RealVar (Hidden)                  
+   2DArrayIndexes (Hidden)           
+   1DArrayIndex (Hidden)             
+   Type                               Type                              
+   VName                              Variable Name                     
+   Row                                Row                               
+   Column                             Column                            
+   AName                              Attribute Name                    
+   TypeName                           Entity Type                       
+   PicName                            Entity Picture                    
+   OtherName                          Other                             
+   Value                              New Value                         
+
+Module: Record          
+
+   Operands Contained in Dialog 'Record':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Label (Hidden)                    
+   Next Label (Hidden)               
+   INT (Hidden)                      
+   BET (Hidden)                      
+   AutoSetTally (Hidden)             
+   AutoSetCounter (Hidden)           
+   Count_DataType (Hidden)           
+   Count_Category (Hidden)           
+   Count_Id (Hidden)                 
+   Tally_DataType (Hidden)           
+   Tally_Category (Hidden)           
+   Tally_Id (Hidden)                 
+   Name                               Name                              
+   Type                               Type                              
+   Attribute                          Attribute Name                    
+   Value                              Value                             
+   Set                                Record into Set                   
+   Counter Name                       Counter Name                      
+   Tally Name                         Tally Name                        
+   Tally Set Name                     Tally Set Name                    
+   Counter Set Name                   Counter Set Name                  
+   Set Index                          Set Index                         
+
+Module: Entity          
+
+   Operands Contained in Dialog 'Entity':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Pic_Report (Hidden)               
+   Pic_Bike (Hidden)                 
+   Pic_Airplane (Hidden)             
+   Pic_Man (Hidden)                  
+   Pic_Woman (Hidden)                
+   Pic_BlueBall (Hidden)             
+   Pic_RedBall (Hidden)              
+   Pic_YellowBall (Hidden)           
+   Pic_GreenBall (Hidden)            
+   Pic_Boat (Hidden)                 
+   Pic_Box (Hidden)                  
+   Pic_Diskette (Hidden)             
+   Pic_Letter (Hidden)               
+   Pic_RedPage (Hidden)              
+   Pic_BluePage (Hidden)             
+   Pic_YellowPage (Hidden)           
+   Pic_GreenPage (Hidden)            
+   Pic_Truck (Hidden)                
+   Pic_Van (Hidden)                  
+   Pic_Widgets (Hidden)              
+   Pic_EMail (Hidden)                
+   Pic_Telephone (Hidden)            
+   Pic_Package (Hidden)              
+   Pic_Fax (Hidden)                  
+   Pic_Envelope (Hidden)             
+   RealPicture (Hidden)              
+   Pic_Person (Hidden)               
+   Pic_Ball (Hidden)                 
+   Name                               Entity Type                       
+   Picture                            Initial Picture                   
+   Holding Cost                       Holding Cost / Hour               
+   InitVACost                         Value Added                       
+   InitNVACost                        Non-Value Added                   
+   Waiting                            Waiting                           
+   InitTranCost                       Transfer                          
+   Other                              Other                             
+   ReportStatistics                   Report Statistics                 
+
+Module: Queue           
+
+   Operands Contained in Dialog 'Queue':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RealAttribute (Hidden)            
+   Q_Shared (Hidden)                 
+   HasAdvancedProcess (Hidden)       
+   HasBasicProcess (Hidden)          
+   Name                               Name                              
+   Type                               Type                              
+   Attribute                          Attribute Name                    
+   Shared                             Shared                            
+   ReportStatistics                   Report Statistics                 
+
+Module: Resource        
+
+   Operands Contained in Dialog 'Resource':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RealSchedule (Hidden)             
+   RealStateSetN (Hidden)            
+   InitStateEle (Hidden)             
+   Category (Hidden)                 
+   HasAdvancedProcess (Hidden)       
+   HasBasicProcess (Hidden)          
+   authorization level (Hidden)      
+   Name                               Name                              
+   Type                               Type                              
+   Capacity                           Capacity                          
+   Schedule                           Schedule Name                     
+   ScheduleRule                       Schedule Rule                     
+   Busy                               Busy / Hour                       
+   Idle                               Idle / Hour                       
+   Usage                              Per Use                           
+   StateSetN                          StateSet Name                     
+   InitState                          Initial State                     
+   ReportStatistics                   Report Statistics                 
+
+
+   Operands Contained in Repeat Group 'Failures':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RealFailure (Hidden)              
+   Failure                            Failure Name                      
+   FailWhen                           Failure Rule                      
+
+
+   Operands Contained in Dialog 'FDM Info':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+   Base Efficiency                    Base Efficiency                   
+   Efficiency Schedule                Efficiency Schedule               
+
+Module: Variable        
+
+   Operands Contained in Dialog 'Variable':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   RealVar (Hidden)                  
+   ControlCategory (Hidden)          
+   HasAdvancedProcess (Hidden)       
+   HasBasicProcess (Hidden)          
+   ResponseCategory (Hidden)         
+   DSTATReference (Hidden)           
+   DSTATRefName (Hidden)             
+   DSTATRefCategory (Hidden)         
+   DSTATRefDataType (Hidden)         
+   DSTATRefIdentifier (Hidden)       
+   DSTAT (Hidden)                    
+   DSTATName (Hidden)                
+   DSTATDataType (Hidden)            
+   DSTATCategory (Hidden)            
+   DSTATIdentifier (Hidden)          
+   VariableReference (Hidden)        
+   RefControlCategory (Hidden)       
+   RefResponseCategory (Hidden)      
+   DataTypeReal (Hidden)             
+   DataTypeQuotedString (Hidden)     
+   DefaultRealValue (Hidden)         
+   DefaultStringValue (Hidden)       
+   Name                               Name                              
+   Rows                               Rows                              
+   Columns                            Columns                           
+   Data Type                          Data Type                         
+   Clear Option                       Clear Option                      
+   Statistics                         Report Statistics                 
+
+
+   Operands Contained in Repeat Group 'Initial Values':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Initial Value                      Initial Value                     
+
+Module: Schedule        
+
+   Operands Contained in Dialog 'Schedule':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   HideSchedEditorParameters (Hidden)
+   Hidden Arrival Sched Element (Hidden)
+   Hidden Efficiency Sched Element (Hidden)
+   Hidden Other Sched Element (Hidden)
+   Hidden Cal Cap Sched Element (Hidden)
+   Hidden All Cap Sched Element (Hidden)
+   authorization level (Hidden)      
+   Name                               Name                              
+   Format Type                        Format Type                       
+   Type                               Type                              
+   Units                              Time Units                        
+   Scale Factor                       Scale Factor                      
+   ScheduleEditorParameters           SEP                               
+
+
+   Operands Contained in Repeat Group 'Durations':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Capacity                           Value                             
+   Duration                           Duration                          
+
+
+   Operands Contained in Dialog 'Calendar Data':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Calendar Type                      Type                              
+   Calendar Scale Factor              Scale Factor                      
+   Repeating Length                   Repeating Length                  
+   Length Time Units                  Length Time Units                 
+   Base Date                          Base Date                         
+   Default Value or Name              Default Value or Name             
+   Locked                             Locked                            
+   Repeating Length Type              Repeating Length Type             
+   Default Value Type                 Default Value Type                
+   Time Pattern Category              Time Pattern Category             
+   Calendar Format Note               Calendar Format Note              
+
+
+   Operands Contained in Repeat Group 'Details':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Value Type                         Value Type                        
+   Value or Name                      Value or Name                     
+   Start Time                         Start Time                        
+   End Time                           End Time                          
+   Day Number of Start Time           Day Number of Start Time          
+   Day Number of End Time             Day Number of End Time            
+
+
+   Operands Contained in Dialog 'FDM Info':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+
+Module: Set             
+
+   Operands Contained in Dialog 'Set':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   ResSet (Hidden)                   
+   CountSet (Hidden)                 
+   TallySet (Hidden)                 
+   PictureSet (Hidden)               
+   EntitySet (Hidden)                
+   authorization level (Hidden)      
+   Name                               Name                              
+   Type                               Type                              
+
+
+   Operands Contained in Repeat Group 'Members':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   TallyCategory (Hidden)            
+   TallyProcessID (Hidden)           
+   RealResource (Hidden)             
+   RealCounter (Hidden)              
+   RealTally (Hidden)                
+   RealPicture (Hidden)              
+   RealEntity (Hidden)               
+   CounterCategory (Hidden)          
+   CounterProcessId (Hidden)         
+   CounterDataType (Hidden)          
+   Resource Name                      Resource Name                     
+   Counter Name                       Counter Name                      
+   Tally Name                         Tally Name                        
+   Picture Name                       Picture Name                      
+   Entity Name                        Entity Type                       
+
+
+   Operands Contained in Dialog 'FDM Info':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+
+Module: Calendar Exception
+
+   Operands Contained in Dialog 'Calendar Exception':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name (Hidden)                     
+   Description                        Description                       
+   Value Type                         Value Type                        
+   Value or Name                      Value or Name                     
+   Start Date                         Start Date                        
+   End Date                           End Date                          
+   Target Type                        Target Type                       
+   Exception Type                     Exception Type                    
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+
+
+   Operands Contained in Repeat Group 'Specific Names':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Specific Name                      Specific Name                     
+
+Module: Calendar State  
+
+   Operands Contained in Dialog 'Calendar State':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+   Value                              Value                             
+   Color                              Color                             
+   Hatch Color                        Hatch Color                       
+   Hatch Pattern                      Hatch Pattern                     
+   Usage Type                         Usage Type                        
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+
+Module: Calendar Category
+
+   Operands Contained in Dialog 'Calendar Category':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Name                               Name                              
+   FDM Name                           FDM Name                          
+   FDM Id                             FDM Id                            
+   Arena Imported Name                Arena Imported Name               
+
+Module: Simulate        
+
+   Operands Contained in Dialog 'Simulate':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   Seconds (Hidden)                  
+   Minutes (Hidden)                  
+   Hours (Hidden)                    
+   Days (Hidden)                     
+   UnitConv (Hidden)                 
+   RunSeconds (Hidden)               
+   RunMinutes (Hidden)               
+   RunHours (Hidden)                 
+   RunDays (Hidden)                  
+   RunConv (Hidden)                  
+   NoUnits (Hidden)                  
+   Name                               Project Name                      
+   Run Length                         Run Length                        
+   Run Time Units                     Time Units                        
+   WarmUp                             Warm-Up Time                      
+   Units                              Time Units                        
+   HoursPerDay                        Hours / Day                       
+   Replication                        # of Replications                 
+   Time Units                         Simulation Time Units             
+
+
+   Operands Contained in Dialog 'Statistics':
+
+   Operand Name                       Text
+   ---------------------------------- --------------------------------
+   ProcessStatsOn (Hidden)           
+   ProcessStatVal (Hidden)           
+   P1 (Hidden)                       
+   P2 (Hidden)                       
+   EntityStatsOn (Hidden)            
+   EntityStatVal (Hidden)            
+   E1 (Hidden)                       
+   E2 (Hidden)                       
+   ResStatsOn (Hidden)               
+   ResStatVal (Hidden)               
+   R1 (Hidden)                       
+   R2 (Hidden)                       
+   QueueStatsOn (Hidden)             
+   QueueStatVal (Hidden)             
+   Q1 (Hidden)                       
+   Q2 (Hidden)                       
+   Process Statistics                 Process Statistics                
+   Entity Statistics                  Entity Statistics                 
+   Resource Statistics                Resource Statistics               
+   Queue Statistics                   Queue Statistics                  
+

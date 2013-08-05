@@ -1,0 +1,600 @@
+<?xml version="1.0"?>
+
+<!--
+<CMSDDocument xmlns="urn:cmsd:main"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="urn:cmsd:main main.xsd">
+-->
+<CMSDDocument>
+	<DataSection>
+		<ProcessPlan>
+			<Identifier>testpartplan</Identifier>
+			<PartsProduced>
+				<PartType>
+					<PartTypeIdentifier>testpart</PartTypeIdentifier>
+				</PartType>
+			</PartsProduced>
+			<ResourcesRequired>
+				<ResourceClass>
+					<ResourceClassIdentifier>ExampleResourceClass</ResourceClassIdentifier>
+				</ResourceClass>
+				<MinimumNumber>1</MinimumNumber>
+				<MaximumNumber>1</MaximumNumber>
+				
+				<Resource>
+					<DocumentIdentifier>2222</DocumentIdentifier>
+					<ResourceIdentifier>3333</ResourceIdentifier>
+				</Resource>
+			</ResourcesRequired>
+		</ProcessPlan>
+		<Resource>
+			<Identifier>sfssfsdfs</Identifier>
+			<Property>
+				<Name>EmploymentStatus</Name>
+				<Description>Whether the employee is part time or full time</Description>
+				<Value>fullTime</Value>
+			</Property>
+			<Property>
+				<Name>EmployeePayPeriod</Name>
+				<Value>monthly</Value>
+			</Property>
+			<Description>Employee resource example</Description>
+			<ResourceType>employee</ResourceType>
+			<Name>John Smith</Name>
+			<EmployeeSkill>
+				<SkillDefinitionIdentifier>welder</SkillDefinitionIdentifier>
+				<SkillLevelIdentifier>welderLevel1</SkillLevelIdentifier>
+			</EmployeeSkill>
+			<ReferenceMaterial>
+				<ReferenceMaterialIdentifier>ref11111</ReferenceMaterialIdentifier>
+			</ReferenceMaterial>
+			
+		
+			<Property>
+				<Name>PayAmount</Name>
+				<Unit>USD</Unit>
+				<Value>1000</Value>
+			</Property>
+			<Property>
+				<Name>OvertimeEligible</Name>
+				<Value>true</Value>
+			</Property>
+			<Property>
+				<Name>OvertimeRateMultiplier</Name>
+				<Value>10.4</Value>
+			</Property>
+			
+			
+		</Resource>
+		<Resource>
+			<Identifier>234243</Identifier>
+			<Description>An other type resource example</Description>
+			<ResourceType>other</ResourceType>
+			<Name>An other type resource</Name>
+			
+			<Property>
+				<Name>Manufacturer</Name>
+				<Value>some company</Value>
+			</Property>
+			<Property>
+				<Name>EmployeeCapacity</Name>
+				<Value>1</Value>
+			</Property>
+			<Property>
+				<Name>Speed</Name>
+				<Unit>milesPerHour</Unit>
+				<Value>10</Value>
+			</Property>
+			<Property>
+				<Name>ControllerType</Name>
+				<Value>AGoodController</Value>
+			</Property>
+			<Property>
+				<Name>Horsepower</Name>
+				<Unit>horsepower</Unit>
+				<Value>3.5</Value>
+			</Property>
+			<Property>
+				<Name>MaximumLoadCapacity</Name>
+				<Unit>ton</Unit>
+				<Value>1</Value>
+			</Property>
+			<Property>
+				<Name>LocationServed</Name>
+				<ResourceReference>
+					<DocumentIdentifier>ssdfsf</DocumentIdentifier>
+					<ResourceIdentifier>34324234</ResourceIdentifier>
+					
+				</ResourceReference>
+			</Property>
+			<Property>
+				<Name>LocationServed</Name>
+				<ResourceReference>
+					<ResourceIdentifier>4535435</ResourceIdentifier>
+				</ResourceReference>
+			</Property>
+			
+		</Resource>
+		<Calendar>
+			<Identifier>5553324</Identifier>
+			<ShiftSchedule>
+				<Identifier>sfsdf</Identifier>
+				<EffectiveStartDate>1000-12-20T23:11:59</EffectiveStartDate>
+				<EffectiveEndDate>2006-09-30T00:00:00</EffectiveEndDate>
+				<ApplicableShift>
+					<CalendarIdentifier>5553324</CalendarIdentifier>
+					<ShiftIdentifier>FirstShift</ShiftIdentifier>
+				</ApplicableShift>
+				<AvailabilityException>
+					<ExceptionDate>2006-09-22</ExceptionDate>
+					<Description>Rosh Hashanah begins</Description>
+				</AvailabilityException>
+				<AvailabilityException>
+					<ExceptionDate>2006-09-23</ExceptionDate>
+					<Description>Rosh Hashanah Ends</Description>
+				</AvailabilityException>
+			</ShiftSchedule>
+		</Calendar>
+		<Resource>
+			<Identifier>444hhdd4</Identifier>
+			<Description>Station resource example with many status parameters</Description>
+			<ResourceType>station</ResourceType>
+			<ResourceClass>
+				<ResourceClassIdentifier>werewrwerwesf</ResourceClassIdentifier>
+			</ResourceClass>
+			
+			<Name>test station</Name>
+			
+			<CurrentStatus>busy</CurrentStatus>
+			<CurrentSetup>
+				<DocumentIdentifier>wrwe6767rwr</DocumentIdentifier>
+				<SetupDefinitionIdentifier>5553324</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<AssociatedResource>
+				<DocumentIdentifier>wr11werwr</DocumentIdentifier>
+				<ResourceIdentifier>55aa54</ResourceIdentifier>
+				
+			</AssociatedResource>
+				<AssociatedResource>
+				<DocumentIdentifier>wrwerwr</DocumentIdentifier>
+				<ResourceIdentifier>55aa54</ResourceIdentifier>
+				
+			</AssociatedResource>
+			<AssociatedResource>
+				<DocumentIdentifier>444555</DocumentIdentifier>
+				<ResourceIdentifier>sddddd</ResourceIdentifier>
+				
+			</AssociatedResource>
+			<Property>
+				<Name>MaintenanceStatus</Name>
+				<Value>unknown</Value>
+			</Property>
+			<Property>
+				<Name>dummy parameter</Name>
+				<Description>string</Description>
+				<Value>this is a dummy value</Value>
+			</Property>
+		
+			<Property>
+				<Name>MeanTimeBetweenFailure</Name>
+				<Unit>hour</Unit>
+				<Value>1000</Value>
+			</Property>
+			<Property>
+				<Name>MeanTimeToRepair</Name>
+				<Unit>hour</Unit>
+				<DistributionDefinitionReference>
+					<DocumentIdentifier>wrwe6767rwr</DocumentIdentifier>
+					<DistributionDefinitionIdentifier>w342rsr</DistributionDefinitionIdentifier>
+				</DistributionDefinitionReference>
+			</Property>
+			<Property>
+				<Name>SerialNumber</Name>
+				<Value>111-222-556677</Value>
+			</Property>
+			
+		</Resource>
+		<ResourceClass>
+			<Identifier>ResourceClassID1</Identifier>
+			<Description>This element describes a class of lathes</Description>
+			<ResourceType>machine</ResourceType>
+			<Name>manual lathe</Name>
+			
+			
+			
+			
+			<ReferenceMaterial>
+				<ReferenceMaterialIdentifier>sdfsfdsfs</ReferenceMaterialIdentifier>
+			</ReferenceMaterial>
+			
+			
+			
+			
+			<Property>
+				<Name>Manufacturer</Name>
+				<Value>some lathe company</Value>
+			</Property>
+			<Property>
+				<Name>ModelNumber></Name>
+				<Value>Lathe Model xyz</Value>
+			</Property>
+			<Property>
+				<Name>EfficiencyRating</Name>
+				<Value>100</Value>
+			</Property>
+			<Property>
+				<Name>WorkpieceCapacity</Name>
+				<Value>1</Value>
+			</Property>
+			
+		</ResourceClass>
+		<Resource>
+			<Identifier>112233a</Identifier>
+			<Description>The first lathe in the lathe group</Description>
+			<ResourceType>machine</ResourceType>
+			
+			
+			
+			
+			<ResourceClass>
+				<ResourceClassIdentifier>ResourceClassID1</ResourceClassIdentifier>
+			</ResourceClass>
+			<Name>Lathe1a</Name>
+			<Property>
+				<Name>SerialNumber</Name>
+				<Value>111-222-556677-1</Value>
+			</Property>
+			
+		</Resource>
+		<Resource>
+			<Identifier>112233b</Identifier>
+			<Description>The second lathe in the lathe group</Description>
+			<ResourceType>machine</ResourceType>
+			
+			
+			<ResourceClass>
+				<ResourceClassIdentifier>ResourceClassID1</ResourceClassIdentifier>
+			</ResourceClass>
+			<Name>Lathe1b</Name>
+			
+			<Property>
+				<Name>SerialNumber</Name>
+				<Value>111-222-556677-2</Value>
+			</Property>
+			
+		</Resource>
+		<Resource>
+			<Identifier>112233c</Identifier>
+			<Description>The third lathe in the lathe group</Description>
+			<ResourceType>machine</ResourceType>
+			
+			<ResourceClass>
+				<ResourceClassIdentifier>ResourceClassID1</ResourceClassIdentifier>
+			</ResourceClass>
+			<Name>Lathe1c</Name>
+			
+			
+			<Property>
+				<Name>SerialNumber</Name>
+				<Value>111-222-556677-3</Value>
+			</Property>
+			
+		</Resource>
+		<Resource>
+			<Identifier>112233abc</Identifier>
+			<Description>The lathe group that contains Lathe1a, Lathe1b, and Lathe1c</Description>
+			<ResourceType>machine</ResourceType>
+			
+						
+			<Name>Lathe1 Group</Name>
+			<GroupDefinition>
+				<ResourceGroupMember>
+					<ResourceIdentifier>112233a</ResourceIdentifier>
+				</ResourceGroupMember>
+				<ResourceGroupMember>
+					<ResourceIdentifier>112233b</ResourceIdentifier>
+				</ResourceGroupMember>
+				<ResourceGroupMember>
+					<ResourceIdentifier>112233c</ResourceIdentifier>
+				</ResourceGroupMember>
+			</GroupDefinition>
+			
+		</Resource>
+		<!--
+		An example of a resource group and machines that represents a line
+		
+	-->
+		<Resource>
+			<Identifier>line1s1</Identifier>
+			
+			
+			<Description>This is a station in line 1</Description>
+			<ResourceType>station</ResourceType>
+			<Name>Station 1</Name>
+		</Resource>
+		<Resource>
+			<Identifier>line1s2</Identifier>
+			
+			<Description>This is a station in line 1</Description>
+			<ResourceType>station</ResourceType>
+			<Name>Station 2</Name>
+		</Resource>
+		<Resource>
+			<Identifier>line1s3a</Identifier>
+			
+			<Description>This is a station in line 1</Description>
+			<ResourceType>station</ResourceType>
+			<Name>Station 3a</Name>
+		</Resource>
+		<Resource>
+			<Identifier>line1s3b</Identifier>
+			
+			<Description>This is a station in line 1</Description>
+			<ResourceType>station</ResourceType>
+			<Name>Station 3b</Name>
+		</Resource>
+		<Resource>
+			<Identifier>line1</Identifier>
+			
+			<Description>This group defines line 1</Description>
+			<ResourceType>station</ResourceType>
+			<Name>Line 1</Name>
+			<GroupDefinition>
+				<ResourceGroupMember>
+					<ResourceIdentifier>line1s1</ResourceIdentifier>
+				</ResourceGroupMember>
+				<ResourceGroupMember>
+					<ResourceIdentifier>line1s2</ResourceIdentifier>
+				</ResourceGroupMember>
+				<ResourceGroupMember>
+					<ResourceIdentifier>line1s3a</ResourceIdentifier>
+				</ResourceGroupMember>
+				<ResourceGroupMember>
+					<ResourceIdentifier>line1s3b</ResourceIdentifier>
+				</ResourceGroupMember>
+				<Connection>
+					<Identifier>s1tos2</Identifier>
+					<FromResource>
+						<ResourceIdentifier>line1s1</ResourceIdentifier>
+					</FromResource>
+					<ToResource>
+						<ResourceIdentifier>line1s2</ResourceIdentifier>
+					</ToResource>
+				</Connection>
+				<Connection>
+					<Identifier>s2tos3a</Identifier>
+					<FromResource>
+						<ResourceIdentifier>line1s2</ResourceIdentifier>
+					</FromResource>
+					<ToResource>
+						<ResourceIdentifier>line1s3a</ResourceIdentifier>
+					</ToResource>
+				</Connection>
+				<Connection>
+					<Identifier>s2tos3b</Identifier>
+					<FromResource>
+						<ResourceIdentifier>line1s2</ResourceIdentifier>
+					</FromResource>
+					<ToResource>
+						<ResourceIdentifier>line1s3b</ResourceIdentifier>
+					</ToResource>
+				</Connection>
+				<Connection>
+					<Identifier>s3atos1</Identifier>
+					<FromResource>
+						<ResourceIdentifier>line1s3a</ResourceIdentifier>
+					</FromResource>
+					<ToResource>
+						<ResourceIdentifier>line1s1</ResourceIdentifier>
+					</ToResource>
+				</Connection>
+				<Connection>
+					<Identifier>s3btos1</Identifier>
+					<FromResource>
+						<ResourceIdentifier>line1s3b</ResourceIdentifier>
+					</FromResource>
+					<ToResource>
+						<ResourceIdentifier>line1s1</ResourceIdentifier>
+					</ToResource>
+				</Connection>
+				
+			</GroupDefinition>
+			
+		</Resource>
+		<!--
+		
+		Skill and skill level example
+		
+		
+		-->
+		<SkillDefinition>
+			
+			<Identifier>WeldingSkill</Identifier>
+			
+			<Description>Example welding skill hierarchy with 3 levels</Description>
+			<Name>Welder</Name>
+			<SkillLevel>
+				<Identifier>WeldingLevel1</Identifier>
+				<Name>Beginning Welder</Name>
+				
+			</SkillLevel>
+			<SkillLevel>
+				<Identifier>WeldingLevel2</Identifier>
+				<Name>intermediate Welder</Name>
+				
+			</SkillLevel>
+			<SkillLevel>
+				<Identifier>WeldingLevel3</Identifier>
+				<Name>Expert Welder</Name>				
+			</SkillLevel>
+			
+		</SkillDefinition>
+		<!--
+		Setup definition examples
+		
+		
+		-->
+		<SetupDefinition>
+			
+			<Identifier>setup1</Identifier>			
+			<Description>Example setup</Description>
+			<SetupResource>
+				<ResourceIdentifier>4444444</ResourceIdentifier>
+			</SetupResource>
+			<Name>Setup 1</Name>			
+			
+			<SetupComponent>
+				<ResourceIdentifier>1111111</ResourceIdentifier>
+			</SetupComponent>
+			<SetupComponent>
+				<ResourceIdentifier>2222222</ResourceIdentifier>
+			</SetupComponent>
+			<SetupComponent>
+				<ResourceIdentifier>3333333</ResourceIdentifier>
+			</SetupComponent>
+			<ChildSetup>
+				<SetupDefinitionIdentifier>setup1a</SetupDefinitionIdentifier>
+			</ChildSetup>
+			<ChildSetup>
+				<SetupDefinitionIdentifier>setup1b</SetupDefinitionIdentifier>
+			</ChildSetup>
+			
+		</SetupDefinition>
+		<SetupDefinition>
+			<Identifier>setup1a</Identifier>
+			
+			<Description>This setup is a child of setup 1</Description>
+			<SetupResource>
+				<ResourceIdentifier>4444444</ResourceIdentifier>
+			</SetupResource>
+			<Name>Setup 1a</Name>
+		</SetupDefinition>
+		<SetupDefinition>
+			
+			<Identifier>setup1b</Identifier>
+			
+			<Description>This setup is a child of setup 1</Description>
+			<SetupResource>
+				<ResourceIdentifier>4444444</ResourceIdentifier>
+			</SetupResource>
+			<Name>Setup 1b</Name>
+			<Property>
+				<Name>RequiredOperator</Name>
+				<Description>Only Sam can perform this setup operation</Description>
+				<ResourceReference>
+					<ResourceIdentifier>employelist:specialists:Sam</ResourceIdentifier>
+				</ResourceReference>
+				
+			</Property>
+		</SetupDefinition>
+		<!--
+		Setup changeover example
+		
+		
+		-->
+		<SetupDefinition>
+			<Identifier>setup2</Identifier>
+			
+			<Description>Example setup to support setup changover</Description>
+			<SetupResource>
+				<ResourceIdentifier>4444444</ResourceIdentifier>
+			</SetupResource>
+			<Name>Setup 2</Name>
+		</SetupDefinition>
+		
+		<SetupDefinition>
+			<Identifier>setup3</Identifier>
+			
+			<Description>Example setup to support setup changover</Description>
+			<SetupResource>
+				<ResourceIdentifier>4444444</ResourceIdentifier>
+			</SetupResource>
+			<Name>Setup 3</Name>
+		</SetupDefinition>
+		<SetupChangeoverDefinition>
+			<Identifier>change_1_2</Identifier>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup1</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup2</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>5</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			
+		</SetupChangeoverDefinition>
+		<SetupChangeoverDefinition>
+			<Identifier>change_1_3</Identifier>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup1</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup3</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>10</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			
+		</SetupChangeoverDefinition>
+		<SetupChangeoverDefinition>
+			<Identifier>change_2_3</Identifier>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup2</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup3</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>15</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			
+		</SetupChangeoverDefinition>
+		<SetupChangeoverDefinition>
+			<Identifier>change_2_1</Identifier>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup2</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup1</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>5</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			
+		</SetupChangeoverDefinition>
+		<SetupChangeoverDefinition>
+			
+			<Identifier>change_3_1</Identifier>
+			<Description>this changeover may damage the machine</Description>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup3</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup1</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>10</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			
+			
+		</SetupChangeoverDefinition>
+		<SetupChangeoverDefinition>
+			<Identifier>change_3_2</Identifier>
+			<CurrentSetup>
+				<SetupDefinitionIdentifier>setup3</SetupDefinitionIdentifier>
+			</CurrentSetup>
+			<NewSetup>
+				<SetupDefinitionIdentifier>setup2</SetupDefinitionIdentifier>
+				<ChangeoverTime>
+					<Value>15</Value>
+				</ChangeoverTime>
+			</NewSetup>
+			<Property>
+				<Name>SpecialSetup</Name>
+				<Value>true</Value>
+			</Property>
+			
+		</SetupChangeoverDefinition>
+	</DataSection>
+</CMSDDocument>
