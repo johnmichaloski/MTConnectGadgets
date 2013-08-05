@@ -1,10 +1,7 @@
-SimDeviceBuilder/ 
-CMSDCommandCell10.0/*
-CSS/*
-src/Adapter
-src/Agent
-src/Copy*
-CMSDCommandCell/*
+src/Adapter/
+src/Agent/
+src/Copy/
+CMSDCommandCell/
 *.obj
 *.ilk
 *.tlb
