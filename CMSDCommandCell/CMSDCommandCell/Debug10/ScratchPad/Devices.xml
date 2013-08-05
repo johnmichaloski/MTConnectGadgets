@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<MTConnectDevices xmlns="urn:mtconnect.org:MTConnectDevices:1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="urn:mtconnect.org:MTConnectDevices:1.1 http://www.mtconnect.org/schemas/MTConnectDevices_1.1.xsd">
-<Header bufferSize="130000" instanceId="1" creationTime="2013-04-29T16:30:11" sender="local" version="1.1"/>
-<Devices>
-</Devices>
-</MTConnectDevices>
