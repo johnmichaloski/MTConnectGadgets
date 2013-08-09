@@ -89,7 +89,8 @@ double adevs::rv::uniform(double a, double b)
 
 double adevs::rv::normal(double m, double s) 
 {
-#if 0	boost::mt19937 rng; 
+#if 0	
+	boost::mt19937 rng; 
 	boost::normal_distribution<> nd(m, s);
 	boost::variate_generator<boost::mt19937&, 
 		boost::normal_distribution<> > var_nor(rng, nd);
