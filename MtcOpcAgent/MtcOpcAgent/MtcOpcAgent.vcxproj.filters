@@ -5,123 +5,69 @@
     <ClCompile Include="OpcAdapter.cpp" />
     <ClCompile Include="MtcOpcAgent.cpp" />
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\adapter.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\agent.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\asset.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\change_observer.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\checkpoint.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\component.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\component_event.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\config.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\connector.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\cutting_tool.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\data_item.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\device.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\options.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\ref_counted.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\service.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\version.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\xml_parser.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\xml_printer.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\src\Agent\agent\globals.cpp">
-      <Filter>Agent</Filter>
-    </ClCompile>
     <ClCompile Include="ping.cpp" />
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\adapter.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\agent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\asset.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\change_observer.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\checkpoint.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\component.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\component_event.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\config.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\connector.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\cppagent.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\cutting_tool.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\data_item.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\device.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\globals.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\options.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\ref_counted.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\service.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\version.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\xml_parser.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\xml_printer.cpp">
+      <Filter>Agent</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\Agent\agent\adapter.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\agent.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\asset.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\change_observer.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\checkpoint.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\component.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\component_event.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\config.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\connector.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\cutting_tool.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\data_item.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\device.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\options.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\ref_counted.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\service.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\version.h">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\xml_parser.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\xml_printer.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\src\Agent\agent\globals.hpp">
-      <Filter>Agent</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\src\NIST\RunProcess.h">
       <Filter>NIST</Filter>
     </ClInclude>
@@ -174,17 +120,80 @@
       <Filter>Headers</Filter>
     </ClInclude>
     <ClInclude Include="CatchMemoryLeak.h" />
+    <ClInclude Include="..\..\src\NIST\windows7.h">
+      <Filter>Headers</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\adapter.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\agent.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\asset.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\change_observer.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\checkpoint.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\component.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\component_event.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\config.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\connector.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\cutting_tool.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\data_item.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\device.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\globals.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\options.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\ref_counted.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\service.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\stdint.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\version.h">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\xml_parser.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\xml_printer.hpp">
+      <Filter>Agent</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\src\Agent\agent\agent.cfg" />
     <None Include="ChangeLog.txt" />
     <None Include="ReadMe.txt" />
-    <None Include="..\..\src\Agent\agent\CMakeLists.txt">
-      <Filter>Agent</Filter>
-    </None>
     <None Include="ClassDiagram1.cd" />
     <None Include="Table.htm" />
     <None Include="Notes.txt" />
+    <None Include="..\..\..\MTConnect\Agent\agent\jsmtconnect.txt">
+      <Filter>Agent</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Agent">

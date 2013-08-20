@@ -1,3 +1,46 @@
+
+
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\Agent\libxml" 
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\lib\win64" 
+
+
+
+
+
+
+	  <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\src;..\opc;.;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;_CONSOLE;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+   
+
+   <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\agent;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\lib;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_54_0;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\agent;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\lib;C:\Users\michalos\Documents\GitHub\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_54_0;.\x64;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
+
+
+
+set INCLUDE=C:\Libraries\LibA\Include;%INCLUDE%
+set LIB=C:\Libraries\LibA\Lib\x86;%LIB%
+
+
+
+/p:"VCBuildAdditionalOptions= /useenv"
+
+
+
+you can create a txt file (ex. IncludeDirs.txt). Inside that file you can add the include folders:
+
+/I "."
+/I ".."
+/I ".\OtherFolder"
+then in the properties->configuration properties->C/C++-> Command line add the following string:
+
+@includedirs.txt
+You can create a different file for each profile (Debug, Release, etc.)
+
+
     OPCHANDLE hClient;
     FILETIME ftTimeStamp;
     WORD wQuality;

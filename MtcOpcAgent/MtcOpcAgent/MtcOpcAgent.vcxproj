@@ -78,8 +78,8 @@
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\Intermediate\</IntDir>
     <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</GenerateManifest>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_53_0;$(IncludePath)</IncludePath>
-    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\NIST\src\wtl81\Include;.;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\src\boost_1_53_0;.\x64;$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(IncludePath)</IncludePath>
+    <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.\x64;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
     <IncludePath Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;C:\Program Files\NIST\src\boost_1_44_0;$(IncludePath)</IncludePath>
   </PropertyGroup>
@@ -96,6 +96,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <AdditionalOptions> @.\includedirX64.txt %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -103,6 +104,8 @@
       <TargetMachine>MachineX86</TargetMachine>
       <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\Agent\libxml" 
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\lib\win32" %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -111,7 +114,7 @@
     </Midl>
     <ClCompile>
       <Optimization>Disabled</Optimization>
-      <AdditionalIncludeDirectories>..\..\src;..\opc;.;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;DLIB_NO_GUI_SUPPORT;_WINDOWS;_DEBUG;_CONSOLE;WINDOWS;BOOST_NO_ANSI_APIS;BOOST_THREAD_NO_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <MinimalRebuild>false</MinimalRebuild>
       <ExceptionHandling>Async</ExceptionHandling>
@@ -126,14 +129,19 @@
       <ProgramDataBaseFileName>$(Platform)\$(Configuration)\vc$(PlatformToolsetVersion).pdb</ProgramDataBaseFileName>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalOptions>-D_CRT_SECURE_NO_WARNINGS  @includedirs.txt %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
       <SubSystem>Console</SubSystem>
       <TargetMachine>MachineX64</TargetMachine>
       <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>libcmt.lib</IgnoreSpecificDefaultLibraries>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <UACUIAccess>false</UACUIAccess>
+      <AdditionalOptions>/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\Agent\libxml" 
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\lib\win64" %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -149,6 +157,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <AdditionalOptions> @.\includedirX64.txt %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -158,6 +167,8 @@
       <TargetMachine>MachineX86</TargetMachine>
       <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
       <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win32;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\Agent\libxml" 
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\lib\win32" %(AdditionalOptions)</AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -167,7 +178,7 @@
     <ClCompile>
       <Optimization>MaxSpeed</Optimization>
       <IntrinsicFunctions>true</IntrinsicFunctions>
-      <AdditionalIncludeDirectories>..\..\src;..\opc;.;C:\Program Files\NIST\src\wtl81\Include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\agent;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\Agent\win32\libxml2-2.7.7\include;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\NIST;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>WIN64;DLIB_NO_GUI_SUPPORT;_WINDOWS;NDEBUG;_CONSOLE;WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ExceptionHandling>Async</ExceptionHandling>
       <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
@@ -176,7 +187,7 @@
       </PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
-      <AdditionalOptions>-D_CRT_SECURE_NO_WARNINGS %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalOptions>-D_CRT_SECURE_NO_WARNINGS  @.\includedirX64.txt %(AdditionalOptions)</AdditionalOptions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -185,29 +196,73 @@
       <EnableCOMDATFolding>true</EnableCOMDATFolding>
       <TargetMachine>MachineX64</TargetMachine>
       <OutputFile>$(Platform)\$(Configuration)\$(TargetName)$(TargetExt)</OutputFile>
-      <AdditionalLibraryDirectories>C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\libxml;C:\Program Files\NIST\proj\MTConnect\Nist\MTConnectGadgets\src\lib\win64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <UACExecutionLevel>RequireAdministrator</UACExecutionLevel>
+      <AdditionalOptions>/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\Agent\libxml" 
+/LIBPATH:"C:\Users\michalos\Documents\GitHub\MTConnect\lib\win64" </AdditionalOptions>
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\src\Agent\agent\adapter.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\agent.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\asset.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\change_observer.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\checkpoint.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\component.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\component_event.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\config.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\connector.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\cutting_tool.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\data_item.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\device.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\globals.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\options.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\ref_counted.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\service.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\version.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\xml_parser.cpp" />
-    <ClCompile Include="..\..\src\Agent\agent\xml_printer.cpp" />
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\adapter.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\agent.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\asset.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\change_observer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\checkpoint.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\component.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\component_event.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\config.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\connector.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\cppagent.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\cutting_tool.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\data_item.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\device.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\globals.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\options.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\ref_counted.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\service.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\version.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\xml_parser.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\MTConnect\Agent\agent\xml_printer.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
     <ClCompile Include="MTCSiemensAgent.cpp" />
     <ClCompile Include="OpcAdapter.cpp" />
     <ClCompile Include="MtcOpcAgent.cpp" />
@@ -220,31 +275,33 @@
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\src\Agent\agent\adapter.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\agent.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\asset.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\change_observer.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\checkpoint.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\component.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\component_event.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\config.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\connector.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\cutting_tool.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\data_item.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\device.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\globals.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\options.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\ref_counted.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\service.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\adapter.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\agent.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\asset.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\change_observer.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\checkpoint.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\component.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\component_event.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\config.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\connector.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\cutting_tool.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\data_item.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\device.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\globals.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\options.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\ref_counted.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\service.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\stdint.h" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\version.h" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\xml_parser.hpp" />
+    <ClInclude Include="..\..\..\MTConnect\Agent\agent\xml_printer.hpp" />
     <ClInclude Include="..\..\src\Agent\agent\stdint.h" />
-    <ClInclude Include="..\..\src\Agent\agent\version.h" />
-    <ClInclude Include="..\..\src\Agent\agent\xml_parser.hpp" />
-    <ClInclude Include="..\..\src\Agent\agent\xml_printer.hpp" />
     <ClInclude Include="..\..\src\NIST\Config.h" />
     <ClInclude Include="..\..\src\NIST\Logger.h" />
     <ClInclude Include="..\..\src\NIST\RunProcess.h" />
     <ClInclude Include="..\..\src\NIST\StdStringFcn.h" />
     <ClInclude Include="..\..\src\NIST\VarTypes.h" />
+    <ClInclude Include="..\..\src\NIST\windows7.h" />
     <ClInclude Include="CatchMemoryLeak.h" />
     <ClInclude Include="DCOMUtils.h" />
     <ClInclude Include="ExceptionHandler.h" />
@@ -259,8 +316,8 @@
     <ClInclude Include="targetver.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\..\MTConnect\Agent\agent\jsmtconnect.txt" />
     <None Include="..\..\src\Agent\agent\agent.cfg" />
-    <None Include="..\..\src\Agent\agent\CMakeLists.txt" />
     <None Include="ChangeLog.txt" />
     <None Include="ClassDiagram1.cd" />
     <None Include="Notes.txt" />

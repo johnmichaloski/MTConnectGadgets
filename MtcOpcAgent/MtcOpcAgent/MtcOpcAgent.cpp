@@ -17,22 +17,22 @@
 #if defined(WIN64) && defined( _DEBUG) 
 #pragma message( "DEBUG x64" )
 #pragma comment(lib, "libxml2_64d.lib")
-#pragma comment(lib, "libboost_system-vc100-mt-sgd-1_53.lib")
-#pragma comment(lib, "libboost_thread-vc100-mt-sgd-1_53.lib")
+#pragma comment(lib, "libboost_system-vc100-mt-sgd-1_54.lib")
+#pragma comment(lib, "libboost_thread-vc100-mt-sgd-1_54.lib")
   
 #elif !defined( _DEBUG) && defined(WIN64)
 #pragma message( "RELEASE x64" )
 #pragma comment(lib, "libxml2_64.lib")
-#pragma comment(lib, "libboost_thread-vc100-mt-s-1_53.lib")
-#pragma comment(lib, "libboost_system-vc100-mt-s-1_53.lib")
+#pragma comment(lib, "libboost_thread-vc100-mt-s-1_54.lib")
+#pragma comment(lib, "libboost_system-vc100-mt-s-1_54.lib")
 
 #elif defined(_DEBUG) && defined(WIN32)
 #pragma message( "DEBUG x32" )
 #pragma comment(lib, "libxml2d.lib")
-#pragma comment(lib, "libboost_thread-vc100-mt-sgd-1_53.lib")
+#pragma comment(lib, "libboost_thread-vc100-mt-sgd-1_54.lib")
 #elif !defined( _DEBUG) && defined(WIN32)
 #pragma message( "RELEASE x32" )
-#pragma comment(lib, "libboost_thread-vc100-mt-s-1_53.lib")
+#pragma comment(lib, "libboost_thread-vc100-mt-s-1_54.lib")
 #pragma comment(lib, "libxml2.lib")
 #endif
 
