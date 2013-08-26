@@ -87,6 +87,101 @@ BOOL CMainDlg::OnIdle()
 	return FALSE;
 }
 
+//#define HKEY_CLASSES_ROOT                   (( HKEY ) (ULONG_PTR)((LONG)0x80000000) )
+//#define HKEY_CURRENT_USER                   (( HKEY ) (ULONG_PTR)((LONG)0x80000001) )
+//#define HKEY_LOCAL_MACHINE                  (( HKEY ) (ULONG_PTR)((LONG)0x80000002) )
+//#define HKEY_USERS                          (( HKEY ) (ULONG_PTR)((LONG)0x80000003) )
+//#define HKEY_PERFORMANCE_DATA               (( HKEY ) (ULONG_PTR)((LONG)0x80000004) )
+//#define HKEY_PERFORMANCE_TEXT               (( HKEY ) (ULONG_PTR)((LONG)0x80000050) )
+//#define HKEY_PERFORMANCE_NLSTEXT            (( HKEY ) (ULONG_PTR)((LONG)0x80000060) )
+
+template<typename T>
+static STDMETHODIMP SetRegistryKeyValue(HKEY hive, std::wstring fullykey, std::wstring value)
+{
+	HRESULT hr = S_OK;
+	CRegKey regkey;
+	std::wstring key =  fullykey.substr( 0, fullykey.find_last_of( '\\' ) );
+	std::wstring keyonly =   fullykey.substr( fullykey.find_last_of( '\\' ) +1 );
+
+	if(ERROR_SUCCESS != regkey.Create(hive, key.c_str()))
+	{
+
+		regkey.Open(hive, key.c_str(),KEY_READ | KEY_WRITE);
+	}
+
+
+	if( stricmp( typeid(T).name() , "std::wstring")==0)
+	{
+		hr =regkey.SetValue( value.c_str(),keyonly.c_str() );
+
+	}
+	else if( stricmp(typeid(T).name() , "unsigned long")==0)
+	{
+		DWORD d =ConvertString<DWORD>((LPCTSTR) value.c_str(),0);
+
+		hr =regkey.SetDWORDValue(keyonly.c_str(), d);
+
+	}
+
+
+	if(ERROR_SUCCESS != hr)
+	{
+		OutputDebugString(_T("Registry value failed"));
+		hr= E_FAIL;
+	}
+
+	regkey.Flush();
+	regkey.Close();
+
+	return hr;
+}
+
+std::map<std::wstring, std::wstring> CMainDlg::ParseIni(std::wstring inisection)
+{
+	CStringVector tmp;
+	std::map<std::wstring, std::wstring> pairs;
+	std::wstring buffer(2048, '0');;
+
+	int len = GetPrivateProfileSection(inisection.c_str(),&buffer[0], buffer.size(), inifile);
+	for(int i=0; i< len; i++) 
+	{
+		if(buffer[i]==0) 
+			buffer[i]=L'\n';
+	}
+	CStringVector lines = Tokenize((LPCWSTR) std::wstring( buffer.begin(), buffer.begin() + len ).c_str(), "\n" );
+	for(int i=0; i< lines.size(); i++)
+	{
+		int n;
+		lines[i]=lines[i].Trim();
+		if((n=lines[i].Find('='))<0)
+			continue;
+		pairs[(LPCTSTR) lines[i].Mid(0,n) ] =(LPCTSTR) lines[i].Mid(n+1);
+	}
+	return pairs;
+}
+
+LRESULT  CMainDlg::OnBnClickedRegistrybutton(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
+{
+	
+	std::map<std::wstring, std::wstring> keys = ParseIni(L"KEYS");
+
+	for( std::map<std::wstring, std::wstring>::iterator it = keys.begin(); it!=keys.end(); it++)
+	{
+		if((*it).first.substr(0,4) == L"HKLM")
+		{
+			SetRegistryKeyValue<DWORD>(HKEY_LOCAL_MACHINE, (*it).first.substr(5).c_str(),(LPCTSTR)(*it).second.c_str());
+		}
+		else if((*it).first.substr(0,4) == L"HKCU")
+		{
+
+		}
+
+	}
+	return 0;
+
+
+}
+
 LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
 {
 	USES_CONVERSION;
@@ -187,47 +282,13 @@ LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam
 	return TRUE;
 }
 
-LRESULT CMainDlg::OnDestroy(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam*/, BOOL& /*bHandled*/)
-{
-	// unregister message filtering and idle updates
-	CMessageLoop* pLoop = _Module.GetMessageLoop();
-	ATLASSERT(pLoop != NULL);
-	pLoop->RemoveMessageFilter(this);
-	pLoop->RemoveIdleHandler(this);
 
-	return 0;
-}
 
-LRESULT CMainDlg::OnAppAbout(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
-{
-	CAboutDlg dlg;
-	dlg.DoModal();
-	return 0;
-}
-
-LRESULT CMainDlg::OnOK(WORD /*wNotifyCode*/, WORD wID, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
-{
-	// TODO: Add validation code 
-	CloseDialog(wID);
-	return 0;
-}
-
-LRESULT CMainDlg::OnCancel(WORD /*wNotifyCode*/, WORD wID, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
-{
-	CloseDialog(wID);
-	return 0;
-}
-
-void CMainDlg::CloseDialog(int nVal)
-{
-	DestroyWindow();
-	::PostQuitMessage(nVal);
-}
 
 HRESULT CMainDlg::Connect(void)
 {
 	HRESULT hr;
-	CString status = COleDateTime::GetCurrentTime().Format();
+	status = COleDateTime::GetCurrentTime().Format();
 	std::wstring buffer(1024, '0');;
 
 	try {
@@ -244,11 +305,9 @@ HRESULT CMainDlg::Connect(void)
 		{&__uuidof(IUnknown), NULL , 0} 
 	};
 
-
-
 	CLSID gOpcServerClsid;
 	// OPC.SINUMERIK.MachineSwitch
-	// sClsid=L"{1BD3938A-878F-4737-8DEC-3E3E3D4F6F4F}";
+	// sClsid=L"{75d00afe-dda5-11d1-b944-9e614d000000}";  // Siemens 840D OPC Server CLSID : 75d00afe-dda5-11d1-b944-9e614d000000
 	if(FAILED(CLSIDFromString(sClsid , &gOpcServerClsid)))
 	{
 		throw bstr_t(L"CLSIDFromString(_bstr_t(sClsid) , &gOpcServerClsid))) FAILED\n");
@@ -301,11 +360,12 @@ HRESULT CMainDlg::Connect(void)
 
 		throw bstrFormat(L":Test840D CoCreateInstanceEx  FAILED 0x%x = %s\n",  hr, ErrorFormatMessage(hr));
 
+	_pIOPCServer = (IOPCServer *) (mqi[0].pItf); // Retrieve first interface pointer hr=pBackupAdmin->StartBackup(); // use it…
+	TestOPCGroup();
 
-	IUnknown * m_pExe = (IUnknown *) (mqi[0].pItf); 
-	status+= L":Test840D Connect Succeded";
-	//	hr=m_pExe->Lock();
-	hr=m_pExe->Release();
+	//IUnknown * m_pExe = (IUnknown *) (mqi[0].pItf); 
+	//status+= L":Test840D Connect Succeded";
+	_pIOPCServer.Release();
 	}
 	catch(bstr_t errmsg)
 	{
@@ -324,6 +384,118 @@ HRESULT CMainDlg::Connect(void)
 	return S_OK;
 }
 
+HRESULT CMainDlg::TestOPCGroup(void)
+{		
+	HRESULT hResult;
+	// variables for AddGroup method
+	LONG	lTimeBias = -5;				// washington DC (-5) to greenwich meantime 
+	FLOAT	fDeadband = 0;				// no deadband
+	DWORD	dwRevisedUpdateRate = 0;	// revised update rate from server
+	OPCHANDLE _hServerHandleGroup=NULL;					// server handle of our group
+	long _nOPCServerRate=5000;
+	try {
+		/////////////////////////////////////////////////////////////////////////////
+		//Add group to server
+		/////////////////////////////////////////////////////////////////////////////
+
+		// add our group to the OPC server
+		if(FAILED(hResult = _pIOPCServer->AddGroup(	
+			L"TestGroup",		// name of the new group
+			TRUE,					// group is active (sends callbacks)
+			_nOPCServerRate,		// update rate of 100 ms
+			23111980,				// our client handle of this group
+			&lTimeBias,				// time bias
+			&fDeadband,				// deadband until server sends change notifications
+			LOCALE_USER_DEFAULT,	// LCID of the user
+			&_hServerHandleGroup,	// server handle of the group
+			&dwRevisedUpdateRate,	// revised update rate
+			IID_IOPCItemMgt,		// desired interface of the group
+			(LPUNKNOWN*)&_pIOPCItemMgt
+			)))
+		{
+			_pIOPCItemMgt=NULL;
+			throw std::wstring (_T("FAIL: Connect() couldn't add group to server!\n"));
+		}
+
+		if(FAILED(hResult = AddOPCItem(L"TestItem")))
+		{
+			throw std::wstring (_T("FAIL: Connect() couldn't add item to group!\n"));
+		}
+	}
+	catch(std::wstring errmsg)
+	{
+		status += (LPCTSTR)  errmsg.c_str();
+	}
+
+	return S_OK;
+}
+inline WCHAR * WSTRClone(_bstr_t oldstr)
+{
+	WCHAR *newstr;
+	//if(oldstr==NULL)
+	//	oldstr=_bstr_t("");
+
+	newstr = (WCHAR*)CoTaskMemAlloc(sizeof(WCHAR) * (wcslen(oldstr) + 1));
+
+	if(newstr) wcscpy_s(newstr, wcslen(oldstr) + 1, oldstr.GetBSTR());
+	return newstr;
+}
+HRESULT CMainDlg::AddOPCItem(std::wstring name) 
+{
+	// variables for AddItem method
+	HRESULT hr=S_OK;
+	OPCITEMDEF		opcItemDef[1];			// item definition structure
+	OPCITEMRESULT*	popcItemResult =NULL;	// array of item result structures
+	HRESULT*		phResultArray = NULL;	// array of result
+	try 
+	{
+		// fill item definition structure with data of our item (/bag/state/opmode)
+		opcItemDef[0].szAccessPath=L"";					// no access path description
+		opcItemDef[0].szItemID=WSTRClone(name.c_str());			// ItemID of the variable (BTSS name)
+		opcItemDef[0].bActive=TRUE;						// set item active to get notifications, if value changes
+		opcItemDef[0].hClient=(OPCHANDLE)0x100;		    // client handle of the item
+		opcItemDef[0].dwBlobSize=0;						// no blob
+		opcItemDef[0].pBlob=NULL;						//  -"-
+		opcItemDef[0].vtRequestedDataType=VT_BSTR;		// value of the item should be delivered as BSTR
+
+		// add our item to the group
+		if(FAILED(hr=_pIOPCItemMgt->AddItems(	
+			1,									// add 1 item...
+			opcItemDef,							// with this definition
+			(OPCITEMRESULT**)&popcItemResult,	// server data of this item
+			(HRESULT**)&phResultArray			// was addition successfull?
+			))) 
+			return hr;
+
+		if(FAILED(hr))
+		{
+			throw std::wstring (_T("FAIL: AddOPCItem() generic fail")) + (LPCTSTR) bstrFormat(L"%x\n", hr); 
+		}
+		else if(hr==S_FALSE)
+		{
+		}
+
+		if(phResultArray[0]!=S_OK)
+		{
+			throw std::wstring (_T("FAIL: AddOPCItem() phResultArray fail\n")); 
+			hr=E_FAIL;
+		}
+	}
+	catch( std::wstring errmsg)
+	{
+		status += (LPCTSTR)  errmsg.c_str();
+	}
+
+	if(opcItemDef[0].szItemID!=NULL)
+		::CoTaskMemFree( opcItemDef[0].szItemID );
+
+	if(popcItemResult!=NULL)
+		::CoTaskMemFree( popcItemResult );
+
+	if(phResultArray!=NULL)
+		::CoTaskMemFree( phResultArray );
+	return hr;
+}
 LRESULT CMainDlg::OnBnClickedConnect(WORD /*wNotifyCode*/, WORD /*wID*/, HWND /*hWndCtl*/, BOOL& /*bHandled*/)
 {
 	_cStatus.SetWindowText(L"");

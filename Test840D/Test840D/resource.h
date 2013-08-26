@@ -16,6 +16,8 @@
 #define IDC_IPADDRESS                   1008
 #define ID_CONNECT2                     1009
 #define ID_PINGBUTTON                   1009
+#define ID_PINGBUTTON2                  1010
+#define ID_REGISTRYBUTTON               1010
 #define IDC_AUTHENLEVELCOMBO4           1011
 #define IDC_IMPERSLEVELCOMBO5           1012
 #define IDC_USERSCOMBO3                 1014

@@ -11,6 +11,20 @@
 #include <vector>
 #include "atlstr.h"
 
+#include <istream>
+#include <sstream>
+
+template<typename T>
+inline T ConvertString(std::wstring data, T defaultval)
+{
+	T result;
+	std::wstringstream stream(data);
+
+	if(stream >> result)
+		return result;
+	return defaultval;
+}
+
 
 inline CString ErrorFormatMessage(HRESULT dwLastErr )
 {
