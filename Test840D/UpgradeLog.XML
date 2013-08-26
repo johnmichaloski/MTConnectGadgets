@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Test840D">
+</Property><Property Name="Solution File" Value="C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D.sln">
+</Property><Property Name="Date" Value="Monday, August 26, 2013">
+</Property><Property Name="Time" Value="10:16 AM">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Test840D.sln" Description="File successfully backed up as C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D.sln.old">
+</Event><Event ErrorLevel="0" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="Converting project file 'C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D\Test840D.vcproj'.">
+</Event><Event ErrorLevel="1" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="1" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D\Debug\Test840D.exe') does not match the Linker's OutputFile property value 'Debug\Test840D.exe' ('C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Debug\Test840D.exe') in project configuration 'Debug|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="1" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="MSB8012: $(TargetPath) ('C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D\Release\Test840D.exe') does not match the Linker's OutputFile property value 'Release\Test840D.exe' ('C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Release\Test840D.exe') in project configuration 'Release|Win32'. This may cause your project to build incorrectly. To correct this, please make sure that $(TargetPath) property value matches the value specified in %(Link.OutputFile).">
+</Event><Event ErrorLevel="0" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="Done converting to new project file 'C:\Users\michalos\Documents\GitHub\MTConnectGadgets\Test840D\Test840D\Test840D.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="Test840D" Source="Test840D\Test840D.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Test840D.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Test840D.sln" Description="Converted">
+</Event></UpgradeLog>
