@@ -297,10 +297,11 @@ HRESULT CMainDlg::Connect(void)
 
 	CoInitialize(NULL);
 
-	ComInitializeSecuity dcom;
-	dcom.dwAuthnLevel=RPC_C_AUTHN_LEVEL_CONNECT;;
-	dcom.dwImpLevel=RPC_C_IMP_LEVEL_IDENTIFY;
-	hr=dcom.InitializeSecurity();
+	// Unnecessary and TOO LATE to take effect in APP
+	//ComInitializeSecuity dcom;
+	//dcom.dwAuthnLevel=RPC_C_AUTHN_LEVEL_CONNECT;;
+	//dcom.dwImpLevel=RPC_C_IMP_LEVEL_IDENTIFY;
+	//hr=dcom.InitializeSecurity();
 
 
 	CLSID gOpcServerClsid;
@@ -344,50 +345,6 @@ HRESULT CMainDlg::Connect(void)
 	{ 
 		{&IID_IOPCServer, NULL , 0} 
 	};
-
-	//hr=CoCreateInstanceEx(
-	//	_gOpcServerClsid, // Request an instance of class CLSID_MyBackupService
-	//	NULL, // No aggregation
-	//	CLSCTX_SERVER, // CLSCTX_SERVER, // Any server is fine
-	//	&srvinfo, // Contains remote server name
-	//	sizeof(mqi)/sizeof(mqi[0]), // number of interfaces we are requesting (2)
-	//	(MULTI_QI        *) &mqi); // structure indicating IIDs and interface pointers
-
-	
-
-	
-
-	//
- //
-	//COAUTHIDENTITY* pAuthIdentityData; 
-	//CStringVector info = Tokenize(_users[_nUser], ",");
-	//if(info.size()<3)
-	//{
-	//	pAuthIdentityData=NULL;
-	//	sUserSettings="No User/Password";
-	//}
-	//else
-	//{
-
-	//}
-	//Load();
-
-	//COAUTHINFO athn;
-	//athn.dwAuthnSvc = n_authnEnum;
-	//athn.dwAuthzSvc = n_authzEnum;
-	//athn.pwszServerPrincName = NULL;
-	//athn.dwAuthnLevel = n_authnlevelEnum;
-	//athn.dwImpersonationLevel = n_impersonationlevelEnum;
-	//athn.dwCapabilities = EOAC_NONE;
-	//athn.pAuthIdentityData=pAuthIdentityData;
-	////athn.pAuthIdentityData = (COAUTHIDENTITY*)idn;
-
-	////COSERVERINFO is the class that stores the name of the server
-	//COSERVERINFO srvinfo; // = {0, server, NULL, 0}; // Create the object and query for two interfaces
-	//srvinfo.dwReserved1=0;
-	//srvinfo.dwReserved2=0;
-	//srvinfo.pwszName=server;
-	//srvinfo.pAuthInfo=&athn;
 
 
 	if(FAILED(hr=CoCreateInstanceEx(
@@ -464,7 +421,8 @@ HRESULT CMainDlg::TestOPCGroup(void)
 			throw std::wstring (_T("FAIL: Connect() couldn't add group to server!\n"));
 		}
 
-		if(FAILED(hResult = AddOPCItem(L"TestItem")))
+		// add item to our group - MUST BE 840D ACCEPTABLE ITEM
+		if(FAILED(hResult = AddOPCItem(L"/Channel/MachineAxis/actToolBasePos[1]")))
 		{
 			throw std::wstring (_T("FAIL: Connect() couldn't add item to group!\n"));
 		}

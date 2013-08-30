@@ -27,7 +27,7 @@
     <ClCompile Include="Test840D.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="OPC\opcda_i.c">
+    <ClCompile Include="..\..\..\..\..\..\..\Program Files\NIST\src\OPC\opcda_i.c">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
