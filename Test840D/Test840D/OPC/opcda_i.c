@@ -5,18 +5,21 @@
 /* link this file in with the server and any clients */
 
 
- /* File created by MIDL compiler version 7.00.0555 */
-/* at Mon Aug 26 15:39:47 2013
+ /* File created by MIDL compiler version 6.00.0361 */
+/* at Thu Dec 02 08:28:24 2004
  */
-/* Compiler settings for opcda.idl:
-    Oicf, W1, Zp8, env=Win32 (32b run), target_arch=X86 7.00.0555 
-    protocol : dce , ms_ext, c_ext, robust
+/* Compiler settings for .\opcda.idl:
+    Oicf, W1, Zp8, env=Win32 (32b run)
+    protocol : dce , ms_ext, c_ext
     error checks: allocation ref bounds_check enum stub_data 
     VC __declspec() decoration level: 
          __declspec(uuid()), __declspec(selectany), __declspec(novtable)
          DECLSPEC_UUID(), MIDL_INTERFACE()
 */
-/* @@MIDL_FILE_HEADING(  ) */
+//@@MIDL_FILE_HEADING(  )
+
+#if !defined(_M_IA64) && !defined(_M_AMD64)
+
 
 #pragma warning( disable: 4049 )  /* more than 64k source lines */
 
@@ -145,4 +148,6 @@ MIDL_DEFINE_GUID(IID, LIBID_OPCDA,0x3B540B51,0x0378,0x4551,0xAD,0xCC,0xEA,0x9B,0
 #endif
 
 
+
+#endif /* !defined(_M_IA64) && !defined(_M_AMD64)*/
 

@@ -40,7 +40,17 @@ int WINAPI _tWinMain(HINSTANCE hInstance, HINSTANCE /*hPrevInstance*/, LPTSTR lp
 // make the EXE free threaded. This means that calls come in on a random RPC thread.
 //	HRESULT hRes = ::CoInitializeEx(NULL, COINIT_MULTITHREADED);
 	ATLASSERT(SUCCEEDED(hRes));
-
+	hRes= ::CoInitializeSecurity( NULL, //Points to security descriptor 
+			-1, //Count of entries in asAuthSvc 
+			NULL, //Array of names to register 
+			NULL, //Reserved for future use 
+			RPC_C_AUTHN_LEVEL_NONE, //The default authentication //level for proxies 
+			RPC_C_IMP_LEVEL_IDENTIFY, //The default impersonation //level for proxies 
+			NULL, //Reserved; must be set to  NULL
+			EOAC_NONE, //Additional client or //server-side capabilities 
+			NULL //Reserved for future use 
+			);
+	ATLASSERT(SUCCEEDED(hRes));
 	// this resolves ATL window thunking problem when Microsoft Layer for Unicode (MSLU) is used
 	::DefWindowProc(NULL, 0, 0, 0L);
 

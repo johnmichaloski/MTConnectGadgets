@@ -1,0 +1,18 @@
+@echo off
+setlocal
+rem If {%1}=={} goto :err
+rem if /i "%1" EQU "ON" set data=1&goto doit
+rem if /i "%1" EQU "OFF" set data=0&goto doit
+set data=1&goto doit
+:err
+@echo Syntax: DCOMErr ON^|OFF
+endlocal
+goto :EOF
+:doit
+set key="HKLM\SOFTWARE\Microsoft\Ole"
+call :quiet>nul 2>&1
+endlocal
+goto :EOF
+:quiet
+reg add %key% /V ActivationFailureLoggingLevel /T REG_DWORD /F /D %data%
+reg add %key% /V CallFailureLoggingLevel /T REG_DWORD /F /D %data%

@@ -264,6 +264,8 @@ LRESULT CMainDlg::OnInitDialog(UINT /*uMsg*/, WPARAM /*wParam*/, LPARAM /*lParam
 			continue;
 		_users.push_back(lines[i].Mid(n+1));
 	}
+	if(lines.size()==0)
+		_users.push_back("None");
 
 	for(i=0; i< _users.size(); i++)
 		_usersCombo.AddString(_users[i]);
@@ -296,63 +298,102 @@ HRESULT CMainDlg::Connect(void)
 	CoInitialize(NULL);
 
 	ComInitializeSecuity dcom;
-	dcom.dwAuthnLevel=n_authLevelComSecurityEnum;
-	dcom.dwImpLevel=n_impLevelComSecurityEnum;
+	dcom.dwAuthnLevel=RPC_C_AUTHN_LEVEL_CONNECT;;
+	dcom.dwImpLevel=RPC_C_IMP_LEVEL_IDENTIFY;
 	hr=dcom.InitializeSecurity();
 
-	MULTI_QI mqi[]=
-	{ 
-		{&__uuidof(IUnknown), NULL , 0} 
-	};
 
 	CLSID gOpcServerClsid;
 	// OPC.SINUMERIK.MachineSwitch
-	// sClsid=L"{75d00afe-dda5-11d1-b944-9e614d000000}";  // Siemens 840D OPC Server CLSID : 75d00afe-dda5-11d1-b944-9e614d000000
+	sClsid=L"{75d00afe-dda5-11d1-b944-9e614d000000}";  // Siemens 840D OPC Server CLSID : 75d00afe-dda5-11d1-b944-9e614d000000
 	if(FAILED(CLSIDFromString(sClsid , &gOpcServerClsid)))
 	{
 		throw bstr_t(L"CLSIDFromString(_bstr_t(sClsid) , &gOpcServerClsid))) FAILED\n");
 		return 0;
 	}
- 
-	COAUTHIDENTITY* pAuthIdentityData; 
-	CStringVector info = Tokenize(_users[_nUser], ",");
-	if(info.size()<3)
-	{
-		pAuthIdentityData=NULL;
-		sUserSettings="No User/Password";
-	}
-	else
-	{
-		Auth_Identity idn((LPCWSTR) info[0].Trim(),(LPCWSTR) info[1].Trim(),(LPCWSTR) info[2].Trim());
-		pAuthIdentityData=idn.GetNullAuth_Identity();
-		sUserSettings.Format(L"Domain=%s\r\nUser=%s\r\nPassword=%s", 
-			(LPCWSTR) info[0].Trim(), (LPCWSTR) info[1].Trim(),(LPCWSTR) info[2].Trim());
 
-	}
-	Load();
+	//	Auth_Identity idn((LPCWSTR) domain),(LPCWSTR) user,(LPCWSTR) password);
+	//	pAuthIdentityData=idn.GetNullAuth_Identity();
+	//	sUserSettings.Format(L"Domain=%s\r\nUser=%s\r\nPassword=%s", 
+	//		(LPCWSTR) domain, (LPCWSTR) user,(LPCWSTR) password);
+
+	COAUTHIDENTITY* pAuthIdentityData=NULL; 
+
+	//pAuthIdentityData.dwAuthzSvc  = RPC_C_AUTHZ_NAME; 
+	//pAuthIdentityData.dwAuthnLevel  = RPC_C_AUTHN_LEVEL_NONE ; 
+
 
 	COAUTHINFO athn;
-	athn.dwAuthnSvc = n_authnEnum;
-	athn.dwAuthzSvc = n_authzEnum;
+	athn.dwAuthnSvc = RPC_C_AUTHN_WINNT; 
+	athn.dwAuthzSvc = RPC_C_AUTHZ_NONE; 
 	athn.pwszServerPrincName = NULL;
-	athn.dwAuthnLevel = n_authnlevelEnum;
-	athn.dwImpersonationLevel = n_impersonationlevelEnum;
+	athn.dwAuthnLevel =  RPC_C_AUTHN_LEVEL_NONE; 
+	athn.dwImpersonationLevel = RPC_C_IMP_LEVEL_IDENTIFY; // n_impersonationlevelEnum;
 	athn.dwCapabilities = EOAC_NONE;
 	athn.pAuthIdentityData=pAuthIdentityData;
-	//athn.pAuthIdentityData = (COAUTHIDENTITY*)idn;
 
 	//COSERVERINFO is the class that stores the name of the server
 	COSERVERINFO srvinfo; // = {0, server, NULL, 0}; // Create the object and query for two interfaces
 	srvinfo.dwReserved1=0;
 	srvinfo.dwReserved2=0;
-	srvinfo.pwszName=server;
+	srvinfo.pwszName=L"129.6.78.90";
 	srvinfo.pAuthInfo=&athn;
+
+	//CoInitializeEx(NULL, COINIT_MULTITHREADED  );
+	MULTI_QI mqi[]=
+	{ 
+		{&IID_IOPCServer, NULL , 0} 
+	};
+
+	//hr=CoCreateInstanceEx(
+	//	_gOpcServerClsid, // Request an instance of class CLSID_MyBackupService
+	//	NULL, // No aggregation
+	//	CLSCTX_SERVER, // CLSCTX_SERVER, // Any server is fine
+	//	&srvinfo, // Contains remote server name
+	//	sizeof(mqi)/sizeof(mqi[0]), // number of interfaces we are requesting (2)
+	//	(MULTI_QI        *) &mqi); // structure indicating IIDs and interface pointers
+
+	
+
+	
+
+	//
+ //
+	//COAUTHIDENTITY* pAuthIdentityData; 
+	//CStringVector info = Tokenize(_users[_nUser], ",");
+	//if(info.size()<3)
+	//{
+	//	pAuthIdentityData=NULL;
+	//	sUserSettings="No User/Password";
+	//}
+	//else
+	//{
+
+	//}
+	//Load();
+
+	//COAUTHINFO athn;
+	//athn.dwAuthnSvc = n_authnEnum;
+	//athn.dwAuthzSvc = n_authzEnum;
+	//athn.pwszServerPrincName = NULL;
+	//athn.dwAuthnLevel = n_authnlevelEnum;
+	//athn.dwImpersonationLevel = n_impersonationlevelEnum;
+	//athn.dwCapabilities = EOAC_NONE;
+	//athn.pAuthIdentityData=pAuthIdentityData;
+	////athn.pAuthIdentityData = (COAUTHIDENTITY*)idn;
+
+	////COSERVERINFO is the class that stores the name of the server
+	//COSERVERINFO srvinfo; // = {0, server, NULL, 0}; // Create the object and query for two interfaces
+	//srvinfo.dwReserved1=0;
+	//srvinfo.dwReserved2=0;
+	//srvinfo.pwszName=server;
+	//srvinfo.pAuthInfo=&athn;
 
 
 	if(FAILED(hr=CoCreateInstanceEx(
-		gOpcServerClsid, // Request an instance of class CLSID_MyBackupService
+		gOpcServerClsid, // Request an instance of class 
 		NULL, // No aggregation
-		CLSCTX_ALL, // CLSCTX_SERVER, // Any server is fine
+		CLSCTX_SERVER, // CLSCTX_SERVER, // Any server is fine
 		&srvinfo, // Contains remote server name
 		sizeof(mqi)/sizeof(mqi[0]), // number of interfaces we are requesting (2)
 		(MULTI_QI        *) &mqi))) // structure indicating IIDs and interface pointers
@@ -361,11 +402,17 @@ HRESULT CMainDlg::Connect(void)
 		throw bstrFormat(L":Test840D CoCreateInstanceEx  FAILED 0x%x = %s\n",  hr, ErrorFormatMessage(hr));
 
 	_pIOPCServer = (IOPCServer *) (mqi[0].pItf); // Retrieve first interface pointer hr=pBackupAdmin->StartBackup(); // use it…
+
+	OPCSERVERSTATUS * pServerStatus=NULL;
+	if(FAILED(hr=_pIOPCServer->GetStatus(&pServerStatus)))
+	{
+		OutputDebugString(bstrFormat(L"COPCBackEnd::Connect Machine  -  GetStatus error 0x%x\n",hr ));
+		return E_FAIL;
+	}
 	TestOPCGroup();
 
-	//IUnknown * m_pExe = (IUnknown *) (mqi[0].pItf); 
 	//status+= L":Test840D Connect Succeded";
-	_pIOPCServer.Release();
+	_pIOPCServer->Release();
 	}
 	catch(bstr_t errmsg)
 	{
@@ -389,7 +436,7 @@ HRESULT CMainDlg::TestOPCGroup(void)
 	HRESULT hResult;
 	// variables for AddGroup method
 	LONG	lTimeBias = -5;				// washington DC (-5) to greenwich meantime 
-	FLOAT	fDeadband = 0;				// no deadband
+	FLOAT	fDeadband = 10.0;				// no deadband
 	DWORD	dwRevisedUpdateRate = 0;	// revised update rate from server
 	OPCHANDLE _hServerHandleGroup=NULL;					// server handle of our group
 	long _nOPCServerRate=5000;
@@ -400,7 +447,7 @@ HRESULT CMainDlg::TestOPCGroup(void)
 
 		// add our group to the OPC server
 		if(FAILED(hResult = _pIOPCServer->AddGroup(	
-			L"TestGroup",		// name of the new group
+			L"Test",		// name of the new group
 			TRUE,					// group is active (sends callbacks)
 			_nOPCServerRate,		// update rate of 100 ms
 			23111980,				// our client handle of this group
@@ -451,7 +498,7 @@ HRESULT CMainDlg::AddOPCItem(std::wstring name)
 	{
 		// fill item definition structure with data of our item (/bag/state/opmode)
 		opcItemDef[0].szAccessPath=L"";					// no access path description
-		opcItemDef[0].szItemID=WSTRClone(name.c_str());			// ItemID of the variable (BTSS name)
+		opcItemDef[0].szItemID=WSTRClone(L"/Channel/MachineAxis/actToolBasePos[1]");			// ItemID of the variable (BTSS name)
 		opcItemDef[0].bActive=TRUE;						// set item active to get notifications, if value changes
 		opcItemDef[0].hClient=(OPCHANDLE)0x100;		    // client handle of the item
 		opcItemDef[0].dwBlobSize=0;						// no blob
@@ -459,17 +506,16 @@ HRESULT CMainDlg::AddOPCItem(std::wstring name)
 		opcItemDef[0].vtRequestedDataType=VT_BSTR;		// value of the item should be delivered as BSTR
 
 		// add our item to the group
-		if(FAILED(hr=_pIOPCItemMgt->AddItems(	
+		hr=_pIOPCItemMgt->AddItems(	
 			1,									// add 1 item...
 			opcItemDef,							// with this definition
 			(OPCITEMRESULT**)&popcItemResult,	// server data of this item
 			(HRESULT**)&phResultArray			// was addition successfull?
-			))) 
-			return hr;
+			); 
 
 		if(FAILED(hr))
 		{
-			throw std::wstring (_T("FAIL: AddOPCItem() generic fail")) + (LPCTSTR) bstrFormat(L"%x\n", hr); 
+			throw std::wstring ((LPCTSTR)  bstrFormat(L"FAIL: AddOPCItem() generic fai  -   error 0x%x\n",hr ));
 		}
 		else if(hr==S_FALSE)
 		{
@@ -484,6 +530,8 @@ HRESULT CMainDlg::AddOPCItem(std::wstring name)
 	catch( std::wstring errmsg)
 	{
 		status += (LPCTSTR)  errmsg.c_str();
+		OutputDebugString(status);
+
 	}
 
 	if(opcItemDef[0].szItemID!=NULL)

@@ -4,7 +4,7 @@
 
 #pragma once
 #include "Misc.h"
-#include "Test840D.h"
+#include "opcda.h"
 
 class CMainDlg : public CDialogImpl<CMainDlg>, public CUpdateUI<CMainDlg>,
 		public CMessageFilter, public CIdleHandler
@@ -45,8 +45,8 @@ public:
 	std::map<std::wstring, std::wstring> ParseIni(std::wstring inisection);
 		CString status;
 
-	CComPtr<IOPCServer>		_pIOPCServer;
-	CComPtr<IOPCItemMgt>	_pIOPCItemMgt;
+	IOPCServer * 	_pIOPCServer;
+	IOPCItemMgt *	_pIOPCItemMgt;
 
 	BEGIN_MSG_MAP(CMainDlg)
 		MESSAGE_HANDLER(WM_INITDIALOG, OnInitDialog)
